@@ -19,7 +19,6 @@ import torch
 from torch.utils.data.dataset import Dataset
 from einops import rearrange
 import glob
-from moviepy.editor import VideoFileClip
 import torchvision.transforms as transforms
 from tqdm import tqdm
 import torch.nn.functional as F
@@ -328,14 +327,20 @@ class CustomLeRobotDataset(Dataset):
         """
         video_list = []
         for cam_name in cam_name_list:
+            cap = None
             try:
-                video_reader = VideoFileClip(video_path.format(cam_name))
-                fps = video_reader.fps
+                cap = cv2.VideoCapture(video_path.format(cam_name))
+                if not cap.isOpened():
+                    raise IOError(f"Failed to open video file: {video_path.format(cam_name)}")
                 video = []
 
                 for idx in slices:
                     try:
-                        frame = video_reader.get_frame(float(idx) / fps)
+                        cap.set(cv2.CAP_PROP_POS_FRAMES, int(idx))
+                        ok, frame = cap.read()
+                        if not ok or frame is None:
+                            raise IOError(f"Failed to read frame {idx}")
+                        frame = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
                         video.append(frame)
                     except Exception as e:
                         print(f"[Error] Failed in get_frame {cam_name}: {e}")
@@ -345,8 +350,8 @@ class CustomLeRobotDataset(Dataset):
                 print(f"[Error] Failed to open video {cam_name}: {e}")
                 video = None
             finally:
-                if 'video_reader' in locals():
-                    video_reader.close()
+                if cap is not None:
+                    cap.release()
 
             if video is None:
                 return None  

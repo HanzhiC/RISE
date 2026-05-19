@@ -36,8 +36,8 @@ import torch.utils.checkpoint
 
 from diffusers.loaders.single_file_model import FromOriginalModelMixin
 
-from dynamics_model.models.ltx_models.ltx_attention_processor import Attention
-from dynamics_model.models.action_patches.patches import preprocessing_action_states, add_action_expert
+from models.ltx_models.ltx_attention_processor import Attention
+from models.action_patches.patches import preprocessing_action_states, add_action_expert
 
 
 

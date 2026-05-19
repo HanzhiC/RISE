@@ -7,7 +7,7 @@ logging_dir: logs
 output_dir: results
 
 #### change to the ltx backbone ckpts path
-pretrained_model_name_or_path: path/checkpoints
+pretrained_model_name_or_path: checkpoints
 
 ###
 train_data_class_path: data/data_finetune.py
@@ -100,7 +100,7 @@ pixel_wise_timestep: True
 
 diffusion_model:
   #### change to our diffusion ckpts path
-  model_path: path/checkpoints/model/diffusion_pytorch_model.safetensors
+  model_path: checkpoints/dynamics_model/pretrained/diffusion_pytorch_model.safetensors
   config:
     activation_fn: gelu-approximate
     attention_bias: true
@@ -124,14 +124,12 @@ diffusion_model:
 
 data:
   train:
-    data_roots: ["/path/to/finetuned_data"]
-    domains: []
-    # list your training data here, for example:
-    # domains: ['task_1', 'task_2']
+    data_roots: ["dataset"]
+    domains: ["open_the_ricecooker_pi_abs"]
     sample_size: [192, 256]
     sample_n_frames: 900
     preprocess :  'resize'
-    valid_cam :  ['observation.images.top_head', 'observation.images.hand_left', 'observation.images.hand_right']
+    valid_cam :  ['image']
     chunk: 25 # prediction frames
     action_chunk: 50
     n_previous: 4 # input frames
@@ -140,23 +138,27 @@ data:
     dataset_info_cache_path: 
     action_type: "absolute"
     action_space: "joint"
+    action_key: "actions"
+    state_key: "state"
+    norm_config_path: "data/utils/action_norm.json"
   val:
-   data_roots: ["/path/to/finetuned_data"]
-    domains: []
-    # list your validation data here, for example:
-    # domains: ['task_1', 'task_2']
+    data_roots: ["dataset"]
+    domains: ["open_the_ricecooker_pi_abs"]
     sample_size: [192, 256]
     sample_n_frames: 900
     preprocess :  'resize'
-    valid_cam :  ['observation.images.top_head', 'observation.images.hand_left', 'observation.images.hand_right']
+    valid_cam :  ['image']
     chunk: 25
     action_chunk: 50
     n_previous: 4
     previous_pick_mode: 'random'
     random_crop: False
     dataset_info_cache_path: 
-    action_type: "delta"
+    action_type: "absolute"
     action_space: "joint"
+    action_key: "actions"
+    state_key: "state"
+    norm_config_path: "data/utils/action_norm.json"
 
 
 use_color_jitter: true

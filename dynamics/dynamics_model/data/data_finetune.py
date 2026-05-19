@@ -19,7 +19,6 @@ import torch
 from torch.utils.data.dataset import Dataset
 from einops import rearrange
 import glob
-from moviepy.editor import VideoFileClip
 import torchvision.transforms as transforms
 from tqdm import tqdm
 import torch.nn.functional as F
@@ -270,6 +269,28 @@ class CustomLeRobotDataset(Dataset):
         self.fix_sidx = fix_sidx
         self.fix_mem_idx = fix_mem_idx
 
+    def load_action_array(self, data):
+        if self.action_key in data.keys():
+            action = np.stack([self.ensure_array(data[self.action_key][i]) for i in range(data[self.action_key].shape[0])])
+            return action
+
+        if 'action' in data.keys():
+            return np.stack([self.ensure_array(data['action'][i]) for i in range(data['action'].shape[0])])
+
+        if 'actions' in data.keys():
+            return np.stack([self.ensure_array(data['actions'][i]) for i in range(data['actions'].shape[0])])
+
+        cols = ['action.left_arm', 'action.left_gripper', 'action.right_arm', 'action.right_gripper']
+        if all(col in data.columns for col in cols):
+            return np.stack([
+                np.concatenate([self.ensure_array(data.at[i, col]) for col in cols])
+                for i in range(len(data))
+            ])
+
+        raise ValueError(
+            f"Unsupported action format. action_key={self.action_key}, available columns={list(data.columns)}"
+        )
+
     def get_frame_indexes(self, total_frames, domain_name):
         """
         select self.n_previous memory frames and self.action_chunk prediction frmaes
@@ -304,14 +325,20 @@ class CustomLeRobotDataset(Dataset):
         """
         video_list = []
         for cam_name in cam_name_list:
+            cap = None
             try:
-                video_reader = VideoFileClip(video_path.format(cam_name))
-                fps = video_reader.fps
+                cap = cv2.VideoCapture(video_path.format(cam_name))
+                if not cap.isOpened():
+                    raise IOError(f"Failed to open video file: {video_path.format(cam_name)}")
                 video = []
 
                 for idx in slices:
                     try:
-                        frame = video_reader.get_frame(float(idx) / fps)
+                        cap.set(cv2.CAP_PROP_POS_FRAMES, int(idx))
+                        ok, frame = cap.read()
+                        if not ok or frame is None:
+                            raise IOError(f"Failed to read frame {idx}")
+                        frame = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
                         video.append(frame)
                     except Exception as e:
                         print(f"[Error] Failed in get_frame {cam_name}: {e}")
@@ -321,8 +348,8 @@ class CustomLeRobotDataset(Dataset):
                 print(f"[Error] Failed to open video {cam_name}: {e}")
                 video = None
             finally:
-                if 'video_reader' in locals():
-                    video_reader.close()
+                if cap is not None:
+                    cap.release()
 
             if video is None:
                 return None  
@@ -393,10 +420,10 @@ class CustomLeRobotDataset(Dataset):
 
     @staticmethod
     def ensure_array(x):
-        if isinstance(x, np.ndarray):
-            return x
-        else:
-            return np.array([x], dtype=float)
+        array = np.asarray(x, dtype=np.float32)
+        if array.ndim == 0:
+            array = array.reshape(1)
+        return array
 
     def get_batch(self, idx):
         
@@ -412,20 +439,9 @@ class CustomLeRobotDataset(Dataset):
         data = pd.read_parquet(parquet_path)
 
         try:
-            if 'action' in data.keys():
-                action = np.stack([data['action'][i] for i in range(data['action'].shape[0])])
-            else:
-                cols = ['action.left_arm', 'action.left_gripper', 'action.right_arm', 'action.right_gripper']
-                action = np.stack([
-                    np.concatenate([self.ensure_array(data.at[i, col]) for col in cols])
-                    for i in range(len(data))
-                ])
-                if action.shape[1] == 16:
-                    return None, None, None
-                # print(action.shape)
-                
-        except:
-            raise ValueError("We currently only support action and state data with the shape of T*C!")
+            action = self.load_action_array(data)
+        except Exception as e:
+            raise ValueError(f"We currently only support action data with shape T*C. {e}")
 
         action_tokens_need = action[act_tokens_index].astype(np.float32)
         action_tokens_need = torch.FloatTensor(action_tokens_need)

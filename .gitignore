@@ -1,4 +1,4 @@
-# Data directories.
+	# Data directories.
 assets/
 checkpoints
 checkpoints/
@@ -179,5 +179,6 @@ visualizations_labeled/
 visualizations_legacy/
 
 genie-envisioner/
-
+dynamics/dynamics_model/slurm_logs
 lerobot/
+dynamics/dynamics_model/results
