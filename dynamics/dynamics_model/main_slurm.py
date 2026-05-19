@@ -17,7 +17,9 @@ def parse_args():
     default_log_dir = repo_root / "slurm_logs"
     default_conda_sh = Path.home() / "anaconda3" / "etc" / "profile.d" / "conda.sh"
 
-    parser = argparse.ArgumentParser(description="Submit a Slurm training job for this repo.")
+    parser = argparse.ArgumentParser(
+        description="Submit a Slurm training job for this repo."
+    )
     parser.add_argument(
         "--script",
         default="main.py",
@@ -31,7 +33,9 @@ def parse_args():
     parser.add_argument("--job-name", default="dynamics-ft", help="Slurm job name.")
     parser.add_argument("--nodes", type=int, default=1, help="Number of nodes.")
     parser.add_argument("--gpus-per-node", type=int, default=1, help="GPUs per node.")
-    parser.add_argument("--cpus-per-task", type=int, default=4, help="CPUs per Slurm task.")
+    parser.add_argument(
+        "--cpus-per-task", type=int, default=4, help="CPUs per Slurm task."
+    )
     parser.add_argument(
         "--mem-per-gpu-gb",
         type=int,
@@ -42,15 +46,17 @@ def parse_args():
     parser.add_argument("--partition", default="DEADLINE", help="Slurm partition.")
     parser.add_argument(
         "--constraint",
-        default="GPU_MODEL:nvidia_rtx_pro_6000_blackwell_server_edition|nvidia_h100_nvl",
-        help="Optional Slurm constraint string. Use '' to disable.",
+        default="",
+        help="Optional Slurm constraint string. Leave empty to disable.",
     )
     parser.add_argument(
         "--gres-vram",
-        default="96G",
-        help="Optional VRAM gres suffix, e.g. 48G. Produces --gres=gpu:N,VRAM:48G.",
+        default="",
+        help="Optional VRAM gres suffix, e.g. 48G. Leave empty to request plain gpu:N.",
     )
-    parser.add_argument("--comment", default="corl w anran", help="Optional Slurm comment.")
+    parser.add_argument(
+        "--comment", default="corl w anran", help="Optional Slurm comment."
+    )
     parser.add_argument(
         "--log-dir",
         default=str(default_log_dir),
@@ -79,8 +85,13 @@ def parse_args():
     )
     parser.add_argument(
         "--module-cuda",
-        default="cuda/12.1.0",
+        default="cuda/13.1.0",
         help="Optional CUDA module to load, e.g. cuda/12.1.0.",
+    )
+    parser.add_argument(
+        "--nccl-socket-ifname",
+        default="",
+        help="Optional NCCL socket interface name. Leave empty to unset it inside the job.",
     )
     parser.add_argument(
         "--extra-arg",
@@ -174,7 +185,6 @@ def build_job_script(args, repo_root: Path, out_file: Path, err_file: Path):
             "pwd; hostname; date",
             "nvidia-smi",
             'export NCCL_DEBUG="${NCCL_DEBUG:-INFO}"',
-            'export NCCL_SOCKET_IFNAME="${NCCL_SOCKET_IFNAME:-^docker0,lo}"',
             'export TOKENIZERS_PARALLELISM="${TOKENIZERS_PARALLELISM:-false}"',
             'export SLURM_CPU_BIND="${SLURM_CPU_BIND:-none}"',
             'export OMP_NUM_THREADS="${OMP_NUM_THREADS:-4}"',
@@ -185,6 +195,15 @@ def build_job_script(args, repo_root: Path, out_file: Path, err_file: Path):
             "",
         ]
     )
+
+    if args.nccl_socket_ifname:
+        lines.append(
+            f"export NCCL_SOCKET_IFNAME={shlex.quote(args.nccl_socket_ifname)}"
+        )
+    else:
+        lines.append("unset NCCL_SOCKET_IFNAME")
+
+    lines.append("")
 
     if args.module_cuda:
         lines.append(f"module load {shlex.quote(args.module_cuda)}")
