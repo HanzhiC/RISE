@@ -14,7 +14,7 @@ from pathlib import Path
 
 def parse_args():
     repo_root = Path(__file__).resolve().parent
-    default_log_dir = repo_root / "slurm_logs"
+    default_log_dir = Path("/home/wiss/chenh/storage/slurm2/logs/rise") / "slurm_logs"
     default_conda_sh = Path.home() / "anaconda3" / "etc" / "profile.d" / "conda.sh"
 
     parser = argparse.ArgumentParser(
@@ -46,12 +46,12 @@ def parse_args():
     parser.add_argument("--partition", default="DEADLINE", help="Slurm partition.")
     parser.add_argument(
         "--constraint",
-        default="",
+        default="GPU_MODEL:nvidia_rtx_pro_6000_blackwell_server_edition",
         help="Optional Slurm constraint string. Leave empty to disable.",
     )
     parser.add_argument(
         "--gres-vram",
-        default="",
+        default="96G",
         help="Optional VRAM gres suffix, e.g. 48G. Leave empty to request plain gpu:N.",
     )
     parser.add_argument(
@@ -165,6 +165,7 @@ def build_job_script(args, repo_root: Path, out_file: Path, err_file: Path):
         f"#SBATCH --error={err_file}",
         f"#SBATCH --nodes={args.nodes}",
         "#SBATCH --ntasks-per-node=1",
+        # f"#SBATCH --ntasks={args.nodes}",
         f"#SBATCH --gres={gres}",
         f"#SBATCH --cpus-per-task={args.cpus_per_task}",
         f"#SBATCH --mem={total_mem_gb}G",
@@ -205,8 +206,8 @@ def build_job_script(args, repo_root: Path, out_file: Path, err_file: Path):
 
     lines.append("")
 
-    if args.module_cuda:
-        lines.append(f"module load {shlex.quote(args.module_cuda)}")
+    # if args.module_cuda:
+    #     lines.append(f"module load {shlex.quote(args.module_cuda)}")
 
     if args.conda_env:
         lines.extend(
@@ -256,9 +257,10 @@ def main():
     if args.dry_run:
         print("Dry run enabled, not submitting job.")
         return
-
     subprocess.run(["sbatch", str(job_file)], check=True)
 
 
 if __name__ == "__main__":
     main()
+
+# salloc --ntasks=1 --cpus-per-task=5 --mem=96G --gres="gpu:1,VRAM:96G" -t 3600 -p DEADLINEBIG --comment "corl w anran"
