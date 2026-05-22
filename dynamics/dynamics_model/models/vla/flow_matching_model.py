@@ -21,7 +21,7 @@ from models.vla.cdit_rope import (
     RoPECDiTAction,
 )
 from models.vla.guidance import DynamicsGuidance
-from typing import Callable, Optional
+from typing import Callable
 from contextlib import AbstractContextManager
 from einops import rearrange
 from utils.dataset_utils import (
@@ -788,31 +788,9 @@ class VLAFlowMatching(nn.Module):
             action_features_vm = actions[:, 0, :][:, None, :].repeat(
                 1, self.action_chunk_size, 1
             )  # Current state action
-
-            # Current state value
-            prefix_image_value, prefix_language_value = (
-                self.prepare_vision_language_features(
-                    model="vm",
-                    image_features=image_features_vm,
-                    language_features=language_features,
-                    history_raymaps=history_raymaps,
-                )
-            )
-            dynamics_features_value = self.dynamics_proj_for_vm(
-                history_state_dynamics
-            )  # [B, N, D]
-            context_vm = torch.cat([prefix_image_value, dynamics_features_value], dim=1)
-            v = self.value_query.expand(prefix_image_value.shape[0], -1, -1)
-            v, c_values = self.value_model(
-                x=v,
-                x_history=action_features_vm,
-                context=context_vm,
-                language=prefix_language_value,
-                timestamp=torch.zeros_like(time),
-            )
-            v = self.vm_out_proj(v, c_values).squeeze((-1, -2))
-            loss_value = F.mse_loss(v, values.float().view_as(v))
-            losses["absolute_loss_values"] = loss_value
+            # dynamics_features_value = history_state_dynamics
+            values_target = values
+            vm_use_predict_visual = False
 
             if (
                 self.use_wm
@@ -821,107 +799,72 @@ class VLAFlowMatching(nn.Module):
                 and self.history_visual_horizon == 1
                 and random.random() < self.vm_use_predict_visual_prob
             ):
-                assert aux_data is not None
-                assert dynamics_absolute is not None
-                assert self.predict_x0
-
+                assert values_future is not None
                 res_visual = int(image_features.shape[-2] ** 0.5)
+                pred_t_dynamics_visual_for_vm = pred_t_dynamics_visual.clone().detach()
+                pred_t_dynamics_visual_for_vm = F.interpolate(
+                    pred_t_dynamics_visual_for_vm,
+                    size=(
+                        res_visual,
+                        res_visual,
+                    ),
+                    mode="bilinear",
+                    align_corners=False,
+                )
+                pred_t_dynamics_visual_for_vm = rearrange(
+                    pred_t_dynamics_visual_for_vm, "b c h w -> b (h w) c"
+                )
 
-                with torch.no_grad():
-                    gt_t_dynamics_visual = dynamics[:, -self.dynamics_visual_dim :]
-                    future_image_features_vm_gt = (
-                        self.dynamics_visual_to_vm_image_features(
-                            gt_t_dynamics_visual, res_visual
-                        )
-                    )
-                    future_absolute_geometric_dynamics_gt = dynamics_absolute
-                    future_actions_features_gt = actions[:, -1, :][:, None, :].repeat(
-                        1, self.action_chunk_size, 1
-                    )
-                    # Do inference for the gt future state as target
-                    future_prefix_image_value_gt, future_prefix_language_value_gt = (
-                        self.prepare_vision_language_features(
-                            model="vm",
-                            image_features=future_image_features_vm_gt,
-                            language_features=language_features,
-                            history_raymaps=history_raymaps,
-                        )
-                    )
-                    future_dynamics_features_value_gt = self.dynamics_proj_for_vm(
-                        future_absolute_geometric_dynamics_gt
-                    )
-                    future_context_vm_gt = torch.cat(
-                        [
-                            future_prefix_image_value_gt,
-                            future_dynamics_features_value_gt,
-                        ],
-                        dim=1,
-                    )
-                    future_v = self.value_query.expand(
-                        future_prefix_image_value_gt.shape[0], -1, -1
-                    )
-                    future_v, future_c_values = self.value_model(
-                        x=future_v,
-                        x_history=future_actions_features_gt,
-                        context=future_context_vm_gt,
-                        language=future_prefix_language_value_gt,
-                        timestamp=torch.zeros_like(time),
-                    )
-                    future_v = self.vm_out_proj(future_v, future_c_values).squeeze(
-                        (-1, -2)
-                    )
+                # dynamics_features_value = dynamics_absolute
 
-                future_image_features_vm_pred = (
-                    self.dynamics_visual_to_vm_image_features(
-                        pred_t_dynamics_visual, res_visual
+                # Reshape and denormalize the visual feature
+                image_features_vm = (
+                    pred_t_dynamics_visual_for_vm[:, None].expand(
+                        -1, self.horizon, -1, -1
                     )
+                    * 5.0
                 )
-                future_absolute_geometric_dynamics_pred = (
-                    self.scaled_dynamics_output_to_absolute_geometric(
-                        pred_t_dynamics, aux_data, history_state_dynamics
-                    )
+                # Future-value target: condition on final timestep in the action chunk
+                action_features_vm = actions[:, -1, :][:, None, :].repeat(
+                    1, self.action_chunk_size, 1
                 )
-                future_actions_features_pred = pred_t_actions[:, -1, :][
-                    :, None, :
-                ].repeat(1, self.action_chunk_size, 1)
-                future_prefix_image_value_pred, future_prefix_language_value_pred = (
-                    self.prepare_vision_language_features(
-                        model="vm",
-                        image_features=future_image_features_vm_pred,
-                        language_features=language_features,
-                        history_raymaps=history_raymaps,
-                    )
-                )
-                future_dynamics_features_value_pred = self.dynamics_proj_for_vm(
-                    future_absolute_geometric_dynamics_pred
-                )
-                future_context_vm_pred = torch.cat(
-                    [
-                        future_prefix_image_value_pred,
-                        future_dynamics_features_value_pred,
-                    ],
-                    dim=1,
-                )
-                future_v_pred = self.value_query.expand(
-                    future_prefix_image_value_pred.shape[0], -1, -1
-                )
-                future_v_pred, future_c_values_pred = self.value_model(
-                    x=future_v_pred,
-                    x_history=future_actions_features_pred,
-                    context=future_context_vm_pred,
-                    language=future_prefix_language_value_pred,
-                    timestamp=torch.zeros_like(time),
-                )
-                future_v_pred = self.vm_out_proj(
-                    future_v_pred, future_c_values_pred
-                ).squeeze((-1, -2))
+                values_target = values_future
+                vm_use_predict_visual = True
 
-                loss_value_future_pred = F.mse_loss(future_v_pred, future_v.detach())
-                losses["absolute_loss_future_values"] = loss_value_future_pred
-            else:
-                losses["absolute_loss_future_values"] = torch.zeros_like(loss_value)
+            # Current state value
+            prefix_image_value, prefix_language_value = (
+                self.prepare_vision_language_features(
+                    model="vm",
+                    image_features=image_features_vm,
+                    language_features=language_features,
+                    history_raymaps=history_raymaps,
+                    image_features_gripper=image_features_gripper,
+                    history_raymaps_gripper=history_raymaps_gripper,
+                )
+            )
+            # dynamics_features_value = self.dynamics_proj_for_vm(
+            #     dynamics_features_value
+            # )  # [B, N, D]
+            # context_vm = torch.cat([prefix_image_value, dynamics_features_value], dim=1)
+            v = self.value_query.expand(prefix_image_value.shape[0], -1, -1)
+            v, c_values = self.value_model(
+                x=v,
+                x_history=torch.zeros_like(action_features_vm),
+                context=prefix_image_value,
+                language=prefix_language_value,
+                timestamp=torch.zeros_like(time),
+            )
+            v = self.vm_out_proj(v, c_values).squeeze((-1, -2))
 
-            if values_meta[0] is not None and values_meta[1] is not None:
+            value_target = values_target.float().view_as(v)
+            loss_value = F.mse_loss(v, value_target)
+            losses["absolute_loss_values"] = loss_value
+
+            if (
+                values_meta[0] is not None
+                and values_meta[1] is not None
+                and not vm_use_predict_visual
+            ):
                 assert (
                     image_features_next is not None and history_raymaps_next is not None
                 ), "image_features_next and history_raymaps_next are required for VM"
@@ -963,16 +906,17 @@ class VLAFlowMatching(nn.Module):
                     dynamics_features_value_next
                 )
 
-                context_vm_next = torch.cat(
-                    [prefix_image_value_next, dynamics_features_value_next], dim=1
-                )
+                # context_vm_next = torch.cat(
+                #     [prefix_image_value_next, dynamics_features_value_next], dim=1
+                # )
+                # context_vm_next = dynamics_features_value_next #torch.cat([prefix_image_value_next, dynamics_features_value_next], dim=1)
                 v_next = self.value_query.expand(
                     prefix_image_value_next.shape[0], -1, -1
                 )
                 v_next, c_values_next = self.value_model(
                     x=v_next,
-                    x_history=action_features_vm_next,
-                    context=context_vm_next,
+                    x_history=torch.zeros_like(action_features_vm_next),
+                    context=prefix_image_value_next,
                     language=prefix_language_value_next,
                     timestamp=torch.zeros_like(time),
                 )
@@ -989,56 +933,6 @@ class VLAFlowMatching(nn.Module):
                 losses["absolute_loss_values_td"] = loss_td
 
         return losses
-
-    def dynamics_visual_to_vm_image_features(
-        self, dynamics_visual: Tensor, res_visual: int
-    ):
-        """
-        Map predicted dynamics visual features [B, C, H, W] to the value-model
-        image feature layout [B, T, L, C] with T = horizon and L the token count
-        (H' * W' after bilinear resampling to (res_visual, res_visual)).
-        """
-        # x = dynamics_visual
-        x = dynamics_visual.clone().detach()
-        x = F.interpolate(
-            x,
-            size=(res_visual, res_visual),
-            mode="bilinear",
-            align_corners=False,
-        )
-        x = rearrange(x, "b c h w -> b (h w) c")
-        return x[:, None].expand(-1, self.horizon, -1, -1) * 5.0
-
-    def scaled_dynamics_output_to_absolute_geometric(
-        self,
-        pred_t_dynamics: Tensor,
-        aux_data: dict,
-        history_state: Optional[Tensor] = None,
-    ):
-        """
-        From WM output in scaled space (optional [geometric | visual] on dim=1) to
-        absolute geometric dynamics, same path as `outputs['dynamics_predictions']` in
-        `forward` (descale + add last history frame when `dynamics_in_relative`).
-        """
-        dynamics_geometric = pred_t_dynamics[:, : self.dynamics_geometric_dim]
-        dynamics_geometric = dynamics_geometric.clone().detach()
-        dynamics_geometric = self.descale_state(
-            dynamics_geometric,
-            aux_data["state_norm_min_bound"],
-            aux_data["state_norm_max_bound"],
-            aux_data["state_mean"],
-            aux_data["state_std"],
-        )
-        if self.dynamics_in_relative:
-            assert history_state is not None
-            history_state_last = rearrange(
-                history_state, "b (t c) h w -> b t c h w", c=3
-            )[:, -1]
-            history_state_last = history_state_last.repeat(
-                1, dynamics_geometric.shape[1] // 3, 1, 1
-            )
-            dynamics_geometric = dynamics_geometric + history_state_last
-        return dynamics_geometric
 
     def prepare_vision_language_features(
         self,
@@ -1469,10 +1363,6 @@ class VLAFlowMatching(nn.Module):
                 "history_visual_feature_patch_gripper_null"
             ]
 
-        if "history_state_actions_null" in data_batch:
-            aux_info["history_state_actions_null"] = data_batch[
-                "history_state_actions_null"
-            ]
         if "history_raymap" in data_batch:
             aux_info["history_raymap"] = data_batch["history_raymap"]
         if "history_raymap_gripper" in data_batch:
@@ -1906,8 +1796,8 @@ class VLAFlowMatching(nn.Module):
             )
             values = self.predict_values_step(
                 action_state=vm_action_features,
-                dynamics_state=input_dynamics,
                 prefix=prefix_image_value,
+                # prefix=prefix_image_value,
                 language=prefix_language_value,
             )
             values = values.reshape(
@@ -2091,14 +1981,9 @@ class VLAFlowMatching(nn.Module):
                     ),
                 )
             )
-            if "history_state_actions_null" in aux_data:
-                history_state_actions_null = aux_data["history_state_actions_null"]
-            else:
-                history_state_actions_null = history_state_actions
         else:
             prefix_image_action_uncond = prefix_image_action
             prefix_language_action_uncond = prefix_language_action
-            history_state_actions_null = history_state_actions
 
         dt = -1.0 / self.config.num_steps
         dt = torch.tensor(dt, dtype=torch.float32, device=device)
@@ -2157,7 +2042,7 @@ class VLAFlowMatching(nn.Module):
                         x_t=torch.cat([x_t_actions, x_t_actions], dim=0),
                         timestep=torch.cat([expanded_time, expanded_time], dim=0),
                         history_state_actions=torch.cat(
-                            [history_state_actions, history_state_actions_null], dim=0
+                            [history_state_actions, history_state_actions], dim=0
                         ),
                         advantage=torch.cat([advantage, advantage], dim=0),
                     )
@@ -2385,23 +2270,20 @@ class VLAFlowMatching(nn.Module):
     def predict_values_step(
         self,
         action_state: torch.Tensor,
-        dynamics_state: torch.Tensor,
         prefix: torch.Tensor,
         language: torch.Tensor,
         grad_withctx: Callable[[], AbstractContextManager] = torch.no_grad,
     ):
         """Apply one denoising step of the noise `x_t` for actions at a given timestep."""
         with grad_withctx():
-            v = self.value_query.expand(prefix.shape[0], -1, -1)
-            dynamics_features_value = self.dynamics_proj_for_vm(dynamics_state)
-            context_vm = torch.cat([prefix, dynamics_features_value], dim=1)
+            v = self.value_query.expand(action_state.shape[0], -1, -1)
             v, c = self.value_model(
                 x=v,
-                x_history=action_state,
-                context=context_vm,
+                x_history=torch.zeros_like(action_state),
+                context=prefix,
                 language=language,
                 timestamp=torch.zeros(
-                    prefix.shape[0], device=prefix.device, dtype=torch.float32
+                    action_state.shape[0], device=action_state.device, dtype=torch.float32
                 ),
             )
             v = v.to(dtype=torch.float32)

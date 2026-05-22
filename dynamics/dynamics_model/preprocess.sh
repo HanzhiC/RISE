@@ -1,8 +1,9 @@
 #!/bin/bash
 
 # Build videos_small for LeRobot-style datasets.
-# - If a dataset already has videos/video, center-crop and resize them to 256x192.
-# - Otherwise, try to encode videos directly from image columns stored in parquet.
+# - Head cameras (e.g. observation.images.top_head): center-crop to square, then resize to 256x192.
+# - Other cameras: center-crop to 256:192 aspect ratio, then resize to 256x192.
+# - If a dataset has no videos/, encode from image columns stored in parquet.
 #
 # Usage:
 #   ./preprocess.sh [dataset_name1] [dataset_name2] ...
@@ -14,6 +15,11 @@ DATASET_BASE_DIR="${SCRIPT_DIR}/dataset"
 TARGET_WIDTH=256
 TARGET_HEIGHT=192
 
+# ffmpeg: square center crop, then scale to TARGET_WIDTH x TARGET_HEIGHT
+FFMPEG_VF_HEAD="crop=min(iw\\,ih):min(iw\\,ih),scale=${TARGET_WIDTH}:${TARGET_HEIGHT}"
+# ffmpeg: center crop to target aspect ratio, then scale
+FFMPEG_VF_DEFAULT="scale=${TARGET_WIDTH}:${TARGET_HEIGHT}:force_original_aspect_ratio=increase,crop=${TARGET_WIDTH}:${TARGET_HEIGHT}"
+
 if ! command -v ffmpeg >/dev/null 2>&1; then
     echo "Error: ffmpeg not found"
     exit 1
@@ -23,6 +29,18 @@ if ! command -v python3 >/dev/null 2>&1; then
     echo "Error: python3 not found"
     exit 1
 fi
+
+is_head_camera() {
+    local name=$1
+    case "$name" in
+        *top_head*|*images.head*|*/head/*|*head_rgb*|*head_color*)
+            return 0
+            ;;
+        *)
+            return 1
+            ;;
+    esac
+}
 
 process_dataset_from_videos() {
     local dataset_name=$1
@@ -72,6 +90,11 @@ process_dataset_from_videos() {
         local output_path="${output_dir}/${rel_path}"
         local output_dir_path
         output_dir_path="$(dirname "$output_path")"
+        local vf_filter="$FFMPEG_VF_DEFAULT"
+
+        if is_head_camera "$rel_path"; then
+            vf_filter="$FFMPEG_VF_HEAD"
+        fi
 
         mkdir -p "$output_dir_path"
 
@@ -100,7 +123,7 @@ process_dataset_from_videos() {
             "$percent" "$bar" "$current" "$total_videos" "$processed" "$skipped" "$failed"
 
         if ffmpeg -i "$video_path" \
-            -vf "scale=${TARGET_WIDTH}:${TARGET_HEIGHT}:force_original_aspect_ratio=increase,crop=${TARGET_WIDTH}:${TARGET_HEIGHT}" \
+            -vf "$vf_filter" \
             -c:v libx264 -preset medium -crf 23 -pix_fmt yuv420p -y "$output_path" \
             -loglevel error 2>&1; then
             processed=$((processed + 1))
@@ -150,6 +173,11 @@ except ImportError as exc:
     sys.exit(1)
 
 
+def is_head_camera(name: str) -> bool:
+    markers = ("top_head", "images.head", "/head/", "head_rgb", "head_color")
+    return any(marker in name for marker in markers)
+
+
 def load_image_value(value):
     if value is None:
         return None
@@ -191,7 +219,20 @@ def load_image_value(value):
     return frame.astype(np.uint8)
 
 
-def center_crop_and_resize(frame):
+def center_square_crop_and_resize(frame):
+    """Head image: center crop to square, then resize to target_width x target_height."""
+    h, w = frame.shape[:2]
+    crop_size = min(h, w)
+    x0 = (w - crop_size) // 2
+    y0 = (h - crop_size) // 2
+    cropped = frame[y0 : y0 + crop_size, x0 : x0 + crop_size]
+    return cv2.resize(
+        cropped, (target_width, target_height), interpolation=cv2.INTER_AREA
+    )
+
+
+def center_crop_aspect_and_resize(frame):
+    """Non-head: center crop to target aspect ratio, then resize."""
     h, w = frame.shape[:2]
     src_aspect = w / h
     dst_aspect = target_width / target_height
@@ -207,8 +248,16 @@ def center_crop_and_resize(frame):
         x0 = 0
         y0 = max(0, (h - crop_h) // 2)
 
-    cropped = frame[y0:y0 + crop_h, x0:x0 + crop_w]
-    return cv2.resize(cropped, (target_width, target_height), interpolation=cv2.INTER_AREA)
+    cropped = frame[y0 : y0 + crop_h, x0 : x0 + crop_w]
+    return cv2.resize(
+        cropped, (target_width, target_height), interpolation=cv2.INTER_AREA
+    )
+
+
+def preprocess_frame(frame, image_col: str):
+    if is_head_camera(image_col):
+        return center_square_crop_and_resize(frame)
+    return center_crop_aspect_and_resize(frame)
 
 
 meta_path = os.path.join(dataset_dir, "meta", "info.json")
@@ -287,7 +336,7 @@ for idx, parquet_path in enumerate(parquet_files, start=1):
                 frame = load_image_value(value)
                 if frame is None:
                     continue
-                frame = center_crop_and_resize(frame)
+                frame = preprocess_frame(frame, image_col)
                 writer.write(cv2.cvtColor(frame, cv2.COLOR_RGB2BGR))
                 frame_count += 1
         finally:

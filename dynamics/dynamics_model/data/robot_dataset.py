@@ -313,7 +313,7 @@ class Robot4DDataset(Egoasis4DDataset):
             clip_idx = f"{int(clip_idx_start):06d}_{int(clip_idx_end):06d}"
 
             value_pred_dir = os.path.join(
-                dataset_path, sample, f"value_prediction_rlround{self.rl_round}"
+                dataset_path, sample, f"value_prediction"
             )
             value_pred_save_path = os.path.join(value_pred_dir, f"{clip_idx}.npz")
 
@@ -679,7 +679,7 @@ class Robot4DDataset(Egoasis4DDataset):
             value_pred_fpath = os.path.join(
                 dataset_path,
                 sample,
-                f"value_prediction_rlround{self.rl_round}",
+                f"value_prediction",
                 f"{clip_idx}.npz",
             )
 

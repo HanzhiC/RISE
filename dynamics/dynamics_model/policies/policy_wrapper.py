@@ -602,8 +602,8 @@ class PolicyVLAWorldModelWrapper:
     def select_best_sample(self, results, criteria="value"):
         value_info_selected = copy.deepcopy(results["value_info"])
         pred_actions = results["action_predictions"]
-        pred_dynamics = results["dynamics_predictions"]
-        pred_visual = results["visual_predictions"]
+        pred_dynamics = results["image_predictions"]
+        # pred_visual = results["visual_predictions"]
         if criteria == "value":
             selected_action_idx = value_info_selected[
                 "future_value_predictions"
@@ -625,7 +625,6 @@ class PolicyVLAWorldModelWrapper:
             batch_idx, selected_action_idx
         ]  # [B, H, D]
         pred_dynamics_selected = pred_dynamics[batch_idx, selected_action_idx]
-        pred_visual_selected = pred_visual[batch_idx, selected_action_idx]
         value_info_selected["value_predictions"] = value_info_selected[
             "value_predictions"
         ][batch_idx, selected_action_idx]
@@ -639,8 +638,7 @@ class PolicyVLAWorldModelWrapper:
         results.update(
             {
                 "selected_action_prediction": pred_actions_selected,
-                "selected_dynamics_prediction": pred_dynamics_selected,
-                "selected_visual_prediction": pred_visual_selected,
+                "selected_image_prediction": pred_dynamics_selected,
                 "selected_value_info": value_info_selected,
             }
         )
@@ -997,7 +995,7 @@ class PolicyVLAWorldModelWrapper:
         )
         pred_visual = rearrange(pred_visual, "(b n) c h w -> b n (h w) c", n=N)
         pred_visual = pred_visual[:, :, None].expand(-1, -1, history_length, -1, -1)
-        return pred_visual
+        return pred_visual # [B, N, history_length, 196, 768]
 
     def build_action_conditioning(self, pred_action, action_chunk_size=30):
         assert (

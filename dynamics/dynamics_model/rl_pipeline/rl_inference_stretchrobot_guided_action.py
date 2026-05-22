@@ -506,94 +506,56 @@ def infer_with_top_k_references(
     return all_outputs_dict
 
 
-def _extract_dinov3_spatial_from_rgb_frames(policy_wrapper, frames, spatial_size):
-    """Run DINOv3 on RGB frames ``[N,3,H,W]`` in [0,1]; return ``[N,C,Hg,Wg]``."""
-    if policy_wrapper.visual_feature_extractor is None:
-        raise RuntimeError("visual_feature_extractor is not initialized (dinov3/cut3r)")
-    device = policy_wrapper.device
-    frames = frames.to(device)
-    features = policy_wrapper.visual_feature_extractor.extract_features_in_sequence(
-        frames
-    )
-    if spatial_size is not None:
-        features = F.interpolate(
-            features,
-            size=spatial_size,
-            mode="bilinear",
-            align_corners=False,
-        )
-    compress_dim = int(
-        getattr(policy_wrapper.cfg.ALGORITHM.model, "wm_vm_visual_compress_dim", 768)
-    )
-    if compress_dim < features.shape[1]:
-        features = policy_wrapper.compress_visual_tokens_for_wm_vm_infer(features)
-    return features
-
-
 def infer_advantage_with_video_visual_conditioning(
     policy_wrapper,
     data_batch,
-    pred_actions,
-    video_frames,
+    outputs,
+    history_length=15,
 ):
     """Value/advantage per sample using DINO features from predicted video last frames."""
-    num_samples = pred_actions.shape[1]
-    if video_frames.shape[0] != num_samples:
-        raise ValueError(
-            f"video frame count {video_frames.shape[0]} != action samples {num_samples}"
-        )
-    if "start_state_dinov3_feature" not in data_batch:
-        policy_wrapper.model.extract_dinov3_features(data_batch)
-    spatial_size = tuple(data_batch["history_state"].shape[-2:])
 
-    dino_spatial = _extract_dinov3_spatial_from_rgb_frames(
-        policy_wrapper, video_frames, spatial_size
+    future_frames = outputs["image_predictions"] # [B, N, 3, 224, 224]
+    pred_actions = outputs["action_predictions"] # [B, N, H, D]
+    B, N, _, _, _ = future_frames.shape
+    future_frames = future_frames.view(B * N, 3, 224, 224)
+    future_visual_feature_patch = (
+        policy_wrapper.visual_feature_extractor.extract_features(future_frames)[-1]
     )
-    pred_visual = dino_spatial.unsqueeze(0)  # [B, N, C, Hg, Wg]
+    future_visual_feature_patch = rearrange(future_visual_feature_patch, "b c h w -> b (h w) c", h=14, w=14)
+    future_visual_feature_patch = rearrange(
+        future_visual_feature_patch, "(b n) l c -> b n l c", b=B, n=N
+    ) # [B, N, 196, 768]
+    future_visual_feature_patch = future_visual_feature_patch
+    future_visual_feature_patch = future_visual_feature_patch[:, :, None].expand(-1, -1, history_length, -1, -1) # [B, N, H, 196, 768]
 
-    history_visual_patch = (
-        policy_wrapper.build_history_visual_feature_patch_conditioning(pred_visual)
-    )
     pred_action_cond = policy_wrapper.build_action_conditioning(
         pred_actions,
         action_chunk_size=policy_wrapper.cfg.ALGORITHM.model.action_chunk_size,
-    )
-
-    history_state_future = data_batch["history_state"].repeat_interleave(
-        num_samples, dim=0
-    )
-
+    ) # [B, N, H, D]
+    
     data_batch_future = copy.deepcopy(data_batch)
     data_batch_current = copy.deepcopy(data_batch)
     data_batch_future = TensorUtils.repeat_by_expand_at(
-        data_batch_future, repeats=num_samples, dim=0
+        data_batch_future, repeats=N, dim=0
     )
     data_batch_current = TensorUtils.repeat_by_expand_at(
-        data_batch_current, repeats=num_samples, dim=0
+        data_batch_current, repeats=N, dim=0
     )
-
-    action_suffix = (
-        "_rel" if policy_wrapper.cfg.ALGORITHM.model.am_use_relative_action else ""
-    )
-    data_batch_future["history_visual_feature_patch"] = history_visual_patch.flatten(
-        0, 1
-    )
-    data_batch_future[f"gt_action{action_suffix}"] = pred_action_cond.flatten(0, 1)
-    data_batch_future["history_state"] = history_state_future
-
-    value_info = policy_wrapper.inference_advantage(
-        data_batch_current, data_batch_future
-    )
+    data_batch_future["history_visual_feature_patch"] = future_visual_feature_patch.flatten(0, 1) # [B*N, history_length, 196, 768]
+    data_batch_future[f"gt_action"] = pred_action_cond.flatten(0, 1)
+    
+    value_info = policy_wrapper.inference_advantage(data_batch_current, data_batch_future)
     value_info["advantage_predictions"] = value_info["advantage_predictions"].view(
-        -1, num_samples
+        -1, N
     )
     value_info["value_predictions"] = value_info["value_predictions"].view(
-        -1, num_samples
+        -1, N
     )
     value_info["future_value_predictions"] = value_info[
         "future_value_predictions"
-    ].view(-1, num_samples)
-    return value_info
+    ].view(-1, N)
+    outputs["value_info"] = value_info
+    return outputs
 
 
 def pred_actions_to_rise(pred_actions, target_horizon=50):
@@ -691,14 +653,26 @@ def _obs_from_head_image_path(head_image_path, size=(256, 192)):
     return torch.stack([frames], dim=0)
 
 
+# Match PolicyVLAWorldModelWrapper.HEAD_IMAGE_SIZE / DINO input grid (H, W).
+VIDEO_OUTPUT_SIZE = (224, 224)
+
+
+def _resize_video_spatial(video, size=VIDEO_OUTPUT_SIZE):
+    """Resize ``[C, T, H, W]`` (in [-1, 1]) to target ``(H, W)``."""
+    target_h, target_w = size
+    h, w = video.shape[-2:]
+    if h == target_h and w == target_w:
+        return video
+    frames = video.permute(1, 0, 2, 3).float()  # [T, C, H, W]
+    frames = F.interpolate(
+        frames, size=size, mode="bilinear", align_corners=False
+    )
+    return frames.permute(1, 0, 2, 3).to(dtype=video.dtype)
+
+
 def _video_tensor_to_01(video_tensor):
     """Map [C,T,H,W] from [-1,1] to [C,T,H,W] in [0,1]."""
     return ((video_tensor.detach().float() + 1) / 2).clamp(0.0, 1.0)
-
-
-def _video_last_frame_tensor(video_tensor):
-    """Extract last frame from [C,T,H,W] in [-1,1] as [3,H,W] float tensor in [0,1]."""
-    return _video_tensor_to_01(video_tensor)[:, -1]
 
 
 def _save_cached_action_videos_mp4(videos_01, save_path, fps=10):
@@ -819,13 +793,14 @@ class VideoDynamicsInferencer:
 
         if not self.infer_args.return_video:
             raise RuntimeError("infer config has return_video=false")
-        video = preds["video"].data.cpu()[0]  # [C, T, H, W] in [-1, 1]
+        video = preds["video"].data.cpu()[0]  # [C, T, H, W] in [-1, 1], native ~192x256
+        video = _resize_video_spatial(video)  # [C, T, 224, 224] for WM/DINO parity
         if video_save_path is not None:
             os.makedirs(os.path.dirname(video_save_path) or ".", exist_ok=True)
             save_video(video, video_save_path, fps=self.video_fps)
             print(f"[INFO] Saved inferred video to {video_save_path}")
         video_01 = _video_tensor_to_01(video)
-        return video_01[:, -1], video_01
+        return video_01[:, video_01.shape[1] // 2], video_01
 
 
 def infer_video_from_pred_actions(
@@ -1102,13 +1077,13 @@ def main(args):
         clip_idx = f"{int(clip_idx_start):06d}_{int(clip_idx_end):06d}"
         dataset_path = os.path.join(val_dataset.data_dir, dataset_name)
         action_save_video_fpath = os.path.join(
-            dataset_path, sample, f"dex_traj_guided_latest_rlround{args.rl_round}"
+            dataset_path, sample, f"dex_traj_guided_risevideogen_rlround{args.rl_round}"
         )
         action_original_video_fpath = os.path.join(dataset_path, sample, "dex_traj")
         value_pred_save_path = os.path.join(
             dataset_path,
             sample,
-            f"value_prediction_rlround{args.rl_round}",
+            f"value_prediction",
             f"{clip_idx}.npz",
         )
 
@@ -1345,223 +1320,136 @@ def main(args):
                 dataset_path, sample, "head_rgb", f"{frame_idx:06d}.png"
             )
 
-            # Optionally run diffusion-based future video inference for this frame
-            if getattr(args, "infer_future_video", False):
-                infer_save_dir = getattr(
-                    args, "infer_save_dir", "tmp_infer_case/outputs"
-                )
-                os.makedirs(infer_save_dir, exist_ok=True)
-                dynamics_predictions = []
-                cached_videos = []
-                for sample_idx, pred_action_rise in enumerate(pred_actions_rise):
-                    try:
-                        last_frame, pred_video = infer_video_from_pred_actions(
-                            pred_action_rise[None],
-                            head_image_path,
-                            infer_cfg_path=getattr(
-                                args, "infer_cfg", "configs/ltx_model/infer.yaml"
-                            ),
-                            device=getattr(args, "infer_device", "cuda"),
-                            n_chunk=1,
-                            norm_constant="FINETUNE_TASK",
-                            norm_config_path="data/utils/action_norm.json",  # change this
-                            domain_name="open_the_ricecooker_pi_abs",  # change this
-                            action_chunk=50,
-                            model_root=getattr(args, "infer_model_root", None),
-                            diffusion_ckpt=getattr(args, "infer_diffusion_ckpt", None),
-                            act_tokens_path=getattr(
-                                args, "infer_act_tokens_path", None
-                            ),
-                        )
-                        dynamics_predictions.append(last_frame)
-                        cached_videos.append(pred_video)
-                    except Exception as e:
-                        print(
-                            f"[ERROR] Future video inference failed for frame {frame_idx} "
-                            f"sample {sample_idx}: {e}"
-                        )
-
-                if cached_videos:
-                    combined_mp4 = os.path.join(
-                        infer_save_dir, f"{frame_idx:06d}_all_samples.mp4"
+            # Infer future video
+            infer_save_dir = getattr(
+                args, "infer_save_dir", "tmp_infer_case/outputs"
+            )
+            os.makedirs(infer_save_dir, exist_ok=True)
+            dynamics_predictions = []
+            cached_videos = []
+            for sample_idx, pred_action_rise in enumerate(pred_actions_rise):
+                try:
+                    last_frame, pred_video = infer_video_from_pred_actions(
+                        pred_action_rise[None],
+                        head_image_path,
+                        infer_cfg_path=getattr(
+                            args, "infer_cfg", "configs/ltx_model/infer.yaml"
+                        ),
+                        device=getattr(args, "infer_device", "cuda"),
+                        n_chunk=1,
+                        norm_constant="FINETUNE_TASK",
+                        norm_config_path="data/utils/action_norm.json",  # change this
+                        domain_name="open_the_ricecooker_pi_abs",  # change this
+                        action_chunk=50,
+                        model_root=getattr(args, "infer_model_root", None),
+                        diffusion_ckpt=getattr(args, "infer_diffusion_ckpt", None),
+                        act_tokens_path=getattr(
+                            args, "infer_act_tokens_path", None
+                        ),
                     )
-                    _save_cached_action_videos_mp4(cached_videos, combined_mp4, fps=10)
-
-                if len(dynamics_predictions) == 0:
+                    dynamics_predictions.append(last_frame)
+                    cached_videos.append(pred_video)
+                except Exception as e:
                     print(
-                        f"[WARN] No video frames for frame {frame_idx}, skip value infer"
+                        f"[ERROR] Future video inference failed for frame {frame_idx} "
+                        f"sample {sample_idx}: {e}"
                     )
-                    continue
 
-                # video_last_frames = torch.stack(
-                #     dynamics_predictions, dim=0
-                # )  # [N, 3, H, W]
-                # value_info = infer_advantage_with_video_visual_conditioning(
-                #     policy_wrapper,
-                #     data_batch,
-                #     outputs["action_predictions"],
-                #     video_last_frames,
-                # )
-                # outputs["value_info"] = value_info
-                # outputs["visual_predictions_video_dino"] = video_last_frames
-                # best_idx = value_info["future_value_predictions"][0].argmax().item()
-                # print(
-                #     f"[INFO] Video-conditioned value (frame {frame_idx}): "
-                #     f"best_sample={best_idx}, "
-                #     f"future_value={value_info['future_value_predictions'][0, best_idx].item():.5f}, "
-                #     f"advantage={value_info['advantage_predictions'][0, best_idx].item():.5f}"
-                # )
+            if cached_videos:
+                combined_mp4 = os.path.join(
+                    infer_save_dir, f"{frame_idx:06d}_all_samples.mp4"
+                )
+                _save_cached_action_videos_mp4(cached_videos, combined_mp4, fps=10)
 
-    #         value_info_rollout = outputs["selected_value_info"]
+            if len(dynamics_predictions) == 0:
+                print(
+                    f"[WARN] No video frames for frame {frame_idx}, skip value infer"
+                )
+                continue
 
-    #         # Print the value information
-    #         advantage_rollout, value_future_rollout = (
-    #             value_info_rollout["advantage_predictions"],
-    #             value_info_rollout["future_value_predictions"],
-    #         )
+            video_last_frames = torch.stack(
+                dynamics_predictions, dim=0
+            )  # [N, 3, H, W]
+            outputs["image_predictions"] = video_last_frames[None].to(policy_wrapper.device)
+            outputs = infer_advantage_with_video_visual_conditioning(
+                policy_wrapper,
+                data_batch,
+                outputs,
+            )
+            outputs = policy_wrapper.select_best_sample(outputs, criteria="value")
 
-    #         # Acquire the expected value information
-    #         advantage_expected, value_future_expected = (
-    #             frame_data["advantage"],
-    #             frame_data["value_future_expected"],
-    #         )
-    #         advantage_threshold = frame_data["advantage_threshold"]
+            # Select the best sample
 
-    #         # TODO: set up a task-dependent filtering strategy for the final guided cost
-    #         print(
-    #             f"====> Rollout Value Future: {value_future_rollout.item():.5f}, Expected Value Future: {value_future_expected.item():.5f} <==="
-    #         )
-    #         print(
-    #             f"====> Rollout Advantage: {advantage_rollout.item():.5f}, Expected Advantage: {advantage_expected.item():.5f}, Threshold: {advantage_threshold:.5f} <==="
-    #         )
+            value_info_rollout = outputs["selected_value_info"]
 
-    #         is_improved = (
-    #             advantage_rollout.item() > max(advantage_expected.item(), 0) + 0.01
-    #         )
-    #         if not is_improved:
-    #             value_future_rollout = value_future_expected
-    #             advantage_rollout = advantage_expected
+            # Print the value information
+            advantage_rollout, value_future_rollout = (
+                value_info_rollout["advantage_predictions"],
+                value_info_rollout["future_value_predictions"],
+            )
 
-    #         # Add the value predictions to the video
-    #         value_seq.append(frame_data["value_expected"].item())
-    #         value_seq_future.append(value_future_rollout.item())
-    #         advantage_seq.append(advantage_rollout.item())
+            # Acquire the expected value information
+            advantage_expected, value_future_expected = (
+                frame_data["advantage"],
+                frame_data["value_future_expected"],
+            )
+            advantage_threshold = frame_data["advantage_threshold"]
 
-    #         # Save the action
-    #         if not args.no_save:
-    #             action_to_save = build_action_to_save(outputs)
-    #             action_original_fpath = os.path.join(
-    #                 action_original_video_fpath, f"{frame_idx:06d}.npz"
-    #             )
-    #             history_action_original = np.load(action_original_fpath)[
-    #                 "history_trajectory"
-    #             ]
-    #             action_save_fpath = os.path.join(
-    #                 action_save_video_fpath, f"{frame_idx:06d}.npz"
-    #             )
-    #             action_to_save_final = {
-    #                 "history_trajectory": history_action_original,
-    #                 "trajectory": action_to_save,
-    #                 "is_improved": np.array(is_improved, dtype=np.bool_),
-    #             }
-    #             os.makedirs(os.path.dirname(action_save_fpath), exist_ok=True)
-    #             np.savez(action_save_fpath, **action_to_save_final)
-    #             if is_improved:
-    #                 print(
-    #                     f"=============> Action improved: Saved guided action to {action_save_fpath}"
-    #                 )
+            # TODO: set up a task-dependent filtering strategy for the final guided cost
+            print(
+                f"====> Rollout Value Future: {value_future_rollout.item():.5f}, Expected Value Future: {value_future_expected.item():.5f} <==="
+            )
+            print(
+                f"====> Rollout Advantage: {advantage_rollout.item():.5f}, Expected Advantage: {advantage_expected.item():.5f}, Threshold: {advantage_threshold:.5f} <==="
+            )
 
-    #         # Collect for plotting
-    #         if args.visualize:
-    #             value_future_rollout_seq.append(value_future_rollout.item())
-    #             value_future_expected_seq.append(value_future_expected.item())
-    #             line_rollout.set_data(
-    #                 cfg.ALGORITHM.model.action_chunk_size
-    #                 + np.arange(len(value_future_rollout_seq)),
-    #                 np.array(value_future_rollout_seq),
-    #             )
-    #             line_actual.set_data(
-    #                 cfg.ALGORITHM.model.action_chunk_size
-    #                 + np.arange(len(value_future_expected_seq)),
-    #                 np.array(value_future_expected_seq),
-    #             )
-    #             ax.relim()
-    #             ax.autoscale_view()
-    #             fig.canvas.draw()
-    #             fig.canvas.flush_events()
-    #             plt.pause(0.001)
+            is_improved = (
+                advantage_rollout.item() > max(advantage_expected.item(), 0) + 0.01
+            )
+            if not is_improved:
+                value_future_rollout = value_future_expected
+                advantage_rollout = advantage_expected
 
-    #         if args.visualize_action:  # and is_improved:
+            # Add the value predictions to the video
+            value_seq.append(frame_data["value_expected"].item())
+            value_seq_future.append(value_future_rollout.item())
+            advantage_seq.append(advantage_rollout.item())
 
-    #             value_future_pred = (
-    #                 outputs["value_info"]["future_value_predictions"][0].cpu().numpy()
-    #             )
-    #             print(f"Value future pred: {value_future_pred}")
+            # Save the action
+            if not args.no_save:
+                action_to_save = build_action_to_save(outputs)
+                action_original_fpath = os.path.join(
+                    action_original_video_fpath, f"{frame_idx:06d}.npz"
+                )
+                history_action_original = np.load(action_original_fpath)[
+                    "history_trajectory"
+                ]
+                action_save_fpath = os.path.join(
+                    action_save_video_fpath, f"{frame_idx:06d}.npz"
+                )
+                action_to_save_final = {
+                    "history_trajectory": history_action_original,
+                    "trajectory": action_to_save,
+                    "is_improved": np.array(is_improved, dtype=np.bool_),
+                }
+                os.makedirs(os.path.dirname(action_save_fpath), exist_ok=True)
+                np.savez(action_save_fpath, **action_to_save_final)
+                if is_improved:
+                    print(
+                        f"=============> Action improved: Saved guided action to {action_save_fpath}"
+                    )
 
-    #             policy_wrapper.visualize_visual_predictions(
-    #                 data_batch,
-    #                 outputs,
-    #                 ranking_criteria="value",
-    #                 viser_server=viser_server,
-    #             )
-    #             policy_wrapper.visualize_action_predictions(
-    #                 data_batch,
-    #                 outputs,
-    #                 ranking_criteria="value",
-    #                 viser_server=viser_server,
-    #                 # view="gripper",
-    #                 view="head",
-    #             )
+            if args.visualize_action:  # and is_improved:
 
-    #             color_gripper = (
-    #                 frame_data["color_gripper"].cpu().numpy().transpose(1, 2, 0)
-    #             )
-    #             color_gripper_most_similar_filename = gripper_color_filenames[
-    #                 top_k_of_interest_idx_list[0]
-    #             ]
-    #             color_gripper_most_similar = (
-    #                 cv2.imread(color_gripper_most_similar_filename)[..., ::-1].copy()
-    #                 / 255.0
-    #             )
+                policy_wrapper.visualize_action_predictions(
+                    data_batch,
+                    outputs,
+                    ranking_criteria="value",
+                    viser_server=viser_server,
+                    view="head",
+                )
 
-    #             color_vis = np.concatenate(
-    #                 [color_gripper, color_gripper_most_similar], axis=1
-    #             )
-    #             color_vis = (color_vis * 255).astype(np.uint8)[..., ::-1].copy()
-    #             cv2.putText(
-    #                 color_vis,
-    #                 f"Rollout Value Future: {value_future_rollout.item()}",
-    #                 (10, 30),
-    #                 cv2.FONT_HERSHEY_SIMPLEX,
-    #                 1,
-    #                 (255, 255, 255),
-    #                 2,
-    #             )
-    #             cv2.putText(
-    #                 color_vis,
-    #                 f"Expected Value Future: {value_future_expected.item()}",
-    #                 (10, 60),
-    #                 cv2.FONT_HERSHEY_SIMPLEX,
-    #                 1,
-    #                 (255, 255, 255),
-    #                 2,
-    #             )
-    #             if not use_viser:
-    #                 cv2.imshow("color_vis", color_vis)
-    #                 cv2.waitKey(0)
-    #                 cv2.destroyAllWindows()
-    #             else:
-    #                 cv2.imwrite(f".tmp/guided_action_retrieved.png", color_vis)
-    #                 print(
-    #                     f"[INFO] Saved color visualization to .tmp/guided_action_retrieved.png"
-    #                 )
-    #                 # input("Press Enter to continue...")
 
-    #     # save_meta disabled: do not collect guidance meta entries
-
-    #     # Skipping value npz update and saving — stop after action inference and per-frame action saves.
-
-    # # Skipping final guidance meta save (save_meta disabled).
 
     if args.visualize:
         plt.ioff()
