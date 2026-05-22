@@ -125,17 +125,23 @@ diffusion_model:
 data:
   train:
     data_roots: ["dataset"]
-    domains: ["open_the_ricecooker_pi_abs"]
+    domains:
+      - pnp_basketball
+      - pnp_microwave
+      - pnp_ricecooker
+      - pnp_socks
+      - wipe_table
     sample_size: [192, 256]
     sample_n_frames: 900
     preprocess :  'resize'
     valid_cam :  ['image']
     chunk: 25 # prediction frames
     action_chunk: 50
+    action_future_horizon: 30  # load 30 future actions, pad last row to 50 (RL/infer parity)
     n_previous: 4 # input frames
     previous_pick_mode: 'random'
     random_crop: False
-    dataset_info_cache_path: 
+    dataset_info_cache_path: "data/cache/all_datasets_info.json"
     action_type: "absolute"
     action_space: "joint"
     action_key: "actions"
@@ -143,7 +149,12 @@ data:
     norm_config_path: "data/utils/action_norm.json"
   val:
     data_roots: ["dataset"]
-    domains: ["open_the_ricecooker_pi_abs"]
+    domains:
+      - pnp_basketball
+      - pnp_microwave
+      - pnp_ricecooker
+      - pnp_socks
+      - wipe_table
     sample_size: [192, 256]
     sample_n_frames: 900
     preprocess :  'resize'
@@ -153,7 +164,7 @@ data:
     n_previous: 4
     previous_pick_mode: 'random'
     random_crop: False
-    dataset_info_cache_path: 
+    dataset_info_cache_path: "data/cache/all_datasets_val_info.json"
     action_type: "absolute"
     action_space: "joint"
     action_key: "actions"

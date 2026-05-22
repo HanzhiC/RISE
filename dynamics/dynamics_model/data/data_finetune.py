@@ -69,6 +69,8 @@ class CustomLeRobotDataset(Dataset):
         valid_cam = ['observation.images.top_head', 'observation.images.hand_left', 'observation.images.hand_right'],
         chunk=1,
         action_chunk=None,
+        action_future_horizon=30,
+        action_pad_horizon=None,
         n_previous=-1,
         previous_pick_mode='uniform',
         random_crop=True,
@@ -103,7 +105,9 @@ class CustomLeRobotDataset(Dataset):
         preprocess:              frame preprocessing strategy, resize or center_crop_resize
         valid_cam:               list of cam names 
         chunk:                   number of video frames to predict
-        action_chunk:            number of actions to predict, action_chunk should be an integer multiple of chunk.
+        action_chunk:            video / window length; also default pad target horizon (50).
+        action_future_horizon:   future action frames loaded before pad (default 30).
+        action_pad_horizon:      pad future actions to this horizon by repeating the last frame (default action_chunk).
         n_previous:              number of memory frames
         previous_pick_mode:      how to select memories
         random_crop:             randomly crop images
@@ -221,6 +225,10 @@ class CustomLeRobotDataset(Dataset):
         if action_chunk is None:
             action_chunk = chunk
         self.action_chunk = action_chunk
+        self.action_future_horizon = action_future_horizon
+        self.action_pad_horizon = (
+            action_pad_horizon if action_pad_horizon is not None else action_chunk
+        )
         # action_chunk 54 chunk 9
         self.video_temporal_stride = self.action_chunk // self.chunk
         assert(self.chunk * self.video_temporal_stride == self.action_chunk)
@@ -291,6 +299,26 @@ class CustomLeRobotDataset(Dataset):
             f"Unsupported action format. action_key={self.action_key}, available columns={list(data.columns)}"
         )
 
+    @staticmethod
+    def pad_actions_to_horizon(actions, target_horizon=50):
+        """Match ``pred_actions_to_rise`` in rl_inference_stretchrobot_guided_action.py.
+
+        If horizon < target: pad by repeating the last action row.
+        If horizon > target: truncate to target_horizon.
+        """
+        actions = np.asarray(actions, dtype=np.float32)
+        if actions.ndim == 1:
+            actions = actions.reshape(1, -1)
+        h = actions.shape[0]
+        if h < target_horizon:
+            pad_h = target_horizon - h
+            actions = np.concatenate(
+                [actions, np.repeat(actions[-1:], pad_h, axis=0)], axis=0
+            )
+        elif h > target_horizon:
+            actions = actions[:target_horizon]
+        return actions
+
     def get_frame_indexes(self, total_frames, domain_name):
         """
         select self.n_previous memory frames and self.action_chunk prediction frmaes
@@ -302,7 +330,15 @@ class CustomLeRobotDataset(Dataset):
         if self.fix_sidx is not None and self.fix_mem_idx is not None:
             action_indexes = list(range(self.fix_sidx, self.fix_sidx+self.action_chunk))
             frame_indexes = action_indexes[::self.video_temporal_stride]
-            return self.fix_mem_idx + frame_indexes, self.fix_mem_idx + action_indexes
+            window_end = self.fix_sidx + self.action_chunk
+            action_future_indexes = list(
+                range(window_end - self.action_future_horizon, window_end)
+            )
+            return (
+                self.fix_mem_idx + frame_indexes,
+                self.fix_mem_idx + action_indexes,
+                action_future_indexes,
+            )
 
         chunk_end = random.randint(10 + self.video_temporal_stride * 4, total_frames)
         video_end = np.array(list(range(chunk_end-self.action_chunk, chunk_end)))
@@ -312,10 +348,12 @@ class CustomLeRobotDataset(Dataset):
         frame_indexes = list(mem_indexes) + list(video_end[self.video_temporal_stride-1::self.video_temporal_stride])
 
         action_indexes = list(mem_indexes) + list(video_end)
-        
-        act_tokens_index = [i for i in video_end[self.video_temporal_stride-1::self.video_temporal_stride]]
-        
-        return frame_indexes, action_indexes, act_tokens_index
+
+        action_future_indexes = list(
+            range(chunk_end - self.action_future_horizon, chunk_end)
+        )
+
+        return frame_indexes, action_indexes, action_future_indexes
 
 
     def seek_mp4(self, video_path, cam_name_list, slices):
@@ -434,8 +472,10 @@ class CustomLeRobotDataset(Dataset):
         total_frames = self.dataset[idx][6]
         
         sample_size, specific_transforms_resize, specific_transforms_norm = self.get_transform()
-        vid_indexes, indexes, act_tokens_index = self.get_frame_indexes(total_frames, domain_name)
-        
+        vid_indexes, indexes, action_future_indexes = self.get_frame_indexes(
+            total_frames, domain_name
+        )
+
         data = pd.read_parquet(parquet_path)
 
         try:
@@ -443,8 +483,12 @@ class CustomLeRobotDataset(Dataset):
         except Exception as e:
             raise ValueError(f"We currently only support action data with shape T*C. {e}")
 
-        action_tokens_need = action[act_tokens_index].astype(np.float32)
-        action_tokens_need = torch.FloatTensor(action_tokens_need)
+        action_future = action[action_future_indexes].astype(np.float32)
+        action_padded = self.pad_actions_to_horizon(
+            action_future, self.action_pad_horizon
+        )
+        # Same as infer_example / RL: 50 rows -> indices 1,3,...,49 (25 tokens)
+        action_tokens_need = torch.FloatTensor(action_padded[1 : self.action_pad_horizon : 2])
         action_tokens_original = action_tokens_need.clone()
 
         # Load normalization values from config file or fallback to constants

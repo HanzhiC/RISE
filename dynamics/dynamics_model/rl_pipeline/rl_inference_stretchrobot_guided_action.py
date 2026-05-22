@@ -596,6 +596,48 @@ def pred_actions_to_rise(pred_actions, target_horizon=50):
     return out
 
 
+# Match configs/ltx_model/finetune.yaml (CustomLeRobotDataset action path).
+ACTION_FUTURE_HORIZON = 30
+ACTION_PAD_HORIZON = 50
+
+
+def pad_actions_to_horizon(actions, target_horizon=ACTION_PAD_HORIZON):
+    """Same rule as ``data_finetune.pad_actions_to_horizon`` / ``pred_actions_to_rise``."""
+    if isinstance(actions, torch.Tensor):
+        actions = actions.detach().cpu().float()
+    else:
+        actions = torch.tensor(actions, dtype=torch.float32)
+    if actions.ndim == 1:
+        actions = actions.unsqueeze(0)
+    h = actions.shape[0]
+    if h < target_horizon:
+        pad_h = target_horizon - h
+        actions = torch.cat(
+            [actions, actions[-1:].expand(pad_h, -1)], dim=0
+        )
+    elif h > target_horizon:
+        actions = actions[:target_horizon]
+    return actions
+
+
+def rise_actions_to_video_act_tokens(
+    rise_actions,
+    action_future_horizon=ACTION_FUTURE_HORIZON,
+    action_pad_horizon=ACTION_PAD_HORIZON,
+):
+    """Build ``[1, 25, 7]`` act tokens for LTX — same steps as finetune ``get_batch``."""
+    if isinstance(rise_actions, torch.Tensor):
+        actions = rise_actions.detach().cpu().float()
+    else:
+        actions = torch.tensor(rise_actions, dtype=torch.float32)
+    if actions.ndim == 3:
+        actions = actions[0]
+    if actions.shape[0] > action_future_horizon:
+        actions = actions[:action_future_horizon]
+    actions = pad_actions_to_horizon(actions, action_pad_horizon)
+    return actions[1:action_pad_horizon:2].unsqueeze(0)
+
+
 def _dynamics_model_root():
     return Path(__file__).resolve().parents[1]
 
@@ -832,22 +874,14 @@ def infer_video_from_pred_actions(
             act_tokens = act_tokens.unsqueeze(0)
     else:
         if isinstance(pred_actions_rise, torch.Tensor):
-            pa = pred_actions_rise.detach().cpu()
+            pa = pred_actions_rise
         else:
-            pa = torch.tensor(pred_actions_rise)
-        if pa.ndim != 3:
-            raise ValueError("pred_actions_rise must be [N,H,7]")
-        sample_actions = pa[0]
-        if sample_actions.shape[0] < 50:
-            raise ValueError(
-                "pred_actions_rise horizon must be >=50 before sampling tokens"
-            )
-        act_tokens = sample_actions[1:50:2, :].unsqueeze(0).float()  # [1,25,7]
-        # print(
-        #     "[WARN] infer_video_from_pred_actions: using WM-predicted actions for "
-        #     "video dynamics (not dataset parquet). For debugging parity with "
-        #     "infer_example_from_dataset.sh, pass --infer_act_tokens_path."
-        # )
+            pa = torch.tensor(pred_actions_rise, dtype=torch.float32)
+        if pa.ndim == 3:
+            pa = pa[0]
+        if pa.ndim != 2:
+            raise ValueError("pred_actions_rise must be [H,7] or [N,H,7]")
+        act_tokens = rise_actions_to_video_act_tokens(pa).float()  # [1,25,7]
     video_inferencer = VideoDynamicsInferencer.get_or_create(
         infer_cfg_path=infer_cfg_path,
         model_root=model_root,
@@ -1312,8 +1346,10 @@ def main(args):
                 action_only=not infer_video_value,
             )
 
+            # WM action chunk = 30; video model uses 30 -> pad(last) -> 50 -> [1:50:2]
             pred_actions_rise = pred_actions_to_rise(
-                outputs["action_predictions"][0], target_horizon=50
+                outputs["action_predictions"][0],
+                target_horizon=ACTION_FUTURE_HORIZON,
             )
             # Current frame head/gripper image paths (can be used for visualization)
             head_image_path = os.path.join(

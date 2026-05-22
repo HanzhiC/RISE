@@ -14,7 +14,8 @@ temp*
 
 AGENTS.md
 .codex
-
+.tmp
+dynamics/dynamics_model/.tmp
 # episode_videos/
 
 # Byte-compiled / optimized / DLL files
