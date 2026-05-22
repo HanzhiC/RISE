@@ -1375,7 +1375,7 @@ def main(args):
                         n_chunk=1,
                         norm_constant="FINETUNE_TASK",
                         norm_config_path="data/utils/action_norm.json",  # change this
-                        domain_name="open_the_ricecooker_pi_abs",  # change this
+                        domain_name=args.task.replace("-", "_"),  
                         action_chunk=50,
                         model_root=getattr(args, "infer_model_root", None),
                         diffusion_ckpt=getattr(args, "infer_diffusion_ckpt", None),

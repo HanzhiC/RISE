@@ -1,5 +1,9 @@
 #!/usr/bin/bash
 
+# unset NCCL_SOCKET_IFNAME
+# # 可选：看 node21 上实际有哪些网卡
+# ip -o link show up
+# bash task_finetune.sh
 
 script_path=${1}
 echo $script_path
