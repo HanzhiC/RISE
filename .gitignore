@@ -182,3 +182,4 @@ genie-envisioner/
 dynamics/dynamics_model/slurm_logs
 lerobot/
 dynamics/dynamics_model/results
+tmp_infer_case/
