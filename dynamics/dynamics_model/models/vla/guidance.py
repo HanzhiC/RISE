@@ -217,7 +217,6 @@ class DynamicsRegressionGuidance(Guidance):
         self.predict_visual = kwargs.get("predict_visual", True)
         self.geometric_weight = kwargs.get("geometric_weight", 1.0)
         self.visual_weight = kwargs.get("visual_weight", 1.0)
-        self.spatial_visual_compress = kwargs.get("spatial_visual_compress", None)
 
     def compute_guidance_loss(self, x, t, aux_data_batch):
         """
@@ -279,10 +278,6 @@ class DynamicsRegressionGuidance(Guidance):
                 mode="bilinear",
                 align_corners=False,
             )
-            if self.spatial_visual_compress is not None:
-                goal_visual_scaled = self.spatial_visual_compress(
-                    rearrange(goal_visual_scaled, "b c h w -> b h w c")
-                ).permute(0, 3, 1, 2)
             state_valid_visual = (
                 _state_valid[:, None]
                 .clone()
@@ -318,7 +313,6 @@ class CorrespondenceGoalConditionedDynamicsGuidance(Guidance):
         self.predict_distance_to_goal = kwargs.get("predict_distance_to_goal", True)
         self.predict_visual = kwargs.get("predict_visual", True)
         self.dynamics_visual_dim = kwargs.get("dynamics_visual_dim", 768)
-        self.spatial_visual_compress = kwargs.get("spatial_visual_compress", None)
 
     def compute_guidance_loss(self, x, t, aux_data_batch):
         """
@@ -377,12 +371,6 @@ class CorrespondenceGoalConditionedDynamicsGuidance(Guidance):
                     mode="bilinear",
                     align_corners=False,
                 )  # [B, 768, H, W]
-                if self.spatial_visual_compress is not None:
-                    goal_visual_feature_scaled = self.spatial_visual_compress(
-                        rearrange(
-                            goal_visual_feature_scaled, "b c h w -> b h w c"
-                        )
-                    ).permute(0, 3, 1, 2)
             else:
                 goal_visual_feature_scaled = torch.zeros_like(
                     x[:, -self.dynamics_visual_dim :]

@@ -544,6 +544,7 @@ class PolicyVLAWorldModelWrapper:
         eval_guidance=True,
         align_to_current_state=False,
         add_history_state_actions_null=False,
+        action_only=True,
     ):
         assert (
             self.cfg.ALGORITHM.model.wm_predict_visual
@@ -590,78 +591,13 @@ class PolicyVLAWorldModelWrapper:
         outputs = self.model(
             data_batch,
             num_samples=num_samples,
-            action_only=False,
+            action_only=action_only,
             w_conditional=w_conditional,
             enable_guidance=enable_guidance,
             eval_guidance=eval_guidance,
             align_to_current_state=align_to_current_state,
         )
-
-        # Acquire the final action
-        pred_actions = outputs["action_predictions"]  # [B, N, H, D]
-        pred_dynamics = outputs["dynamics_predictions"]  # [B, N, C, H, W]
-        pred_visual = outputs["visual_predictions"]  # [B, N, C, H, W]
-
-        ## Hack for debugging ...
-        # pred_visual = data_batch["goal_visual_feature_patch"][:, None].expand(
-        #     -1, num_samples, -1, -1
-        # )  # [B, N, L, C]
-        # pred_visual = rearrange(pred_visual, "b n (h w) c -> (b n) c h w", h=14, w=14)
-        # pred_visual = F.interpolate(
-        #     pred_visual, size=(64, 64), mode="bilinear", align_corners=False
-        # )
-        # pred_visual = rearrange(pred_visual, "(b n) c h w -> b n c h w", n=num_samples)
-        # pred_visual = pred_visual * 5.0
-        # pred_actions = data_batch["gt_action"][:, None].expand(-1, num_samples, -1, -1)
-        ## Hack for debugging ...
-
-        # Infer the future state's value
-        data_batch_future = copy.deepcopy(data_batch)
-        data_batch_current = copy.deepcopy(data_batch)
-        data_batch_future = TensorUtils.repeat_by_expand_at(
-            data_batch_future, repeats=num_samples, dim=0
-        )
-        data_batch_current = TensorUtils.repeat_by_expand_at(
-            data_batch_current, repeats=num_samples, dim=0
-        )
-        data_batch_future["history_visual_feature_patch"] = (
-            self.build_history_visual_feature_patch_conditioning(pred_visual)
-        ).flatten(
-            0, 1
-        )  # [B * N, 15, 196, C_vis] — C_vis is 768 or wm_vm_visual_in_dim (WM pred)
-        data_batch_future["gt_action"] = (
-            self.build_action_conditioning(
-                pred_actions,
-                action_chunk_size=self.cfg.ALGORITHM.model.action_chunk_size,
-            )
-        ).flatten(
-            0, 1
-        )  # [B * N, H, D] — aligns with repeat_by_expand_at row order
-        data_batch_future["history_state"] = pred_dynamics.flatten(0, 1)
-
-        value_info = self.inference_advantage(data_batch_current, data_batch_future)
-        value_info["advantage_predictions"] = value_info["advantage_predictions"].view(
-            -1, num_samples
-        )
-        value_info["value_predictions"] = value_info["value_predictions"].view(
-            -1, num_samples
-        )
-        value_info["future_value_predictions"] = value_info[
-            "future_value_predictions"
-        ].view(-1, num_samples)
-
-        # Acquire all results
-        results = {
-            "action_predictions": pred_actions,
-            "dynamics_predictions": pred_dynamics,
-            "visual_predictions": pred_visual,
-            "value_info": value_info,
-        }
-        if eval_guidance:
-            results["guidance_cost"] = outputs["guidance_losses"][
-                "dynamics_regression_guidance_loss"
-            ]
-        return results
+        return outputs
 
     def select_best_sample(self, results, criteria="value"):
         value_info_selected = copy.deepcopy(results["value_info"])

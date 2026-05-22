@@ -451,7 +451,7 @@ class VLAWorldModelModule(pl.LightningModule):
         data_batch.update({"pred_distance_to_goal": pred_distance_to_goal})
         return distance_to_goal_rmse
 
-    def compute_state_accuracy(self, data_batch, outputs, policy):
+    def compute_state_accuracy(self, data_batch, outputs):
         pred_state = outputs["dynamics_predictions"][:, 0]  # [B, D, 32, 32]
         gt_state = data_batch["gt_state"]  # [B, D, 32, 32]
 
@@ -461,7 +461,7 @@ class VLAWorldModelModule(pl.LightningModule):
         state_rmse = state_rmse.pow(2)
         state_rmse = state_rmse.mean().pow(0.5).float()
         if self.algo_config.model.wm_predict_visual:
-            pred_visual = outputs["visual_predictions"][:, 0]  # [B, C_wm, H, W]
+            pred_visual = outputs["visual_predictions"][:, 0]  # [B, D, 32, 32]
             pred_visual = (pred_visual) / 5.0
             gt_visual = data_batch["goal_visual_feature_patch"]
             feature_res = int(gt_visual.shape[-2] ** 0.5)
@@ -477,8 +477,6 @@ class VLAWorldModelModule(pl.LightningModule):
                 mode="bilinear",
                 align_corners=False,
             )
-            if policy.visual_compress_wm_vm is not None:
-                gt_visual = policy.compress_visual_spatial_map_for_wm_vm(gt_visual)
             gt_state_valid = gt_state_valid[:, :1].expand(
                 -1, gt_visual.shape[1], -1, -1
             )
@@ -628,9 +626,7 @@ class VLAWorldModelModule(pl.LightningModule):
             )
         val_prefix = "ema_" if use_ema else ""
         if "+wm" in self.algo_config.model.mode:  # and include_dynamics_loss:
-            state_rmse, visual_rmse = self.compute_state_accuracy(
-                data_batch, out, curr_policy
-            )
+            state_rmse, visual_rmse = self.compute_state_accuracy(data_batch, out)
             self.log(
                 f"val/{val_prefix}state_rmse", state_rmse, prog_bar=True, sync_dist=True
             )
@@ -661,7 +657,7 @@ class VLAWorldModelModule(pl.LightningModule):
                     sync_dist=True,
                 )
                 if vis_mode == "draw":
-                    self.visualize_visual_prediction(data_batch, policy=curr_policy)
+                    self.visualize_visual_prediction(data_batch)
                     goal_feature_vis = torchvision.utils.make_grid(
                         data_batch["goal_feature_vis"], nrow=4
                     )
@@ -770,10 +766,7 @@ class VLAWorldModelModule(pl.LightningModule):
         return_dict = {f"{val_prefix}losses": losses}
         return return_dict
 
-    def visualize_visual_prediction(self, data_batch, policy=None, **kwargs):
-        """PCA RGB vis of goal vs pred dynamics visual in **WM token space** (compressed when enabled)."""
-        if policy is None:
-            policy = self.nets["policy"]
+    def visualize_visual_prediction(self, data_batch, **kwargs):
         target_size = 64
         goal_feature = data_batch["goal_visual_feature_patch"]
         pred_feature = data_batch["pred_visual"]
@@ -788,8 +781,6 @@ class VLAWorldModelModule(pl.LightningModule):
             mode="bilinear",
             align_corners=False,
         )
-        if policy.visual_compress_wm_vm is not None:
-            goal_feature = policy.compress_visual_spatial_map_for_wm_vm(goal_feature)
         pred_feature = F.interpolate(
             pred_feature,
             size=(target_size, target_size),

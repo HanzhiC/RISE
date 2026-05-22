@@ -4,8 +4,6 @@ import os
 import sys
 import utils.dataset_utils as DatasetUtils
 import open3d as o3d
-from compas.geometry import oriented_bounding_box_numpy
-from transformations import rotation_matrix
 from scipy.spatial.transform import Rotation as R
 from typing import Tuple
 from typing import List
@@ -99,116 +97,7 @@ def compute_bbox3d_orientation_pca(corners):
     return eigenvectors, center
 
 
-def compute_object_bbox3d_and_pose(points, filtering_percentile=3):
-    # Compute the 3D bbox for the object
-    center = np.mean(points, axis=0)
-    points = points - center
 
-    if filtering_percentile > 0:
-        lower_percentile = filtering_percentile
-        upper_percentile = 100 - filtering_percentile
-
-        # Vectorized percentile filtering (much faster than loop)
-        lower_bounds = np.percentile(points, lower_percentile, axis=0)
-        upper_bounds = np.percentile(points, upper_percentile, axis=0)
-
-        # Create mask for all dimensions at once
-        mask = np.all((points >= lower_bounds) & (points <= upper_bounds), axis=1)
-        if mask.sum() < 10:
-            return None, None
-        points = points[mask]
-
-    bbox_3d_corners = oriented_bounding_box_numpy(points)
-    bbox_3d_corners = np.array(bbox_3d_corners)
-    bbox_3d_corners = bbox_3d_corners + center
-    # Compute the orientation of the bbox
-    rot_pca, center_pca = compute_bbox3d_orientation_pca(bbox_3d_corners)
-    T_world_object = np.eye(4)
-    T_world_object[:3, :3] = rot_pca
-    T_world_object[:3, 3] = center_pca
-    return bbox_3d_corners, T_world_object
-
-
-def align_bbox3d_with_gravity(
-    bbox_3d_corners, T_world_object, gravity_vector=np.array([0, 0, 1])
-):
-    """
-    Align the z-axis of the object with the gravity vector (upwards)
-    This ensures the object's z-axis is always pointing up
-    """
-    # Extract rotation and translation from the transformation matrix
-    R_world_object = T_world_object[:3, :3]
-    t_world_object = T_world_object[:3, 3]
-    T_object_world = np.linalg.inv(T_world_object)
-
-    # Get the current axes of the object
-    x_axis = R_world_object[:, 0]  # Current x-axis
-    y_axis = R_world_object[:, 1]  # Current y-axis
-    z_axis = R_world_object[:, 2]  # Current z-axis
-
-    corners_in_object_frame = DatasetUtils.transform_points(
-        bbox_3d_corners, T_object_world
-    )
-
-    # We want to align the z-axis with gravity (upwards)
-    # First, find which current axis is most aligned with gravity
-    dot_products = [
-        abs(np.dot(x_axis, gravity_vector)),
-        abs(np.dot(y_axis, gravity_vector)),
-        abs(np.dot(z_axis, gravity_vector)),
-    ]
-
-    # Find the axis most aligned with gravity
-    most_aligned_idx = np.argmax(dot_products)
-    most_aligned_axis = R_world_object[most_aligned_idx]
-    # print(f"Most aligned axis: {most_aligned_idx}")
-
-    # If the most aligned axis is pointing in the wrong direction, flip it
-    if np.dot(most_aligned_axis, gravity_vector) < 0:
-        R_world_object[:, most_aligned_idx] = -R_world_object[:, most_aligned_idx]
-
-    x_axis = R_world_object[:, 0]
-    y_axis = R_world_object[:, 1]
-    z_axis = R_world_object[:, 2]
-
-    if most_aligned_idx == 0:
-        new_x_axis = gravity_vector
-        new_y_axis = np.cross(z_axis, new_x_axis)
-        new_y_axis = new_y_axis / np.linalg.norm(new_y_axis)
-        new_z_axis = np.cross(new_x_axis, new_y_axis)
-        new_z_axis = new_z_axis / np.linalg.norm(new_z_axis)
-        new_R_world_object = np.stack([-new_z_axis, new_y_axis, new_x_axis], axis=1)
-        corners_in_object_frame = (
-            corners_in_object_frame @ rotation_matrix(np.pi / 2, [0, 1, 0])[:3, :3].T
-        )
-
-    elif most_aligned_idx == 1:
-        new_y_axis = gravity_vector
-        new_x_axis = -np.cross(z_axis, new_y_axis)
-        new_x_axis = new_x_axis / np.linalg.norm(new_x_axis)
-        new_z_axis = -np.cross(new_y_axis, new_x_axis)
-        new_z_axis = new_z_axis / np.linalg.norm(new_z_axis)
-        new_R_world_object = np.stack([new_x_axis, -new_z_axis, new_y_axis], axis=1)
-        corners_in_object_frame = (
-            corners_in_object_frame @ rotation_matrix(-np.pi / 2, [1, 0, 0])[:3, :3].T
-        )
-    elif most_aligned_idx == 2:
-        new_z_axis = gravity_vector
-        new_x_axis = np.cross(y_axis, new_z_axis)
-        new_x_axis = new_x_axis / np.linalg.norm(new_x_axis)
-        new_y_axis = np.cross(new_z_axis, new_x_axis)
-        new_y_axis = new_y_axis / np.linalg.norm(new_y_axis)
-        new_R_world_object = np.stack([new_x_axis, new_y_axis, new_z_axis], axis=1)
-
-    new_T_world_object = np.eye(4)
-    new_T_world_object[:3, :3] = new_R_world_object
-    new_T_world_object[:3, 3] = t_world_object  # Keep the same center
-
-    bbox_3d_corners_aligned = DatasetUtils.transform_points(
-        corners_in_object_frame, new_T_world_object
-    )
-
-    return bbox_3d_corners_aligned, new_T_world_object
 
 
 def get_sparse_depth(world_points, T_world_cam, intr, height, width):

@@ -34,34 +34,6 @@ import random
 from timm.models.vision_transformer import PatchEmbed
 
 
-class VisualChannelPool(nn.Module):
-    """Reduce DINO patch dim for WM/VM by adaptive average pool along the feature axis.
-
-    Treats the 768-d descriptor as a length-768 sequence (shape ``(..., 768)`` as ``(N, 1, 768)``)
-    and applies ``AdaptiveAvgPool1d(out_dim)`` — no learnable weights, unlike a Linear.
-    """
-
-    def __init__(self, in_dim: int, out_dim: int):
-        super().__init__()
-        if out_dim > in_dim:
-            raise ValueError(
-                f"wm_vm_visual_compress_dim ({out_dim}) must be <= dinov3 patch dim ({in_dim}) for pooling."
-            )
-        self.in_dim = in_dim
-        self.out_dim = out_dim
-        self.pool = nn.AdaptiveAvgPool1d(out_dim)
-
-    def forward(self, x: Tensor):
-        *leading, d = x.shape
-        if d != self.in_dim:
-            raise ValueError(
-                f"expected last dim {self.in_dim} for WM/VM visual pool, got {d}"
-            )
-        flat = x.reshape(-1, 1, self.in_dim)
-        y = self.pool(flat)
-        return y.reshape(*leading, self.out_dim)
-
-
 class VLAFlowMatching(nn.Module):
     def __init__(self, config: dict):
         super().__init__()
@@ -74,39 +46,15 @@ class VLAFlowMatching(nn.Module):
         self.history_action_horizon = self.config.history_action_horizon
         self.history_visual_horizon = self.config.history_visual_horizon
         self.history_sample_mode = self.config.history_sample_mode
+        self.visual_feature_type = config.get("visual_feature_type", "dinov3")
+
+        # self.dtype = torch.float16 if config.dtype == "torch.float16" else torch.float32
         if self.config.dtype == "torch.float16":
             self.dtype = torch.float16
         elif self.config.dtype == "torch.bfloat16":
             self.dtype = torch.bfloat16
         else:
             self.dtype = torch.float32
-
-        self.visual_feature_type = config.get("visual_feature_type", "dinov3")
-        # Raw DINO patch descriptor dim (VLA path always uses this).
-        self.dinov3_patch_dim = 768
-        # WM/VM see patches in this dim; 768 disables the compressor (default).
-        self.wm_vm_visual_in_dim = int(
-            config.get("wm_vm_visual_compress_dim", self.dinov3_patch_dim)
-        )
-        self.use_wm = "+wm" in self.mode
-        self.use_vm = "+vm" in self.mode
-        if self.wm_vm_visual_in_dim != self.dinov3_patch_dim:
-            if not (self.use_wm or self.use_vm):
-                raise ValueError(
-                    "wm_vm_visual_compress_dim != 768 requires config.mode to include +wm or +vm"
-                )
-            self.visual_compress_wm_vm = VisualChannelPool(
-                self.dinov3_patch_dim, self.wm_vm_visual_in_dim
-            )
-        else:
-            self.visual_compress_wm_vm = None
-        if self.visual_compress_wm_vm is not None:
-            self.visual_compress_wm_vm.to(dtype=self.dtype)
-            print(
-                f"=====> WM/VM DINO patch pool: {self.dinov3_patch_dim} -> "
-                f"{self.wm_vm_visual_in_dim} (AdaptiveAvgPool1d on feature axis; "
-                f"VLA still uses {self.dinov3_patch_dim})\n"
-            )
 
         # See if the model use gripper image
         self.am_use_gripper_image = self.config.get("am_use_gripper_image", False)
@@ -163,33 +111,28 @@ class VLAFlowMatching(nn.Module):
         print("============================================================")
 
         # Parse the dynamics model related config
+        self.use_wm = "+wm" in self.mode
         if self.use_wm:
-            self.visual_proj_for_wm = nn.Linear(
-                self.wm_vm_visual_in_dim + 6, self.feature_dim
-            )
+            self.visual_proj_for_wm = nn.Linear(768 + 6, self.feature_dim)
             self.language_proj_for_wm = nn.Linear(768, self.feature_dim)
 
             context_dim = self.feature_dim
             self.dynamics_in_relative = self.config.get("wm_use_relative_flow", True)
             self.dynamics_predict_visual = self.config.get("wm_predict_visual", False)
-            # PatchEmbed input: scaled dynamics (geom [+ optional visual channels]).
-            # start_state RGB is not concatenated onto x_t (see velocity_loss / denoise_dynamics_step).
-            self.dynamics_transition_dim = self.config.dynamics_dim
+            self.dynamics_transition_dim = self.config.dynamics_dim + 3
 
             # geometric, visual, history dynamics dimensions
             self.dynamics_geometric_dim = self.config.dynamics_dim
-            self.dynamics_visual_dim = (
-                self.wm_vm_visual_in_dim if self.dynamics_predict_visual else 0
-            )
+            self.dynamics_visual_dim = 768 if self.dynamics_predict_visual else 0
             self.dynamics_history_dim = self.config.dynamics_dim
 
             # add additional dimensions when concatenating dinov3 feature
             if self.config.wm_concat_dinov3_feature:
-                self.dynamics_transition_dim += self.wm_vm_visual_in_dim
+                self.dynamics_transition_dim += 768
 
             # add additional dimensions when predicting visual
             if self.dynamics_predict_visual:
-                self.dynamics_transition_dim += self.wm_vm_visual_in_dim
+                self.dynamics_transition_dim += 768
 
             # # add additional dimensions when predicting distance to goal
             # if self.dynamics_predict_distance_to_goal:
@@ -239,6 +182,14 @@ class VLAFlowMatching(nn.Module):
                 self.config.dynamics_patch_factor,
                 self.dynamics_geometric_dim,
             )
+            # if self.dynamics_predict_distance_to_goal:
+            #     self.dynamics_dist2goal_proj = FinalLayerDynamics(
+            #         self.dynamics_model.dim,
+            #         self.config.dynamics_patch_factor,
+            #         3,
+            #     )
+            # else:
+            #     self.dynamics_dist2goal_proj = None
 
             if self.dynamics_predict_visual:
                 self.dynamics_visual_proj = FinalLayerDynamics(
@@ -262,10 +213,9 @@ class VLAFlowMatching(nn.Module):
         else:
             self.dynamics_model = None
         # Parse the value model related config
+        self.use_vm = "+vm" in self.mode
         if self.use_vm:
-            self.visual_proj_for_vm = nn.Linear(
-                self.wm_vm_visual_in_dim + 6, self.feature_dim
-            )
+            self.visual_proj_for_vm = nn.Linear(768 + 6, self.feature_dim)
             self.language_proj_for_vm = nn.Linear(768, self.feature_dim)
             self.dynamics_proj_for_vm = PatchEmbed(
                 self.config.dynamics_input_size,
@@ -326,17 +276,14 @@ class VLAFlowMatching(nn.Module):
         # Initialize the guidance
         self.current_guidance = None
         if self.use_wm:
-            _dyn_guidance_cfg = dict(
-                weight=50,
-                dynamics_geometric_dim=self.dynamics_geometric_dim,
-                dynamics_visual_dim=self.dynamics_visual_dim,
-                predict_visual=self.dynamics_predict_visual,
-            )
-            if self.visual_compress_wm_vm is not None:
-                _dyn_guidance_cfg["spatial_visual_compress"] = (
-                    self.visual_compress_wm_vm
+            self.guidance_config = dict[str, dict[str, int]](
+                DynamicsRegressionGuidance=dict(
+                    weight=50,
+                    dynamics_geometric_dim=self.dynamics_geometric_dim,
+                    dynamics_visual_dim=self.dynamics_visual_dim,
+                    predict_visual=self.dynamics_predict_visual,
                 )
-            self.guidance_config = dict(DynamicsRegressionGuidance=_dyn_guidance_cfg)
+            )
             self.set_guidance(self.guidance_config)
 
     def set_models_frozen(self, model_components: list[str]):
@@ -372,9 +319,6 @@ class VLAFlowMatching(nn.Module):
                     param.requires_grad = False
                 for _, param in self.language_proj_for_wm.named_parameters():
                     param.requires_grad = False
-                if self.visual_compress_wm_vm is not None:
-                    for _, param in self.visual_compress_wm_vm.named_parameters():
-                        param.requires_grad = False
                 if self.dynamics_predict_visual:
                     for _, param in self.dynamics_visual_proj.named_parameters():
                         param.requires_grad = False
@@ -407,9 +351,6 @@ class VLAFlowMatching(nn.Module):
         self.dynamics_history_dim = fm_model.dynamics_history_dim
         self.dynamics_dim = fm_model.dynamics_dim
         self.wm_concat_dinov3_feature = fm_model.wm_concat_dinov3_feature
-        self.visual_compress_wm_vm = fm_model.visual_compress_wm_vm
-        self.wm_vm_visual_in_dim = fm_model.wm_vm_visual_in_dim
-        self.dinov3_patch_dim = fm_model.dinov3_patch_dim
 
         # Set the dynamics model and the related modules
         self.dynamics_model = fm_model.dynamics_model
@@ -425,8 +366,6 @@ class VLAFlowMatching(nn.Module):
         # copy the related config
         self.value_model_type = fm_model.value_model_type
         self.vm_use_predict_visual_prob = fm_model.vm_use_predict_visual_prob
-        self.visual_compress_wm_vm = fm_model.visual_compress_wm_vm
-        self.wm_vm_visual_in_dim = fm_model.wm_vm_visual_in_dim
 
         # Set the value model and the related modules
         self.value_model = fm_model.value_model
@@ -625,58 +564,6 @@ class VLAFlowMatching(nn.Module):
         imgs = x.reshape(shape=(x.shape[0], c, h * p, h * p))
         return imgs
 
-    def compress_visual_tokens_for_wm_vm(self, image_features: Tensor):
-        """Patch tokens with last dim DINO (768) -> WM/VM token dim (adaptive avg pool).
-
-        If features are already ``wm_vm_visual_in_dim`` (e.g. WM rollout fed into VM),
-        returns them unchanged.
-        """
-        if self.visual_compress_wm_vm is None:
-            return image_features
-        d = image_features.shape[-1]
-        if d == self.wm_vm_visual_in_dim:
-            return image_features
-        if d != self.dinov3_patch_dim:
-            raise ValueError(
-                f"compress_visual_tokens_for_wm_vm expects last dim "
-                f"{self.dinov3_patch_dim} or {self.wm_vm_visual_in_dim}, got {d}"
-            )
-        return self.visual_compress_wm_vm(image_features)
-
-    def compress_visual_spatial_map_for_wm_vm(self, x: Tensor):
-        """Spatial maps [B, 768, H, W] or [B, T, 768, H, W] -> pooled channel dim.
-
-        If channel count is already ``wm_vm_visual_in_dim``, returns ``x`` unchanged.
-        """
-        if self.visual_compress_wm_vm is None:
-            return x
-        if x.dim() == 4:
-            if x.shape[1] == self.wm_vm_visual_in_dim:
-                return x
-            if x.shape[1] != self.dinov3_patch_dim:
-                raise ValueError(
-                    f"Expected in_channels {self.dinov3_patch_dim} or "
-                    f"{self.wm_vm_visual_in_dim}, got {x.shape[1]}"
-                )
-            y = rearrange(x, "b c h w -> b h w c")
-            y = self.visual_compress_wm_vm(y)
-            return rearrange(y, "b h w c -> b c h w")
-        if x.dim() == 5:
-            if x.shape[2] == self.wm_vm_visual_in_dim:
-                return x
-            if x.shape[2] != self.dinov3_patch_dim:
-                raise ValueError(
-                    f"Expected in_channels {self.dinov3_patch_dim} or "
-                    f"{self.wm_vm_visual_in_dim}, got {x.shape[2]}"
-                )
-            b, t, _, h, w = x.shape
-            y = rearrange(x, "b t c h w -> (b t) h w c")
-            y = self.visual_compress_wm_vm(y)
-            return rearrange(y, "(b t) h w c -> b t c h w", b=b, t=t)
-        raise ValueError(
-            f"compress_visual_spatial_map_for_wm_vm expects 4D or 5D tensor, got {x.dim()}D"
-        )
-
     def velocity_loss(
         self,
         image_features,
@@ -817,14 +704,14 @@ class VLAFlowMatching(nn.Module):
                 time_expanded_dynamics * noise_dynamics
                 + (1 - time_expanded_dynamics) * dynamics
             )
+            x_t_dynamics = torch.cat(
+                [initial_dynamics, x_t_dynamics], dim=1
+            )  # [B, D+3, H, W]
             if self.wm_concat_dinov3_feature:
                 assert initial_dynamics_feature is not None
-                idf_wm = self.compress_visual_spatial_map_for_wm_vm(
-                    initial_dynamics_feature
-                )
                 x_t_dynamics = torch.cat(
-                    [idf_wm, x_t_dynamics], dim=1
-                )  # [B, C_wm + D, H, W] with D = geom [+ visual] flow channels
+                    [initial_dynamics_feature, x_t_dynamics], dim=1
+                )  # [B, D+3+768, H, W]
 
             if self.predict_x0:
                 target_t_dynamics = dynamics  # position target
@@ -860,7 +747,7 @@ class VLAFlowMatching(nn.Module):
                     x_t_dynamics, c_dynamics
                 )
                 pred_t_dynamics_visual = self.unpatchify(
-                    pred_t_dynamics_visual, c=self.dynamics_visual_dim, p=1
+                    pred_t_dynamics_visual, c=self.feature_dim, p=1
                 )
                 pred_t_dynamics_visual = F.interpolate(
                     pred_t_dynamics_visual,
@@ -1186,11 +1073,6 @@ class VLAFlowMatching(nn.Module):
         elif model == "wm":
             assert self.visual_proj_for_wm is not None
             assert self.language_proj_for_wm is not None
-            image_features = self.compress_visual_tokens_for_wm_vm(image_features)
-            if image_features_gripper is not None:
-                image_features_gripper = self.compress_visual_tokens_for_wm_vm(
-                    image_features_gripper
-                )
             prefix_image, prefix_language = self.embed_vision_language_features(
                 image_features=image_features,
                 language_features=language_features,
@@ -1203,11 +1085,6 @@ class VLAFlowMatching(nn.Module):
             # Raymaps are not used for VM, so we set them to 0.0 with a hack
             assert self.visual_proj_for_vm is not None
             assert self.language_proj_for_vm is not None
-            image_features = self.compress_visual_tokens_for_wm_vm(image_features)
-            if image_features_gripper is not None:
-                image_features_gripper = self.compress_visual_tokens_for_wm_vm(
-                    image_features_gripper
-                )
             prefix_image, prefix_language = self.embed_vision_language_features(
                 image_features=image_features,
                 language_features=language_features,
@@ -1450,9 +1327,6 @@ class VLAFlowMatching(nn.Module):
                     ),
                     mode="bilinear",
                     align_corners=False,
-                )
-                visual_dynamics_scaled = self.compress_visual_spatial_map_for_wm_vm(
-                    visual_dynamics_scaled
                 )
                 dynamics_scaled = torch.cat(
                     [dynamics_scaled, visual_dynamics_scaled], dim=1
@@ -1914,10 +1788,10 @@ class VLAFlowMatching(nn.Module):
                         if input_actions_scaled is not None
                         else actions_scaled
                     ),
-                    history_state_dynamics=history_state_dynamics,
-                    aux_data=aux_data,
                     initial_dynamics=initial_dynamics,
                     initial_dynamics_feature=initial_dynamics_feature,
+                    history_state_dynamics=history_state_dynamics,
+                    aux_data=aux_data,
                     image_features_gripper=image_features_gripper,
                     history_raymaps_gripper=history_raymaps_gripper,
                 )
@@ -1973,6 +1847,7 @@ class VLAFlowMatching(nn.Module):
 
             if self.use_wm and not action_only:
                 assert dynamics_scaled is not None
+                assert initial_dynamics is not None
                 dynamics_geometric = dynamics_scaled[:, : self.dynamics_geometric_dim]
                 dynamics_geometric = self.descale_state(
                     dynamics_geometric,
@@ -2051,10 +1926,10 @@ class VLAFlowMatching(nn.Module):
         language_features: torch.Tensor,
         history_raymaps: torch.Tensor,
         input_actions: torch.Tensor,
+        initial_dynamics: torch.Tensor,
+        initial_dynamics_feature: torch.Tensor,
         history_state_dynamics: torch.Tensor,
         aux_data: dict,
-        initial_dynamics: Optional[Tensor] = None,
-        initial_dynamics_feature: Optional[Tensor] = None,
         noise_dynamics: torch.Tensor = None,
         drop_action_mask: torch.Tensor = None,
         image_features_gripper: torch.Tensor = None,
@@ -2070,15 +1945,12 @@ class VLAFlowMatching(nn.Module):
 
         Args:
             input_actions: fixed action trajectory [B, H, D] used as condition.
-            initial_dynamics_feature: optional; required when ``wm_concat_dinov3_feature``
-                is True (prepended to ``x_t`` before the dynamics DiT).
             grad_withctx: gradient context for both the action preprocessing and
                 the dynamics denoising steps.  Pass ``torch.enable_grad`` when
                 the caller needs ``∂output / ∂input_actions``.
 
         Returns:
-            x_t_dynamics: clean dynamics prediction [B, D, H, W] with
-            ``D = dynamics_dim`` (geometry [+ visual channels] when enabled).
+            x_t_dynamics: clean dynamics prediction [B, Dg, Hg, Wg].
         """
         assert self.use_wm, "sample_dynamics requires a world model (use_wm=True)"
         assert self.predict_x0, "sample_dynamics requires predict_x0=True"
@@ -2129,8 +2001,9 @@ class VLAFlowMatching(nn.Module):
                     action=action_cond,
                     x_t=x_t_dynamics,
                     timestep=expanded_time,
-                    history_state_dynamics=history_state_dynamics,
+                    initial_dynamics=initial_dynamics,
                     initial_dynamics_feature=initial_dynamics_feature,
+                    history_state_dynamics=history_state_dynamics,
                     drop_action_mask=drop_action_mask,
                     grad_withctx=grad_withctx,
                 )
@@ -2332,9 +2205,9 @@ class VLAFlowMatching(nn.Module):
             # dynamics prediction, then compute ∂guidance_loss / ∂x_t_actions.
             if enable_guidance:
                 assert self.current_guidance is not None
-                assert history_state_dynamics is not None
-                if self.wm_concat_dinov3_feature:
-                    assert initial_dynamics_feature is not None
+                assert (
+                    initial_dynamics is not None and history_state_dynamics is not None
+                )
 
                 # Create a leaf tensor so autograd can compute the gradient
                 x_t_actions_leaf = x_t_actions.detach().clone().requires_grad_(True)
@@ -2345,10 +2218,10 @@ class VLAFlowMatching(nn.Module):
                     language_features=language_features,
                     history_raymaps=history_raymaps,
                     input_actions=x_t_actions_leaf,
-                    history_state_dynamics=history_state_dynamics,
-                    aux_data=aux_data,
                     initial_dynamics=initial_dynamics,
                     initial_dynamics_feature=initial_dynamics_feature,
+                    history_state_dynamics=history_state_dynamics,
+                    aux_data=aux_data,
                     drop_action_mask=drop_action_mask,
                     image_features_gripper=image_features_gripper,
                     history_raymaps_gripper=history_raymaps_gripper,
@@ -2451,19 +2324,19 @@ class VLAFlowMatching(nn.Module):
         action,
         x_t: torch.Tensor,
         timestep: torch.Tensor,
+        initial_dynamics: torch.Tensor,
+        initial_dynamics_feature: torch.Tensor,
         history_state_dynamics: torch.Tensor,
-        initial_dynamics_feature: Optional[Tensor] = None,
         drop_action_mask: torch.Tensor = None,
         grad_withctx: Callable[[], AbstractContextManager] = torch.no_grad,
     ):
         """Apply one denoising step of the noise `x_t` for dynamics at a given timestep."""
         with grad_withctx():
+            x_t = torch.cat([initial_dynamics, x_t], dim=1)  # [B, D+3, H, W]
             if self.wm_concat_dinov3_feature:
-                assert initial_dynamics_feature is not None
-                idf_wm = self.compress_visual_spatial_map_for_wm_vm(
-                    initial_dynamics_feature
-                )
-                x_t = torch.cat([idf_wm, x_t], dim=1)  # [B, C_wm + D, H, W]
+                x_t = torch.cat(
+                    [initial_dynamics_feature, x_t], dim=1
+                )  # [B, D+3+768, H, W]
             x_t, c = self.dynamics_model(
                 x=x_t,
                 x_history=history_state_dynamics,
@@ -2493,7 +2366,7 @@ class VLAFlowMatching(nn.Module):
             if self.dynamics_predict_visual:
                 pred_t_dynamics_visual = self.dynamics_visual_proj(x_t, c)
                 pred_t_dynamics_visual = self.unpatchify(
-                    pred_t_dynamics_visual, c=self.dynamics_visual_dim, p=1
+                    pred_t_dynamics_visual, c=self.feature_dim, p=1
                 )
                 pred_t_dynamics_visual = F.interpolate(
                     pred_t_dynamics_visual,
