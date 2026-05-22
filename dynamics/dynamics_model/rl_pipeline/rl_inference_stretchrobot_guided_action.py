@@ -647,9 +647,16 @@ def _resolve_infer_paths(
     if model_root is None:
         model_root = str(dynamics_root / "checkpoints")
     if diffusion_ckpt is None:
-        diffusion_ckpt = str(
+        finetuned_ckpt = (
+            dynamics_root
+            / "results/2026_05_19_18_25_28/step_7000/diffusion_pytorch_model.safetensors"
+        )
+        pretrained_ckpt = (
             dynamics_root
             / "checkpoints/dynamics_model/pretrained/diffusion_pytorch_model.safetensors"
+        )
+        diffusion_ckpt = str(
+            finetuned_ckpt if finetuned_ckpt.is_file() else pretrained_ckpt
         )
     base_cfg_path = infer_cfg_path
     if not os.path.isabs(base_cfg_path):
@@ -671,35 +678,17 @@ def _load_patched_infer_args(base_cfg_path, model_root, diffusion_ckpt):
     return argparse.Namespace(**infer_cfg)
 
 
-def _preprocess_head_image_bgr(head_image_path, target_size=(256, 192)):
-    """Center-crop and resize head image to model input size (BGR uint8)."""
+def _obs_from_head_image_path(head_image_path, size=(256, 192)):
+    """Build obs tensor exactly like ``infer.load_images`` (resize only, no center crop)."""
     img = cv2.imread(head_image_path)
     if img is None:
         raise ValueError(f"Failed to read head image: {head_image_path}")
-    h, w = img.shape[:2]
-    target_w, target_h = target_size
-    src_aspect = float(w) / float(h)
-    dst_aspect = float(target_w) / float(target_h)
-    if src_aspect > dst_aspect:
-        crop_h = h
-        crop_w = int(round(h * dst_aspect))
-        x0 = max(0, (w - crop_w) // 2)
-        y0 = 0
-    else:
-        crop_w = w
-        crop_h = int(round(w / dst_aspect))
-        x0 = 0
-        y0 = max(0, (h - crop_h) // 2)
-    cropped = img[y0 : y0 + crop_h, x0 : x0 + crop_w]
-    return cv2.resize(cropped, (target_w, target_h), interpolation=cv2.INTER_AREA)
-
-
-def _obs_tensor_from_bgr(bgr_img):
-    """Build [1,C,T,H,W] observation tensor (same layout as infer.load_images)."""
-    rgb = bgr_img[:, :, ::-1].astype(np.float32) / 255.0 * 2.0 - 1.0
-    frame = torch.from_numpy(np.transpose(rgb, (2, 0, 1)))  # C,H,W
-    frames = torch.stack([frame] * 4, dim=1)  # C,T,H,W, n_prev=4
-    return torch.stack([frames], dim=0)  # V,C,T,H,W
+    img = img[:, :, ::-1]
+    img = cv2.resize(img, size)
+    img = img.astype(np.float32) / 255.0 * 2.0 - 1.0
+    frame = torch.from_numpy(np.transpose(img, (2, 0, 1)))
+    frames = torch.stack([frame] * 4, dim=1)
+    return torch.stack([frames], dim=0)
 
 
 def _video_tensor_to_01(video_tensor):
@@ -710,6 +699,22 @@ def _video_tensor_to_01(video_tensor):
 def _video_last_frame_tensor(video_tensor):
     """Extract last frame from [C,T,H,W] in [-1,1] as [3,H,W] float tensor in [0,1]."""
     return _video_tensor_to_01(video_tensor)[:, -1]
+
+
+def _save_cached_action_videos_mp4(videos_01, save_path, fps=10):
+    """Concat cached ``[C,T,H,W]`` videos (0–1) side-by-side and write one mp4."""
+    if not videos_01:
+        return
+    t_len = min(v.shape[1] for v in videos_01)
+    aligned = [v[:, :t_len].cpu() for v in videos_01]
+    grid = torch.cat(aligned, dim=-1)  # [C, T, H, N*W]
+    grid = grid * 2.0 - 1.0  # save_video expects [-1, 1]
+    os.makedirs(os.path.dirname(save_path) or ".", exist_ok=True)
+    save_video(grid, save_path, fps=fps)
+    print(
+        f"[INFO] Saved {len(videos_01)} cached videos to {save_path} "
+        f"(grid shape C,T,H,W = {tuple(grid.shape)})"
+    )
 
 
 class VideoDynamicsInferencer:
@@ -745,6 +750,12 @@ class VideoDynamicsInferencer:
             infer_args = _load_patched_infer_args(
                 base_cfg_path, model_root, diffusion_ckpt
             )
+            print(
+                "[INFO] Video dynamics paths:",
+                f"config={base_cfg_path}",
+                f"model_root={model_root}",
+                f"diffusion_ckpt={diffusion_ckpt}",
+            )
             cls._instances[cache_key] = cls(
                 infer_args,
                 device=device,
@@ -766,8 +777,7 @@ class VideoDynamicsInferencer:
         video_save_path=None,
     ):
         """Returns ``(last_frame, video)`` in [0, 1]; optionally writes ``video_save_path`` mp4."""
-        bgr = _preprocess_head_image_bgr(head_image_path)
-        obs = _obs_tensor_from_bgr(bgr)
+        obs = _obs_from_head_image_path(head_image_path)
         _, _, _, h, w = obs.shape
 
         if not isinstance(act_tokens, torch.Tensor):
@@ -831,25 +841,38 @@ def infer_video_from_pred_actions(
     model_root=None,
     diffusion_ckpt=None,
     video_save_path=None,
+    act_tokens_path=None,
 ):
     """Run video dynamics inference; optionally save mp4 to ``video_save_path``.
 
     Returns ``(last_frame, video)`` with tensors in [0, 1].
+
+    Use ``act_tokens_path`` (same ``.pt`` as ``infer.sh``) for parity with
+    ``infer_example_from_dataset.sh``. ``pred_actions_rise`` from the VLA-WM policy
+    is a different action space and usually must not be fed directly to the video model.
     """
-    if isinstance(pred_actions_rise, torch.Tensor):
-        pa = pred_actions_rise.detach().cpu()
+    if act_tokens_path is not None:
+        act_tokens = torch.load(act_tokens_path).float()
+        if act_tokens.ndim == 2:
+            act_tokens = act_tokens.unsqueeze(0)
     else:
-        pa = torch.tensor(pred_actions_rise)
-    if pa.ndim != 3:
-        raise ValueError("pred_actions_rise must be [N,H,7]")
-    sample_actions = pa[0]
-    if sample_actions.shape[0] < 50:
-        raise ValueError(
-            "pred_actions_rise horizon must be >=50 before sampling tokens"
-        )
-
-    act_tokens = sample_actions[1:50:2, :].unsqueeze(0).float()  # [1,25,7]
-
+        if isinstance(pred_actions_rise, torch.Tensor):
+            pa = pred_actions_rise.detach().cpu()
+        else:
+            pa = torch.tensor(pred_actions_rise)
+        if pa.ndim != 3:
+            raise ValueError("pred_actions_rise must be [N,H,7]")
+        sample_actions = pa[0]
+        if sample_actions.shape[0] < 50:
+            raise ValueError(
+                "pred_actions_rise horizon must be >=50 before sampling tokens"
+            )
+        act_tokens = sample_actions[1:50:2, :].unsqueeze(0).float()  # [1,25,7]
+        # print(
+        #     "[WARN] infer_video_from_pred_actions: using WM-predicted actions for "
+        #     "video dynamics (not dataset parquet). For debugging parity with "
+        #     "infer_example_from_dataset.sh, pass --infer_act_tokens_path."
+        # )
     video_inferencer = VideoDynamicsInferencer.get_or_create(
         infer_cfg_path=infer_cfg_path,
         model_root=model_root,
@@ -1106,7 +1129,6 @@ def main(args):
             max(span - 50, 0) / span,
             1,
         )
-        frame_range_ratio = (0., 0.05)
         video_data_to_be_optimized = val_dataset._get_video(
             video_seq,
             downsample_factor=1,
@@ -1330,11 +1352,8 @@ def main(args):
                 )
                 os.makedirs(infer_save_dir, exist_ok=True)
                 dynamics_predictions = []
+                cached_videos = []
                 for sample_idx, pred_action_rise in enumerate(pred_actions_rise):
-                    video_mp4_path = os.path.join(
-                        infer_save_dir,
-                        f"{frame_idx:06d}_sample_{sample_idx:02d}.mp4",
-                    )
                     try:
                         last_frame, pred_video = infer_video_from_pred_actions(
                             pred_action_rise[None],
@@ -1345,23 +1364,29 @@ def main(args):
                             device=getattr(args, "infer_device", "cuda"),
                             n_chunk=1,
                             norm_constant="FINETUNE_TASK",
-                            norm_config_path="/home/wiss/chenh/mobile_manip/RISE/dynamics/dynamics_model/data/utils/action_norm.json",
-                            domain_name="open_the_ricecooker_pi_abs",
+                            norm_config_path="data/utils/action_norm.json",  # change this
+                            domain_name="open_the_ricecooker_pi_abs",  # change this
                             action_chunk=50,
                             model_root=getattr(args, "infer_model_root", None),
                             diffusion_ckpt=getattr(args, "infer_diffusion_ckpt", None),
-                            video_save_path=video_mp4_path,
+                            act_tokens_path=getattr(
+                                args, "infer_act_tokens_path", None
+                            ),
                         )
                         dynamics_predictions.append(last_frame)
-                        print(
-                            f"[INFO] Inferred video shape={pred_video.shape}, "
-                            f"last frame shape={last_frame.shape}"
-                        )
+                        cached_videos.append(pred_video)
                     except Exception as e:
                         print(
-                            f"[ERROR] Future video inference failed for frame {frame_idx}: {e}"
+                            f"[ERROR] Future video inference failed for frame {frame_idx} "
+                            f"sample {sample_idx}: {e}"
                         )
-                
+
+                if cached_videos:
+                    combined_mp4 = os.path.join(
+                        infer_save_dir, f"{frame_idx:06d}_all_samples.mp4"
+                    )
+                    _save_cached_action_videos_mp4(cached_videos, combined_mp4, fps=10)
+
                 if len(dynamics_predictions) == 0:
                     print(
                         f"[WARN] No video frames for frame {frame_idx}, skip value infer"
@@ -1657,6 +1682,12 @@ if __name__ == "__main__":
         help="Directory to save inferred future videos as mp4",
     )
     parser.add_argument(
+        "--infer_act_tokens_path",
+        type=str,
+        default=None,
+        help="Optional act_tokens.pt (dataset format, same as infer.sh). Overrides WM actions.",
+    )
+    parser.add_argument(
         "--save_meta",
         "-sm",
         action="store_true",
@@ -1678,4 +1709,4 @@ if __name__ == "__main__":
     args = parser.parse_args()
     main(args)
 
-# python rl_pipeline/rl_inference_stretchrobot_guided_action.py --cfg /home/wiss/chenh/storage/logs/egoasis4d-stretchrobot-vlawmvm/frozenvla+wm+vm_stretchrobot_pnp-ricecooker_from_robotexplorationpretrained_sparsereward_rlround2/config.yaml -t pnp-ricecooker -n -o --use_episode_correspondence --infer_future_video --infer_save_dir tmp_infer_case/outputs   
+# python rl_pipeline/rl_inference_stretchrobot_guided_action.py --cfg /home/wiss/chenh/storage/logs/egoasis4d-stretchrobot-vlawmvm/frozenvla+wm+vm_stretchrobot_pnp-ricecooker_from_robotexplorationpretrained_sparsereward_rlround2/config.yaml -t pnp-ricecooker -n -o --use_episode_correspondence --infer_future_video --infer_save_dir tmp_infer_case/outputs     --infer_diffusion_ckpt results/2026_05_19_18_25_28/step_7000/diffusion_pytorch_model.safetensors
