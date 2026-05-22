@@ -13,15 +13,30 @@ import torch.distributed as dist
 
 
 class Tee:
+    """Duplicate stdout/stderr to a log file; proxy TTY helpers to the primary stream."""
+
     def __init__(self, *files):
         self.files = files
+        self._primary = files[0]
+
     def write(self, obj):
         for f in self.files:
             f.write(obj)
             f.flush()
+
     def flush(self):
         for f in self.files:
             f.flush()
+
+    def isatty(self):
+        isatty = getattr(self._primary, "isatty", None)
+        return isatty() if callable(isatty) else False
+
+    def fileno(self):
+        return self._primary.fileno()
+
+    def __getattr__(self, name):
+        return getattr(self._primary, name)
 
 def init_logging(log_dir, rank):
 
