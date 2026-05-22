@@ -1597,4 +1597,4 @@ if __name__ == "__main__":
     args = parser.parse_args()
     main(args)
 
-# python rl_pipeline/rl_inference_stretchrobot_guided_action.py --cfg /home/wiss/chenh/storage/logs/egoasis4d-stretchrobot-vlawmvm/frozenvla+wm+vm_stretchrobot_pnp-ricecooker_from_robotexplorationpretrained_sparsereward_rlround2/config.yaml -t pnp-ricecooker -n -o --use_episode_correspondence --infer_future_video --infer_save_dir tmp_infer_case/outputs     --infer_diffusion_ckpt results/2026_05_19_18_25_28/step_7000/diffusion_pytorch_model.safetensors
+#  python rl_pipeline/rl_inference_stretchrobot_guided_action.py --cfg /home/wiss/chenh/storage/logs/egoasis4d-stretchrobot-vlawmvm-repre-ablation/ablation_repre_wo_geometric_frozenvla+wm+vm_stretchrobot_pnp-ricecooker/config.yaml  -t pnp-ricecooker -n -o --use_episode_correspondence --infer_future_video --infer_save_dir tmp_infer_case/outputs     --infer_diffusion_ckpt results/2026_05_19_18_25_28/step_7000/diffusion_pytorch_model.safetensors -a 2 -n -va
