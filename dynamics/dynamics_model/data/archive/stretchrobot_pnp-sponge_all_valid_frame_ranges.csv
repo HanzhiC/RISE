@@ -1,0 +1,23 @@
+dataset,sample,task_label,category_name,valid_frame_range,fine_action,valid_trajectory_number,advantage_label,success
+pnp_sponge,2026-03-06--18-47-24/0-207,,,"[0, 207]",pick up sponge and place it in the pot,207,1,1
+pnp_sponge,2026-03-06--18-48-49/0-254,,,"[0, 254]",pick up sponge and place it in the pot,254,1,1
+pnp_sponge,2026-03-06--18-51-12/0-208,,,"[0, 208]",pick up sponge and place it in the pot,208,1,1
+pnp_sponge,2026-03-06--18-52-03/0-196,,,"[0, 196]",pick up sponge and place it in the pot,196,1,1
+pnp_sponge,2026-03-06--18-53-08/0-195,,,"[0, 195]",pick up sponge and place it in the pot,195,1,1
+pnp_sponge,2026-03-06--18-53-54/0-199,,,"[0, 199]",pick up sponge and place it in the pot,199,1,1
+pnp_sponge,2026-03-06--18-55-18/0-188,,,"[0, 188]",pick up sponge and place it in the pot,188,1,1
+pnp_sponge,2026-03-06--18-56-18/0-175,,,"[0, 175]",pick up sponge and place it in the pot,175,1,1
+pnp_sponge,2026-03-06--18-57-25_bad/0-197,,,"[0, 197]",pick up sponge and place it in the pot,197,1,1
+pnp_sponge,2026-03-06--18-58-27_bad/0-240,,,"[0, 240]",pick up sponge and place it in the pot,240,1,1
+pnp_sponge,2026-03-06--18-59-45/0-186,,,"[0, 186]",pick up sponge and place it in the pot,186,1,1
+pnp_sponge,2026-03-06--19-01-02/0-208,,,"[0, 208]",pick up sponge and place it in the pot,208,1,1
+pnp_sponge,2026-03-10--10-52-45/0-187,,,"[0, 187]",pick up sponge and place it in the pot,187,1,1
+pnp_sponge,2026-03-10--10-54-19/0-174,,,"[0, 174]",pick up sponge and place it in the pot,174,1,1
+pnp_sponge,2026-03-10--10-57-15/0-166,,,"[0, 166]",pick up sponge and place it in the pot,166,1,1
+pnp_sponge,2026-03-10--11-00-56/0-167,,,"[0, 167]",pick up sponge and place it in the pot,167,1,1
+pnp_sponge,2026-03-10--11-02-35/0-163,,,"[0, 163]",pick up sponge and place it in the pot,163,0,0
+pnp_sponge,2026-03-10--11-09-28/0-123,,,"[0, 123]",pick up sponge and place it in the pot,123,0,0
+pnp_sponge,2026-03-10--11-15-23/0-171,,,"[0, 171]",pick up sponge and place it in the pot,171,1,1
+pnp_sponge,2026-03-10--11-16-14/0-133,,,"[0, 133]",pick up sponge and place it in the pot,133,0,0
+pnp_sponge,2026-03-10--11-17-03/0-123,,,"[0, 123]",pick up sponge and place it in the pot,123,0,0
+pnp_sponge,2026-03-10--11-17-52/0-169,,,"[0, 169]",pick up sponge and place it in the pot,169,1,1

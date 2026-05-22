@@ -1,0 +1,493 @@
+sample,task_label,category_name,valid_frame_range,fine_action,valid_trajectory_number
+basic_pick_place/2324/0-39,pick and place,object,"[0, 39]",pick up a yellow die from the metal table and place it into a tub,39
+basic_pick_place/6466/0-57,pick and place,object,"[0, 57]",pick up the blue tongs from the table with the left hand and place them into the tupperware,57
+basic_pick_place/139/0-44,pick and place,object,"[0, 44]",pick up the white lego from the gray tupperware with the right hand and place it on the metal tray,44
+basic_pick_place/9351/0-51,pick and place,object,"[0, 51]",pick up the black screwdriver from the metal table and place it in the speaker case,51
+basic_pick_place/569/0-75,pick and place,object,"[0, 75]",pick up the pink block from the table with the right hand and place it in the blue bowl,75
+basic_pick_place/2451/0-64,pick and place,object,"[0, 64]",pick up the jenga block from the light blue bowl with the right hand and place it into the orange bowl,64
+basic_pick_place/4759/0-44,pick and place,object,"[0, 44]",pick up a blue cooking tong from the metal table and place it in a speaker case,44
+basic_pick_place/182/0-31,pick and place,object,"[0, 31]",pick up the brown egg from the wood table with the right hand and place it into the yellow bowl,31
+basic_pick_place/9991/0-39,pick and place,object,"[0, 39]",pick up the red strawberry from the baking tray and place it in the bowl,39
+basic_pick_place/2446/0-44,pick and place,object,"[0, 44]",pick up the orange carrot from the table with the left hand and place it into the green bowl,44
+basic_pick_place/2679/0-74,pick and place,object,"[0, 74]",pick up a black donut block from the table and place it in the purple scoop,74
+basic_pick_place/570/0-66,pick and place,object,"[0, 66]",pick up the blue block from the light blue bowl with the right hand and place it on the tray,66
+basic_pick_place/8066/0-41,pick and place,object,"[0, 41]",pick up the white egg from the table with the right hand and place it into the yellow bowl,41
+basic_pick_place/8563/0-47,pick and place,object,"[0, 47]",pick up the blue plushie from the table with the left hand and place it in the green plate,47
+basic_pick_place/5401/0-69,pick and place,object,"[0, 69]",pick up a red screwdriver from the metal table and place it on the baking tray,69
+basic_pick_place/9586/0-55,pick and place,object,"[0, 55]",pick up the green grapes from the metal table with the right hand and place them on the green plate,55
+basic_pick_place/640/0-21,pick and place,object,"[0, 21]",pick up the purple teacup from the table with the right hand and place it on the yellow bowl,21
+basic_pick_place/515/0-158,pick and place,object,"[0, 158]",pick up the tennis ball from the black case with the right hand and place it on the cardboard lid,158
+basic_pick_place/6468/0-46,pick and place,object,"[0, 46]",pick up the blue plushie from the table with the left hand and place it in the green plate,46
+basic_pick_place/2540/0-63,pick and place,object,"[0, 63]",pick up a yellow builder duck from the table and place it onto the red plate,63
+basic_pick_place/5288/0-50,pick and place,object,"[0, 50]",pick up the big yellow block from the table with the right hand and place it on the gray bowl,50
+basic_pick_place/1512/0-44,pick and place,object,"[0, 44]",pick up the yellow banana from the wooden table with the right hand and place it on the green plate,44
+basic_pick_place/2254/0-42,pick and place,object,"[0, 42]",pick up the lime from the gray plate with the right hand and place it on the tupperwear,42
+basic_pick_place/3689/0-26,pick and place,object,"[0, 26]",pick up the red strawberry from the table with the left hand and place it in the green bowl,26
+basic_pick_place/3536/0-34,pick and place,object,"[0, 34]",pick up a brown ruler from the metal table and place it in the tool box,34
+basic_pick_place/8031/0-31,pick and place,object,"[0, 31]",pick up the clear safety glasses from the metal table and place them on the plate,31
+basic_pick_place/9532/0-28,pick and place,object,"[0, 28]",pick up a multi-color rubik's cube from the metal table and place it in the drawer,28
+basic_pick_place/8035/0-47,pick and place,object,"[0, 47]",pick up the white plushie from the table with the right hand and place it on the blue plate,47
+basic_pick_place/1087/0-24,pick and place,object,"[0, 24]",pick up a blue lego brick from the table and place it on a lid,24
+basic_pick_place/2285/0-68,pick and place,object,"[0, 68]",pick up the yellow hippo from the table and place it into the turquoise bowl,68
+basic_pick_place/2761/0-86,pick and place,object,"[0, 86]",pick up an ice cube from the table and place it onto the blue plate,86
+basic_pick_place/3473/0-92,pick and place,object,"[0, 92]",pick up the red cherry from the table and place it in the utensil drying rack,92
+basic_pick_place/4703/0-62,pick and place,object,"[0, 62]",pick up the blue plushie from the table with the right hand and place it in the white dustpan,62
+basic_pick_place/6659/0-32,pick and place,object,"[0, 32]",pick up the cherries from the table with the right hand and place them into the orange bowl,32
+basic_pick_place/6154/0-71,pick and place,object,"[0, 71]",pick up the brown duck from the metal table with the right hand and place it in the gray bowl,71
+basic_pick_place/427/0-30,pick and place,object,"[0, 30]",pick up a white lego brick from the table and place it on a baking tray,30
+basic_pick_place/3990/0-39,pick and place,object,"[0, 39]",pick up the red strawberry from the table with the right hand and place it in the pink bowl,39
+basic_pick_place/6264/0-43,pick and place,object,"[0, 43]",pick up the croissant from the table with the left hand and place it into the yellow bowl,43
+basic_pick_place/3263/0-32,pick and place,object,"[0, 32]",pick up the croissant from the table with the left hand and place it into the yellow bowl,32
+basic_pick_place/6350/0-69,pick and place,object,"[0, 69]",pick up a brown tropical duck from the table and place it in the green bowl,69
+basic_pick_place/2967/0-40,pick and place,object,"[0, 40]",pick up the brown egg from the blue plate with the right hand and place it in the gray bowl,40
+basic_pick_place/6410/0-32,pick and place,object,"[0, 32]",pick up the gray brush from the gray tray with the right hand and place it on the clear tupperware,32
+basic_pick_place/4676/0-98,pick and place,object,"[0, 98]",pick up a brown goat plush from the table and place it in the yellow bowl,98
+basic_pick_place/9167/0-21,pick and place,object,"[0, 21]",pick up the beige and blue and red block from the table with the right hand and place it in the green bowl,21
+basic_pick_place/7330/0-82,pick and place,object,"[0, 82]",pick up the green triangle from the table with the right hand and place it in the blue bowl,82
+basic_pick_place/5240/0-39,pick and place,object,"[0, 39]",pick up the brown plushie from the yellow plate with the right hand and place it on the orange bowl,39
+basic_pick_place/4168/0-39,pick and place,object,"[0, 39]",pick up the white domino from the wood table with the right hand and place it on the gray tupperware,39
+basic_pick_place/4795/0-71,pick and place,object,"[0, 71]",pick up the red block from the table with the right hand and place it in the blue bowl,71
+basic_pick_place/6392/0-35,pick and place,object,"[0, 35]",pick up the pink duck from the table with the right hand and place it onto the green plate,35
+basic_pick_place/9928/0-53,pick and place,object,"[0, 53]",pick up the yellow pepper from the table with the right hand and place it in the yellow bowl,53
+basic_pick_place/8001/0-59,pick and place,object,"[0, 59]",pick up the apple from the tupperwear with the right hand and place it on the gray plate,59
+basic_pick_place/301/0-30,pick and place,object,"[0, 30]",pick up the mango from the table with the right hand and place it on the blue bowl,30
+basic_pick_place/5431/0-31,pick and place,object,"[0, 31]",pick up the purple sticky notes from the metal table and place them in the bowl,31
+basic_pick_place/5819/0-33,pick and place,object,"[0, 33]",pick up the brown egg from the wood table with the right hand and place it into the yellow bowl,33
+basic_pick_place/7030/0-59,pick and place,object,"[0, 59]",pick up the white domino from the metal table with the right hand and place it in the white dustpan,59
+basic_pick_place/8713/0-28,pick and place,object,"[0, 28]",pick up the deep purple plum from the table with the right hand and place it into the green bowl,28
+basic_pick_place/5114/0-42,pick and place,object,"[0, 42]",pick up the big blue block from the table with the right hand and place it on the gray bowl,42
+basic_pick_place/7812/0-57,pick and place,object,"[0, 57]",pick up a gray rabbit plush from the yellow bowl and place it in the container,57
+basic_pick_place/8915/0-62,pick and place,object,"[0, 62]",pick up the blue cube from the wood table with the right hand and place it on the yellow plate,62
+basic_pick_place/7364/0-81,pick and place,object,"[0, 81]",pick up a yellow mummy duck from the blue bowl and place it in the small container,81
+basic_pick_place/3186/0-50,pick and place,object,"[0, 50]",pick up the yellow block from the table with the right hand and place it in the white dustpan,50
+basic_pick_place/1537/0-56,pick and place,object,"[0, 56]",pick up a yellow builder duck from the table and place it onto the red plate,56
+basic_pick_place/4956/0-157,pick and place,object,"[0, 157]",pick up the tennis ball from the black case with the right hand and place it on the cardboard lid,157
+basic_pick_place/3082/0-42,pick and place,object,"[0, 42]",pick up the cherries from the table with the right hand and place them into the orange bowl,42
+basic_pick_place/2515/0-43,pick and place,object,"[0, 43]",pick up the cherries from the table with the right hand and place them into the orange bowl,43
+basic_pick_place/6488/0-43,pick and place,object,"[0, 43]",pick up the white duck from the tupperwear with the right hand and place it on the gray bowl,43
+basic_pick_place/5693/0-59,pick and place,object,"[0, 59]",pick up the purple duck from the table with the right hand and place it in the yellow plate,59
+basic_pick_place/7676/0-52,pick and place,object,"[0, 52]",pick up the yellow plushie from the table with the right hand and place it in the gray bowl,52
+basic_pick_place/2668/0-44,pick and place,object,"[0, 44]",pick up the green block from the blue bowl with the right hand and place it in the gray bowl,44
+basic_pick_place/5836/0-38,pick and place,object,"[0, 38]",pick up the blue sponge from the gray plate with the right hand and place it on the tupperwear,38
+basic_pick_place/5439/0-38,pick and place,object,"[0, 38]",pick up the pink duck from the table with the right hand and place it onto the green plate,38
+basic_pick_place/5335/0-125,pick and place,object,"[0, 125]",pick up the black and yellow tape measure from the metal table and place it into the black case,125
+basic_pick_place/3058/0-35,pick and place,object,"[0, 35]",pick up the brown egg from the table with the right hand and place it into the orange bowl,35
+basic_pick_place/485/0-43,pick and place,object,"[0, 43]",pick up a white box of staples from the drawer and place it in a box,43
+basic_pick_place/3558/0-63,pick and place,object,"[0, 63]",pick up an orange heart block from the table and place it in the turquoise bowl,63
+basic_pick_place/8308/0-14,pick and place,object,"[0, 14]",pick up the brown block from the wood table with the right hand and place it into the gray bowl,14
+basic_pick_place/4205/0-37,pick and place,object,"[0, 37]",pick up a black stapler from the metal table and place it in a speaker case,37
+basic_pick_place/5017/0-47,pick and place,object,"[0, 47]",pick up the red toy screwdriver from the table with the right hand and place it on the baking tray,47
+basic_pick_place/3065/0-26,pick and place,object,"[0, 26]",pick up the pink tea cup from the table with the right hand and place it on the green bowl,26
+basic_pick_place/5576/0-21,pick and place,object,"[0, 21]",pick up the gray duck from the table with the right hand and place it on the green bowl,21
+basic_pick_place/7040/0-142,pick and place,object,"[0, 142]",pick up the rubik's cube from the cardboard lid with the right hand and place it on the black case,142
+basic_pick_place/4007/0-29,pick and place,object,"[0, 29]",pick up the sanitizer from the wooden table with the right hand and place it on the small plate,29
+basic_pick_place/4940/0-23,pick and place,object,"[0, 23]",pick up the brown block from the wood table with the right hand and place it into the gray bowl,23
+basic_pick_place/902/0-42,pick and place,object,"[0, 42]",pick up the bread slice from the table with the right hand and place it into the blue bowl,42
+basic_pick_place/2892/0-21,pick and place,object,"[0, 21]",pick up the brown block from the wood table with the right hand and place it into the gray bowl,21
+basic_pick_place/6329/0-59,pick and place,object,"[0, 59]",pick up a red screwdriver from the metal table and place it on the baking tray,59
+basic_pick_place/7052/0-140,pick and place,object,"[0, 140]",pick up the black pen from the yellow cup with the right hand and place it in the orange bowl,140
+basic_pick_place/8747/0-35,pick and place,object,"[0, 35]",pick up the gray brush from the gray tray with the right hand and place it on the clear tupperware,35
+basic_pick_place/5717/0-61,pick and place,object,"[0, 61]",pick up the block from the wooden table with the right hand and place it on the clear tupperwear,61
+basic_pick_place/9408/0-85,pick and place,object,"[0, 85]",pick up a pink macaron from the table and place it onto the yellow plate,85
+basic_pick_place/3044/0-32,pick and place,object,"[0, 32]",pick up the blue slime from the wooden table with the right hand and place it into the yellow bowl,32
+basic_pick_place/4632/0-38,pick and place,object,"[0, 38]",pick up a brown ruler from the metal table and place it in the tool box,38
+basic_pick_place/6416/0-52,pick and place,object,"[0, 52]",pick up a yellow hippo from the metal table and place it into a tupperware,52
+basic_pick_place/3272/0-43,pick and place,object,"[0, 43]",pick up the gray duck from the table with the right hand and place it in the green bowl,43
+basic_pick_place/3557/0-33,pick and place,object,"[0, 33]",pick up the gray plushie from the wooden table with the right hand and place it into the green bowl,33
+basic_pick_place/41/0-38,pick and place,object,"[0, 38]",pick up a black computer mouse from the metal table and place it in a small box,38
+basic_pick_place/4578/0-43,pick and place,object,"[0, 43]",pick up the black wheel from the metal table with the right hand and place it in the white dustpan,43
+basic_pick_place/611/0-70,pick and place,object,"[0, 70]",pick up a pink duck from the sweeper and place it in the container,70
+basic_pick_place/1226/0-43,pick and place,object,"[0, 43]",pick up the beige jenga block from the table with the right hand and place it in the green bowl,43
+basic_pick_place/9820/0-27,pick and place,object,"[0, 27]",pick up the yellow duck from the table with the right hand and place it into the green bowl,27
+basic_pick_place/7600/0-29,pick and place,object,"[0, 29]",pick up a yellow cup from the table and place it on a baking tray,29
+basic_pick_place/758/0-42,pick and place,object,"[0, 42]",pick up the purple grape from the wooden table with the right hand and place it on the clear tupperwear,42
+basic_pick_place/9360/0-29,pick and place,object,"[0, 29]",pick up the brown egg from the wood table with the right hand and place it into the yellow bowl,29
+basic_pick_place/4216/0-65,pick and place,object,"[0, 65]",pick up a blue lego block from the table and place it in the purple scoop,65
+basic_pick_place/3122/0-34,pick and place,object,"[0, 34]",pick up a grey remote from the metal table and place it in a tub,34
+basic_pick_place/7381/0-59,pick and place,object,"[0, 59]",pick up a yellow mummy duck from the blue bowl and place it in the small container,59
+basic_pick_place/5254/0-26,pick and place,object,"[0, 26]",pick up the mango from the table with the right hand and place it on the blue bowl,26
+basic_pick_place/4050/0-53,pick and place,object,"[0, 53]",pick up the blue block from the table with the right hand and place it onto the green plate,53
+basic_pick_place/5856/0-56,pick and place,object,"[0, 56]",pick up the slime from the yellow bowl with the right hand and place it on the clear tupperwear,56
+basic_pick_place/5378/0-35,pick and place,object,"[0, 35]",pick up the white egg from the wooden table with the right hand and place it into the yellow bowl,35
+basic_pick_place/3591/0-56,pick and place,object,"[0, 56]",pick up the ice cube from the wooden table with the right hand and place it on the tupperwear,56
+basic_pick_place/8622/0-40,pick and place,object,"[0, 40]",pick up the brown stuffed animal from the metal table and place it into the tupperware,40
+basic_pick_place/6921/0-72,pick and place,object,"[0, 72]",pick up the black tube from the wood table with the right hand and place it in the gray bowl,72
+basic_pick_place/7792/0-45,pick and place,object,"[0, 45]",pick up the blue lego from the gray plate with the right hand and place it on the tupperwear,45
+basic_pick_place/2479/0-124,pick and place,object,"[0, 124]",pick up the thera tears from the table and place it in the dark blue bowl,124
+basic_pick_place/8287/0-47,pick and place,object,"[0, 47]",pick up the brown duck from the table with the right hand and place it on the blue plate,47
+basic_pick_place/1946/0-42,pick and place,object,"[0, 42]",pick up a yellow mustard bottle from the metal table and place it in a tupperware,42
+basic_pick_place/6759/0-38,pick and place,object,"[0, 38]",pick up the white airpods from the metal table and place them into the tupperware,38
+basic_pick_place/5460/0-44,pick and place,object,"[0, 44]",pick up the pink bunny from the wooden table with the right hand and place it on the tray,44
+basic_pick_place/3199/0-25,pick and place,object,"[0, 25]",pick up the deep purple plum from the table with the right hand and place it into the green bowl,25
+basic_pick_place/5209/0-41,pick and place,object,"[0, 41]",pick up the bread slice from the table with the right hand and place it into the blue bowl,41
+basic_pick_place/8937/0-35,pick and place,object,"[0, 35]",pick up a white usb from the cup and place it in the bowl,35
+basic_pick_place/8353/0-31,pick and place,object,"[0, 31]",pick up the red grapes from the metal bowl with the right hand and place them on the black plate,31
+basic_pick_place/5062/0-41,pick and place,object,"[0, 41]",pick up the red grapes from the metal bowl with the right hand and place them on the black plate,41
+basic_pick_place/2248/0-56,pick and place,object,"[0, 56]",pick up the lime from the gray bowl with the right hand and place it on the tupperwear,56
+basic_pick_place/3983/0-84,pick and place,object,"[0, 84]",pick up the silver lock from the gray bowl with the left hand and place it in the blue bowl,84
+basic_pick_place/900/0-35,pick and place,object,"[0, 35]",pick up the brown donut from the baking tray and place it in the bowl,35
+basic_pick_place/836/0-38,pick and place,object,"[0, 38]",pick up the yellow fry from the table with the right hand and place it into the red cup,38
+basic_pick_place/636/0-41,pick and place,object,"[0, 41]",pick up the green dice from the metal table with the right hand and place it in the blue plate,41
+basic_pick_place/2246/0-46,pick and place,object,"[0, 46]",pick up a grey remote from a speaker case and place it in a black box,46
+basic_pick_place/7358/0-50,pick and place,object,"[0, 50]",pick up the leaf from the tupperwear with the right hand and place it on the gray plate,50
+basic_pick_place/381/0-49,pick and place,object,"[0, 49]",pick up the brown plushie from the table with the right hand and place it onto the blue plate,49
+basic_pick_place/1522/0-31,pick and place,object,"[0, 31]",pick up the brown bread from the metal table and place it in the bowl,31
+basic_pick_place/8682/0-24,pick and place,object,"[0, 24]",pick up the purple teacup from the table with the right hand and place it on the yellow bowl,24
+basic_pick_place/9128/0-34,pick and place,object,"[0, 34]",pick up the big blue block from the table with the right hand and place it on the gray bowl,34
+basic_pick_place/8999/0-20,pick and place,object,"[0, 20]",pick up the yellow banana from the table with the right hand and place it in the green bowl,20
+basic_pick_place/1545/0-43,pick and place,object,"[0, 43]",pick up the green wooden piece from the metal table with the right hand and place it in the white dustpan,43
+basic_pick_place/5553/0-44,pick and place,object,"[0, 44]",pick up the white domino from the wood table with the right hand and place it on the gray tupperware,44
+basic_pick_place/4449/0-39,pick and place,object,"[0, 39]",pick up the buddha from the wooden table with the right hand and place it in the gray bowl,39
+basic_pick_place/7367/0-65,pick and place,object,"[0, 65]",pick up a pink duck from the sweeper and place it in the container,65
+basic_pick_place/6576/0-34,pick and place,object,"[0, 34]",pick up the white domino from the wood table with the right hand and place it on the gray tupperware,34
+basic_pick_place/8284/0-46,pick and place,object,"[0, 46]",pick up the brown stuffed animal from the metal table and place it into the tupperware,46
+basic_pick_place/7317/0-40,pick and place,object,"[0, 40]",pick up the ice cube from the red cup with the right hand and place it on the wooden table,40
+basic_pick_place/1154/0-80,pick and place,object,"[0, 80]",pick up a white box of tape from the metal table and place it on the baking tray,80
+basic_pick_place/7891/0-22,pick and place,object,"[0, 22]",pick up the brown block from the wood table with the right hand and place it into the gray bowl,22
+basic_pick_place/3493/0-34,pick and place,object,"[0, 34]",pick up the brown donut from the baking tray and place it in the bowl,34
+basic_pick_place/3768/0-79,pick and place,object,"[0, 79]",pick up the red crab from the gray tray and place it into the blue bowl,79
+basic_pick_place/7388/0-59,pick and place,object,"[0, 59]",pick up a red tomato from a yellow plate and place it in the green plate,59
+basic_pick_place/7785/0-81,pick and place,object,"[0, 81]",pick up a green magnetic square from the green bowl and place it on the large container lid,81
+basic_pick_place/1342/0-33,pick and place,object,"[0, 33]",pick up the yellow duck from the table with the right hand and place it into the green bowl,33
+basic_pick_place/4024/0-58,pick and place,object,"[0, 58]",pick up the blue tongs from the table with the left hand and place them into the tupperware,58
+basic_pick_place/9395/0-21,pick and place,object,"[0, 21]",pick up the blue star toy block from the table with the right hand and place it into the green bowl,21
+basic_pick_place/5813/0-33,pick and place,object,"[0, 33]",pick up a white and red box of tape from the metal table and place it on a plate,33
+basic_pick_place/8698/0-41,pick and place,object,"[0, 41]",pick up a silver padlock from the metal table and place it in a tupperware,41
+basic_pick_place/4539/0-69,pick and place,object,"[0, 69]",pick up a magnetic ring from the table and place it in the pink bowl,69
+basic_pick_place/2890/0-64,pick and place,object,"[0, 64]",pick up a yellow mummy duck from the blue bowl and place it in the small container,64
+basic_pick_place/4397/0-34,pick and place,object,"[0, 34]",pick up the clear safety glasses from the metal table and place them on the plate,34
+basic_pick_place/6719/0-64,pick and place,object,"[0, 64]",pick up a red tomato from a yellow plate and place it in the green plate,64
+basic_pick_place/4412/0-69,pick and place,object,"[0, 69]",pick up the yellow block from the table with the right hand and place it in the white dustpan,69
+basic_pick_place/1373/0-38,pick and place,object,"[0, 38]",pick up the brown stuffed animal from the metal table and place it into the tupperware,38
+basic_pick_place/4672/0-66,pick and place,object,"[0, 66]",pick up the pink plushie from the table with the right hand and place it onto the yellow plate,66
+basic_pick_place/5141/0-31,pick and place,object,"[0, 31]",pick up the white ring from the metal table and place it in the tupperware,31
+basic_pick_place/4078/0-56,pick and place,object,"[0, 56]",pick up the blue block from the table with the right hand and place it onto the green plate,56
+basic_pick_place/8021/0-151,pick and place,object,"[0, 151]",pick up the donut from the gray tray with the left hand and place it on the red plate,151
+basic_pick_place/3484/0-29,pick and place,object,"[0, 29]",pick up the red grapes from the metal bowl with the right hand and place them on the black plate,29
+basic_pick_place/3670/0-32,pick and place,object,"[0, 32]",pick up the wooden block from the gray tray with the right hand and place it on the clear tupperware,32
+basic_pick_place/7006/0-63,pick and place,object,"[0, 63]",pick up the white egg from the blue bowl with the right hand and place it into the gray tupperware,63
+basic_pick_place/403/0-22,pick and place,object,"[0, 22]",pick up the red and beige screw from the table with the right hand and place it into the green bowl,22
+basic_pick_place/6836/0-35,pick and place,object,"[0, 35]",pick up the green dice from the table with the right hand and place it into the green bowl,35
+basic_pick_place/1753/0-60,pick and place,object,"[0, 60]",pick up a green hexagon block from the table and place it in the jar lid,60
+basic_pick_place/620/0-154,pick and place,object,"[0, 154]",pick up the hand sanitizer bottle from the pink bowl with the right hand and place it on the gray tray,154
+basic_pick_place/2198/0-41,pick and place,object,"[0, 41]",pick up the blue block from the wooden table with the right hand and place it on the green plate,41
+basic_pick_place/4770/0-31,pick and place,object,"[0, 31]",pick up the blue dice box from the table with the right hand and place it in the tupperware,31
+basic_pick_place/4933/0-22,pick and place,object,"[0, 22]",pick up the red strawberry from the table with the left hand and place it in the green bowl,22
+basic_pick_place/9298/0-113,pick and place,object,"[0, 113]",pick up a brown egg from a black pot and place it on a yellow plate,113
+basic_pick_place/9230/0-25,pick and place,object,"[0, 25]",pick up the white box from the wood table with the right hand and place it on the gray bowl,25
+basic_pick_place/8521/0-47,pick and place,object,"[0, 47]",pick up the brown plushie from the yellow plate with the right hand and place it on the orange bowl,47
+basic_pick_place/7827/0-41,pick and place,object,"[0, 41]",pick up a transparent roll of tape from the metal table and place it on a plate,41
+basic_pick_place/4792/0-35,pick and place,object,"[0, 35]",pick up the blue scrub from the table with the right hand and place it in the pink bowl,35
+basic_pick_place/7662/0-32,pick and place,object,"[0, 32]",pick up a red lego brick from the metal table and place it in a small box,32
+basic_pick_place/770/0-52,pick and place,object,"[0, 52]",pick up a black computer mouse from the metal table and place it in a small box,52
+basic_pick_place/2163/0-72,pick and place,object,"[0, 72]",pick up the screwdriver from the tray with the right hand and place it on the yellow plate,72
+basic_pick_place/7653/0-29,pick and place,object,"[0, 29]",pick up the purple sticky notes from the metal table and place them in the bowl,29
+basic_pick_place/471/0-24,pick and place,object,"[0, 24]",pick up the white ring from the metal table and place it in the tupperware,24
+basic_pick_place/3503/0-31,pick and place,object,"[0, 31]",pick up a red lego brick from the metal table and place it in a small box,31
+basic_pick_place/6890/0-59,pick and place,object,"[0, 59]",pick up the bread from the orange bowl with the right hand and place it on the clear tupperwear,59
+basic_pick_place/9188/0-44,pick and place,object,"[0, 44]",pick up the red strawberry from the gray tupperware with the right hand and place it into the blue bowl,44
+basic_pick_place/5968/0-48,pick and place,object,"[0, 48]",pick up a jenga block from the table and place it in the pink bowl,48
+basic_pick_place/6805/0-78,pick and place,object,"[0, 78]",pick up the pink block from the table with the right hand and place it in the blue bowl,78
+basic_pick_place/6008/0-31,pick and place,object,"[0, 31]",pick up a grey remote from the metal table and place it in a tub,31
+basic_pick_place/1706/0-70,pick and place,object,"[0, 70]",pick up the red block from the table with the right hand and place it in the blue bowl,70
+basic_pick_place/4213/0-37,pick and place,object,"[0, 37]",pick up the blue dice box from the table with the right hand and place it in the tupperware,37
+basic_pick_place/1926/0-24,pick and place,object,"[0, 24]",pick up the yellow duck from the table with the right hand and place it into the green bowl,24
+basic_pick_place/928/0-24,pick and place,object,"[0, 24]",pick up a yellow rubber duck from the metal table and place it in the bowl,24
+basic_pick_place/7901/0-58,pick and place,object,"[0, 58]",pick up the red strawberry from the gray tupperware with the right hand and place it into the blue bowl,58
+basic_pick_place/8322/0-41,pick and place,object,"[0, 41]",pick up the red block from the table with the right hand and place it in the blue bowl,41
+basic_pick_place/1624/0-58,pick and place,object,"[0, 58]",pick up the green lego from the yellow plate with the right hand and place it on the tray,58
+basic_pick_place/4517/0-25,pick and place,object,"[0, 25]",pick up the blue lego block from the table with the right hand and place it into the green bowl,25
+basic_pick_place/7474/0-48,pick and place,object,"[0, 48]",pick up a brown piece of bread from the baking tray and place it in a tupperware,48
+basic_pick_place/1525/0-63,pick and place,object,"[0, 63]",pick up the light blue slime box from the table with the right hand and place it in the pink bowl,63
+basic_pick_place/2846/0-59,pick and place,object,"[0, 59]",pick up a white airpods case from the metal table and place it in the dresser,59
+basic_pick_place/7015/0-81,pick and place,object,"[0, 81]",pick up a pink teacup from the table and place it in the yellow bowl,81
+basic_pick_place/7817/0-46,pick and place,object,"[0, 46]",pick up the domino from the wooden table with the right hand and place it on the small plate,46
+basic_pick_place/7274/0-22,pick and place,object,"[0, 22]",pick up the gray duck from the table with the right hand and place it on the green bowl,22
+basic_pick_place/6627/0-57,pick and place,object,"[0, 57]",pick up a green hexagon block from the table and place it in the jar lid,57
+basic_pick_place/7271/0-51,pick and place,object,"[0, 51]",pick up the yellow duck from the table with the right hand and place it in the pink bowl,51
+basic_pick_place/5785/0-25,pick and place,object,"[0, 25]",pick up the brown chess piece from the wood table with the right hand and place it into the yellow bowl,25
+basic_pick_place/8304/0-33,pick and place,object,"[0, 33]",pick up the brown duck from the table with the right hand and place it on the blue plate,33
+basic_pick_place/5519/0-31,pick and place,object,"[0, 31]",pick up the blue dice box from the table with the left hand and place it on the gray plate,31
+basic_pick_place/882/0-68,pick and place,object,"[0, 68]",pick up a green dice from the large container lid and place it in the utensil dry rack,68
+basic_pick_place/2056/0-54,pick and place,object,"[0, 54]",pick up the yellow duck from the table with the right hand and place it in the orange bowl,54
+basic_pick_place/125/0-80,pick and place,object,"[0, 80]",pick up a yellow dishsoap from the table and place it in the blue bowl,80
+basic_pick_place/6322/0-46,pick and place,object,"[0, 46]",pick up the white plushie from the table with the right hand and place it on the blue plate,46
+basic_pick_place/5812/0-52,pick and place,object,"[0, 52]",pick up the white domino from the metal table with the right hand and place it in the white dustpan,52
+basic_pick_place/7669/0-55,pick and place,object,"[0, 55]",pick up the blue cube from the wood table with the right hand and place it on the yellow plate,55
+basic_pick_place/5446/0-136,pick and place,object,"[0, 136]",pick up the rubber duck from the white dustpan with the right hand and place it on the purple scooper,136
+basic_pick_place/2695/0-53,pick and place,object,"[0, 53]",pick up the ice cube from the tupperwear with the right hand and place it on the gray plate,53
+basic_pick_place/9699/0-33,pick and place,object,"[0, 33]",pick up the blue scrub from the metal table with the right hand and place it onto the yellow plate,33
+basic_pick_place/3156/0-30,pick and place,object,"[0, 30]",pick up a grey remote from the metal table and place it in a tub,30
+basic_pick_place/2260/0-57,pick and place,object,"[0, 57]",pick up the pink block from the table with the right hand and place it in the blue bowl,57
+basic_pick_place/1618/0-31,pick and place,object,"[0, 31]",pick up a white laptop charger from the metal table and place it in the drawer,31
+basic_pick_place/7003/0-54,pick and place,object,"[0, 54]",pick up the ice cube from the gray bowl with the right hand and place it on the green plate,54
+basic_pick_place/8013/0-111,pick and place,object,"[0, 111]",pick up a gray duck from the table and place it in the blue pan,111
+basic_pick_place/4248/0-26,pick and place,object,"[0, 26]",pick up a yellow die from the metal table and place it into a tub,26
+basic_pick_place/5422/0-59,pick and place,object,"[0, 59]",pick up the yellow plushie from the table with the right hand and place it in the gray bowl,59
+basic_pick_place/1257/0-30,pick and place,object,"[0, 30]",pick up the beige jenga from the table with the right hand and place it in the green bowl,30
+basic_pick_place/9069/0-62,pick and place,object,"[0, 62]",pick up a white box of tape from the metal table and place it on the baking tray,62
+basic_pick_place/6431/0-47,pick and place,object,"[0, 47]",pick up the yellow soap dispenser from the table with the right hand and place it in the blue bowl,47
+basic_pick_place/972/0-58,pick and place,object,"[0, 58]",pick up the white plushie from the table with the right hand and place it onto the blue plate,58
+basic_pick_place/9812/0-25,pick and place,object,"[0, 25]",pick up the purple sticky notes from the metal table and place them in the bowl,25
+basic_pick_place/3743/0-57,pick and place,object,"[0, 57]",pick up the yellow duck from the table with the right hand and place it onto the green plate,57
+basic_pick_place/6427/0-31,pick and place,object,"[0, 31]",pick up the blue cylinder from the wood table with the right hand and place it into the clear tupperware,31
+basic_pick_place/9420/0-39,pick and place,object,"[0, 39]",pick up the brown donut from the wood table with the right hand and place it into the gray bowl,39
+basic_pick_place/470/0-24,pick and place,object,"[0, 24]",pick up the beige and red screw from the table with the right hand and place it into the green bowl,24
+basic_pick_place/7400/0-64,pick and place,object,"[0, 64]",pick up a purple block from a blue pot and place it in the blue bowl,64
+basic_pick_place/1488/0-44,pick and place,object,"[0, 44]",pick up the ice cube from the red cup with the right hand and place it on the wooden table,44
+basic_pick_place/9750/0-40,pick and place,object,"[0, 40]",pick up the teacup from the table with the right hand and place it on the yellow bowl,40
+basic_pick_place/2686/0-165,pick and place,object,"[0, 165]",pick up the lime from the yellow bowl with the right hand and place it on the transparent tupperware,165
+basic_pick_place/707/0-45,pick and place,object,"[0, 45]",pick up a white box of staples from the drawer and place it in a box,45
+basic_pick_place/3563/0-32,pick and place,object,"[0, 32]",pick up the blue scrub from the table with the right hand and place it in the pink bowl,32
+basic_pick_place/9397/0-61,pick and place,object,"[0, 61]",pick up the iphone from the clear tupperwear with the right hand and place it on the orange bowl,61
+basic_pick_place/8673/0-43,pick and place,object,"[0, 43]",pick up the brown egg from the teacup and place it on the plate,43
+basic_pick_place/2926/0-26,pick and place,object,"[0, 26]",pick up the yellow block from the table with the right hand and place it onto the blue plate,26
+basic_pick_place/3027/0-54,pick and place,object,"[0, 54]",pick up the white block from the table with the right hand and place it in the blue bowl,54
+basic_pick_place/6974/0-44,pick and place,object,"[0, 44]",pick up a pink donut from the baking tray and place it in a tupperware,44
+basic_pick_place/6450/0-44,pick and place,object,"[0, 44]",pick up a clear jar from the metal table and place it on a plate,44
+basic_pick_place/4485/0-23,pick and place,object,"[0, 23]",pick up the beige dog from the table with the left hand and place it into the green bowl,23
+basic_pick_place/7623/0-23,pick and place,object,"[0, 23]",pick up a blue sponge from the metal table and place it on a lid,23
+basic_pick_place/5410/0-33,pick and place,object,"[0, 33]",pick up a yellow die from the metal table and place it into a tub,33
+basic_pick_place/4458/0-45,pick and place,object,"[0, 45]",pick up the wood block from the gray plate with the right hand and place it on the tupperwear,45
+basic_pick_place/8131/0-60,pick and place,object,"[0, 60]",pick up a yellow builder duck from the table and place it onto the red plate,60
+basic_pick_place/3538/0-35,pick and place,object,"[0, 35]","pick up the beige, red, and blue block from the table with the left hand and place it into the green bowl",35
+basic_pick_place/4263/0-150,pick and place,object,"[0, 150]",pick up the pencil from the red cup with the left hand and place it into the small blue cup,150
+basic_pick_place/9602/0-47,pick and place,object,"[0, 47]",pick up the blue block from the table with the right hand and place it onto the green plate,47
+basic_pick_place/8091/0-48,pick and place,object,"[0, 48]",pick up a white box of tape from the metal table and place it on the baking tray,48
+basic_pick_place/2809/0-69,pick and place,object,"[0, 69]",pick up a yellow dishsoap from the table and place it in the blue bowl,69
+basic_pick_place/8129/0-53,pick and place,object,"[0, 53]",pick up the donut from the gray plate with the right hand and place it on the tupperwear,53
+basic_pick_place/3945/0-70,pick and place,object,"[0, 70]",pick up the small plate from the light blue bowl with the right hand and place it into the orange bowl,70
+basic_pick_place/4834/0-62,pick and place,object,"[0, 62]",pick up a clear jar from the metal table and place it on a plate,62
+basic_pick_place/1697/0-53,pick and place,object,"[0, 53]",pick up the normal banana from the table with the left hand and place it on the turquoise bowl,53
+basic_pick_place/6582/0-48,pick and place,object,"[0, 48]",pick up a jenga block from the pink bowl and place it in the blue bowl,48
+basic_pick_place/8928/0-53,pick and place,object,"[0, 53]",pick up a brown goat plush from the table and place it in the yellow bowl,53
+basic_pick_place/8580/0-39,pick and place,object,"[0, 39]",pick up a brown egg from the teacup and place it in the bowl,39
+basic_pick_place/9782/0-34,pick and place,object,"[0, 34]",pick up the blue dice box from the table with the right hand and place it in the tupperware,34
+basic_pick_place/2400/0-39,pick and place,object,"[0, 39]","pick up the beige, red, and blue block from the table with the left hand and place it into the green bowl",39
+basic_pick_place/7261/0-138,pick and place,object,"[0, 138]",pick up the rubber duck from the white dustpan with the right hand and place it on the purple scooper,138
+basic_pick_place/5329/0-27,pick and place,object,"[0, 27]",pick up the red strawberry from the baking tray and place it in the bowl,27
+basic_pick_place/9304/0-34,pick and place,object,"[0, 34]",pick up the brown egg from the metal table and place it on the plate,34
+basic_pick_place/6081/0-13,pick and place,object,"[0, 13]",pick up the white cube from the table with the right hand and place it into the green bowl,13
+basic_pick_place/479/0-39,pick and place,object,"[0, 39]",pick up the yellow duck from the table with the right hand and place it into the green bowl,39
+basic_pick_place/1996/0-81,pick and place,object,"[0, 81]",pick up a pink donut from the table and place it in the turquoise bowl,81
+basic_pick_place/4974/0-29,pick and place,object,"[0, 29]",pick up the blue elephant from the table with the left hand and place it into the green bowl,29
+basic_pick_place/2162/0-36,pick and place,object,"[0, 36]",pick up the brown duck from the table with the right hand and place it on the blue plate,36
+basic_pick_place/3915/0-42,pick and place,object,"[0, 42]",pick up an orange ball from the metal table and place it on a plate,42
+basic_pick_place/8524/0-54,pick and place,object,"[0, 54]",pick up the small cup from the wooden table with the right hand and place it on the tupperwear,54
+basic_pick_place/5520/0-98,pick and place,object,"[0, 98]",pick up a brown egg from a black pot and place it on a yellow plate,98
+basic_pick_place/3013/0-61,pick and place,object,"[0, 61]",pick up the brown chess piece from the wood table with the right hand and place it into the yellow bowl,61
+basic_pick_place/2875/0-48,pick and place,object,"[0, 48]",pick up a red lego block from the table and place it onto the blue plate,48
+basic_pick_place/309/0-59,pick and place,object,"[0, 59]",pick up a red lego block from the table and place it onto the blue plate,59
+basic_pick_place/6252/0-36,pick and place,object,"[0, 36]",pick up the yellow banana from the wooden table with the right hand and place it on the blue plate,36
+basic_pick_place/2749/0-52,pick and place,object,"[0, 52]",pick up an ice cube from the table and place it onto the blue plate,52
+basic_pick_place/1334/0-25,pick and place,object,"[0, 25]",pick up the red and beige screw from the table with the right hand and place it into the green bowl,25
+basic_pick_place/8135/0-51,pick and place,object,"[0, 51]",pick up a black stapler from the metal table and place it in the box lid,51
+basic_pick_place/4814/0-40,pick and place,object,"[0, 40]",pick up the blue block from the wooden table with the right hand and place it on the green plate,40
+basic_pick_place/2717/0-30,pick and place,object,"[0, 30]",pick up the yellow block from the table with the right hand and place it onto the blue plate,30
+basic_pick_place/22/0-25,pick and place,object,"[0, 25]",pick up the brown donut from the wood table with the right hand and place it into the gray bowl,25
+basic_pick_place/6271/0-55,pick and place,object,"[0, 55]",pick up a yellow fish from the table and place it in the blue bowl,55
+basic_pick_place/326/0-40,pick and place,object,"[0, 40]",pick up the orange carrot from the table with the left hand and place it into the green bowl,40
+basic_pick_place/4258/0-50,pick and place,object,"[0, 50]",pick up the ice cube from the gray bowl with the right hand and place it on the green plate,50
+basic_pick_place/2552/0-77,pick and place,object,"[0, 77]",pick up the yellow block from the table with the right hand and place it in the white dustpan,77
+basic_pick_place/3918/0-62,pick and place,object,"[0, 62]",pick up the black wheel from the metal table with the right hand and place it in the white dustpan,62
+basic_pick_place/9671/0-65,pick and place,object,"[0, 65]",pick up the normal banana from the table with the left hand and place it on the turquoise bowl,65
+basic_pick_place/3179/0-27,pick and place,object,"[0, 27]",pick up the tan baguette from the wooden table with the right hand and place it into the green bowl,27
+basic_pick_place/6361/0-26,pick and place,object,"[0, 26]",pick up the deep purple plum from the table with the right hand and place it into the green bowl,26
+basic_pick_place/867/0-44,pick and place,object,"[0, 44]",pick up the gray duck from the table with the right hand and place it on the green plate,44
+basic_pick_place/7955/0-66,pick and place,object,"[0, 66]",pick up a pink duck from the sweeper and place it in the container,66
+basic_pick_place/5292/0-62,pick and place,object,"[0, 62]",pick up a red screwdriver from the metal table and place it on the baking tray,62
+basic_pick_place/6462/0-46,pick and place,object,"[0, 46]",pick up the red cherry from the table with the right hand and place it in the brown barrel,46
+basic_pick_place/9151/0-30,pick and place,object,"[0, 30]",pick up the red strawberry from the table with the left hand and place it into the green bowl,30
+basic_pick_place/134/0-30,pick and place,object,"[0, 30]",pick up the beige dog from the table with the left hand and place it into the green bowl,30
+basic_pick_place/2176/0-61,pick and place,object,"[0, 61]",pick up a red tomato from a yellow plate and place it in the green plate,61
+basic_pick_place/9334/0-137,pick and place,object,"[0, 137]",pick up the tennis ball from the silver tray with the right hand and place it in the orange bowl,137
+basic_pick_place/632/0-49,pick and place,object,"[0, 49]",pick up the jenga block from the light blue bowl with the right hand and place it into the orange bowl,49
+basic_pick_place/4337/0-55,pick and place,object,"[0, 55]",pick up a pink puppy plush from the red plate and place it in the purple scoop,55
+basic_pick_place/5394/0-141,pick and place,object,"[0, 141]",pick up the yellow banana from the clear tupperware with the right hand and place it into the blue bowl,141
+basic_pick_place/4146/0-40,pick and place,object,"[0, 40]",pick up the wood block from the table with the right hand and place it into the yellow bowl,40
+basic_pick_place/6927/0-137,pick and place,object,"[0, 137]",pick up the puzzle pieces from the wooden table with the right hand and assemble the puzzle,137
+basic_pick_place/5769/0-42,pick and place,object,"[0, 42]",pick up the purple duck from the table with the right hand and place it onto the blue plate,42
+basic_pick_place/9161/0-49,pick and place,object,"[0, 49]",pick up the brown egg from the clear tupperware with the right hand and place it into the orange bowl,49
+basic_pick_place/8559/0-72,pick and place,object,"[0, 72]",pick up the metal lid from the wood table with the right hand and place it on the gray bowl,72
+basic_pick_place/3141/0-47,pick and place,object,"[0, 47]",pick up the tennis ball from the table with the right hand and place it into the gray bowl,47
+basic_pick_place/600/0-39,pick and place,object,"[0, 39]",pick up the wood block from the gray plate with the right hand and place it on the tupperwear,39
+basic_pick_place/9148/0-33,pick and place,object,"[0, 33]",pick up the brown croissant from the metal skillet with the right hand and place it on the black plate,33
+basic_pick_place/8707/0-44,pick and place,object,"[0, 44]",pick up the blue sponge from the table with the right hand and place it on the tupperwear,44
+basic_pick_place/6700/0-43,pick and place,object,"[0, 43]",pick up the green block from the table with the right hand and place it onto the yellow plate,43
+basic_pick_place/2013/0-31,pick and place,object,"[0, 31]",pick up the blue dice box from the table with the right hand and place it in the tupperware,31
+basic_pick_place/3947/0-61,pick and place,object,"[0, 61]",pick up a small yellow banana from the table and place it in the turquoise basket,61
+basic_pick_place/8204/0-38,pick and place,object,"[0, 38]",pick up the white egg from the table with the right hand and place it into the yellow bowl,38
+basic_pick_place/8705/0-42,pick and place,object,"[0, 42]",pick up a clear jar from the metal table and place it on a plate,42
+basic_pick_place/2608/0-33,pick and place,object,"[0, 33]",pick up a white usb from the cup and place it in the bowl,33
+basic_pick_place/9979/0-64,pick and place,object,"[0, 64]",pick up the blue scrub from the metal table with the right hand and place it in the yellow plate,64
+basic_pick_place/3382/0-83,pick and place,object,"[0, 83]",pick up the red cherry from the table and place it in the utensil drying rack,83
+basic_pick_place/3575/0-77,pick and place,object,"[0, 77]",pick up a brown tropical duck from the table and place it in the green bowl,77
+basic_pick_place/7660/0-39,pick and place,object,"[0, 39]",pick up the yellow banana from the wooden table with the right hand and place it on the green plate,39
+basic_pick_place/5093/0-41,pick and place,object,"[0, 41]",pick up the pink donut from the wood table with the right hand and place it on the clear tupperware,41
+basic_pick_place/495/0-58,pick and place,object,"[0, 58]",pick up the gray duck from the table with the right hand and place it on the green plate,58
+basic_pick_place/6904/0-57,pick and place,object,"[0, 57]",pick up the green dice from the table with the right hand and place it in the yellow plate,57
+basic_pick_place/7635/0-47,pick and place,object,"[0, 47]",pick up the big yellow block from the table with the right hand and place it on the gray bowl,47
+basic_pick_place/7695/0-63,pick and place,object,"[0, 63]",pick up the gray duck from the table with the right hand and place it on the green plate,63
+basic_pick_place/5073/0-28,pick and place,object,"[0, 28]",pick up the beige and red screw from the table with the right hand and place it into the green bowl,28
+basic_pick_place/1520/0-43,pick and place,object,"[0, 43]",pick up the white box from the wood table with the right hand and place it on the gray bowl,43
+basic_pick_place/8604/0-30,pick and place,object,"[0, 30]",pick up the beige and blue and red block from the table with the right hand and place it in the green bowl,30
+basic_pick_place/8086/0-41,pick and place,object,"[0, 41]",pick up the wooden block from the gray tray with the right hand and place it on the clear tupperware,41
+basic_pick_place/4105/0-29,pick and place,object,"[0, 29]",pick up a white lego brick from the table and place it on a baking tray,29
+basic_pick_place/4125/0-107,pick and place,object,"[0, 107]",pick up the black and yellow tape measure from the metal table and place it into the black case,107
+basic_pick_place/7684/0-71,pick and place,object,"[0, 71]",pick up the green block from the blue bowl with the right hand and place it on the yellow plate,71
+basic_pick_place/4135/0-63,pick and place,object,"[0, 63]",pick up the blue dice from the table with the right hand and place it in the blue bowl,63
+basic_pick_place/5601/0-46,pick and place,object,"[0, 46]",pick up the gray screw from the table with the right hand and place it into the yellow bowl,46
+basic_pick_place/4139/0-40,pick and place,object,"[0, 40]",pick up the red cherry from the table with the right hand and place it in the brown barrel,40
+basic_pick_place/3673/0-58,pick and place,object,"[0, 58]",pick up a magnetic ring from the table and place it in the pink bowl,58
+basic_pick_place/8067/0-28,pick and place,object,"[0, 28]",pick up the beige dog from the table with the left hand and place it into the green bowl,28
+basic_pick_place/5356/0-122,pick and place,object,"[0, 122]",pick up a pink duck from the sweeper and place it in the container,122
+basic_pick_place/142/0-53,pick and place,object,"[0, 53]",pick up the orange plushie from the wooden table with the right hand and place it on the tray,53
+basic_pick_place/4980/0-52,pick and place,object,"[0, 52]",pick up the blue plushie from the table with the left hand and place it in the green plate,52
+basic_pick_place/9437/0-32,pick and place,object,"[0, 32]",pick up the orange plushie from the table with the right hand and place it in the yellow plate,32
+basic_pick_place/6910/0-36,pick and place,object,"[0, 36]",pick up the ice cube from the wooden table with the right hand and place it in the blue bowl,36
+basic_pick_place/2420/0-52,pick and place,object,"[0, 52]",pick up the yellow nurse duck from the table and place it in the orange bowl,52
+basic_pick_place/6669/0-55,pick and place,object,"[0, 55]",pick up the pink plate from the wood table with the right hand and place it on the gray tupperware,55
+basic_pick_place/1635/0-50,pick and place,object,"[0, 50]",pick up the orange plushie from the table with the right hand and place it in the yellow plate,50
+basic_pick_place/5561/0-24,pick and place,object,"[0, 24]",pick up the beige jenga from the table with the right hand and place it in the green bowl,24
+basic_pick_place/1986/0-24,pick and place,object,"[0, 24]",pick up a yellow cup from the table and place it on a baking tray,24
+basic_pick_place/6808/0-60,pick and place,object,"[0, 60]",pick up the block labeled 'a f' from the small container and place it in the blue bowl,60
+basic_pick_place/7779/0-10,pick and place,object,"[0, 10]",pick up the beige and navy toy block from the table with the right hand and place it into the green bowl,10
+basic_pick_place/8469/0-66,pick and place,object,"[0, 66]",pick up the yellow block from the table with the right hand and place it onto the green plate,66
+basic_pick_place/978/0-55,pick and place,object,"[0, 55]",pick up the red toy screwdriver from the table with the right hand and place it on the baking tray,55
+basic_pick_place/8868/0-32,pick and place,object,"[0, 32]",pick up the red strawberry from the baking tray and place it in the bowl,32
+basic_pick_place/4303/0-52,pick and place,object,"[0, 52]",pick up a green block from the metal table and place it into the tupperware,52
+basic_pick_place/6136/0-149,pick and place,object,"[0, 149]",pick up the blue dice from the purple scooper with the right hand and place it on the white dustpan,149
+basic_pick_place/8694/0-44,pick and place,object,"[0, 44]",pick up the yellow duck from the table with the right hand and place it in the white dustpan,44
+basic_pick_place/2872/0-25,pick and place,object,"[0, 25]",pick up the blue cylinder from the wood table with the right hand and place it into the clear tupperware,25
+basic_pick_place/5638/0-29,pick and place,object,"[0, 29]",pick up a white laptop charger from the metal table and place it in the drawer,29
+basic_pick_place/2283/0-51,pick and place,object,"[0, 51]",pick up a blue and green square fidget toy from the metal table and place it on the baking tray,51
+basic_pick_place/1106/0-31,pick and place,object,"[0, 31]",pick up the blue lego from the table with the left hand and place it in the green bowl,31
+basic_pick_place/6187/0-40,pick and place,object,"[0, 40]",pick up the tan baguette from the wooden table with the right hand and place it into the green bowl,40
+basic_pick_place/8600/0-28,pick and place,object,"[0, 28]",pick up the blue star toy block from the table with the right hand and place it into the green bowl,28
+basic_pick_place/503/0-37,pick and place,object,"[0, 37]",pick up the white domino from the wood table with the right hand and place it on the gray tupperware,37
+basic_pick_place/6177/0-44,pick and place,object,"[0, 44]",pick up the yellow duck from the table with the right hand and place it onto the green plate,44
+basic_pick_place/8324/0-37,pick and place,object,"[0, 37]",pick up the yellow duck from the table with the right hand and place it in the pink bowl,37
+basic_pick_place/1252/0-48,pick and place,object,"[0, 48]",pick up the red strawberry from the gray tupperware with the right hand and place it into the blue bowl,48
+basic_pick_place/9424/0-90,pick and place,object,"[0, 90]",pick up a brown elephant plush from the table and place it on the large container lid,90
+basic_pick_place/5632/0-61,pick and place,object,"[0, 61]",pick up the orange plushie from the wooden table with the right hand and place it on the tray,61
+basic_pick_place/8111/0-50,pick and place,object,"[0, 50]",pick up the black screwdriver from the metal table and place it in the speaker case,50
+basic_pick_place/7670/0-39,pick and place,object,"[0, 39]",pick up a yellow mustard bottle from the metal table and place it in a tupperware,39
+basic_pick_place/3877/0-54,pick and place,object,"[0, 54]",pick up the green wooden piece from the metal table with the right hand and place it in the white dustpan,54
+basic_pick_place/8766/0-30,pick and place,object,"[0, 30]",pick up the white lego from the gray tupperware with the right hand and place it on the metal tray,30
+basic_pick_place/589/0-44,pick and place,object,"[0, 44]",pick up a yellow mustard bottle from the metal table and place it in a tupperware,44
+basic_pick_place/3449/0-126,pick and place,object,"[0, 126]",pick up the black pen from the yellow cup with the right hand and place it in the orange bowl,126
+basic_pick_place/1324/0-37,pick and place,object,"[0, 37]",pick up the white plushie from the table with the right hand and place it on the blue plate,37
+basic_pick_place/8336/0-69,pick and place,object,"[0, 69]",pick up a blue lego block from the table and place it in the purple scoop,69
+basic_pick_place/8905/0-91,pick and place,object,"[0, 91]",pick up the beige and pink donut from the table with the left hand and place it into the green bowl,91
+basic_pick_place/8232/0-33,pick and place,object,"[0, 33]",pick up the white bread from the yellow plate with the right hand and place it on the clear tupperware,33
+basic_pick_place/4249/0-80,pick and place,object,"[0, 80]",pick up the lipton tea from the table and place it into the container,80
+basic_pick_place/5397/0-33,pick and place,object,"[0, 33]",pick up a yellow cup from the table and place it on a baking tray,33
+basic_pick_place/3361/0-32,pick and place,object,"[0, 32]",pick up the black tube from the wood table with the right hand and place it in the gray bowl,32
+basic_pick_place/8717/0-44,pick and place,object,"[0, 44]",pick up the pink duck from the table with the right hand and place it onto the green plate,44
+basic_pick_place/1703/0-87,pick and place,object,"[0, 87]",pick up the lipton tea from the table and place it into the container,87
+basic_pick_place/7147/0-76,pick and place,object,"[0, 76]",pick up a blue dice from the blue plate and place it in the clear jar,76
+basic_pick_place/7108/0-29,pick and place,object,"[0, 29]",pick up the red lego from the table with the left hand and place it in the green bowl,29
+basic_pick_place/5100/0-66,pick and place,object,"[0, 66]",pick up the black tube from the wood table with the right hand and place it in the gray bowl,66
+basic_pick_place/3902/0-28,pick and place,object,"[0, 28]",pick up the tan baguette from the wooden table with the right hand and place it into the green bowl,28
+basic_pick_place/1032/0-41,pick and place,object,"[0, 41]",pick up the black and yellow tape measure from the metal table and place it into the tupperware,41
+basic_pick_place/5261/0-38,pick and place,object,"[0, 38]",pick up the multicolor cube from the wood table with the right hand and place it in the blue bowl,38
+basic_pick_place/1918/0-66,pick and place,object,"[0, 66]",pick up the blue dice from the table with the right hand and place it in the gray bowl,66
+basic_pick_place/1666/0-33,pick and place,object,"[0, 33]",pick up the yellow fry from the table with the right hand and place it into the red cup,33
+basic_pick_place/8841/0-34,pick and place,object,"[0, 34]",pick up the yellow fry from the wooden table with the right hand and place it on the green plate,34
+basic_pick_place/2049/0-28,pick and place,object,"[0, 28]",pick up a yellow cup from the table and place it on a baking tray,28
+basic_pick_place/9429/0-81,pick and place,object,"[0, 81]",pick up a stack of white and red cards from one baking tray and place it onto the other baking tray,81
+basic_pick_place/4071/0-37,pick and place,object,"[0, 37]",pick up the blue scrub from the metal table with the right hand and place it onto the yellow plate,37
+basic_pick_place/7494/0-64,pick and place,object,"[0, 64]",pick up a brown elephant plush from the table and place it on the large container lid,64
+basic_pick_place/8130/0-69,pick and place,object,"[0, 69]",pick up a black mouse from the metal table and place it in the black case,69
+basic_pick_place/7024/0-46,pick and place,object,"[0, 46]",pick up a black usb dongle from the chess board and place it in a box,46
+basic_pick_place/6962/0-50,pick and place,object,"[0, 50]",pick up a white laptop charger from the metal table and place it in the drawer,50
+basic_pick_place/8259/0-35,pick and place,object,"[0, 35]",pick up a pink donut from the baking tray and place it in a tupperware,35
+basic_pick_place/7203/0-29,pick and place,object,"[0, 29]",pick up the yellow bread from the table with the left hand and place it in the green bowl,29
+basic_pick_place/4246/0-49,pick and place,object,"[0, 49]",pick up the domino from the table with the right hand and place it on the gray tray,49
+basic_pick_place/3356/0-39,pick and place,object,"[0, 39]",pick up the small cup from the tupperwear with the right hand and place it on the yellow bowl,39
+basic_pick_place/2354/0-72,pick and place,object,"[0, 72]",pick up a red tomato from a yellow plate and place it in the green plate,72
+basic_pick_place/720/0-30,pick and place,object,"[0, 30]",pick up the green apple from the table with the right hand and place it on the black plate,30
+basic_pick_place/742/0-144,pick and place,object,"[0, 144]",pick up the red apple from the blue bowl with the left hand and place it into the pink bowl,144
+basic_pick_place/3744/0-57,pick and place,object,"[0, 57]",pick up a pink donut from the baking tray and place it in a tupperware,57
+basic_pick_place/3368/0-64,pick and place,object,"[0, 64]",pick up a green tennis ball from a speaker case and place it in a black box,64
+basic_pick_place/3957/0-83,pick and place,object,"[0, 83]",pick up a gray rabbit plush from the yellow bowl and place it in the container,83
+basic_pick_place/8463/0-41,pick and place,object,"[0, 41]",pick up the jenga block from the wooden table with the right hand and place it on the small plate,41
+basic_pick_place/6520/0-52,pick and place,object,"[0, 52]",pick up the purple sticky notes from the metal table and place them in the bowl,52
+basic_pick_place/1686/0-57,pick and place,object,"[0, 57]",pick up a white airpods case from the metal table and place it in the dresser,57
+basic_pick_place/2936/0-50,pick and place,object,"[0, 50]",pick up a yellow screw from the table and place it in the purple scoop,50
+basic_pick_place/625/0-51,pick and place,object,"[0, 51]",pick up the white duck from the tupperwear with the right hand and place it on the gray bowl,51
+basic_pick_place/9263/0-152,pick and place,object,"[0, 152]",pick up the tennis ball from the silver tray with the right hand and place it in the orange bowl,152
+basic_pick_place/3433/0-41,pick and place,object,"[0, 41]",pick up the brown duck from the wooden table with the right hand and place it in the blue bowl,41
+basic_pick_place/2114/0-87,pick and place,object,"[0, 87]",pick up an orange lip balm from the table and place it in the green cup,87
+basic_pick_place/9686/0-29,pick and place,object,"[0, 29]",pick up the blue dice box from the table with the right hand and place it in the tupperware,29
+basic_pick_place/8348/0-34,pick and place,object,"[0, 34]",pick up a green lego brick from the chess board and place it in a box,34
+basic_pick_place/8842/0-71,pick and place,object,"[0, 71]",pick up the lipton tea from the table and place it into the container,71
+basic_pick_place/4317/0-44,pick and place,object,"[0, 44]",pick up the dark orange plush elephant from the table with the left hand and place it into the green bowl,44
+basic_pick_place/9463/0-61,pick and place,object,"[0, 61]",pick up the purell from the yellow bowl and place it on the blue plate,61
+basic_pick_place/7658/0-23,pick and place,object,"[0, 23]",pick up a blue sponge from the metal table and place it on a lid,23
+basic_pick_place/1928/0-38,pick and place,object,"[0, 38]",pick up the sanitizer from the wooden table with the right hand and place it on the yellow plate,38
+basic_pick_place/8919/0-35,pick and place,object,"[0, 35]",pick up the purple grape from the wooden table with the right hand and place it in the yellow bowl,35
+basic_pick_place/1710/0-80,pick and place,object,"[0, 80]",pick up a pink macaron from the table and place it onto the yellow plate,80
+basic_pick_place/6646/0-64,pick and place,object,"[0, 64]",pick up an orange lip balm from the table and place it in the green cup,64
+basic_pick_place/1785/0-44,pick and place,object,"[0, 44]",pick up the lime from the gray bowl with the right hand and place it on the tupperwear,44
+basic_pick_place/5913/0-22,pick and place,object,"[0, 22]",pick up the beige dog from the table with the left hand and place it into the green bowl,22
+basic_pick_place/6379/0-21,pick and place,object,"[0, 21]",pick up the white box from the wood table with the right hand and place it on the gray bowl,21
+basic_pick_place/3470/0-33,pick and place,object,"[0, 33]",pick up the brown croissant from the metal skillet with the right hand and place it on the black plate,33
+basic_pick_place/3107/0-54,pick and place,object,"[0, 54]",pick up the purell from the yellow bowl and place it on the blue plate,54
+basic_pick_place/551/0-51,pick and place,object,"[0, 51]",pick up a black computer mouse from the metal table and place it in a small box,51
+basic_pick_place/4826/0-39,pick and place,object,"[0, 39]",pick up the wood block from the wood table with the right hand and place it on the yellow plate,39
+basic_pick_place/3448/0-34,pick and place,object,"[0, 34]",pick up the beige and yellow and red toy block from the table with the right hand and place it into the green bowl,34
+basic_pick_place/8593/0-126,pick and place,object,"[0, 126]",pick up the black pen from the yellow cup with the right hand and place it in the orange bowl,126
+basic_pick_place/5328/0-77,pick and place,object,"[0, 77]",pick up a blue dice from an orange bowl and place it on the green plate,77
+basic_pick_place/7566/0-39,pick and place,object,"[0, 39]",pick up the blue dice box from the table with the left hand and place it on the gray plate,39
+basic_pick_place/3628/0-31,pick and place,object,"[0, 31]",pick up the blue scrub from the table with the right hand and place it in the pink bowl,31
+basic_pick_place/109/0-40,pick and place,object,"[0, 40]",pick up the big blue block from the table with the right hand and place it on the gray bowl,40
+basic_pick_place/3685/0-27,pick and place,object,"[0, 27]",pick up the red strawberry from the baking tray and place it in the bowl,27
+basic_pick_place/8183/0-63,pick and place,object,"[0, 63]",pick up the yellow square duck from the table and place it into the turquoise bowl,63
+basic_pick_place/1653/0-53,pick and place,object,"[0, 53]",pick up the orange semicircle shape from the table with the right hand and place it onto the green plate,53
+basic_pick_place/6760/0-29,pick and place,object,"[0, 29]",pick up the gray plushie from the wooden table with the right hand and place it into the green bowl,29
+basic_pick_place/3115/0-58,pick and place,object,"[0, 58]",pick up the yellow nurse duck from the table and place it in the orange bowl,58
+basic_pick_place/9962/0-47,pick and place,object,"[0, 47]",pick up the white block from the table with the left hand and place it into the blue bowl,47
+basic_pick_place/1707/0-65,pick and place,object,"[0, 65]",pick up the small plate from the light blue bowl with the right hand and place it into the orange bowl,65
+basic_pick_place/4553/0-75,pick and place,object,"[0, 75]",pick up a green clover block from the purple scoop and place it in the coffee lid,75
+basic_pick_place/8370/0-23,pick and place,object,"[0, 23]",pick up the green block from the table with the right hand and place it into the blue bowl,23
+basic_pick_place/3537/0-38,pick and place,object,"[0, 38]",pick up a white and red box of tape from the metal table and place it on a plate,38
+basic_pick_place/9362/0-35,pick and place,object,"[0, 35]",pick up the white plushie from the table with the right hand and place it on the blue plate,35
+basic_pick_place/1886/0-56,pick and place,object,"[0, 56]",pick up the white block from the table with the right hand and place it in the blue bowl,56
+basic_pick_place/1611/0-30,pick and place,object,"[0, 30]",pick up the blue lego from the table with the left hand and place it in the green bowl,30
+basic_pick_place/4744/0-35,pick and place,object,"[0, 35]",pick up a red lego brick from the metal table and place it in a small box,35
+basic_pick_place/5583/0-78,pick and place,object,"[0, 78]",pick up a grey remote from a speaker case and place it in a black box,78
+basic_pick_place/9325/0-53,pick and place,object,"[0, 53]",pick up the blue scrub from the metal table with the right hand and place it onto the yellow plate,53
+basic_pick_place/153/0-83,pick and place,object,"[0, 83]",pick up a large red pepper from the container lid and place it in the container,83
+basic_pick_place/8397/0-51,pick and place,object,"[0, 51]",pick up the yellow fish from the plate and place it into the blue bowl,51
+basic_pick_place/9824/0-44,pick and place,object,"[0, 44]",pick up the green grapes from the metal table with the right hand and place them on the green plate,44
+basic_pick_place/7459/0-65,pick and place,object,"[0, 65]",pick up a pink puppy plush from the red plate and place it in the purple scoop,65
+basic_pick_place/1598/0-84,pick and place,object,"[0, 84]",pick up a creamer from a green plate and place it in the orange bowl,84
+basic_pick_place/8688/0-125,pick and place,object,"[0, 125]",pick up the pencil from the red cup with the left hand and place it on the small blue cup,125
+basic_pick_place/2300/0-35,pick and place,object,"[0, 35]",pick up the white domino from the wood table with the right hand and place it on the gray tupperware,35
+basic_pick_place/3868/0-66,pick and place,object,"[0, 66]",pick up the brown plushie from the table with the right hand and place it onto the blue plate,66
+basic_pick_place/971/0-34,pick and place,object,"[0, 34]",pick up the jenga block from the wooden table with the right hand and place it on the small plate,34
+basic_pick_place/4161/0-23,pick and place,object,"[0, 23]",pick up the yellow banana from the table with the right hand and place it in the green bowl,23
+basic_pick_place/2257/0-90,pick and place,object,"[0, 90]",pick up the lipton tea from the table and place it into the container,90
+basic_pick_place/2488/0-43,pick and place,object,"[0, 43]",pick up the blue sponge from the gray plate with the right hand and place it on the tupperwear,43
+basic_pick_place/1740/0-64,pick and place,object,"[0, 64]",pick up a white sheep plush from the table and place it in the blue pan,64
+basic_pick_place/1742/0-59,pick and place,object,"[0, 59]",pick up a transparent roll of tape from the metal table and place it on a plate,59
+basic_pick_place/3438/0-32,pick and place,object,"[0, 32]",pick up the pink donut from the wood table with the right hand and place it on the clear tupperware,32
+basic_pick_place/278/0-46,pick and place,object,"[0, 46]",pick up a silver padlock from the metal table and place it in a tupperware,46
+basic_pick_place/6539/0-60,pick and place,object,"[0, 60]",pick up the yellow soap dispenser from the table with the right hand and place it in the blue bowl,60
+basic_pick_place/2898/0-26,pick and place,object,"[0, 26]",pick up the white ice cube from the blue tablecloth with the left hand and place it into the green bowl,26
+basic_pick_place/3280/0-84,pick and place,object,"[0, 84]",pick up a brown tropical duck from the table and place it in the green bowl,84
+basic_pick_place/6766/0-34,pick and place,object,"[0, 34]",pick up the purple sticky notes from the metal table and place them in the bowl,34
+basic_pick_place/9442/0-49,pick and place,object,"[0, 49]",pick up the blue tongs from the table with the left hand and place them into the tupperware,49
+basic_pick_place/2570/0-166,pick and place,object,"[0, 166]",pick up the sticky notes from the clear drawer with the right hand and place them on the black oval case,166
+basic_pick_place/2046/0-27,pick and place,object,"[0, 27]","pick up the beige, red, and blue block from the table with the right hand and place it into the green bowl",27
+basic_pick_place/4058/0-46,pick and place,object,"[0, 46]",pick up the red cherry from the table with the right hand and place it in the brown barrel,46
+basic_pick_place/2289/0-145,pick and place,object,"[0, 145]",pick up the green apple from the pink bowl with the left hand and place it into the blue bowl,145
+basic_pick_place/2411/0-36,pick and place,object,"[0, 36]",pick up the brown croissant from the metal skillet with the right hand and place it on the black plate,36
+basic_pick_place/8119/0-59,pick and place,object,"[0, 59]",pick up the white egg from the wooden table with the right hand and place it into the yellow bowl,59
+basic_pick_place/9286/0-59,pick and place,object,"[0, 59]",pick up a creamer from a green plate and place it in the orange bowl,59
+basic_pick_place/7917/0-65,pick and place,object,"[0, 65]",pick up the duck from the orange bowl with the right hand and place it on the clear tupperwear,65
+basic_pick_place/9743/0-34,pick and place,object,"[0, 34]",pick up the brown donut from the baking tray and place it in the bowl,34
+basic_pick_place/5223/0-75,pick and place,object,"[0, 75]",pick up the white plushie from the table with the right hand and place it on the blue plate,75
+basic_pick_place/8332/0-23,pick and place,object,"[0, 23]",pick up the yellow dice from the table with the right hand and place it in the green bowl,23
+basic_pick_place/1748/0-35,pick and place,object,"[0, 35]",pick up the red strawberry from the table with the right hand and place it in the pink bowl,35

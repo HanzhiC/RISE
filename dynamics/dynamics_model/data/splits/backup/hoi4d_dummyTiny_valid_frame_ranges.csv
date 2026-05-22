@@ -1,0 +1,4 @@
+sample,task_label,category_name,valid_frame_range,fine_action,valid_trajectory_number
+ZY20210800004/H4/C3/N67/S380/s05/T2.000,open and close the display,laptop,"[51, 75]",pick up laptop,24
+ZY20210800002/H2/C1/N01/S336/s02/T1.003,pick and place,toy car,"[221, 240]",put down toy car,67
+ZY20210800004/H4/C3/N08/S97/s04/T2.000,open and close the display,laptop,"[45, 64]",open laptop,31

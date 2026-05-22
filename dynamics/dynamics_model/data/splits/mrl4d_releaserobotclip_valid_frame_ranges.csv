@@ -1,0 +1,6 @@
+dataset,sample,task_label,category_name,valid_frame_range,fine_action,valid_trajectory_number
+mrl4d,manip_robot/2026-04-08--18-19-25/0-4,interact with object,object,"[0, 4]",close drawer,4
+mrl4d,manip_robot/2026-04-08--18-20-44/0-4,interact with object,object,"[0, 4]",pick up food from pan,4
+mrl4d,manip_robot/2026-04-08--18-21-25/0-4,interact with object,object,"[0, 4]",pick up brown sock,4
+mrl4d,manip_robot/2026-04-08--18-22-11/0-4,interact with object,object,"[0, 4]",pick up food from pan,4
+mrl4d,manip_robot/2026-04-08--18-22-59/0-4,interact with object,object,"[0, 4]",open microwave,4

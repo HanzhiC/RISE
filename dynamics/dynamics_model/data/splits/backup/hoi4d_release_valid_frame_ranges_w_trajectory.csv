@@ -1,0 +1,1683 @@
+sample,task_label,category_name,valid_frame_range,fine_action,valid_trajectory_number
+ZY20210800004/H4/C7/N15/S56/s02/T1,Pick and place,Bowl,"[22, 255]",pick and place bowl,233
+ZY20210800004/H4/C7/N13/S57/s01/T1,Pick and place,Bowl,"[25, 252]",pick and place bowl,227
+ZY20210800004/H4/C5/N32/S56/s03/T1,Pick and place,Bottle,"[40, 258]",pick and place bottle,218
+ZY20210800004/H4/C5/N31/S56/s03/T1,Pick and place,Bottle,"[36, 263]",pick and place bottle,227
+ZY20210800004/H4/C5/N29/S113/s02/T5,Reposition the bottle,Bottle,"[17, 142]",reposition the bottle bottle,125
+ZY20210800004/H4/C5/N29/S113/s02/T1,Pick and place,Bottle,"[14, 131]",pick and place bottle,117
+ZY20210800004/H4/C5/N28/S113/s02/T5,Reposition the bottle,Bottle,"[17, 131]",reposition the bottle bottle,114
+ZY20210800004/H4/C5/N27/S113/s01/T5,Reposition the bottle,Bottle,"[13, 130]",reposition the bottle bottle,117
+ZY20210800004/H4/C5/N26/S113/s01/T1,Pick and place,Bottle,"[14, 114]",pick and place bottle,100
+ZY20210800004/H4/C5/N23/S109/s04/T5,Reposition the bottle,Bottle,"[14, 123]",reposition the bottle bottle,109
+ZY20210800004/H4/C5/N20/S109/s03/T5,Reposition the bottle,Bottle,"[22, 142]",reposition the bottle bottle,120
+ZY20210800004/H4/C5/N18/S109/s02/T1,Pick and place,Bottle,"[19, 136]",pick and place bottle,117
+ZY20210800004/H4/C5/N17/S109/s01/T1,Pick and place,Bottle,"[16, 135]",pick and place bottle,119
+ZY20210800004/H4/C5/N16/S109/s01/T5,Reposition the bottle,Bottle,"[20, 128]",reposition the bottle bottle,108
+ZY20210800004/H4/C5/N16/S109/s01/T1,Pick and place,Bottle,"[20, 133]",pick and place bottle,113
+ZY20210800004/H4/C3/N68/S380/s05/T2,Open and close the display,Laptop,"[42, 263]",open and close the display laptop,221
+ZY20210800004/H4/C3/N68/S380/s03/T2,Open and close the display,Laptop,"[41, 239]",open and close the display laptop,198
+ZY20210800004/H4/C3/N68/S380/s02/T1,Pick and place,Laptop,"[49, 251]",pick and place laptop,202
+ZY20210800004/H4/C3/N68/S380/s01/T1,Pick and place,Laptop,"[39, 268]",pick and place laptop,229
+ZY20210800004/H4/C3/N67/S380/s05/T2,Open and close the display,Laptop,"[43, 250]",open and close the display laptop,207
+ZY20210800004/H4/C3/N67/S380/s04/T2,Open and close the display,Laptop,"[47, 271]",open and close the display laptop,224
+ZY20210800004/H4/C3/N67/S380/s03/T2,Open and close the display,Laptop,"[42, 242]",open and close the display laptop,200
+ZY20210800004/H4/C3/N67/S380/s02/T1,Pick and place,Laptop,"[48, 266]",pick and place laptop,218
+ZY20210800004/H4/C3/N67/S380/s01/T1,Pick and place,Laptop,"[43, 255]",pick and place laptop,212
+ZY20210800004/H4/C3/N66/S380/s05/T1,Pick and place,Laptop,"[41, 254]",pick and place laptop,213
+ZY20210800004/H4/C3/N66/S380/s04/T2,Open and close the display,Laptop,"[44, 275]",open and close the display laptop,231
+ZY20210800004/H4/C3/N66/S380/s03/T2,Open and close the display,Laptop,"[40, 267]",open and close the display laptop,227
+ZY20210800004/H4/C3/N66/S380/s02/T1,Pick and place,Laptop,"[41, 259]",pick and place laptop,218
+ZY20210800004/H4/C3/N66/S380/s01/T1,Pick and place,Laptop,"[41, 249]",pick and place laptop,208
+ZY20210800004/H4/C3/N65/S380/s05/T1,Pick and place,Laptop,"[42, 249]",pick and place laptop,207
+ZY20210800004/H4/C3/N65/S380/s04/T2,Open and close the display,Laptop,"[47, 272]",open and close the display laptop,225
+ZY20210800004/H4/C3/N65/S380/s03/T2,Open and close the display,Laptop,"[46, 267]",open and close the display laptop,221
+ZY20210800004/H4/C3/N65/S380/s02/T1,Pick and place,Laptop,"[42, 274]",pick and place laptop,232
+ZY20210800004/H4/C3/N65/S380/s01/T1,Pick and place,Laptop,"[41, 240]",pick and place laptop,199
+ZY20210800004/H4/C3/N64/S379/s05/T2,Open and close the display,Laptop,"[43, 258]",open and close the display laptop,215
+ZY20210800004/H4/C3/N64/S379/s04/T2,Open and close the display,Laptop,"[47, 255]",open and close the display laptop,208
+ZY20210800004/H4/C3/N64/S379/s03/T2,Open and close the display,Laptop,"[41, 255]",open and close the display laptop,214
+ZY20210800004/H4/C3/N64/S379/s02/T1,Pick and place,Laptop,"[44, 256]",pick and place laptop,212
+ZY20210800004/H4/C3/N64/S379/s01/T1,Pick and place,Laptop,"[40, 240]",pick and place laptop,200
+ZY20210800004/H4/C3/N63/S379/s05/T2,Open and close the display,Laptop,"[46, 272]",open and close the display laptop,226
+ZY20210800004/H4/C3/N63/S379/s03/T2,Open and close the display,Laptop,"[40, 254]",open and close the display laptop,214
+ZY20210800004/H4/C3/N63/S379/s02/T1,Pick and place,Laptop,"[40, 253]",pick and place laptop,213
+ZY20210800004/H4/C3/N63/S379/s01/T1,Pick and place,Laptop,"[39, 249]",pick and place laptop,210
+ZY20210800004/H4/C3/N62/S379/s05/T1,Pick and place,Laptop,"[46, 256]",pick and place laptop,210
+ZY20210800004/H4/C3/N62/S379/s04/T2,Open and close the display,Laptop,"[42, 249]",open and close the display laptop,207
+ZY20210800004/H4/C3/N62/S379/s03/T2,Open and close the display,Laptop,"[45, 257]",open and close the display laptop,212
+ZY20210800004/H4/C3/N62/S379/s01/T1,Pick and place,Laptop,"[53, 271]",pick and place laptop,218
+ZY20210800004/H4/C3/N61/S379/s05/T2,Open and close the display,Laptop,"[47, 256]",open and close the display laptop,209
+ZY20210800004/H4/C3/N61/S379/s04/T2,Open and close the display,Laptop,"[42, 277]",open and close the display laptop,235
+ZY20210800004/H4/C3/N61/S379/s03/T2,Open and close the display,Laptop,"[43, 248]",open and close the display laptop,205
+ZY20210800004/H4/C3/N61/S379/s02/T1,Pick and place,Laptop,"[43, 258]",pick and place laptop,215
+ZY20210800004/H4/C3/N61/S379/s01/T1,Pick and place,Laptop,"[40, 246]",pick and place laptop,206
+ZY20210800004/H4/C3/N60/S377/s05/T2,Open and close the display,Laptop,"[45, 253]",open and close the display laptop,208
+ZY20210800004/H4/C3/N60/S377/s04/T2,Open and close the display,Laptop,"[45, 273]",open and close the display laptop,228
+ZY20210800004/H4/C3/N59/S375/s03/T2,Open and close the display,Laptop,"[42, 119]",open and close the display laptop,77
+ZY20210800004/H4/C3/N59/S375/s02/T2,Open and close the display,Laptop,"[45, 256]",open and close the display laptop,211
+ZY20210800004/H4/C3/N59/S374/s02/T1,Pick and place,Laptop,"[47, 281]",pick and place laptop,234
+ZY20210800004/H4/C3/N59/S373/s05/T2,Open and close the display,Laptop,"[50, 262]",open and close the display laptop,212
+ZY20210800004/H4/C3/N59/S373/s03/T1,Pick and place,Laptop,"[52, 277]",pick and place laptop,225
+ZY20210800004/H4/C3/N58/S375/s03/T2,Open and close the display,Laptop,"[43, 257]",open and close the display laptop,214
+ZY20210800004/H4/C3/N58/S375/s01/T2,Open and close the display,Laptop,"[42, 268]",open and close the display laptop,226
+ZY20210800004/H4/C3/N58/S374/s02/T1,Pick and place,Laptop,"[44, 280]",pick and place laptop,236
+ZY20210800004/H4/C3/N58/S373/s05/T2,Open and close the display,Laptop,"[51, 268]",open and close the display laptop,217
+ZY20210800004/H4/C3/N58/S373/s02/T1,Pick and place,Laptop,"[48, 278]",pick and place laptop,230
+ZY20210800004/H4/C3/N57/S375/s01/T2,Open and close the display,Laptop,"[49, 263]",open and close the display laptop,214
+ZY20210800004/H4/C3/N57/S374/s02/T1,Pick and place,Laptop,"[47, 272]",pick and place laptop,221
+ZY20210800004/H4/C3/N57/S373/s05/T2,Open and close the display,Laptop,"[47, 247]",open and close the display laptop,200
+ZY20210800004/H4/C3/N57/S373/s04/T2,Open and close the display,Laptop,"[42, 241]",open and close the display laptop,199
+ZY20210800004/H4/C3/N57/S373/s02/T1,Pick and place,Laptop,"[50, 246]",pick and place laptop,196
+ZY20210800004/H4/C3/N56/S375/s01/T2,Open and close the display,Laptop,"[45, 272]",open and close the display laptop,227
+ZY20210800004/H4/C3/N56/S374/s02/T1,Pick and place,Laptop,"[55, 279]",pick and place laptop,224
+ZY20210800004/H4/C3/N56/S373/s05/T2,Open and close the display,Laptop,"[43, 250]",open and close the display laptop,207
+ZY20210800004/H4/C3/N56/S373/s04/T2,Open and close the display,Laptop,"[42, 272]",open and close the display laptop,230
+ZY20210800004/H4/C3/N56/S373/s02/T1,Pick and place,Laptop,"[46, 271]",pick and place laptop,225
+ZY20210800004/H4/C3/N55/S375/s03/T1,Pick and place,Laptop,"[42, 261]",pick and place laptop,219
+ZY20210800004/H4/C3/N55/S375/s01/T2,Open and close the display,Laptop,"[43, 275]",open and close the display laptop,232
+ZY20210800004/H4/C3/N55/S374/s01/T1,Pick and place,Laptop,"[52, 270]",pick and place laptop,218
+ZY20210800004/H4/C3/N55/S373/s04/T2,Open and close the display,Laptop,"[37, 264]",open and close the display laptop,227
+ZY20210800004/H4/C3/N55/S373/s02/T1,Pick and place,Laptop,"[54, 279]",pick and place laptop,225
+ZY20210800004/H4/C3/N54/S375/s03/T1,Pick and place,Laptop,"[43, 266]",pick and place laptop,223
+ZY20210800004/H4/C3/N54/S374/s03/T2,Open and close the display,Laptop,"[52, 280]",open and close the display laptop,228
+ZY20210800004/H4/C3/N54/S374/s01/T1,Pick and place,Laptop,"[46, 282]",pick and place laptop,236
+ZY20210800004/H4/C3/N54/S373/s04/T2,Open and close the display,Laptop,"[40, 257]",open and close the display laptop,217
+ZY20210800004/H4/C3/N54/S373/s01/T1,Pick and place,Laptop,"[44, 267]",pick and place laptop,223
+ZY20210800004/H4/C3/N53/S375/s02/T1,Pick and place,Laptop,"[41, 274]",pick and place laptop,233
+ZY20210800004/H4/C3/N53/S374/s03/T2,Open and close the display,Laptop,"[49, 266]",open and close the display laptop,217
+ZY20210800004/H4/C3/N53/S374/s01/T1,Pick and place,Laptop,"[47, 283]",pick and place laptop,236
+ZY20210800004/H4/C3/N53/S373/s03/T2,Open and close the display,Laptop,"[40, 254]",open and close the display laptop,214
+ZY20210800004/H4/C3/N52/S375/s02/T1,Pick and place,Laptop,"[41, 259]",pick and place laptop,218
+ZY20210800004/H4/C3/N52/S374/s03/T2,Open and close the display,Laptop,"[42, 279]",open and close the display laptop,237
+ZY20210800004/H4/C3/N52/S374/s01/T1,Pick and place,Laptop,"[44, 277]",pick and place laptop,233
+ZY20210800004/H4/C3/N52/S373/s03/T2,Open and close the display,Laptop,"[42, 257]",open and close the display laptop,215
+ZY20210800004/H4/C3/N52/S373/s01/T1,Pick and place,Laptop,"[53, 285]",pick and place laptop,232
+ZY20210800004/H4/C3/N46/S111/s05/T1,Pick and place,Laptop,"[15, 139]",pick and place laptop,124
+ZY20210800004/H4/C3/N08/S97/s04/T2,Open and close the display,Laptop,"[11, 139]",open and close the display laptop,128
+ZY20210800004/H4/C20/N50/S301/s03/T2,Pick and place to the original position,Chair,"[77, 225]",pick and place to the original position chair,148
+ZY20210800004/H4/C20/N50/S298/s04/T1,Pick and place to the original position,Chair,"[67, 209]",pick and place to the original position chair,142
+ZY20210800004/H4/C20/N49/S301/s03/T2,Pick and place to the original position,Chair,"[76, 224]",pick and place to the original position chair,148
+ZY20210800004/H4/C20/N46/S304/s05/T4,Pick and place to a new position,Chair,"[66, 234]",pick and place to a new position chair,168
+ZY20210800004/H4/C20/N46/S304/s01/T3,Pick and place to a new position,Chair,"[73, 266]",pick and place to a new position chair,193
+ZY20210800004/H4/C20/N46/S301/s02/T2,Pick and place to the original position,Chair,"[75, 233]",pick and place to the original position chair,158
+ZY20210800004/H4/C20/N46/S298/s03/T1,Pick and place to the original position,Chair,"[70, 217]",pick and place to the original position chair,147
+ZY20210800004/H4/C20/N45/S304/s05/T4,Pick and place to a new position,Chair,"[67, 249]",pick and place to a new position chair,182
+ZY20210800004/H4/C20/N45/S304/s01/T3,Pick and place to a new position,Chair,"[74, 247]",pick and place to a new position chair,173
+ZY20210800004/H4/C20/N45/S301/s02/T2,Pick and place to the original position,Chair,"[70, 215]",pick and place to the original position chair,145
+ZY20210800004/H4/C20/N45/S298/s03/T1,Pick and place to the original position,Chair,"[66, 228]",pick and place to the original position chair,160
+ZY20210800004/H4/C20/N44/S304/s04/T4,Pick and place to a new position,Chair,"[76, 275]",pick and place to a new position chair,199
+ZY20210800004/H4/C20/N44/S304/s01/T3,Pick and place to a new position,Chair,"[78, 247]",pick and place to a new position chair,169
+ZY20210800004/H4/C20/N44/S301/s02/T2,Pick and place to the original position,Chair,"[81, 250]",pick and place to the original position chair,169
+ZY20210800004/H4/C20/N44/S298/s03/T1,Pick and place to the original position,Chair,"[87, 265]",pick and place to the original position chair,178
+ZY20210800004/H4/C20/N43/S304/s04/T4,Pick and place to a new position,Chair,"[75, 239]",pick and place to a new position chair,164
+ZY20210800004/H4/C20/N43/S301/s05/T3,Pick and place to a new position,Chair,"[68, 240]",pick and place to a new position chair,172
+ZY20210800004/H4/C20/N43/S301/s01/T2,Pick and place to the original position,Chair,"[71, 260]",pick and place to the original position chair,189
+ZY20210800004/H4/C20/N43/S298/s02/T1,Pick and place to the original position,Chair,"[76, 248]",pick and place to the original position chair,172
+ZY20210800004/H4/C20/N42/S304/s04/T4,Pick and place to a new position,Chair,"[45, 220]",pick and place to a new position chair,175
+ZY20210800004/H4/C20/N42/S301/s05/T3,Pick and place to a new position,Chair,"[51, 241]",pick and place to a new position chair,190
+ZY20210800004/H4/C20/N42/S301/s01/T2,Pick and place to the original position,Chair,"[46, 224]",pick and place to the original position chair,178
+ZY20210800004/H4/C20/N42/S298/s02/T1,Pick and place to the original position,Chair,"[48, 256]",pick and place to the original position chair,208
+ZY20210800004/H4/C20/N41/S304/s04/T4,Pick and place to a new position,Chair,"[47, 244]",pick and place to a new position chair,197
+ZY20210800004/H4/C20/N41/S301/s05/T3,Pick and place to a new position,Chair,"[51, 255]",pick and place to a new position chair,204
+ZY20210800004/H4/C20/N41/S301/s01/T2,Pick and place to the original position,Chair,"[51, 227]",pick and place to the original position chair,176
+ZY20210800004/H4/C20/N41/S298/s02/T1,Pick and place to the original position,Chair,"[48, 232]",pick and place to the original position chair,184
+ZY20210800004/H4/C20/N40/S304/s03/T4,Pick and place to a new position,Chair,"[74, 242]",pick and place to a new position chair,168
+ZY20210800004/H4/C20/N40/S301/s05/T3,Pick and place to a new position,Chair,"[71, 227]",pick and place to a new position chair,156
+ZY20210800004/H4/C20/N40/S301/s01/T2,Pick and place to the original position,Chair,"[66, 209]",pick and place to the original position chair,143
+ZY20210800004/H4/C20/N40/S298/s02/T1,Pick and place to the original position,Chair,"[81, 264]",pick and place to the original position chair,183
+ZY20210800004/H4/C20/N39/S304/s03/T4,Pick and place to a new position,Chair,"[45, 237]",pick and place to a new position chair,192
+ZY20210800004/H4/C20/N39/S301/s04/T3,Pick and place to a new position,Chair,"[42, 263]",pick and place to a new position chair,221
+ZY20210800004/H4/C20/N39/S298/s05/T2,Pick and place to the original position,Chair,"[50, 220]",pick and place to the original position chair,170
+ZY20210800004/H4/C20/N39/S298/s01/T1,Pick and place to the original position,Chair,"[50, 257]",pick and place to the original position chair,207
+ZY20210800004/H4/C20/N38/S304/s03/T4,Pick and place to a new position,Chair,"[66, 271]",pick and place to a new position chair,205
+ZY20210800004/H4/C20/N38/S301/s04/T3,Pick and place to a new position,Chair,"[59, 250]",pick and place to a new position chair,191
+ZY20210800004/H4/C20/N38/S298/s05/T2,Pick and place to the original position,Chair,"[48, 238]",pick and place to the original position chair,190
+ZY20210800004/H4/C20/N38/S298/s01/T1,Pick and place to the original position,Chair,"[51, 229]",pick and place to the original position chair,178
+ZY20210800004/H4/C20/N37/S304/s03/T4,Pick and place to a new position,Chair,"[63, 256]",pick and place to a new position chair,193
+ZY20210800004/H4/C20/N37/S301/s04/T3,Pick and place to a new position,Chair,"[71, 270]",pick and place to a new position chair,199
+ZY20210800004/H4/C20/N37/S298/s05/T2,Pick and place to the original position,Chair,"[61, 233]",pick and place to the original position chair,172
+ZY20210800004/H4/C20/N37/S298/s01/T1,Pick and place to the original position,Chair,"[68, 227]",pick and place to the original position chair,159
+ZY20210800004/H4/C20/N36/S304/s02/T4,Pick and place to a new position,Chair,"[47, 269]",pick and place to a new position chair,222
+ZY20210800004/H4/C20/N36/S301/s04/T3,Pick and place to a new position,Chair,"[51, 256]",pick and place to a new position chair,205
+ZY20210800004/H4/C20/N36/S298/s05/T2,Pick and place to the original position,Chair,"[45, 253]",pick and place to the original position chair,208
+ZY20210800004/H4/C20/N36/S298/s01/T1,Pick and place to the original position,Chair,"[52, 267]",pick and place to the original position chair,215
+ZY20210800004/H4/C2/N49/S16/s03/T5,Pour water into another mug,Mug,"[10, 126]",pour water into another mug mug,116
+ZY20210800004/H4/C2/N49/S16/s03/T1,Pick and place,Mug,"[12, 140]",pick and place mug,128
+ZY20210800004/H4/C2/N48/S16/s02/T5,Pour water into another mug,Mug,"[10, 128]",pour water into another mug mug,118
+ZY20210800004/H4/C2/N48/S16/s02/T1,Pick and place,Mug,"[11, 122]",pick and place mug,111
+ZY20210800004/H4/C2/N47/S16/s02/T1,Pick and place,Mug,"[9, 120]",pick and place mug,111
+ZY20210800004/H4/C2/N45/S5/s01/T5,Pour water into another mug,Mug,"[32, 294]",pour water into another mug mug,262
+ZY20210800004/H4/C2/N45/S5/s01/T1,Pick and place,Mug,"[45, 275]",pick and place mug,230
+ZY20210800004/H4/C2/N44/S364/s05/T6,Pick and place (with water),Mug,"[46, 274]",pick and place (with water) mug,226
+ZY20210800004/H4/C2/N43/S15/s01/T5,Pour water into another mug,Mug,"[21, 288]",pour water into another mug mug,267
+ZY20210800004/H4/C2/N40/S10/s05/T1,Pick and place,Mug,"[38, 281]",pick and place mug,243
+ZY20210800004/H4/C2/N39/S364/s05/T4,Fill with water by a kettle,Mug,"[45, 213]",fill with water by a kettle mug,168
+ZY20210800004/H4/C2/N39/S10/s05/T5,Pour water into another mug,Mug,"[37, 269]",pour water into another mug mug,232
+ZY20210800004/H4/C2/N39/S10/s05/T1,Pick and place,Mug,"[30, 261]",pick and place mug,231
+ZY20210800004/H4/C2/N36/S364/s05/T3,Take it out of the drawer,Mug,"[52, 268]",take it out of the drawer mug,216
+ZY20210800004/H4/C2/N36/S10/s04/T5,Pour water into another mug,Mug,"[22, 253]",pour water into another mug mug,231
+ZY20210800004/H4/C2/N33/S10/s03/T5,Pour water into another mug,Mug,"[18, 263]",pour water into another mug mug,245
+ZY20210800004/H4/C2/N33/S10/s03/T1,Pick and place,Mug,"[37, 281]",pick and place mug,244
+ZY20210800004/H4/C2/N32/S364/s04/T2,Put it in the drawer,Mug,"[47, 239]",put it in the drawer mug,192
+ZY20210800004/H4/C2/N32/S14/s02/T1,Pick and place,Mug,"[40, 251]",pick and place mug,211
+ZY20210800004/H4/C2/N30/S14/s01/T1,Pick and place,Mug,"[38, 272]",pick and place mug,234
+ZY20210800004/H4/C2/N29/S14/s01/T1,Pick and place,Mug,"[50, 276]",pick and place mug,226
+ZY20210800004/H4/C2/N27/S13/s05/T5,Pour water into another mug,Mug,"[35, 284]",pour water into another mug mug,249
+ZY20210800004/H4/C2/N27/S13/s05/T1,Pick and place,Mug,"[45, 127]",pick and place mug,82
+ZY20210800004/H4/C2/N23/S13/s03/T5,Pour water into another mug,Mug,"[46, 279]",pour water into another mug mug,233
+ZY20210800004/H4/C2/N21/S13/s02/T1,Pick and place,Mug,"[31, 264]",pick and place mug,233
+ZY20210800004/H4/C2/N19/S13/s01/T5,Pour water into another mug,Mug,"[30, 277]",pour water into another mug mug,247
+ZY20210800004/H4/C2/N17/S364/s04/T2,Put it in the drawer,Mug,"[48, 248]",put it in the drawer mug,200
+ZY20210800004/H4/C2/N16/S11/s04/T1,Pick and place,Mug,"[36, 277]",pick and place mug,241
+ZY20210800004/H4/C2/N15/S11/s04/T5,Pour water into another mug,Mug,"[35, 278]",pour water into another mug mug,243
+ZY20210800004/H4/C14/N36/S335/s02/T2,Throw something in it,Trash Can,"[44, 277]",throw something in it trash can,233
+ZY20210800004/H4/C14/N36/S335/s01/T1,Open and close,Trash Can,"[50, 240]",open and close trash can,190
+ZY20210800004/H4/C14/N34/S211/s03/T2,Throw something in it,Trash Can,"[44, 272]",throw something in it trash can,228
+ZY20210800004/H4/C14/N34/S177/s03/T1,Open and close,Trash Can,"[59, 245]",open and close trash can,186
+ZY20210800004/H4/C14/N32/S211/s03/T2,Throw something in it,Trash Can,"[46, 258]",throw something in it trash can,212
+ZY20210800004/H4/C14/N32/S177/s03/T1,Open and close,Trash Can,"[63, 231]",open and close trash can,168
+ZY20210800004/H4/C14/N30/S335/s02/T2,Throw something in it,Trash Can,"[49, 279]",throw something in it trash can,230
+ZY20210800004/H4/C14/N30/S335/s01/T1,Open and close,Trash Can,"[54, 239]",open and close trash can,185
+ZY20210800004/H4/C14/N28/S211/s02/T2,Throw something in it,Trash Can,"[46, 252]",throw something in it trash can,206
+ZY20210800004/H4/C14/N28/S177/s02/T1,Open and close,Trash Can,"[50, 238]",open and close trash can,188
+ZY20210800004/H4/C14/N26/S335/s02/T2,Throw something in it,Trash Can,"[46, 272]",throw something in it trash can,226
+ZY20210800004/H4/C14/N26/S335/s01/T1,Open and close,Trash Can,"[46, 226]",open and close trash can,180
+ZY20210800004/H4/C14/N25/S211/s02/T2,Throw something in it,Trash Can,"[45, 256]",throw something in it trash can,211
+ZY20210800004/H4/C14/N25/S174/s01/T1,Open and close,Trash Can,"[63, 252]",open and close trash can,189
+ZY20210800004/H4/C14/N24/S211/s01/T2,Throw something in it,Trash Can,"[49, 261]",throw something in it trash can,212
+ZY20210800004/H4/C14/N23/S211/s01/T2,Throw something in it,Trash Can,"[52, 237]",throw something in it trash can,185
+ZY20210800004/H4/C14/N23/S174/s01/T1,Open and close,Trash Can,"[61, 245]",open and close trash can,180
+ZY20210800004/H4/C14/N22/S211/s01/T2,Throw something in it,Trash Can,"[37, 247]",throw something in it trash can,210
+ZY20210800004/H4/C14/N22/S174/s01/T1,Open and close,Trash Can,"[70, 264]",open and close trash can,194
+ZY20210800004/H4/C14/N21/S211/s01/T2,Throw something in it,Trash Can,"[35, 256]",throw something in it trash can,221
+ZY20210800004/H4/C14/N21/S174/s02/T1,Open and close,Trash Can,"[50, 253]",open and close trash can,201
+ZY20210800004/H4/C14/N20/S210/s05/T2,Throw something in it,Trash Can,"[55, 259]",throw something in it trash can,204
+ZY20210800004/H4/C14/N20/S174/s02/T1,Open and close,Trash Can,"[58, 252]",open and close trash can,194
+ZY20210800004/H4/C14/N19/S210/s05/T2,Throw something in it,Trash Can,"[53, 266]",throw something in it trash can,213
+ZY20210800004/H4/C14/N18/S210/s05/T2,Throw something in it,Trash Can,"[44, 259]",throw something in it trash can,215
+ZY20210800004/H4/C14/N18/S174/s02/T1,Open and close,Trash Can,"[68, 266]",open and close trash can,198
+ZY20210800004/H4/C14/N17/S210/s05/T2,Throw something in it,Trash Can,"[52, 272]",throw something in it trash can,220
+ZY20210800004/H4/C14/N17/S174/s03/T1,Open and close,Trash Can,"[51, 241]",open and close trash can,190
+ZY20210800004/H4/C14/N16/S210/s04/T2,Throw something in it,Trash Can,"[50, 244]",throw something in it trash can,194
+ZY20210800004/H4/C14/N16/S174/s03/T1,Open and close,Trash Can,"[53, 236]",open and close trash can,183
+ZY20210800004/H4/C14/N15/S210/s04/T2,Throw something in it,Trash Can,"[44, 230]",throw something in it trash can,186
+ZY20210800004/H4/C14/N15/S174/s03/T1,Open and close,Trash Can,"[63, 268]",open and close trash can,205
+ZY20210800004/H4/C14/N14/S210/s04/T2,Throw something in it,Trash Can,"[39, 230]",throw something in it trash can,191
+ZY20210800004/H4/C14/N14/S174/s03/T1,Open and close,Trash Can,"[78, 262]",open and close trash can,184
+ZY20210800004/H4/C14/N13/S210/s04/T2,Throw something in it,Trash Can,"[40, 268]",throw something in it trash can,228
+ZY20210800004/H4/C14/N13/S174/s04/T1,Open and close,Trash Can,"[47, 267]",open and close trash can,220
+ZY20210800004/H4/C14/N12/S210/s03/T2,Throw something in it,Trash Can,"[38, 271]",throw something in it trash can,233
+ZY20210800004/H4/C14/N12/S174/s04/T1,Open and close,Trash Can,"[51, 245]",open and close trash can,194
+ZY20210800004/H4/C14/N11/S174/s04/T1,Open and close,Trash Can,"[60, 262]",open and close trash can,202
+ZY20210800004/H4/C13/N50/S234/s02/T1,Pick and place,Knife,"[50, 263]",pick and place knife,213
+ZY20210800004/H4/C13/N50/S186/s02/T3,Put it in the drawer,Knife,"[49, 224]",put it in the drawer knife,175
+ZY20210800004/H4/C13/N49/S234/s01/T1,Pick and place,Knife,"[47, 262]",pick and place knife,215
+ZY20210800004/H4/C13/N49/S186/s01/T3,Put it in the drawer,Knife,"[47, 235]",put it in the drawer knife,188
+ZY20210800004/H4/C13/N48/S234/s01/T1,Pick and place,Knife,"[46, 257]",pick and place knife,211
+ZY20210800004/H4/C13/N48/S186/s01/T3,Put it in the drawer,Knife,"[52, 245]",put it in the drawer knife,193
+ZY20210800004/H4/C13/N47/S234/s01/T1,Pick and place,Knife,"[40, 258]",pick and place knife,218
+ZY20210800004/H4/C13/N47/S186/s01/T3,Put it in the drawer,Knife,"[49, 236]",put it in the drawer knife,187
+ZY20210800004/H4/C13/N46/S186/s01/T3,Put it in the drawer,Knife,"[51, 248]",put it in the drawer knife,197
+ZY20210800004/H4/C13/N45/S233/s05/T1,Pick and place,Knife,"[48, 262]",pick and place knife,214
+ZY20210800004/H4/C13/N44/S233/s05/T1,Pick and place,Knife,"[40, 253]",pick and place knife,213
+ZY20210800004/H4/C13/N44/S184/s05/T4,Cut apple,Knife,"[45, 231]",cut apple knife,186
+ZY20210800004/H4/C13/N43/S233/s05/T1,Pick and place,Knife,"[46, 261]",pick and place knife,215
+ZY20210800004/H4/C13/N43/S184/s05/T4,Cut apple,Knife,"[46, 246]",cut apple knife,200
+ZY20210800004/H4/C13/N42/S233/s05/T1,Pick and place,Knife,"[49, 252]",pick and place knife,203
+ZY20210800004/H4/C13/N42/S184/s05/T4,Cut apple,Knife,"[51, 223]",cut apple knife,172
+ZY20210800004/H4/C13/N41/S233/s04/T1,Pick and place,Knife,"[49, 272]",pick and place knife,221
+ZY20210800004/H4/C13/N41/S184/s04/T4,Cut apple,Knife,"[43, 252]",cut apple knife,209
+ZY20210800004/H4/C13/N40/S233/s04/T1,Pick and place,Knife,"[43, 260]",pick and place knife,217
+ZY20210800004/H4/C13/N40/S184/s04/T4,Cut apple,Knife,"[50, 248]",cut apple knife,198
+ZY20210800004/H4/C13/N39/S233/s04/T1,Pick and place,Knife,"[46, 256]",pick and place knife,210
+ZY20210800004/H4/C13/N39/S184/s04/T4,Cut apple,Knife,"[49, 257]",cut apple knife,208
+ZY20210800004/H4/C13/N38/S233/s04/T1,Pick and place,Knife,"[40, 271]",pick and place knife,231
+ZY20210800004/H4/C13/N38/S184/s04/T4,Cut apple,Knife,"[41, 244]",cut apple knife,203
+ZY20210800004/H4/C13/N37/S233/s03/T1,Pick and place,Knife,"[44, 269]",pick and place knife,225
+ZY20210800004/H4/C13/N37/S184/s03/T4,Cut apple,Knife,"[46, 251]",cut apple knife,205
+ZY20210800004/H4/C13/N36/S233/s03/T1,Pick and place,Knife,"[45, 270]",pick and place knife,223
+ZY20210800004/H4/C13/N36/S184/s03/T4,Cut apple,Knife,"[48, 274]",cut apple knife,226
+ZY20210800004/H4/C13/N35/S233/s03/T1,Pick and place,Knife,"[46, 273]",pick and place knife,227
+ZY20210800004/H4/C13/N35/S184/s03/T4,Cut apple,Knife,"[52, 251]",cut apple knife,199
+ZY20210800004/H4/C13/N34/S233/s03/T1,Pick and place,Knife,"[49, 264]",pick and place knife,211
+ZY20210800004/H4/C13/N34/S184/s03/T4,Cut apple,Knife,"[50, 262]",cut apple knife,212
+ZY20210800004/H4/C13/N33/S233/s02/T1,Pick and place,Knife,"[42, 260]",pick and place knife,218
+ZY20210800004/H4/C13/N33/S184/s02/T4,Cut apple,Knife,"[45, 262]",cut apple knife,217
+ZY20210800004/H4/C13/N32/S233/s02/T1,Pick and place,Knife,"[41, 257]",pick and place knife,216
+ZY20210800004/H4/C13/N32/S184/s02/T4,Cut apple,Knife,"[47, 253]",cut apple knife,206
+ZY20210800004/H4/C13/N31/S233/s02/T1,Pick and place,Knife,"[42, 263]",pick and place knife,221
+ZY20210800004/H4/C13/N31/S184/s02/T4,Cut apple,Knife,"[47, 255]",cut apple knife,208
+ZY20210800004/H4/C13/N30/S365/s01/T3,Put it in the drawer,Knife,"[47, 241]",put it in the drawer knife,194
+ZY20210800004/H4/C13/N30/S233/s02/T1,Pick and place,Knife,"[45, 266]",pick and place knife,221
+ZY20210800004/H4/C13/N30/S184/s02/T4,Cut apple,Knife,"[47, 234]",cut apple knife,187
+ZY20210800004/H4/C13/N29/S184/s01/T4,Cut apple,Knife,"[51, 268]",cut apple knife,217
+ZY20210800004/H4/C13/N28/S233/s01/T1,Pick and place,Knife,"[40, 269]",pick and place knife,229
+ZY20210800004/H4/C13/N28/S184/s01/T4,Cut apple,Knife,"[41, 239]",cut apple knife,198
+ZY20210800004/H4/C13/N27/S365/s01/T2,Take it out of the drawer,Knife,"[51, 240]",take it out of the drawer knife,189
+ZY20210800004/H4/C13/N27/S233/s01/T1,Pick and place,Knife,"[45, 257]",pick and place knife,212
+ZY20210800004/H4/C13/N27/S184/s01/T4,Cut apple,Knife,"[37, 230]",cut apple knife,193
+ZY20210800004/H4/C13/N26/S233/s01/T1,Pick and place,Knife,"[56, 271]",pick and place knife,215
+ZY20210800004/H4/C13/N26/S184/s01/T4,Cut apple,Knife,"[44, 274]",cut apple knife,230
+ZY20210800004/H4/C13/N25/S234/s03/T1,Pick and place,Knife,"[44, 255]",pick and place knife,211
+ZY20210800004/H4/C13/N25/S186/s03/T2,Take it out of the drawer,Knife,"[49, 253]",take it out of the drawer knife,204
+ZY20210800004/H4/C13/N23/S234/s03/T1,Pick and place,Knife,"[43, 263]",pick and place knife,220
+ZY20210800004/H4/C13/N23/S186/s03/T2,Take it out of the drawer,Knife,"[51, 269]",take it out of the drawer knife,218
+ZY20210800004/H4/C13/N21/S234/s03/T1,Pick and place,Knife,"[45, 256]",pick and place knife,211
+ZY20210800004/H4/C13/N21/S186/s02/T2,Take it out of the drawer,Knife,"[46, 245]",take it out of the drawer knife,199
+ZY20210800004/H4/C13/N19/S234/s02/T1,Pick and place,Knife,"[45, 251]",pick and place knife,206
+ZY20210800004/H4/C13/N19/S186/s02/T2,Take it out of the drawer,Knife,"[47, 256]",take it out of the drawer knife,209
+ZY20210800004/H4/C13/N17/S234/s02/T1,Pick and place,Knife,"[47, 247]",pick and place knife,200
+ZY20210800004/H4/C13/N17/S186/s02/T2,Take it out of the drawer,Knife,"[42, 249]",take it out of the drawer knife,207
+ZY20210800004/H4/C13/N15/S234/s02/T1,Pick and place,Knife,"[52, 261]",pick and place knife,209
+ZY20210800004/H4/C13/N15/S186/s02/T2,Take it out of the drawer,Knife,"[44, 244]",take it out of the drawer knife,200
+ZY20210800004/H4/C13/N11/S365/s01/T1,Pick and place,Knife,"[43, 252]",pick and place knife,203
+ZY20210800004/H4/C12/N50/S236/s02/T1,Pick and place,Kettle,"[46, 260]",pick and place kettle,214
+ZY20210800004/H4/C12/N50/S186/s02/T2,Pour water into a mug,Kettle,"[49, 259]",pour water into a mug kettle,210
+ZY20210800004/H4/C12/N49/S236/s02/T1,Pick and place,Kettle,"[42, 261]",pick and place kettle,219
+ZY20210800004/H4/C12/N49/S186/s01/T2,Pour water into a mug,Kettle,"[33, 266]",pour water into a mug kettle,233
+ZY20210800004/H4/C12/N48/S236/s01/T1,Pick and place,Kettle,"[43, 261]",pick and place kettle,213
+ZY20210800004/H4/C12/N48/S186/s01/T2,Pour water into a mug,Kettle,"[42, 265]",pour water into a mug kettle,223
+ZY20210800004/H4/C12/N47/S236/s01/T1,Pick and place,Kettle,"[45, 263]",pick and place kettle,216
+ZY20210800004/H4/C12/N47/S186/s01/T2,Pour water into a mug,Kettle,"[37, 255]",pour water into a mug kettle,218
+ZY20210800004/H4/C12/N46/S236/s01/T1,Pick and place,Kettle,"[40, 258]",pick and place kettle,218
+ZY20210800004/H4/C12/N46/S186/s01/T2,Pour water into a mug,Kettle,"[42, 256]",pour water into a mug kettle,214
+ZY20210800004/H4/C12/N45/S236/s01/T1,Pick and place,Kettle,"[43, 257]",pick and place kettle,212
+ZY20210800004/H4/C12/N45/S184/s05/T2,Pour water into a mug,Kettle,"[42, 265]",pour water into a mug kettle,223
+ZY20210800004/H4/C12/N44/S235/s05/T1,Pick and place,Kettle,"[46, 262]",pick and place kettle,212
+ZY20210800004/H4/C12/N44/S184/s05/T2,Pour water into a mug,Kettle,"[41, 263]",pour water into a mug kettle,222
+ZY20210800004/H4/C12/N43/S235/s05/T1,Pick and place,Kettle,"[47, 258]",pick and place kettle,211
+ZY20210800004/H4/C12/N43/S184/s05/T2,Pour water into a mug,Kettle,"[37, 272]",pour water into a mug kettle,235
+ZY20210800004/H4/C12/N42/S235/s05/T1,Pick and place,Kettle,"[44, 246]",pick and place kettle,202
+ZY20210800004/H4/C12/N42/S184/s05/T2,Pour water into a mug,Kettle,"[37, 264]",pour water into a mug kettle,227
+ZY20210800004/H4/C12/N41/S235/s05/T1,Pick and place,Kettle,"[38, 260]",pick and place kettle,222
+ZY20210800004/H4/C12/N41/S184/s04/T2,Pour water into a mug,Kettle,"[38, 259]",pour water into a mug kettle,221
+ZY20210800004/H4/C12/N40/S235/s04/T1,Pick and place,Kettle,"[43, 253]",pick and place kettle,210
+ZY20210800004/H4/C12/N40/S184/s04/T2,Pour water into a mug,Kettle,"[38, 260]",pour water into a mug kettle,222
+ZY20210800004/H4/C12/N39/S235/s04/T1,Pick and place,Kettle,"[47, 256]",pick and place kettle,209
+ZY20210800004/H4/C12/N39/S184/s04/T2,Pour water into a mug,Kettle,"[41, 261]",pour water into a mug kettle,220
+ZY20210800004/H4/C12/N38/S235/s04/T1,Pick and place,Kettle,"[47, 246]",pick and place kettle,199
+ZY20210800004/H4/C12/N38/S184/s04/T2,Pour water into a mug,Kettle,"[40, 261]",pour water into a mug kettle,221
+ZY20210800004/H4/C12/N37/S235/s04/T1,Pick and place,Kettle,"[45, 253]",pick and place kettle,208
+ZY20210800004/H4/C12/N37/S184/s03/T2,Pour water into a mug,Kettle,"[44, 261]",pour water into a mug kettle,217
+ZY20210800004/H4/C12/N36/S235/s03/T1,Pick and place,Kettle,"[45, 242]",pick and place kettle,197
+ZY20210800004/H4/C12/N36/S184/s03/T2,Pour water into a mug,Kettle,"[40, 253]",pour water into a mug kettle,213
+ZY20210800004/H4/C12/N35/S235/s03/T1,Pick and place,Kettle,"[40, 254]",pick and place kettle,214
+ZY20210800004/H4/C12/N35/S184/s03/T2,Pour water into a mug,Kettle,"[42, 260]",pour water into a mug kettle,218
+ZY20210800004/H4/C12/N34/S235/s03/T1,Pick and place,Kettle,"[43, 272]",pick and place kettle,229
+ZY20210800004/H4/C12/N34/S184/s03/T2,Pour water into a mug,Kettle,"[42, 263]",pour water into a mug kettle,221
+ZY20210800004/H4/C12/N33/S235/s03/T1,Pick and place,Kettle,"[43, 263]",pick and place kettle,220
+ZY20210800004/H4/C12/N33/S184/s02/T2,Pour water into a mug,Kettle,"[43, 275]",pour water into a mug kettle,232
+ZY20210800004/H4/C12/N32/S235/s02/T1,Pick and place,Kettle,"[48, 267]",pick and place kettle,219
+ZY20210800004/H4/C12/N32/S184/s02/T2,Pour water into a mug,Kettle,"[43, 261]",pour water into a mug kettle,218
+ZY20210800004/H4/C12/N31/S235/s02/T1,Pick and place,Kettle,"[41, 274]",pick and place kettle,233
+ZY20210800004/H4/C12/N31/S184/s02/T2,Pour water into a mug,Kettle,"[42, 268]",pour water into a mug kettle,226
+ZY20210800004/H4/C12/N30/S235/s02/T1,Pick and place,Kettle,"[45, 268]",pick and place kettle,223
+ZY20210800004/H4/C12/N30/S184/s02/T2,Pour water into a mug,Kettle,"[48, 251]",pour water into a mug kettle,203
+ZY20210800004/H4/C12/N29/S235/s02/T1,Pick and place,Kettle,"[45, 251]",pick and place kettle,206
+ZY20210800004/H4/C12/N29/S184/s01/T2,Pour water into a mug,Kettle,"[48, 279]",pour water into a mug kettle,231
+ZY20210800004/H4/C12/N28/S235/s01/T1,Pick and place,Kettle,"[51, 277]",pick and place kettle,226
+ZY20210800004/H4/C12/N28/S184/s01/T2,Pour water into a mug,Kettle,"[41, 260]",pour water into a mug kettle,219
+ZY20210800004/H4/C12/N27/S235/s01/T1,Pick and place,Kettle,"[44, 232]",pick and place kettle,188
+ZY20210800004/H4/C12/N27/S184/s01/T2,Pour water into a mug,Kettle,"[42, 269]",pour water into a mug kettle,227
+ZY20210800004/H4/C12/N26/S235/s01/T1,Pick and place,Kettle,"[46, 263]",pick and place kettle,217
+ZY20210800004/H4/C12/N26/S184/s01/T2,Pour water into a mug,Kettle,"[45, 269]",pour water into a mug kettle,224
+ZY20210800004/H4/C12/N25/S235/s01/T1,Pick and place,Kettle,"[43, 265]",pick and place kettle,222
+ZY20210800004/H4/C12/N25/S186/s03/T2,Pour water into a mug,Kettle,"[46, 270]",pour water into a mug kettle,224
+ZY20210800004/H4/C12/N23/S236/s03/T1,Pick and place,Kettle,"[49, 275]",pick and place kettle,226
+ZY20210800004/H4/C12/N23/S186/s02/T2,Pour water into a mug,Kettle,"[42, 268]",pour water into a mug kettle,226
+ZY20210800004/H4/C12/N21/S236/s03/T1,Pick and place,Kettle,"[47, 275]",pick and place kettle,228
+ZY20210800004/H4/C12/N21/S186/s02/T2,Pour water into a mug,Kettle,"[43, 264]",pour water into a mug kettle,221
+ZY20210800004/H4/C12/N19/S236/s03/T1,Pick and place,Kettle,"[48, 267]",pick and place kettle,219
+ZY20210800004/H4/C12/N19/S186/s02/T2,Pour water into a mug,Kettle,"[40, 267]",pour water into a mug kettle,227
+ZY20210800004/H4/C12/N17/S236/s02/T1,Pick and place,Kettle,"[43, 269]",pick and place kettle,226
+ZY20210800004/H4/C12/N17/S186/s02/T2,Pour water into a mug,Kettle,"[45, 277]",pour water into a mug kettle,232
+ZY20210800004/H4/C12/N15/S236/s05/T2,Pour water into a mug,Kettle,"[36, 267]",pour water into a mug kettle,231
+ZY20210800004/H4/C12/N15/S236/s02/T1,Pick and place,Kettle,"[54, 270]",pick and place kettle,216
+ZY20210800004/H4/C12/N15/S186/s02/T2,Pour water into a mug,Kettle,"[49, 253]",pour water into a mug kettle,204
+ZY20210800004/H4/C12/N13/S236/s03/T1,Pick and place,Kettle,"[42, 258]",pick and place kettle,216
+ZY20210800004/H4/C12/N13/S186/s02/T2,Pour water into a mug,Kettle,"[40, 256]",pour water into a mug kettle,216
+ZY20210800004/H4/C1/N50/S6/s02/T1,Pick and place,Toy Car,"[35, 279]",pick and place toy car,244
+ZY20210800004/H4/C1/N50/S240/s03/T2,Push toy car,Toy Car,"[43, 264]",push toy car toy car,221
+ZY20210800004/H4/C1/N49/S240/s03/T2,Push toy car,Toy Car,"[41, 270]",push toy car toy car,229
+ZY20210800004/H4/C1/N48/S240/s02/T2,Push toy car,Toy Car,"[38, 241]",push toy car toy car,203
+ZY20210800004/H4/C1/N47/S240/s02/T2,Push toy car,Toy Car,"[44, 266]",push toy car toy car,220
+ZY20210800004/H4/C1/N46/S240/s02/T2,Push toy car,Toy Car,"[39, 267]",push toy car toy car,228
+ZY20210800004/H4/C1/N46/S17/s03/T1,Pick and place,Toy Car,"[20, 289]",pick and place toy car,269
+ZY20210800004/H4/C1/N45/S240/s02/T2,Push toy car,Toy Car,"[38, 282]",push toy car toy car,244
+ZY20210800004/H4/C1/N45/S17/s02/T3,Put it in the drawer,Toy Car,"[53, 280]",put it in the drawer toy car,227
+ZY20210800004/H4/C1/N45/S17/s02/T1,Pick and place,Toy Car,"[32, 287]",pick and place toy car,255
+ZY20210800004/H4/C1/N44/S240/s01/T2,Push toy car,Toy Car,"[42, 272]",push toy car toy car,230
+ZY20210800004/H4/C1/N43/S240/s01/T2,Push toy car,Toy Car,"[38, 246]",push toy car toy car,208
+ZY20210800004/H4/C1/N42/S240/s01/T2,Push toy car,Toy Car,"[38, 267]",push toy car toy car,229
+ZY20210800004/H4/C1/N42/S17/s01/T3,Put it in the drawer,Toy Car,"[39, 285]",put it in the drawer toy car,246
+ZY20210800004/H4/C1/N41/S240/s01/T2,Push toy car,Toy Car,"[42, 254]",push toy car toy car,212
+ZY20210800004/H4/C1/N41/S190/s03/T3,Put it in the drawer,Toy Car,"[47, 234]",put it in the drawer toy car,187
+ZY20210800004/H4/C1/N41/S17/s01/T3,Put it in the drawer,Toy Car,"[32, 290]",put it in the drawer toy car,258
+ZY20210800004/H4/C1/N41/S17/s01/T1,Pick and place,Toy Car,"[36, 289]",pick and place toy car,253
+ZY20210800004/H4/C1/N40/S239/s05/T2,Push toy car,Toy Car,"[45, 251]",push toy car toy car,206
+ZY20210800004/H4/C1/N40/S190/s03/T3,Put it in the drawer,Toy Car,"[50, 267]",put it in the drawer toy car,217
+ZY20210800004/H4/C1/N39/S244/s05/T4,Take it out of the drawer,Toy Car,"[42, 258]",take it out of the drawer toy car,212
+ZY20210800004/H4/C1/N39/S239/s05/T2,Push toy car,Toy Car,"[40, 267]",push toy car toy car,227
+ZY20210800004/H4/C1/N39/S190/s03/T3,Put it in the drawer,Toy Car,"[47, 263]",put it in the drawer toy car,216
+ZY20210800004/H4/C1/N38/S244/s05/T4,Take it out of the drawer,Toy Car,"[45, 263]",take it out of the drawer toy car,214
+ZY20210800004/H4/C1/N38/S239/s05/T2,Push toy car,Toy Car,"[49, 279]",push toy car toy car,230
+ZY20210800004/H4/C1/N38/S190/s02/T3,Put it in the drawer,Toy Car,"[52, 265]",put it in the drawer toy car,213
+ZY20210800004/H4/C1/N38/S18/s04/T1,Pick and place,Toy Car,"[30, 264]",pick and place toy car,234
+ZY20210800004/H4/C1/N37/S244/s05/T4,Take it out of the drawer,Toy Car,"[43, 248]",take it out of the drawer toy car,205
+ZY20210800004/H4/C1/N37/S239/s05/T2,Push toy car,Toy Car,"[44, 264]",push toy car toy car,220
+ZY20210800004/H4/C1/N37/S190/s02/T3,Put it in the drawer,Toy Car,"[50, 270]",put it in the drawer toy car,220
+ZY20210800004/H4/C1/N37/S18/s04/T3,Put it in the drawer,Toy Car,"[34, 270]",put it in the drawer toy car,236
+ZY20210800004/H4/C1/N36/S244/s04/T4,Take it out of the drawer,Toy Car,"[45, 259]",take it out of the drawer toy car,214
+ZY20210800004/H4/C1/N36/S239/s04/T2,Push toy car,Toy Car,"[54, 265]",push toy car toy car,211
+ZY20210800004/H4/C1/N36/S190/s02/T3,Put it in the drawer,Toy Car,"[49, 265]",put it in the drawer toy car,216
+ZY20210800004/H4/C1/N35/S244/s04/T4,Take it out of the drawer,Toy Car,"[44, 242]",take it out of the drawer toy car,198
+ZY20210800004/H4/C1/N35/S239/s04/T1,Pick and place,Toy Car,"[52, 280]",pick and place toy car,223
+ZY20210800004/H4/C1/N35/S190/s02/T3,Put it in the drawer,Toy Car,"[48, 248]",put it in the drawer toy car,200
+ZY20210800004/H4/C1/N35/S18/s03/T3,Put it in the drawer,Toy Car,"[48, 293]",put it in the drawer toy car,245
+ZY20210800004/H4/C1/N34/S244/s04/T4,Take it out of the drawer,Toy Car,"[49, 259]",take it out of the drawer toy car,210
+ZY20210800004/H4/C1/N34/S239/s04/T1,Pick and place,Toy Car,"[57, 263]",pick and place toy car,206
+ZY20210800004/H4/C1/N34/S190/s01/T3,Put it in the drawer,Toy Car,"[51, 261]",put it in the drawer toy car,210
+ZY20210800004/H4/C1/N33/S6/s05/T1,Pick and place,Toy Car,"[41, 271]",pick and place toy car,230
+ZY20210800004/H4/C1/N33/S244/s04/T4,Take it out of the drawer,Toy Car,"[54, 269]",take it out of the drawer toy car,215
+ZY20210800004/H4/C1/N33/S239/s04/T1,Pick and place,Toy Car,"[49, 268]",pick and place toy car,219
+ZY20210800004/H4/C1/N33/S190/s01/T3,Put it in the drawer,Toy Car,"[45, 241]",put it in the drawer toy car,196
+ZY20210800004/H4/C1/N32/S244/s03/T4,Take it out of the drawer,Toy Car,"[49, 263]",take it out of the drawer toy car,210
+ZY20210800004/H4/C1/N32/S239/s03/T1,Pick and place,Toy Car,"[47, 257]",pick and place toy car,210
+ZY20210800004/H4/C1/N32/S190/s01/T3,Put it in the drawer,Toy Car,"[48, 251]",put it in the drawer toy car,203
+ZY20210800004/H4/C1/N31/S244/s03/T4,Take it out of the drawer,Toy Car,"[51, 270]",take it out of the drawer toy car,219
+ZY20210800004/H4/C1/N31/S239/s03/T1,Pick and place,Toy Car,"[49, 267]",pick and place toy car,218
+ZY20210800004/H4/C1/N31/S190/s01/T3,Put it in the drawer,Toy Car,"[54, 267]",put it in the drawer toy car,213
+ZY20210800004/H4/C1/N30/S244/s03/T4,Take it out of the drawer,Toy Car,"[54, 258]",take it out of the drawer toy car,204
+ZY20210800004/H4/C1/N30/S242/s05/T3,Put it in the drawer,Toy Car,"[44, 250]",put it in the drawer toy car,206
+ZY20210800004/H4/C1/N30/S239/s03/T1,Pick and place,Toy Car,"[54, 275]",pick and place toy car,221
+ZY20210800004/H4/C1/N29/S244/s03/T4,Take it out of the drawer,Toy Car,"[54, 273]",take it out of the drawer toy car,219
+ZY20210800004/H4/C1/N29/S242/s05/T3,Put it in the drawer,Toy Car,"[51, 274]",put it in the drawer toy car,223
+ZY20210800004/H4/C1/N29/S239/s03/T1,Pick and place,Toy Car,"[49, 265]",pick and place toy car,216
+ZY20210800004/H4/C1/N29/S18/s01/T3,Put it in the drawer,Toy Car,"[30, 280]",put it in the drawer toy car,250
+ZY20210800004/H4/C1/N28/S244/s02/T4,Take it out of the drawer,Toy Car,"[52, 274]",take it out of the drawer toy car,222
+ZY20210800004/H4/C1/N28/S242/s05/T3,Put it in the drawer,Toy Car,"[52, 275]",put it in the drawer toy car,223
+ZY20210800004/H4/C1/N28/S239/s02/T1,Pick and place,Toy Car,"[52, 260]",pick and place toy car,208
+ZY20210800004/H4/C1/N27/S244/s02/T4,Take it out of the drawer,Toy Car,"[48, 269]",take it out of the drawer toy car,221
+ZY20210800004/H4/C1/N27/S242/s05/T3,Put it in the drawer,Toy Car,"[44, 260]",put it in the drawer toy car,216
+ZY20210800004/H4/C1/N27/S239/s02/T1,Pick and place,Toy Car,"[58, 264]",pick and place toy car,206
+ZY20210800004/H4/C1/N26/S242/s04/T3,Put it in the drawer,Toy Car,"[48, 276]",put it in the drawer toy car,220
+ZY20210800004/H4/C1/N26/S239/s02/T1,Pick and place,Toy Car,"[46, 260]",pick and place toy car,214
+ZY20210800004/H4/C1/N25/S244/s02/T4,Take it out of the drawer,Toy Car,"[59, 269]",take it out of the drawer toy car,210
+ZY20210800004/H4/C1/N25/S242/s04/T3,Put it in the drawer,Toy Car,"[43, 263]",put it in the drawer toy car,218
+ZY20210800004/H4/C1/N25/S239/s02/T1,Pick and place,Toy Car,"[49, 255]",pick and place toy car,206
+ZY20210800004/H4/C1/N24/S244/s01/T4,Take it out of the drawer,Toy Car,"[46, 259]",take it out of the drawer toy car,213
+ZY20210800004/H4/C1/N24/S242/s04/T3,Put it in the drawer,Toy Car,"[44, 276]",put it in the drawer toy car,228
+ZY20210800004/H4/C1/N24/S239/s01/T1,Pick and place,Toy Car,"[56, 271]",pick and place toy car,213
+ZY20210800004/H4/C1/N23/S244/s01/T4,Take it out of the drawer,Toy Car,"[54, 278]",take it out of the drawer toy car,219
+ZY20210800004/H4/C1/N23/S242/s04/T3,Put it in the drawer,Toy Car,"[40, 256]",put it in the drawer toy car,216
+ZY20210800004/H4/C1/N23/S239/s01/T1,Pick and place,Toy Car,"[54, 275]",pick and place toy car,221
+ZY20210800004/H4/C1/N22/S242/s03/T3,Put it in the drawer,Toy Car,"[44, 268]",put it in the drawer toy car,220
+ZY20210800004/H4/C1/N22/S239/s01/T1,Pick and place,Toy Car,"[55, 263]",pick and place toy car,208
+ZY20210800004/H4/C1/N21/S244/s01/T4,Take it out of the drawer,Toy Car,"[51, 254]",take it out of the drawer toy car,203
+ZY20210800004/H4/C1/N21/S242/s03/T3,Put it in the drawer,Toy Car,"[48, 275]",put it in the drawer toy car,227
+ZY20210800004/H4/C1/N21/S239/s01/T1,Pick and place,Toy Car,"[47, 257]",pick and place toy car,210
+ZY20210800004/H4/C1/N20/S242/s03/T2,Push toy car,Toy Car,"[47, 256]",push toy car toy car,203
+ZY20210800004/H4/C1/N20/S237/s05/T1,Pick and place,Toy Car,"[49, 264]",pick and place toy car,215
+ZY20210800004/H4/C1/N20/S194/s05/T4,Take it out of the drawer,Toy Car,"[50, 250]",take it out of the drawer toy car,200
+ZY20210800004/H4/C1/N19/S9/s04/T1,Pick and place,Toy Car,"[36, 283]",pick and place toy car,247
+ZY20210800004/H4/C1/N19/S242/s03/T2,Push toy car,Toy Car,"[38, 253]",push toy car toy car,215
+ZY20210800004/H4/C1/N19/S237/s05/T1,Pick and place,Toy Car,"[40, 251]",pick and place toy car,211
+ZY20210800004/H4/C1/N19/S194/s05/T4,Take it out of the drawer,Toy Car,"[52, 272]",take it out of the drawer toy car,213
+ZY20210800004/H4/C1/N14/S242/s01/T2,Push toy car,Toy Car,"[38, 268]",push toy car toy car,224
+ZY20210800004/H4/C1/N14/S237/s04/T1,Pick and place,Toy Car,"[54, 281]",pick and place toy car,227
+ZY20210800004/H4/C1/N14/S194/s04/T4,Take it out of the drawer,Toy Car,"[50, 275]",take it out of the drawer toy car,225
+ZY20210800004/H4/C1/N13/S242/s01/T2,Push toy car,Toy Car,"[44, 253]",push toy car toy car,209
+ZY20210800004/H4/C1/N13/S237/s04/T1,Pick and place,Toy Car,"[58, 248]",pick and place toy car,190
+ZY20210800004/H4/C1/N13/S194/s04/T4,Take it out of the drawer,Toy Car,"[56, 268]",take it out of the drawer toy car,208
+ZY20210800004/H4/C1/N06/S237/s02/T1,Pick and place,Toy Car,"[56, 277]",pick and place toy car,214
+ZY20210800004/H4/C1/N06/S194/s02/T4,Take it out of the drawer,Toy Car,"[45, 259]",take it out of the drawer toy car,207
+ZY20210800004/H4/C1/N05/S237/s02/T1,Pick and place,Toy Car,"[54, 272]",pick and place toy car,211
+ZY20210800004/H4/C1/N04/S237/s01/T1,Pick and place,Toy Car,"[54, 255]",pick and place toy car,201
+ZY20210800004/H4/C1/N03/S237/s01/T1,Pick and place,Toy Car,"[49, 266]",pick and place toy car,212
+ZY20210800004/H4/C1/N02/S240/s03/T2,Push toy car,Toy Car,"[44, 260]",push toy car toy car,208
+ZY20210800004/H4/C1/N02/S237/s01/T1,Pick and place,Toy Car,"[50, 248]",pick and place toy car,193
+ZY20210800004/H4/C1/N01/S240/s03/T2,Push toy car,Toy Car,"[42, 277]",push toy car toy car,225
+ZY20210800004/H4/C1/N01/S237/s01/T1,Pick and place,Toy Car,"[48, 251]",pick and place toy car,203
+ZY20210800003/H3/C3/N50/S284/s03/T2,Open and close the display,Laptop,"[37, 252]",open and close the display laptop,215
+ZY20210800003/H3/C3/N50/S282/s02/T2,Open and close the display,Laptop,"[32, 237]",open and close the display laptop,205
+ZY20210800003/H3/C3/N49/S284/s03/T2,Open and close the display,Laptop,"[43, 266]",open and close the display laptop,223
+ZY20210800003/H3/C3/N49/S282/s01/T2,Open and close the display,Laptop,"[37, 265]",open and close the display laptop,228
+ZY20210800003/H3/C3/N48/S284/s02/T2,Open and close the display,Laptop,"[42, 251]",open and close the display laptop,209
+ZY20210800003/H3/C3/N48/S282/s01/T2,Open and close the display,Laptop,"[44, 278]",open and close the display laptop,234
+ZY20210800003/H3/C3/N46/S284/s02/T2,Open and close the display,Laptop,"[38, 258]",open and close the display laptop,220
+ZY20210800003/H3/C3/N46/S282/s01/T2,Open and close the display,Laptop,"[40, 270]",open and close the display laptop,230
+ZY20210800003/H3/C3/N45/S284/s02/T2,Open and close the display,Laptop,"[37, 254]",open and close the display laptop,217
+ZY20210800003/H3/C3/N45/S279/s05/T2,Open and close the display,Laptop,"[43, 268]",open and close the display laptop,225
+ZY20210800003/H3/C3/N44/S279/s05/T2,Open and close the display,Laptop,"[37, 272]",open and close the display laptop,235
+ZY20210800003/H3/C3/N40/S282/s05/T2,Open and close the display,Laptop,"[46, 268]",open and close the display laptop,222
+ZY20210800003/H3/C3/N40/S279/s04/T2,Open and close the display,Laptop,"[39, 268]",open and close the display laptop,229
+ZY20210800003/H3/C3/N36/S282/s04/T2,Open and close the display,Laptop,"[43, 274]",open and close the display laptop,231
+ZY20210800003/H3/C3/N36/S279/s03/T2,Open and close the display,Laptop,"[38, 271]",open and close the display laptop,233
+ZY20210800003/H3/C3/N34/S282/s04/T2,Open and close the display,Laptop,"[43, 265]",open and close the display laptop,222
+ZY20210800003/H3/C3/N34/S279/s03/T2,Open and close the display,Laptop,"[41, 260]",open and close the display laptop,219
+ZY20210800003/H3/C3/N33/S282/s04/T2,Open and close the display,Laptop,"[41, 271]",open and close the display laptop,230
+ZY20210800003/H3/C3/N33/S279/s02/T2,Open and close the display,Laptop,"[44, 257]",open and close the display laptop,213
+ZY20210800003/H3/C3/N32/S282/s03/T2,Open and close the display,Laptop,"[45, 265]",open and close the display laptop,220
+ZY20210800003/H3/C3/N32/S279/s02/T2,Open and close the display,Laptop,"[39, 275]",open and close the display laptop,236
+ZY20210800003/H3/C3/N31/S282/s03/T2,Open and close the display,Laptop,"[37, 258]",open and close the display laptop,221
+ZY20210800003/H3/C3/N31/S279/s02/T2,Open and close the display,Laptop,"[37, 263]",open and close the display laptop,226
+ZY20210800003/H3/C3/N28/S282/s02/T2,Open and close the display,Laptop,"[37, 258]",open and close the display laptop,221
+ZY20210800003/H3/C3/N28/S279/s01/T2,Open and close the display,Laptop,"[34, 260]",open and close the display laptop,226
+ZY20210800003/H3/C3/N26/S282/s02/T2,Open and close the display,Laptop,"[40, 270]",open and close the display laptop,230
+ZY20210800003/H3/C3/N26/S279/s01/T2,Open and close the display,Laptop,"[43, 273]",open and close the display laptop,230
+ZY20210800003/H3/C3/N25/S277/s05/T2,Open and close the display,Laptop,"[40, 265]",open and close the display laptop,225
+ZY20210800003/H3/C3/N24/S277/s05/T2,Open and close the display,Laptop,"[37, 268]",open and close the display laptop,231
+ZY20210800003/H3/C3/N23/S277/s05/T2,Open and close the display,Laptop,"[38, 271]",open and close the display laptop,233
+ZY20210800003/H3/C3/N22/S277/s05/T2,Open and close the display,Laptop,"[46, 262]",open and close the display laptop,216
+ZY20210800003/H3/C3/N20/S277/s04/T2,Open and close the display,Laptop,"[36, 244]",open and close the display laptop,208
+ZY20210800003/H3/C3/N15/S277/s03/T2,Open and close the display,Laptop,"[46, 269]",open and close the display laptop,223
+ZY20210800003/H3/C3/N13/S107/s04/T2,Open and close the display,Laptop,"[9, 140]",open and close the display laptop,131
+ZY20210800003/H3/C3/N13/S107/s04/T1,Pick and place,Laptop,"[13, 119]",pick and place laptop,106
+ZY20210800003/H3/C3/N10/S277/s02/T2,Open and close the display,Laptop,"[34, 272]",open and close the display laptop,238
+ZY20210800003/H3/C3/N08/S277/s01/T2,Open and close the display,Laptop,"[38, 254]",open and close the display laptop,216
+ZY20210800003/H3/C3/N07/S277/s01/T2,Open and close the display,Laptop,"[37, 257]",open and close the display laptop,220
+ZY20210800003/H3/C3/N06/S277/s01/T2,Open and close the display,Laptop,"[38, 273]",open and close the display laptop,235
+ZY20210800003/H3/C3/N03/S275/s05/T2,Open and close the display,Laptop,"[39, 258]",open and close the display laptop,219
+ZY20210800003/H3/C3/N02/S275/s05/T2,Open and close the display,Laptop,"[34, 254]",open and close the display laptop,220
+ZY20210800003/H3/C3/N01/S275/s04/T2,Open and close the display,Laptop,"[38, 249]",open and close the display laptop,211
+ZY20210800003/H3/C20/N35/S307/s02/T1,Pick and place to the original position,Chair,"[50, 218]",pick and place to the original position chair,168
+ZY20210800003/H3/C20/N17/S282/s03/T2,Pick and place to the original position,Chair,"[60, 222]",pick and place to the original position chair,162
+ZY20210800003/H3/C20/N17/S279/s04/T1,Pick and place to the original position,Chair,"[63, 215]",pick and place to the original position chair,152
+ZY20210800003/H3/C20/N16/S284/s02/T3,Pick and place to a new position,Chair,"[76, 263]",pick and place to a new position chair,187
+ZY20210800003/H3/C20/N16/S284/s01/T4,Pick and place to a new position,Chair,"[66, 241]",pick and place to a new position chair,175
+ZY20210800003/H3/C20/N16/S282/s03/T2,Pick and place to the original position,Chair,"[75, 231]",pick and place to the original position chair,156
+ZY20210800003/H3/C20/N16/S279/s04/T1,Pick and place to the original position,Chair,"[77, 243]",pick and place to the original position chair,166
+ZY20210800003/H3/C20/N15/S284/s02/T3,Pick and place to a new position,Chair,"[87, 253]",pick and place to a new position chair,166
+ZY20210800003/H3/C20/N15/S284/s01/T4,Pick and place to a new position,Chair,"[68, 246]",pick and place to a new position chair,178
+ZY20210800003/H3/C20/N15/S282/s03/T2,Pick and place to the original position,Chair,"[51, 229]",pick and place to the original position chair,178
+ZY20210800003/H3/C20/N15/S279/s04/T1,Pick and place to the original position,Chair,"[70, 232]",pick and place to the original position chair,162
+ZY20210800003/H3/C20/N14/S284/s05/T4,Pick and place to a new position,Chair,"[52, 206]",pick and place to a new position chair,154
+ZY20210800003/H3/C20/N14/S284/s02/T3,Pick and place to a new position,Chair,"[97, 254]",pick and place to a new position chair,157
+ZY20210800003/H3/C20/N14/S282/s03/T2,Pick and place to the original position,Chair,"[48, 224]",pick and place to the original position chair,176
+ZY20210800003/H3/C20/N14/S279/s04/T1,Pick and place to the original position,Chair,"[85, 240]",pick and place to the original position chair,155
+ZY20210800003/H3/C20/N13/S284/s05/T4,Pick and place to a new position,Chair,"[79, 259]",pick and place to a new position chair,180
+ZY20210800003/H3/C20/N13/S284/s01/T3,Pick and place to a new position,Chair,"[94, 246]",pick and place to a new position chair,152
+ZY20210800003/H3/C20/N13/S282/s02/T2,Pick and place to the original position,Chair,"[82, 229]",pick and place to the original position chair,147
+ZY20210800003/H3/C20/N13/S279/s03/T1,Pick and place to the original position,Chair,"[85, 229]",pick and place to the original position chair,144
+ZY20210800003/H3/C20/N12/S284/s05/T4,Pick and place to a new position,Chair,"[84, 247]",pick and place to a new position chair,163
+ZY20210800003/H3/C20/N12/S284/s01/T3,Pick and place to a new position,Chair,"[93, 246]",pick and place to a new position chair,153
+ZY20210800003/H3/C20/N12/S282/s02/T2,Pick and place to the original position,Chair,"[85, 231]",pick and place to the original position chair,146
+ZY20210800003/H3/C20/N12/S279/s03/T2,Pick and place to the original position,Chair,"[57, 235]",pick and place to the original position chair,178
+ZY20210800003/H3/C20/N11/S284/s05/T4,Pick and place to a new position,Chair,"[73, 229]",pick and place to a new position chair,156
+ZY20210800003/H3/C20/N11/S284/s01/T3,Pick and place to a new position,Chair,"[72, 227]",pick and place to a new position chair,155
+ZY20210800003/H3/C20/N11/S282/s02/T2,Pick and place to the original position,Chair,"[72, 227]",pick and place to the original position chair,155
+ZY20210800003/H3/C20/N11/S279/s03/T1,Pick and place to the original position,Chair,"[67, 228]",pick and place to the original position chair,161
+ZY20210800003/H3/C2/N49/S219/s02/T3,Take it out of the drawer,Mug,"[42, 246]",take it out of the drawer mug,204
+ZY20210800003/H3/C2/N48/S219/s02/T3,Take it out of the drawer,Mug,"[41, 262]",take it out of the drawer mug,221
+ZY20210800003/H3/C2/N47/S219/s02/T3,Take it out of the drawer,Mug,"[41, 230]",take it out of the drawer mug,189
+ZY20210800003/H3/C2/N46/S219/s01/T3,Take it out of the drawer,Mug,"[42, 233]",take it out of the drawer mug,191
+ZY20210800003/H3/C2/N45/S219/s01/T3,Take it out of the drawer,Mug,"[41, 237]",take it out of the drawer mug,196
+ZY20210800003/H3/C2/N44/S51/s03/T1,Pick and place,Mug,"[26, 273]",pick and place mug,247
+ZY20210800003/H3/C2/N44/S219/s01/T3,Take it out of the drawer,Mug,"[41, 244]",take it out of the drawer mug,203
+ZY20210800003/H3/C2/N43/S219/s01/T3,Take it out of the drawer,Mug,"[40, 236]",take it out of the drawer mug,196
+ZY20210800003/H3/C2/N42/S217/s05/T2,Put it in the drawer,Mug,"[37, 227]",put it in the drawer mug,190
+ZY20210800003/H3/C2/N41/S217/s05/T2,Put it in the drawer,Mug,"[36, 247]",put it in the drawer mug,211
+ZY20210800003/H3/C2/N40/S217/s05/T2,Put it in the drawer,Mug,"[45, 269]",put it in the drawer mug,224
+ZY20210800003/H3/C2/N39/S217/s05/T2,Put it in the drawer,Mug,"[37, 240]",put it in the drawer mug,203
+ZY20210800003/H3/C2/N38/S217/s04/T2,Put it in the drawer,Mug,"[35, 248]",put it in the drawer mug,213
+ZY20210800003/H3/C2/N37/S217/s04/T2,Put it in the drawer,Mug,"[36, 243]",put it in the drawer mug,207
+ZY20210800003/H3/C2/N36/S217/s04/T2,Put it in the drawer,Mug,"[37, 226]",put it in the drawer mug,189
+ZY20210800003/H3/C2/N35/S217/s04/T2,Put it in the drawer,Mug,"[34, 242]",put it in the drawer mug,208
+ZY20210800003/H3/C2/N34/S217/s03/T1,Pick and place,Mug,"[45, 258]",pick and place mug,213
+ZY20210800003/H3/C2/N33/S217/s03/T1,Pick and place,Mug,"[39, 247]",pick and place mug,208
+ZY20210800003/H3/C2/N32/S50/s02/T1,Pick and place,Mug,"[23, 293]",pick and place mug,270
+ZY20210800003/H3/C2/N32/S217/s03/T1,Pick and place,Mug,"[40, 243]",pick and place mug,203
+ZY20210800003/H3/C2/N31/S217/s03/T1,Pick and place,Mug,"[38, 231]",pick and place mug,193
+ZY20210800003/H3/C2/N30/S217/s02/T1,Pick and place,Mug,"[40, 234]",pick and place mug,194
+ZY20210800003/H3/C2/N29/S217/s02/T1,Pick and place,Mug,"[37, 254]",pick and place mug,217
+ZY20210800003/H3/C2/N28/S217/s02/T1,Pick and place,Mug,"[36, 239]",pick and place mug,203
+ZY20210800003/H3/C2/N27/S217/s02/T1,Pick and place,Mug,"[42, 233]",pick and place mug,191
+ZY20210800003/H3/C2/N23/S217/s01/T6,Pick and place (with water),Mug,"[35, 239]",pick and place (with water) mug,204
+ZY20210800003/H3/C2/N22/S217/s01/T6,Pick and place (with water),Mug,"[37, 263]",pick and place (with water) mug,226
+ZY20210800003/H3/C2/N21/S215/s05/T6,Pick and place (with water),Mug,"[34, 256]",pick and place (with water) mug,222
+ZY20210800003/H3/C2/N20/S215/s05/T6,Pick and place (with water),Mug,"[42, 271]",pick and place (with water) mug,229
+ZY20210800003/H3/C2/N19/S215/s05/T6,Pick and place (with water),Mug,"[37, 253]",pick and place (with water) mug,216
+ZY20210800003/H3/C2/N18/S215/s05/T6,Pick and place (with water),Mug,"[37, 256]",pick and place (with water) mug,219
+ZY20210800003/H3/C2/N17/S215/s05/T6,Pick and place (with water),Mug,"[33, 248]",pick and place (with water) mug,215
+ZY20210800003/H3/C2/N16/S215/s04/T6,Pick and place (with water),Mug,"[34, 225]",pick and place (with water) mug,191
+ZY20210800003/H3/C2/N15/S215/s04/T5,Pour water into another mug,Mug,"[40, 246]",pour water into another mug mug,206
+ZY20210800003/H3/C2/N14/S215/s04/T5,Pour water into another mug,Mug,"[37, 249]",pour water into another mug mug,212
+ZY20210800003/H3/C2/N13/S215/s04/T5,Pour water into another mug,Mug,"[37, 233]",pour water into another mug mug,196
+ZY20210800003/H3/C2/N12/S215/s03/T5,Pour water into another mug,Mug,"[41, 239]",pour water into another mug mug,198
+ZY20210800003/H3/C2/N11/S215/s03/T5,Pour water into another mug,Mug,"[43, 248]",pour water into another mug mug,205
+ZY20210800003/H3/C14/N50/S170/s02/T1,Open and close,Trash Can,"[38, 269]",open and close trash can,231
+ZY20210800003/H3/C14/N49/S209/s01/T2,Throw something in it,Trash Can,"[37, 273]",throw something in it trash can,236
+ZY20210800003/H3/C14/N49/S170/s01/T1,Open and close,Trash Can,"[44, 259]",open and close trash can,215
+ZY20210800003/H3/C14/N48/S209/s01/T2,Throw something in it,Trash Can,"[35, 225]",throw something in it trash can,190
+ZY20210800003/H3/C14/N48/S170/s01/T1,Open and close,Trash Can,"[45, 228]",open and close trash can,183
+ZY20210800003/H3/C14/N47/S209/s01/T2,Throw something in it,Trash Can,"[43, 260]",throw something in it trash can,217
+ZY20210800003/H3/C14/N47/S170/s01/T1,Open and close,Trash Can,"[52, 242]",open and close trash can,190
+ZY20210800003/H3/C14/N46/S209/s01/T2,Throw something in it,Trash Can,"[38, 272]",throw something in it trash can,234
+ZY20210800003/H3/C14/N46/S170/s01/T1,Open and close,Trash Can,"[47, 257]",open and close trash can,210
+ZY20210800003/H3/C14/N45/S166/s05/T1,Open and close,Trash Can,"[55, 258]",open and close trash can,203
+ZY20210800003/H3/C14/N44/S207/s05/T2,Throw something in it,Trash Can,"[45, 239]",throw something in it trash can,194
+ZY20210800003/H3/C14/N44/S166/s05/T1,Open and close,Trash Can,"[59, 255]",open and close trash can,196
+ZY20210800003/H3/C14/N43/S207/s05/T2,Throw something in it,Trash Can,"[38, 265]",throw something in it trash can,227
+ZY20210800003/H3/C14/N43/S166/s05/T1,Open and close,Trash Can,"[53, 257]",open and close trash can,204
+ZY20210800003/H3/C14/N42/S207/s05/T2,Throw something in it,Trash Can,"[37, 254]",throw something in it trash can,217
+ZY20210800003/H3/C14/N42/S166/s05/T1,Open and close,Trash Can,"[47, 257]",open and close trash can,210
+ZY20210800003/H3/C14/N41/S207/s04/T2,Throw something in it,Trash Can,"[43, 260]",throw something in it trash can,217
+ZY20210800003/H3/C14/N41/S166/s04/T1,Open and close,Trash Can,"[44, 272]",open and close trash can,228
+ZY20210800003/H3/C14/N40/S207/s04/T2,Throw something in it,Trash Can,"[38, 271]",throw something in it trash can,233
+ZY20210800003/H3/C14/N40/S166/s04/T1,Open and close,Trash Can,"[49, 223]",open and close trash can,174
+ZY20210800003/H3/C14/N39/S207/s04/T2,Throw something in it,Trash Can,"[44, 271]",throw something in it trash can,227
+ZY20210800003/H3/C14/N38/S207/s04/T2,Throw something in it,Trash Can,"[44, 259]",throw something in it trash can,215
+ZY20210800003/H3/C14/N38/S166/s04/T1,Open and close,Trash Can,"[52, 283]",open and close trash can,231
+ZY20210800003/H3/C14/N37/S334/s03/T2,Throw something in it,Trash Can,"[40, 250]",throw something in it trash can,210
+ZY20210800003/H3/C14/N37/S334/s02/T1,Open and close,Trash Can,"[37, 245]",open and close trash can,208
+ZY20210800003/H3/C14/N36/S334/s03/T2,Throw something in it,Trash Can,"[39, 248]",throw something in it trash can,209
+ZY20210800003/H3/C14/N36/S334/s02/T1,Open and close,Trash Can,"[44, 259]",open and close trash can,213
+ZY20210800003/H3/C14/N35/S207/s03/T2,Throw something in it,Trash Can,"[43, 233]",throw something in it trash can,190
+ZY20210800003/H3/C14/N35/S166/s03/T1,Open and close,Trash Can,"[46, 251]",open and close trash can,205
+ZY20210800003/H3/C14/N34/S207/s03/T2,Throw something in it,Trash Can,"[40, 252]",throw something in it trash can,212
+ZY20210800003/H3/C14/N34/S166/s03/T1,Open and close,Trash Can,"[61, 227]",open and close trash can,166
+ZY20210800003/H3/C14/N33/S334/s03/T2,Throw something in it,Trash Can,"[40, 266]",throw something in it trash can,226
+ZY20210800003/H3/C14/N33/S334/s01/T1,Open and close,Trash Can,"[44, 256]",open and close trash can,207
+ZY20210800003/H3/C14/N32/S207/s02/T2,Throw something in it,Trash Can,"[35, 240]",throw something in it trash can,205
+ZY20210800003/H3/C14/N32/S166/s02/T1,Open and close,Trash Can,"[63, 230]",open and close trash can,167
+ZY20210800003/H3/C14/N31/S207/s02/T2,Throw something in it,Trash Can,"[43, 236]",throw something in it trash can,193
+ZY20210800003/H3/C14/N31/S166/s02/T1,Open and close,Trash Can,"[46, 239]",open and close trash can,193
+ZY20210800003/H3/C14/N30/S334/s03/T2,Throw something in it,Trash Can,"[43, 259]",throw something in it trash can,216
+ZY20210800003/H3/C14/N30/S334/s01/T1,Open and close,Trash Can,"[44, 254]",open and close trash can,201
+ZY20210800003/H3/C14/N29/S207/s01/T2,Throw something in it,Trash Can,"[42, 265]",throw something in it trash can,223
+ZY20210800003/H3/C14/N29/S166/s01/T1,Open and close,Trash Can,"[64, 241]",open and close trash can,177
+ZY20210800003/H3/C14/N28/S207/s01/T2,Throw something in it,Trash Can,"[40, 251]",throw something in it trash can,211
+ZY20210800003/H3/C14/N28/S166/s01/T1,Open and close,Trash Can,"[51, 248]",open and close trash can,197
+ZY20210800003/H3/C14/N27/S334/s02/T2,Throw something in it,Trash Can,"[35, 258]",throw something in it trash can,223
+ZY20210800003/H3/C14/N27/S334/s01/T1,Open and close,Trash Can,"[40, 240]",open and close trash can,196
+ZY20210800003/H3/C14/N26/S334/s02/T2,Throw something in it,Trash Can,"[42, 259]",throw something in it trash can,217
+ZY20210800003/H3/C14/N26/S334/s01/T1,Open and close,Trash Can,"[47, 260]",open and close trash can,213
+ZY20210800003/H3/C14/N13/S170/s03/T1,Open and close,Trash Can,"[51, 272]",open and close trash can,221
+ZY20210800003/H3/C14/N11/S170/s03/T1,Open and close,Trash Can,"[57, 260]",open and close trash can,203
+ZY20210800003/H3/C13/N50/S203/s02/T4,Cut apple,Knife,"[37, 217]",cut apple knife,180
+ZY20210800003/H3/C13/N50/S144/s02/T1,Pick and place,Knife,"[46, 225]",pick and place knife,179
+ZY20210800003/H3/C13/N49/S203/s01/T4,Cut apple,Knife,"[38, 239]",cut apple knife,201
+ZY20210800003/H3/C13/N49/S144/s01/T1,Pick and place,Knife,"[68, 268]",pick and place knife,200
+ZY20210800003/H3/C13/N48/S203/s01/T4,Cut apple,Knife,"[41, 255]",cut apple knife,214
+ZY20210800003/H3/C13/N48/S144/s01/T1,Pick and place,Knife,"[56, 258]",pick and place knife,202
+ZY20210800003/H3/C13/N47/S203/s01/T4,Cut apple,Knife,"[41, 260]",cut apple knife,219
+ZY20210800003/H3/C13/N47/S144/s01/T1,Pick and place,Knife,"[67, 254]",pick and place knife,187
+ZY20210800003/H3/C13/N46/S203/s01/T4,Cut apple,Knife,"[44, 268]",cut apple knife,224
+ZY20210800003/H3/C13/N46/S144/s01/T1,Pick and place,Knife,"[54, 242]",pick and place knife,188
+ZY20210800003/H3/C13/N45/S200/s05/T4,Cut apple,Knife,"[47, 254]",cut apple knife,207
+ZY20210800003/H3/C13/N45/S140/s05/T1,Pick and place,Knife,"[61, 259]",pick and place knife,198
+ZY20210800003/H3/C13/N44/S200/s05/T4,Cut apple,Knife,"[44, 259]",cut apple knife,215
+ZY20210800003/H3/C13/N43/S140/s05/T1,Pick and place,Knife,"[61, 262]",pick and place knife,201
+ZY20210800003/H3/C13/N42/S200/s05/T4,Cut apple,Knife,"[49, 248]",cut apple knife,199
+ZY20210800003/H3/C13/N42/S140/s05/T1,Pick and place,Knife,"[58, 255]",pick and place knife,197
+ZY20210800003/H3/C13/N41/S200/s04/T4,Cut apple,Knife,"[48, 280]",cut apple knife,232
+ZY20210800003/H3/C13/N41/S140/s04/T1,Pick and place,Knife,"[54, 251]",pick and place knife,197
+ZY20210800003/H3/C13/N40/S200/s04/T4,Cut apple,Knife,"[49, 264]",cut apple knife,215
+ZY20210800003/H3/C13/N39/S200/s04/T4,Cut apple,Knife,"[49, 245]",cut apple knife,196
+ZY20210800003/H3/C13/N39/S140/s04/T1,Pick and place,Knife,"[60, 281]",pick and place knife,221
+ZY20210800003/H3/C13/N38/S200/s04/T3,Put it in the drawer,Knife,"[52, 246]",put it in the drawer knife,194
+ZY20210800003/H3/C13/N38/S140/s04/T1,Pick and place,Knife,"[42, 241]",pick and place knife,199
+ZY20210800003/H3/C13/N37/S200/s03/T3,Put it in the drawer,Knife,"[40, 244]",put it in the drawer knife,204
+ZY20210800003/H3/C13/N36/S200/s03/T3,Put it in the drawer,Knife,"[52, 265]",put it in the drawer knife,213
+ZY20210800003/H3/C13/N36/S140/s03/T1,Pick and place,Knife,"[61, 258]",pick and place knife,197
+ZY20210800003/H3/C13/N35/S200/s03/T3,Put it in the drawer,Knife,"[50, 266]",put it in the drawer knife,216
+ZY20210800003/H3/C13/N35/S140/s03/T1,Pick and place,Knife,"[70, 250]",pick and place knife,180
+ZY20210800003/H3/C13/N34/S200/s03/T3,Put it in the drawer,Knife,"[50, 242]",put it in the drawer knife,192
+ZY20210800003/H3/C13/N34/S140/s03/T1,Pick and place,Knife,"[49, 219]",pick and place knife,170
+ZY20210800003/H3/C13/N33/S200/s02/T3,Put it in the drawer,Knife,"[44, 242]",put it in the drawer knife,198
+ZY20210800003/H3/C13/N33/S140/s02/T1,Pick and place,Knife,"[64, 235]",pick and place knife,171
+ZY20210800003/H3/C13/N32/S200/s02/T3,Put it in the drawer,Knife,"[40, 252]",put it in the drawer knife,212
+ZY20210800003/H3/C13/N32/S140/s02/T1,Pick and place,Knife,"[66, 246]",pick and place knife,170
+ZY20210800003/H3/C13/N31/S200/s02/T2,Take it out of the drawer,Knife,"[48, 236]",take it out of the drawer knife,188
+ZY20210800003/H3/C13/N31/S140/s02/T1,Pick and place,Knife,"[53, 246]",pick and place knife,186
+ZY20210800003/H3/C13/N30/S200/s02/T2,Take it out of the drawer,Knife,"[53, 260]",take it out of the drawer knife,207
+ZY20210800003/H3/C13/N30/S140/s02/T1,Pick and place,Knife,"[53, 254]",pick and place knife,201
+ZY20210800003/H3/C13/N29/S200/s01/T2,Take it out of the drawer,Knife,"[58, 263]",take it out of the drawer knife,205
+ZY20210800003/H3/C13/N29/S140/s01/T1,Pick and place,Knife,"[54, 222]",pick and place knife,168
+ZY20210800003/H3/C13/N28/S200/s01/T2,Take it out of the drawer,Knife,"[43, 248]",take it out of the drawer knife,205
+ZY20210800003/H3/C13/N28/S140/s01/T1,Pick and place,Knife,"[50, 238]",pick and place knife,188
+ZY20210800003/H3/C13/N27/S200/s01/T2,Take it out of the drawer,Knife,"[54, 260]",take it out of the drawer knife,206
+ZY20210800003/H3/C13/N27/S140/s01/T1,Pick and place,Knife,"[65, 254]",pick and place knife,189
+ZY20210800003/H3/C13/N26/S200/s01/T2,Take it out of the drawer,Knife,"[45, 232]",take it out of the drawer knife,187
+ZY20210800003/H3/C13/N26/S140/s01/T1,Pick and place,Knife,"[58, 248]",pick and place knife,190
+ZY20210800003/H3/C13/N13/S144/s03/T1,Pick and place,Knife,"[50, 258]",pick and place knife,208
+ZY20210800003/H3/C13/N11/S203/s03/T4,Cut apple,Knife,"[37, 249]",cut apple knife,212
+ZY20210800003/H3/C13/N11/S144/s03/T1,Pick and place,Knife,"[55, 248]",pick and place knife,193
+ZY20210800003/H3/C12/N48/S342/s03/T2,Pour water into a mug,Kettle,"[37, 259]",pour water into a mug kettle,222
+ZY20210800003/H3/C12/N42/S342/s02/T2,Pour water into a mug,Kettle,"[40, 263]",pour water into a mug kettle,223
+ZY20210800003/H3/C12/N36/S176/s03/T1,Pick and place,Kettle,"[48, 255]",pick and place kettle,207
+ZY20210800003/H3/C12/N34/S176/s03/T1,Pick and place,Kettle,"[52, 278]",pick and place kettle,218
+ZY20210800003/H3/C12/N32/S176/s03/T1,Pick and place,Kettle,"[48, 263]",pick and place kettle,209
+ZY20210800003/H3/C12/N30/S176/s02/T1,Pick and place,Kettle,"[48, 238]",pick and place kettle,190
+ZY20210800003/H3/C12/N28/S176/s02/T1,Pick and place,Kettle,"[50, 275]",pick and place kettle,225
+ZY20210800003/H3/C12/N26/S176/s02/T1,Pick and place,Kettle,"[52, 237]",pick and place kettle,185
+ZY20210800003/H3/C12/N25/S176/s02/T1,Pick and place,Kettle,"[60, 281]",pick and place kettle,221
+ZY20210800003/H3/C12/N24/S342/s01/T2,Pour water into a mug,Kettle,"[35, 265]",pour water into a mug kettle,230
+ZY20210800003/H3/C12/N24/S176/s03/T1,Pick and place,Kettle,"[50, 272]",pick and place kettle,215
+ZY20210800003/H3/C12/N23/S176/s01/T1,Pick and place,Kettle,"[47, 251]",pick and place kettle,200
+ZY20210800003/H3/C12/N22/S176/s01/T1,Pick and place,Kettle,"[49, 247]",pick and place kettle,198
+ZY20210800003/H3/C12/N21/S176/s01/T1,Pick and place,Kettle,"[52, 257]",pick and place kettle,205
+ZY20210800003/H3/C12/N20/S206/s05/T2,Pour water into a mug,Kettle,"[51, 250]",pour water into a mug kettle,199
+ZY20210800003/H3/C12/N20/S173/s05/T1,Pick and place,Kettle,"[54, 240]",pick and place kettle,186
+ZY20210800003/H3/C12/N19/S206/s05/T2,Pour water into a mug,Kettle,"[45, 244]",pour water into a mug kettle,199
+ZY20210800003/H3/C12/N19/S173/s05/T1,Pick and place,Kettle,"[57, 254]",pick and place kettle,197
+ZY20210800003/H3/C12/N18/S206/s05/T2,Pour water into a mug,Kettle,"[48, 251]",pour water into a mug kettle,203
+ZY20210800003/H3/C12/N18/S173/s05/T1,Pick and place,Kettle,"[50, 275]",pick and place kettle,221
+ZY20210800003/H3/C12/N17/S173/s05/T1,Pick and place,Kettle,"[55, 268]",pick and place kettle,207
+ZY20210800003/H3/C12/N16/S206/s04/T2,Pour water into a mug,Kettle,"[49, 248]",pour water into a mug kettle,199
+ZY20210800003/H3/C12/N16/S173/s04/T1,Pick and place,Kettle,"[50, 257]",pick and place kettle,207
+ZY20210800003/H3/C12/N15/S206/s04/T2,Pour water into a mug,Kettle,"[51, 256]",pour water into a mug kettle,205
+ZY20210800003/H3/C12/N15/S173/s04/T1,Pick and place,Kettle,"[55, 254]",pick and place kettle,199
+ZY20210800003/H3/C12/N14/S206/s04/T2,Pour water into a mug,Kettle,"[46, 265]",pour water into a mug kettle,219
+ZY20210800003/H3/C12/N14/S173/s04/T1,Pick and place,Kettle,"[47, 248]",pick and place kettle,201
+ZY20210800003/H3/C12/N13/S206/s04/T2,Pour water into a mug,Kettle,"[47, 269]",pour water into a mug kettle,222
+ZY20210800003/H3/C12/N13/S173/s04/T1,Pick and place,Kettle,"[43, 257]",pick and place kettle,214
+ZY20210800003/H3/C12/N12/S206/s03/T2,Pour water into a mug,Kettle,"[52, 261]",pour water into a mug kettle,209
+ZY20210800003/H3/C12/N12/S173/s03/T1,Pick and place,Kettle,"[56, 257]",pick and place kettle,201
+ZY20210800003/H3/C12/N11/S206/s03/T2,Pour water into a mug,Kettle,"[48, 234]",pour water into a mug kettle,186
+ZY20210800003/H3/C12/N11/S173/s03/T1,Pick and place,Kettle,"[60, 276]",pick and place kettle,212
+ZY20210800003/H3/C1/N50/S83/s04/T2,Push toy car,Toy Car,"[23, 270]",push toy car toy car,247
+ZY20210800003/H3/C1/N50/S83/s04/T1,Pick and place,Toy Car,"[24, 258]",pick and place toy car,234
+ZY20210800003/H3/C1/N49/S83/s04/T2,Push toy car,Toy Car,"[24, 281]",push toy car toy car,257
+ZY20210800003/H3/C1/N49/S83/s04/T1,Pick and place,Toy Car,"[28, 236]",pick and place toy car,208
+ZY20210800003/H3/C1/N48/S83/s05/T2,Push toy car,Toy Car,"[23, 271]",push toy car toy car,248
+ZY20210800003/H3/C1/N48/S83/s05/T1,Pick and place,Toy Car,"[42, 275]",pick and place toy car,233
+ZY20210800003/H3/C1/N46/S84/s01/T1,Pick and place,Toy Car,"[43, 288]",pick and place toy car,245
+ZY20210800003/H3/C1/N45/S84/s02/T1,Pick and place,Toy Car,"[25, 280]",pick and place toy car,255
+ZY20210800003/H3/C1/N44/S84/s01/T2,Push toy car,Toy Car,"[24, 290]",push toy car toy car,266
+ZY20210800003/H3/C1/N42/S84/s03/T1,Pick and place,Toy Car,"[25, 289]",pick and place toy car,264
+ZY20210800003/H3/C1/N35/S83/s03/T1,Pick and place,Toy Car,"[26, 272]",pick and place toy car,246
+ZY20210800003/H3/C1/N33/S83/s02/T1,Pick and place,Toy Car,"[37, 281]",pick and place toy car,244
+ZY20210800003/H3/C1/N32/S83/s02/T2,Push toy car,Toy Car,"[24, 267]",push toy car toy car,243
+ZY20210800003/H3/C1/N32/S83/s02/T1,Pick and place,Toy Car,"[30, 272]",pick and place toy car,242
+ZY20210800003/H3/C1/N31/S83/s03/T1,Pick and place,Toy Car,"[23, 281]",pick and place toy car,258
+ZY20210800003/H3/C1/N30/S83/s01/T2,Push toy car,Toy Car,"[23, 287]",push toy car toy car,264
+ZY20210800003/H3/C1/N30/S83/s01/T1,Pick and place,Toy Car,"[32, 277]",pick and place toy car,245
+ZY20210800003/H3/C1/N29/S90/s05/T1,Pick and place,Toy Car,"[25, 285]",pick and place toy car,260
+ZY20210800003/H3/C1/N28/S90/s03/T2,Push toy car,Toy Car,"[15, 247]",push toy car toy car,232
+ZY20210800003/H3/C1/N27/S90/s02/T1,Pick and place,Toy Car,"[17, 282]",pick and place toy car,265
+ZY20210800003/H3/C1/N24/S87/s04/T1,Pick and place,Toy Car,"[34, 287]",pick and place toy car,253
+ZY20210800003/H3/C1/N21/S87/s02/T1,Pick and place,Toy Car,"[20, 284]",pick and place toy car,264
+ZY20210800003/H3/C1/N19/S87/s01/T2,Push toy car,Toy Car,"[23, 283]",push toy car toy car,260
+ZY20210800003/H3/C1/N08/S90/s01/T2,Push toy car,Toy Car,"[29, 277]",push toy car toy car,248
+ZY20210800003/H3/C1/N08/S90/s01/T1,Pick and place,Toy Car,"[36, 285]",pick and place toy car,249
+ZY20210800003/H3/C1/N03/S86/s02/T2,Push toy car,Toy Car,"[38, 292]",push toy car toy car,254
+ZY20210800003/H3/C1/N03/S86/s02/T1,Pick and place,Toy Car,"[35, 249]",pick and place toy car,214
+ZY20210800003/H3/C1/N02/S86/s01/T2,Push toy car,Toy Car,"[26, 259]",push toy car toy car,233
+ZY20210800003/H3/C1/N02/S86/s01/T1,Pick and place,Toy Car,"[35, 219]",pick and place toy car,184
+ZY20210800002/H2/C7/N50/S58/s04/T1,Pick and place,Bowl,"[38, 251]",pick and place bowl,213
+ZY20210800002/H2/C7/N49/S58/s03/T1,Pick and place,Bowl,"[32, 226]",pick and place bowl,194
+ZY20210800002/H2/C7/N48/S58/s03/T1,Pick and place,Bowl,"[25, 243]",pick and place bowl,218
+ZY20210800002/H2/C7/N47/S58/s02/T1,Pick and place,Bowl,"[28, 238]",pick and place bowl,210
+ZY20210800002/H2/C7/N46/S58/s02/T1,Pick and place,Bowl,"[33, 255]",pick and place bowl,222
+ZY20210800002/H2/C7/N45/S58/s01/T1,Pick and place,Bowl,"[35, 267]",pick and place bowl,232
+ZY20210800002/H2/C7/N42/S57/s05/T1,Pick and place,Bowl,"[27, 250]",pick and place bowl,223
+ZY20210800002/H2/C7/N41/S57/s04/T1,Pick and place,Bowl,"[34, 255]",pick and place bowl,221
+ZY20210800002/H2/C7/N40/S57/s04/T1,Pick and place,Bowl,"[29, 271]",pick and place bowl,242
+ZY20210800002/H2/C7/N39/S57/s03/T1,Pick and place,Bowl,"[28, 257]",pick and place bowl,229
+ZY20210800002/H2/C7/N38/S57/s03/T1,Pick and place,Bowl,"[29, 206]",pick and place bowl,177
+ZY20210800002/H2/C7/N37/S57/s02/T1,Pick and place,Bowl,"[33, 275]",pick and place bowl,242
+ZY20210800002/H2/C7/N35/S57/s01/T1,Pick and place,Bowl,"[29, 238]",pick and place bowl,209
+ZY20210800002/H2/C7/N34/S57/s01/T1,Pick and place,Bowl,"[40, 226]",pick and place bowl,186
+ZY20210800002/H2/C7/N31/S81/s03/T3,Take it out of the drawer,Bowl,"[31, 244]",take it out of the drawer bowl,213
+ZY20210800002/H2/C7/N31/S81/s03/T1,Pick and place,Bowl,"[24, 269]",pick and place bowl,245
+ZY20210800002/H2/C7/N30/S81/s02/T3,Take it out of the drawer,Bowl,"[24, 281]",take it out of the drawer bowl,257
+ZY20210800002/H2/C7/N30/S81/s02/T1,Pick and place,Bowl,"[26, 239]",pick and place bowl,213
+ZY20210800002/H2/C7/N29/S81/s02/T3,Take it out of the drawer,Bowl,"[27, 243]",take it out of the drawer bowl,216
+ZY20210800002/H2/C7/N29/S81/s02/T1,Pick and place,Bowl,"[38, 246]",pick and place bowl,208
+ZY20210800002/H2/C7/N28/S81/s01/T3,Take it out of the drawer,Bowl,"[34, 256]",take it out of the drawer bowl,222
+ZY20210800002/H2/C7/N28/S81/s01/T1,Pick and place,Bowl,"[34, 243]",pick and place bowl,209
+ZY20210800002/H2/C7/N27/S79/s05/T1,Pick and place,Bowl,"[28, 276]",pick and place bowl,248
+ZY20210800002/H2/C7/N26/S79/s05/T1,Pick and place,Bowl,"[29, 272]",pick and place bowl,243
+ZY20210800002/H2/C7/N25/S81/s01/T1,Pick and place,Bowl,"[25, 277]",pick and place bowl,252
+ZY20210800002/H2/C7/N24/S79/s04/T1,Pick and place,Bowl,"[23, 234]",pick and place bowl,211
+ZY20210800002/H2/C7/N23/S79/s04/T1,Pick and place,Bowl,"[24, 237]",pick and place bowl,213
+ZY20210800002/H2/C7/N22/S79/s03/T1,Pick and place,Bowl,"[28, 261]",pick and place bowl,233
+ZY20210800002/H2/C7/N21/S79/s03/T1,Pick and place,Bowl,"[26, 273]",pick and place bowl,247
+ZY20210800002/H2/C7/N20/S79/s02/T1,Pick and place,Bowl,"[30, 242]",pick and place bowl,212
+ZY20210800002/H2/C7/N19/S79/s02/T1,Pick and place,Bowl,"[29, 273]",pick and place bowl,244
+ZY20210800002/H2/C7/N18/S79/s01/T1,Pick and place,Bowl,"[23, 231]",pick and place bowl,208
+ZY20210800002/H2/C7/N17/S55/s04/T3,Take it out of the drawer,Bowl,"[36, 258]",take it out of the drawer bowl,222
+ZY20210800002/H2/C7/N16/S64/s03/T1,Pick and place,Bowl,"[18, 239]",pick and place bowl,221
+ZY20210800002/H2/C7/N15/S64/s03/T3,Take it out of the drawer,Bowl,"[20, 216]",take it out of the drawer bowl,196
+ZY20210800002/H2/C7/N15/S64/s03/T1,Pick and place,Bowl,"[24, 244]",pick and place bowl,220
+ZY20210800002/H2/C7/N14/S64/s02/T3,Take it out of the drawer,Bowl,"[25, 251]",take it out of the drawer bowl,226
+ZY20210800002/H2/C7/N14/S64/s02/T1,Pick and place,Bowl,"[25, 265]",pick and place bowl,240
+ZY20210800002/H2/C7/N13/S64/s02/T3,Take it out of the drawer,Bowl,"[20, 222]",take it out of the drawer bowl,202
+ZY20210800002/H2/C7/N13/S64/s02/T1,Pick and place,Bowl,"[21, 256]",pick and place bowl,235
+ZY20210800002/H2/C7/N12/S64/s01/T3,Take it out of the drawer,Bowl,"[16, 245]",take it out of the drawer bowl,229
+ZY20210800002/H2/C7/N12/S64/s01/T1,Pick and place,Bowl,"[19, 234]",pick and place bowl,215
+ZY20210800002/H2/C7/N11/S64/s01/T3,Take it out of the drawer,Bowl,"[15, 235]",take it out of the drawer bowl,220
+ZY20210800002/H2/C7/N11/S64/s01/T1,Pick and place,Bowl,"[19, 231]",pick and place bowl,212
+ZY20210800002/H2/C5/N50/S265/s05/T5,Reposition the bottle,Bottle,"[52, 272]",reposition the bottle bottle,216
+ZY20210800002/H2/C5/N50/S261/s03/T3,Put it in the drawer,Bottle,"[46, 244]",put it in the drawer bottle,198
+ZY20210800002/H2/C5/N49/S265/s05/T5,Reposition the bottle,Bottle,"[51, 265]",reposition the bottle bottle,210
+ZY20210800002/H2/C5/N49/S261/s03/T3,Put it in the drawer,Bottle,"[51, 251]",put it in the drawer bottle,200
+ZY20210800002/H2/C5/N48/S265/s05/T5,Reposition the bottle,Bottle,"[51, 259]",reposition the bottle bottle,196
+ZY20210800002/H2/C5/N48/S261/s02/T2,Pour all the water into a mug,Bottle,"[49, 275]",pour all the water into a mug bottle,226
+ZY20210800002/H2/C5/N47/S265/s05/T5,Reposition the bottle,Bottle,"[57, 267]",reposition the bottle bottle,210
+ZY20210800002/H2/C5/N47/S261/s02/T2,Pour all the water into a mug,Bottle,"[48, 260]",pour all the water into a mug bottle,212
+ZY20210800002/H2/C5/N46/S265/s04/T4,Take it out of the drawer,Bottle,"[52, 274]",take it out of the drawer bottle,222
+ZY20210800002/H2/C5/N46/S261/s02/T2,Pour all the water into a mug,Bottle,"[47, 260]",pour all the water into a mug bottle,213
+ZY20210800002/H2/C5/N45/S265/s04/T4,Take it out of the drawer,Bottle,"[50, 272]",take it out of the drawer bottle,222
+ZY20210800002/H2/C5/N45/S261/s02/T2,Pour all the water into a mug,Bottle,"[53, 259]",pour all the water into a mug bottle,206
+ZY20210800002/H2/C5/N44/S269/s01/T6,Pick and place (with water),Bottle,"[49, 269]",pick and place (with water) bottle,220
+ZY20210800002/H2/C5/N44/S265/s04/T4,Take it out of the drawer,Bottle,"[51, 266]",take it out of the drawer bottle,215
+ZY20210800002/H2/C5/N44/S261/s01/T2,Pour all the water into a mug,Bottle,"[45, 275]",pour all the water into a mug bottle,230
+ZY20210800002/H2/C5/N43/S269/s01/T6,Pick and place (with water),Bottle,"[51, 283]",pick and place (with water) bottle,232
+ZY20210800002/H2/C5/N43/S265/s04/T4,Take it out of the drawer,Bottle,"[47, 235]",take it out of the drawer bottle,188
+ZY20210800002/H2/C5/N43/S261/s01/T2,Pour all the water into a mug,Bottle,"[52, 263]",pour all the water into a mug bottle,211
+ZY20210800002/H2/C5/N42/S269/s01/T6,Pick and place (with water),Bottle,"[48, 286]",pick and place (with water) bottle,238
+ZY20210800002/H2/C5/N42/S265/s03/T4,Take it out of the drawer,Bottle,"[48, 263]",take it out of the drawer bottle,215
+ZY20210800002/H2/C5/N42/S261/s01/T2,Pour all the water into a mug,Bottle,"[49, 269]",pour all the water into a mug bottle,220
+ZY20210800002/H2/C5/N41/S269/s01/T6,Pick and place (with water),Bottle,"[50, 268]",pick and place (with water) bottle,218
+ZY20210800002/H2/C5/N41/S265/s03/T4,Take it out of the drawer,Bottle,"[51, 263]",take it out of the drawer bottle,205
+ZY20210800002/H2/C5/N41/S261/s01/T2,Pour all the water into a mug,Bottle,"[51, 265]",pour all the water into a mug bottle,214
+ZY20210800002/H2/C5/N40/S268/s05/T6,Pick and place (with water),Bottle,"[48, 259]",pick and place (with water) bottle,211
+ZY20210800002/H2/C5/N40/S265/s03/T4,Take it out of the drawer,Bottle,"[48, 265]",take it out of the drawer bottle,217
+ZY20210800002/H2/C5/N40/S258/s05/T2,Pour all the water into a mug,Bottle,"[49, 272]",pour all the water into a mug bottle,221
+ZY20210800002/H2/C5/N39/S268/s05/T6,Pick and place (with water),Bottle,"[51, 275]",pick and place (with water) bottle,219
+ZY20210800002/H2/C5/N39/S265/s03/T4,Take it out of the drawer,Bottle,"[44, 255]",take it out of the drawer bottle,202
+ZY20210800002/H2/C5/N39/S258/s05/T2,Pour all the water into a mug,Bottle,"[47, 258]",pour all the water into a mug bottle,211
+ZY20210800002/H2/C5/N38/S268/s05/T6,Pick and place (with water),Bottle,"[51, 265]",pick and place (with water) bottle,214
+ZY20210800002/H2/C5/N38/S265/s02/T4,Take it out of the drawer,Bottle,"[46, 247]",take it out of the drawer bottle,201
+ZY20210800002/H2/C5/N38/S258/s05/T2,Pour all the water into a mug,Bottle,"[61, 274]",pour all the water into a mug bottle,213
+ZY20210800002/H2/C5/N37/S268/s05/T6,Pick and place (with water),Bottle,"[55, 272]",pick and place (with water) bottle,213
+ZY20210800002/H2/C5/N37/S265/s02/T4,Take it out of the drawer,Bottle,"[50, 258]",take it out of the drawer bottle,208
+ZY20210800002/H2/C5/N37/S258/s05/T2,Pour all the water into a mug,Bottle,"[56, 275]",pour all the water into a mug bottle,213
+ZY20210800002/H2/C5/N36/S268/s04/T6,Pick and place (with water),Bottle,"[52, 265]",pick and place (with water) bottle,208
+ZY20210800002/H2/C5/N36/S265/s02/T4,Take it out of the drawer,Bottle,"[52, 271]",take it out of the drawer bottle,215
+ZY20210800002/H2/C5/N36/S258/s04/T2,Pour all the water into a mug,Bottle,"[45, 259]",pour all the water into a mug bottle,208
+ZY20210800002/H2/C5/N35/S268/s04/T6,Pick and place (with water),Bottle,"[44, 248]",pick and place (with water) bottle,202
+ZY20210800002/H2/C5/N35/S265/s02/T4,Take it out of the drawer,Bottle,"[40, 239]",take it out of the drawer bottle,199
+ZY20210800002/H2/C5/N35/S258/s04/T2,Pour all the water into a mug,Bottle,"[54, 273]",pour all the water into a mug bottle,219
+ZY20210800002/H2/C5/N34/S41/s04/T1,Pick and place,Bottle,"[30, 255]",pick and place bottle,225
+ZY20210800002/H2/C5/N34/S268/s04/T6,Pick and place (with water),Bottle,"[51, 263]",pick and place (with water) bottle,212
+ZY20210800002/H2/C5/N34/S265/s01/T4,Take it out of the drawer,Bottle,"[48, 239]",take it out of the drawer bottle,191
+ZY20210800002/H2/C5/N34/S258/s04/T2,Pour all the water into a mug,Bottle,"[46, 266]",pour all the water into a mug bottle,220
+ZY20210800002/H2/C5/N33/S41/s04/T2,Pour all the water into a mug,Bottle,"[25, 254]",pour all the water into a mug bottle,229
+ZY20210800002/H2/C5/N33/S268/s04/T6,Pick and place (with water),Bottle,"[46, 253]",pick and place (with water) bottle,207
+ZY20210800002/H2/C5/N33/S265/s01/T4,Take it out of the drawer,Bottle,"[45, 254]",take it out of the drawer bottle,199
+ZY20210800002/H2/C5/N33/S258/s04/T2,Pour all the water into a mug,Bottle,"[51, 265]",pour all the water into a mug bottle,212
+ZY20210800002/H2/C5/N32/S41/s03/T2,Pour all the water into a mug,Bottle,"[24, 253]",pour all the water into a mug bottle,229
+ZY20210800002/H2/C5/N32/S268/s03/T6,Pick and place (with water),Bottle,"[53, 260]",pick and place (with water) bottle,202
+ZY20210800002/H2/C5/N32/S265/s01/T4,Take it out of the drawer,Bottle,"[49, 244]",take it out of the drawer bottle,195
+ZY20210800002/H2/C5/N32/S258/s03/T2,Pour all the water into a mug,Bottle,"[47, 265]",pour all the water into a mug bottle,213
+ZY20210800002/H2/C5/N31/S268/s03/T6,Pick and place (with water),Bottle,"[51, 256]",pick and place (with water) bottle,205
+ZY20210800002/H2/C5/N31/S265/s01/T4,Take it out of the drawer,Bottle,"[47, 256]",take it out of the drawer bottle,205
+ZY20210800002/H2/C5/N31/S258/s03/T2,Pour all the water into a mug,Bottle,"[51, 280]",pour all the water into a mug bottle,223
+ZY20210800002/H2/C5/N31/S121/s03/T1,Pick and place,Bottle,"[12, 139]",pick and place bottle,127
+ZY20210800002/H2/C5/N30/S41/s03/T2,Pour all the water into a mug,Bottle,"[36, 270]",pour all the water into a mug bottle,234
+ZY20210800002/H2/C5/N30/S268/s03/T6,Pick and place (with water),Bottle,"[50, 257]",pick and place (with water) bottle,201
+ZY20210800002/H2/C5/N30/S263/s05/T4,Take it out of the drawer,Bottle,"[47, 260]",take it out of the drawer bottle,213
+ZY20210800002/H2/C5/N30/S258/s03/T2,Pour all the water into a mug,Bottle,"[48, 259]",pour all the water into a mug bottle,207
+ZY20210800002/H2/C5/N29/S41/s02/T1,Pick and place,Bottle,"[25, 262]",pick and place bottle,237
+ZY20210800002/H2/C5/N29/S268/s03/T6,Pick and place (with water),Bottle,"[53, 266]",pick and place (with water) bottle,211
+ZY20210800002/H2/C5/N29/S263/s05/T4,Take it out of the drawer,Bottle,"[54, 262]",take it out of the drawer bottle,208
+ZY20210800002/H2/C5/N29/S258/s03/T2,Pour all the water into a mug,Bottle,"[48, 253]",pour all the water into a mug bottle,205
+ZY20210800002/H2/C5/N28/S41/s02/T2,Pour all the water into a mug,Bottle,"[28, 261]",pour all the water into a mug bottle,233
+ZY20210800002/H2/C5/N28/S41/s02/T1,Pick and place,Bottle,"[28, 284]",pick and place bottle,256
+ZY20210800002/H2/C5/N28/S268/s02/T6,Pick and place (with water),Bottle,"[51, 254]",pick and place (with water) bottle,201
+ZY20210800002/H2/C5/N28/S263/s05/T4,Take it out of the drawer,Bottle,"[52, 242]",take it out of the drawer bottle,190
+ZY20210800002/H2/C5/N28/S258/s02/T2,Pour all the water into a mug,Bottle,"[60, 257]",pour all the water into a mug bottle,197
+ZY20210800002/H2/C5/N27/S41/s01/T2,Pour all the water into a mug,Bottle,"[29, 261]",pour all the water into a mug bottle,232
+ZY20210800002/H2/C5/N27/S41/s01/T1,Pick and place,Bottle,"[26, 268]",pick and place bottle,242
+ZY20210800002/H2/C5/N27/S268/s02/T6,Pick and place (with water),Bottle,"[54, 264]",pick and place (with water) bottle,210
+ZY20210800002/H2/C5/N27/S263/s05/T4,Take it out of the drawer,Bottle,"[45, 255]",take it out of the drawer bottle,208
+ZY20210800002/H2/C5/N27/S258/s02/T2,Pour all the water into a mug,Bottle,"[53, 265]",pour all the water into a mug bottle,210
+ZY20210800002/H2/C5/N26/S41/s01/T2,Pour all the water into a mug,Bottle,"[35, 255]",pour all the water into a mug bottle,220
+ZY20210800002/H2/C5/N26/S268/s02/T6,Pick and place (with water),Bottle,"[51, 256]",pick and place (with water) bottle,205
+ZY20210800002/H2/C5/N26/S263/s04/T4,Take it out of the drawer,Bottle,"[55, 270]",take it out of the drawer bottle,215
+ZY20210800002/H2/C5/N26/S258/s02/T2,Pour all the water into a mug,Bottle,"[58, 270]",pour all the water into a mug bottle,212
+ZY20210800002/H2/C5/N25/S268/s02/T6,Pick and place (with water),Bottle,"[49, 261]",pick and place (with water) bottle,212
+ZY20210800002/H2/C5/N25/S263/s04/T4,Take it out of the drawer,Bottle,"[54, 252]",take it out of the drawer bottle,198
+ZY20210800002/H2/C5/N25/S258/s02/T2,Pour all the water into a mug,Bottle,"[47, 260]",pour all the water into a mug bottle,213
+ZY20210800002/H2/C5/N24/S268/s01/T6,Pick and place (with water),Bottle,"[50, 260]",pick and place (with water) bottle,210
+ZY20210800002/H2/C5/N24/S263/s04/T4,Take it out of the drawer,Bottle,"[43, 254]",take it out of the drawer bottle,209
+ZY20210800002/H2/C5/N24/S258/s01/T1,Pick and place,Bottle,"[55, 255]",pick and place bottle,200
+ZY20210800002/H2/C5/N23/S56/s04/T2,Pour all the water into a mug,Bottle,"[24, 253]",pour all the water into a mug bottle,229
+ZY20210800002/H2/C5/N23/S56/s04/T1,Pick and place,Bottle,"[22, 269]",pick and place bottle,247
+ZY20210800002/H2/C5/N23/S268/s01/T6,Pick and place (with water),Bottle,"[43, 254]",pick and place (with water) bottle,211
+ZY20210800002/H2/C5/N23/S263/s04/T4,Take it out of the drawer,Bottle,"[50, 248]",take it out of the drawer bottle,198
+ZY20210800002/H2/C5/N23/S258/s01/T1,Pick and place,Bottle,"[54, 264]",pick and place bottle,210
+ZY20210800002/H2/C5/N22/S56/s04/T2,Pour all the water into a mug,Bottle,"[31, 241]",pour all the water into a mug bottle,210
+ZY20210800002/H2/C5/N22/S56/s04/T1,Pick and place,Bottle,"[29, 277]",pick and place bottle,248
+ZY20210800002/H2/C5/N22/S268/s01/T6,Pick and place (with water),Bottle,"[46, 270]",pick and place (with water) bottle,224
+ZY20210800002/H2/C5/N22/S263/s03/T3,Put it in the drawer,Bottle,"[61, 256]",put it in the drawer bottle,195
+ZY20210800002/H2/C5/N22/S258/s01/T1,Pick and place,Bottle,"[50, 246]",pick and place bottle,192
+ZY20210800002/H2/C5/N21/S56/s03/T2,Pour all the water into a mug,Bottle,"[19, 273]",pour all the water into a mug bottle,254
+ZY20210800002/H2/C5/N21/S56/s03/T1,Pick and place,Bottle,"[30, 264]",pick and place bottle,234
+ZY20210800002/H2/C5/N21/S268/s01/T6,Pick and place (with water),Bottle,"[52, 259]",pick and place (with water) bottle,207
+ZY20210800002/H2/C5/N21/S263/s03/T3,Put it in the drawer,Bottle,"[63, 253]",put it in the drawer bottle,190
+ZY20210800002/H2/C5/N21/S258/s01/T1,Pick and place,Bottle,"[60, 254]",pick and place bottle,192
+ZY20210800002/H2/C5/N20/S56/s03/T2,Pour all the water into a mug,Bottle,"[26, 269]",pour all the water into a mug bottle,243
+ZY20210800002/H2/C5/N20/S267/s05/T5,Reposition the bottle,Bottle,"[54, 269]",reposition the bottle bottle,213
+ZY20210800002/H2/C5/N20/S263/s03/T3,Put it in the drawer,Bottle,"[54, 271]",put it in the drawer bottle,217
+ZY20210800002/H2/C5/N20/S255/s05/T1,Pick and place,Bottle,"[64, 269]",pick and place bottle,205
+ZY20210800002/H2/C5/N19/S267/s05/T5,Reposition the bottle,Bottle,"[56, 274]",reposition the bottle bottle,214
+ZY20210800002/H2/C5/N19/S263/s03/T3,Put it in the drawer,Bottle,"[52, 270]",put it in the drawer bottle,218
+ZY20210800002/H2/C5/N19/S255/s05/T1,Pick and place,Bottle,"[54, 267]",pick and place bottle,213
+ZY20210800002/H2/C5/N18/S56/s02/T2,Pour all the water into a mug,Bottle,"[32, 257]",pour all the water into a mug bottle,225
+ZY20210800002/H2/C5/N18/S56/s02/T1,Pick and place,Bottle,"[20, 278]",pick and place bottle,258
+ZY20210800002/H2/C5/N18/S267/s05/T5,Reposition the bottle,Bottle,"[52, 270]",reposition the bottle bottle,218
+ZY20210800002/H2/C5/N18/S263/s02/T3,Put it in the drawer,Bottle,"[49, 259]",put it in the drawer bottle,210
+ZY20210800002/H2/C5/N18/S255/s05/T1,Pick and place,Bottle,"[55, 270]",pick and place bottle,215
+ZY20210800002/H2/C5/N17/S267/s05/T5,Reposition the bottle,Bottle,"[50, 266]",reposition the bottle bottle,216
+ZY20210800002/H2/C5/N17/S263/s02/T3,Put it in the drawer,Bottle,"[50, 263]",put it in the drawer bottle,213
+ZY20210800002/H2/C5/N17/S255/s05/T1,Pick and place,Bottle,"[54, 256]",pick and place bottle,196
+ZY20210800002/H2/C5/N16/S56/s01/T2,Pour all the water into a mug,Bottle,"[23, 270]",pour all the water into a mug bottle,247
+ZY20210800002/H2/C5/N16/S267/s04/T5,Reposition the bottle,Bottle,"[53, 271]",reposition the bottle bottle,218
+ZY20210800002/H2/C5/N16/S263/s02/T3,Put it in the drawer,Bottle,"[52, 274]",put it in the drawer bottle,222
+ZY20210800002/H2/C5/N16/S255/s04/T1,Pick and place,Bottle,"[50, 260]",pick and place bottle,206
+ZY20210800002/H2/C5/N15/S267/s04/T5,Reposition the bottle,Bottle,"[53, 266]",reposition the bottle bottle,211
+ZY20210800002/H2/C5/N15/S263/s02/T3,Put it in the drawer,Bottle,"[51, 259]",put it in the drawer bottle,208
+ZY20210800002/H2/C5/N15/S255/s04/T1,Pick and place,Bottle,"[60, 256]",pick and place bottle,192
+ZY20210800002/H2/C5/N15/S121/s03/T3,Put it in the drawer,Bottle,"[12, 132]",put it in the drawer bottle,120
+ZY20210800002/H2/C5/N15/S121/s03/T1,Pick and place,Bottle,"[17, 137]",pick and place bottle,120
+ZY20210800002/H2/C5/N14/S267/s04/T5,Reposition the bottle,Bottle,"[50, 260]",reposition the bottle bottle,210
+ZY20210800002/H2/C5/N14/S263/s01/T3,Put it in the drawer,Bottle,"[50, 259]",put it in the drawer bottle,209
+ZY20210800002/H2/C5/N14/S255/s04/T1,Pick and place,Bottle,"[52, 247]",pick and place bottle,190
+ZY20210800002/H2/C5/N14/S121/s02/T3,Put it in the drawer,Bottle,"[13, 135]",put it in the drawer bottle,122
+ZY20210800002/H2/C5/N13/S267/s04/T5,Reposition the bottle,Bottle,"[51, 264]",reposition the bottle bottle,213
+ZY20210800002/H2/C5/N13/S263/s01/T3,Put it in the drawer,Bottle,"[46, 250]",put it in the drawer bottle,204
+ZY20210800002/H2/C5/N13/S255/s04/T1,Pick and place,Bottle,"[60, 274]",pick and place bottle,214
+ZY20210800002/H2/C5/N13/S121/s02/T1,Pick and place,Bottle,"[13, 133]",pick and place bottle,120
+ZY20210800002/H2/C5/N12/S267/s03/T5,Reposition the bottle,Bottle,"[54, 253]",reposition the bottle bottle,199
+ZY20210800002/H2/C5/N12/S263/s01/T3,Put it in the drawer,Bottle,"[51, 242]",put it in the drawer bottle,191
+ZY20210800002/H2/C5/N12/S255/s03/T1,Pick and place,Bottle,"[58, 256]",pick and place bottle,196
+ZY20210800002/H2/C5/N12/S121/s01/T3,Put it in the drawer,Bottle,"[12, 128]",put it in the drawer bottle,116
+ZY20210800002/H2/C5/N11/S267/s03/T5,Reposition the bottle,Bottle,"[54, 266]",reposition the bottle bottle,212
+ZY20210800002/H2/C5/N11/S263/s01/T3,Put it in the drawer,Bottle,"[48, 265]",put it in the drawer bottle,217
+ZY20210800002/H2/C5/N11/S255/s03/T1,Pick and place,Bottle,"[57, 270]",pick and place bottle,213
+ZY20210800002/H2/C5/N11/S121/s01/T3,Put it in the drawer,Bottle,"[12, 134]",put it in the drawer bottle,122
+ZY20210800002/H2/C3/N50/S355/s01/T1,Pick and place,Laptop,"[39, 246]",pick and place laptop,207
+ZY20210800002/H2/C3/N50/S354/s05/T2,Open and close the display,Laptop,"[44, 258]",open and close the display laptop,214
+ZY20210800002/H2/C3/N50/S353/s05/T1,Pick and place,Laptop,"[41, 258]",pick and place laptop,217
+ZY20210800002/H2/C3/N28/S354/s05/T2,Open and close the display,Laptop,"[46, 259]",open and close the display laptop,213
+ZY20210800002/H2/C3/N28/S353/s05/T1,Pick and place,Laptop,"[45, 265]",pick and place laptop,220
+ZY20210800002/H2/C3/N26/S353/s04/T1,Pick and place,Laptop,"[39, 265]",pick and place laptop,226
+ZY20210800002/H2/C3/N25/S353/s04/T1,Pick and place,Laptop,"[42, 270]",pick and place laptop,228
+ZY20210800002/H2/C3/N24/S353/s03/T1,Pick and place,Laptop,"[45, 261]",pick and place laptop,216
+ZY20210800002/H2/C3/N23/S353/s03/T1,Pick and place,Laptop,"[40, 261]",pick and place laptop,221
+ZY20210800002/H2/C3/N23/S103/s03/T2,Open and close the display,Laptop,"[14, 133]",open and close the display laptop,119
+ZY20210800002/H2/C3/N23/S103/s03/T1,Pick and place,Laptop,"[12, 127]",pick and place laptop,115
+ZY20210800002/H2/C3/N22/S353/s03/T1,Pick and place,Laptop,"[40, 272]",pick and place laptop,232
+ZY20210800002/H2/C3/N20/S353/s03/T1,Pick and place,Laptop,"[40, 251]",pick and place laptop,211
+ZY20210800002/H2/C3/N17/S353/s02/T1,Pick and place,Laptop,"[44, 260]",pick and place laptop,216
+ZY20210800002/H2/C3/N15/S353/s02/T1,Pick and place,Laptop,"[42, 256]",pick and place laptop,214
+ZY20210800002/H2/C3/N14/S353/s02/T1,Pick and place,Laptop,"[43, 276]",pick and place laptop,233
+ZY20210800002/H2/C3/N06/S354/s01/T2,Open and close the display,Laptop,"[43, 279]",open and close the display laptop,236
+ZY20210800002/H2/C3/N06/S353/s04/T1,Pick and place,Laptop,"[42, 268]",pick and place laptop,226
+ZY20210800002/H2/C3/N03/S96/s01/T1,Pick and place,Laptop,"[18, 140]",pick and place laptop,122
+ZY20210800002/H2/C3/N02/S354/s01/T2,Open and close the display,Laptop,"[39, 271]",open and close the display laptop,230
+ZY20210800002/H2/C20/N16/S277/s01/T4,Pick and place to a new position,Chair,"[89, 237]",pick and place to a new position chair,144
+ZY20210800002/H2/C20/N16/S275/s02/T2,Pick and place to the original position,Chair,"[85, 244]",pick and place to the original position chair,159
+ZY20210800002/H2/C20/N15/S277/s01/T4,Pick and place to a new position,Chair,"[88, 243]",pick and place to a new position chair,151
+ZY20210800002/H2/C20/N15/S275/s02/T2,Pick and place to the original position,Chair,"[86, 233]",pick and place to the original position chair,147
+ZY20210800002/H2/C20/N15/S273/s03/T3,Pick and place to a new position,Chair,"[90, 272]",pick and place to a new position chair,182
+ZY20210800002/H2/C20/N15/S271/s04/T1,Pick and place to the original position,Chair,"[78, 242]",pick and place to the original position chair,164
+ZY20210800002/H2/C20/N14/S277/s01/T4,Pick and place to a new position,Chair,"[85, 256]",pick and place to a new position chair,171
+ZY20210800002/H2/C20/N14/S275/s02/T2,Pick and place to the original position,Chair,"[90, 238]",pick and place to the original position chair,148
+ZY20210800002/H2/C20/N14/S273/s03/T3,Pick and place to a new position,Chair,"[86, 268]",pick and place to a new position chair,178
+ZY20210800002/H2/C20/N14/S271/s04/T1,Pick and place to the original position,Chair,"[82, 233]",pick and place to the original position chair,151
+ZY20210800002/H2/C20/N13/S275/s05/T4,Pick and place to a new position,Chair,"[100, 257]",pick and place to a new position chair,157
+ZY20210800002/H2/C20/N13/S275/s01/T2,Pick and place to the original position,Chair,"[93, 255]",pick and place to the original position chair,162
+ZY20210800002/H2/C20/N13/S273/s03/T3,Pick and place to a new position,Chair,"[79, 247]",pick and place to a new position chair,163
+ZY20210800002/H2/C20/N13/S271/s04/T1,Pick and place to the original position,Chair,"[87, 239]",pick and place to the original position chair,152
+ZY20210800002/H2/C20/N12/S275/s05/T4,Pick and place to a new position,Chair,"[81, 234]",pick and place to a new position chair,146
+ZY20210800002/H2/C20/N12/S275/s01/T2,Pick and place to the original position,Chair,"[88, 234]",pick and place to the original position chair,146
+ZY20210800002/H2/C20/N12/S273/s02/T3,Pick and place to a new position,Chair,"[79, 246]",pick and place to a new position chair,165
+ZY20210800002/H2/C20/N12/S271/s03/T1,Pick and place to the original position,Chair,"[108, 270]",pick and place to the original position chair,154
+ZY20210800002/H2/C20/N11/S275/s05/T4,Pick and place to a new position,Chair,"[85, 264]",pick and place to a new position chair,179
+ZY20210800002/H2/C20/N11/S275/s01/T2,Pick and place to the original position,Chair,"[83, 241]",pick and place to the original position chair,153
+ZY20210800002/H2/C20/N11/S273/s02/T3,Pick and place to a new position,Chair,"[83, 251]",pick and place to a new position chair,166
+ZY20210800002/H2/C20/N11/S271/s03/T1,Pick and place to the original position,Chair,"[70, 234]",pick and place to the original position chair,164
+ZY20210800002/H2/C2/N50/S29/s05/T3,Take it out of the drawer,Mug,"[22, 269]",take it out of the drawer mug,247
+ZY20210800002/H2/C2/N49/S29/s05/T3,Take it out of the drawer,Mug,"[18, 278]",take it out of the drawer mug,260
+ZY20210800002/H2/C2/N49/S29/s05/T1,Pick and place,Mug,"[19, 276]",pick and place mug,257
+ZY20210800002/H2/C2/N48/S29/s04/T3,Take it out of the drawer,Mug,"[22, 281]",take it out of the drawer mug,259
+ZY20210800002/H2/C2/N48/S29/s04/T1,Pick and place,Mug,"[19, 282]",pick and place mug,263
+ZY20210800002/H2/C2/N47/S29/s04/T3,Take it out of the drawer,Mug,"[27, 278]",take it out of the drawer mug,251
+ZY20210800002/H2/C2/N47/S29/s04/T1,Pick and place,Mug,"[22, 285]",pick and place mug,263
+ZY20210800002/H2/C2/N46/S29/s03/T1,Pick and place,Mug,"[15, 285]",pick and place mug,270
+ZY20210800002/H2/C2/N45/S29/s03/T3,Take it out of the drawer,Mug,"[20, 272]",take it out of the drawer mug,252
+ZY20210800002/H2/C2/N45/S29/s03/T1,Pick and place,Mug,"[18, 277]",pick and place mug,259
+ZY20210800002/H2/C2/N44/S29/s02/T1,Pick and place,Mug,"[19, 284]",pick and place mug,265
+ZY20210800002/H2/C2/N43/S29/s02/T3,Take it out of the drawer,Mug,"[17, 272]",take it out of the drawer mug,255
+ZY20210800002/H2/C2/N39/S30/s05/T3,Take it out of the drawer,Mug,"[17, 277]",take it out of the drawer mug,260
+ZY20210800002/H2/C2/N39/S30/s05/T1,Pick and place,Mug,"[25, 271]",pick and place mug,246
+ZY20210800002/H2/C2/N37/S30/s04/T3,Take it out of the drawer,Mug,"[22, 251]",take it out of the drawer mug,229
+ZY20210800002/H2/C2/N36/S30/s03/T3,Take it out of the drawer,Mug,"[19, 278]",take it out of the drawer mug,259
+ZY20210800002/H2/C2/N36/S30/s03/T1,Pick and place,Mug,"[18, 266]",pick and place mug,248
+ZY20210800002/H2/C2/N32/S30/s01/T1,Pick and place,Mug,"[32, 283]",pick and place mug,251
+ZY20210800002/H2/C2/N30/S2/s05/T1,Pick and place,Mug,"[22, 278]",pick and place mug,256
+ZY20210800002/H2/C2/N29/S2/s05/T3,Take it out of the drawer,Mug,"[20, 290]",take it out of the drawer mug,270
+ZY20210800002/H2/C2/N27/S2/s04/T1,Pick and place,Mug,"[17, 275]",pick and place mug,258
+ZY20210800002/H2/C2/N24/S2/s02/T3,Take it out of the drawer,Mug,"[22, 291]",take it out of the drawer mug,269
+ZY20210800002/H2/C2/N24/S2/s02/T1,Pick and place,Mug,"[22, 144]",pick and place mug,122
+ZY20210800002/H2/C2/N22/S2/s01/T3,Take it out of the drawer,Mug,"[53, 280]",take it out of the drawer mug,227
+ZY20210800002/H2/C2/N21/S2/s01/T3,Take it out of the drawer,Mug,"[28, 283]",take it out of the drawer mug,255
+ZY20210800002/H2/C2/N20/S25/s05/T1,Pick and place,Mug,"[14, 256]",pick and place mug,242
+ZY20210800002/H2/C2/N19/S25/s05/T3,Take it out of the drawer,Mug,"[23, 261]",take it out of the drawer mug,238
+ZY20210800002/H2/C2/N19/S25/s05/T1,Pick and place,Mug,"[27, 272]",pick and place mug,245
+ZY20210800002/H2/C2/N18/S25/s04/T3,Take it out of the drawer,Mug,"[25, 252]",take it out of the drawer mug,227
+ZY20210800002/H2/C2/N18/S25/s04/T1,Pick and place,Mug,"[25, 268]",pick and place mug,243
+ZY20210800002/H2/C2/N17/S25/s04/T3,Take it out of the drawer,Mug,"[30, 249]",take it out of the drawer mug,219
+ZY20210800002/H2/C2/N17/S25/s04/T1,Pick and place,Mug,"[29, 270]",pick and place mug,241
+ZY20210800002/H2/C2/N16/S25/s03/T3,Take it out of the drawer,Mug,"[25, 255]",take it out of the drawer mug,230
+ZY20210800002/H2/C2/N16/S25/s03/T1,Pick and place,Mug,"[25, 289]",pick and place mug,264
+ZY20210800002/H2/C2/N15/S25/s03/T3,Take it out of the drawer,Mug,"[22, 268]",take it out of the drawer mug,246
+ZY20210800002/H2/C2/N15/S25/s03/T1,Pick and place,Mug,"[25, 284]",pick and place mug,259
+ZY20210800002/H2/C2/N14/S25/s02/T3,Take it out of the drawer,Mug,"[12, 263]",take it out of the drawer mug,251
+ZY20210800002/H2/C2/N13/S25/s02/T3,Take it out of the drawer,Mug,"[22, 281]",take it out of the drawer mug,259
+ZY20210800002/H2/C2/N11/S25/s01/T3,Take it out of the drawer,Mug,"[27, 294]",take it out of the drawer mug,267
+ZY20210800002/H2/C2/N11/S25/s01/T1,Pick and place,Mug,"[20, 255]",pick and place mug,235
+ZY20210800002/H2/C14/N50/S187/s03/T2,Throw something in it,Trash Can,"[45, 274]",throw something in it trash can,229
+ZY20210800002/H2/C14/N50/S163/s03/T1,Open and close,Trash Can,"[61, 281]",open and close trash can,210
+ZY20210800002/H2/C14/N48/S187/s03/T2,Throw something in it,Trash Can,"[40, 275]",throw something in it trash can,231
+ZY20210800002/H2/C14/N48/S163/s03/T1,Open and close,Trash Can,"[55, 261]",open and close trash can,199
+ZY20210800002/H2/C14/N46/S187/s03/T2,Throw something in it,Trash Can,"[35, 271]",throw something in it trash can,236
+ZY20210800002/H2/C14/N46/S163/s03/T1,Open and close,Trash Can,"[55, 280]",open and close trash can,225
+ZY20210800002/H2/C14/N44/S187/s02/T2,Throw something in it,Trash Can,"[45, 279]",throw something in it trash can,234
+ZY20210800002/H2/C14/N44/S163/s02/T1,Open and close,Trash Can,"[57, 258]",open and close trash can,196
+ZY20210800002/H2/C14/N42/S187/s02/T2,Throw something in it,Trash Can,"[44, 281]",throw something in it trash can,237
+ZY20210800002/H2/C14/N42/S163/s02/T1,Open and close,Trash Can,"[60, 272]",open and close trash can,210
+ZY20210800002/H2/C14/N40/S187/s02/T2,Throw something in it,Trash Can,"[48, 281]",throw something in it trash can,233
+ZY20210800002/H2/C14/N40/S163/s02/T1,Open and close,Trash Can,"[57, 280]",open and close trash can,216
+ZY20210800002/H2/C14/N25/S187/s02/T2,Throw something in it,Trash Can,"[54, 278]",throw something in it trash can,220
+ZY20210800002/H2/C14/N25/S163/s02/T1,Open and close,Trash Can,"[48, 265]",open and close trash can,208
+ZY20210800002/H2/C14/N24/S359/s03/T2,Throw something in it,Trash Can,"[44, 284]",throw something in it trash can,238
+ZY20210800002/H2/C14/N24/S359/s02/T1,Open and close,Trash Can,"[50, 253]",open and close trash can,194
+ZY20210800002/H2/C14/N24/S163/s01/T1,Open and close,Trash Can,"[57, 266]",open and close trash can,201
+ZY20210800002/H2/C14/N23/S187/s01/T2,Throw something in it,Trash Can,"[42, 265]",throw something in it trash can,223
+ZY20210800002/H2/C14/N23/S163/s01/T1,Open and close,Trash Can,"[58, 266]",open and close trash can,198
+ZY20210800002/H2/C14/N22/S163/s01/T1,Open and close,Trash Can,"[51, 271]",open and close trash can,206
+ZY20210800002/H2/C14/N21/S187/s01/T2,Throw something in it,Trash Can,"[43, 276]",throw something in it trash can,233
+ZY20210800002/H2/C14/N21/S163/s01/T1,Open and close,Trash Can,"[55, 280]",open and close trash can,221
+ZY20210800002/H2/C14/N20/S185/s05/T2,Throw something in it,Trash Can,"[41, 276]",throw something in it trash can,235
+ZY20210800002/H2/C14/N20/S161/s05/T1,Open and close,Trash Can,"[50, 269]",open and close trash can,208
+ZY20210800002/H2/C14/N19/S185/s05/T2,Throw something in it,Trash Can,"[41, 255]",throw something in it trash can,214
+ZY20210800002/H2/C14/N19/S161/s05/T1,Open and close,Trash Can,"[53, 272]",open and close trash can,214
+ZY20210800002/H2/C14/N18/S185/s05/T2,Throw something in it,Trash Can,"[45, 261]",throw something in it trash can,216
+ZY20210800002/H2/C14/N18/S161/s05/T1,Open and close,Trash Can,"[58, 265]",open and close trash can,207
+ZY20210800002/H2/C14/N17/S185/s05/T2,Throw something in it,Trash Can,"[46, 263]",throw something in it trash can,217
+ZY20210800002/H2/C14/N17/S161/s05/T1,Open and close,Trash Can,"[58, 268]",open and close trash can,203
+ZY20210800002/H2/C14/N16/S185/s04/T2,Throw something in it,Trash Can,"[40, 260]",throw something in it trash can,220
+ZY20210800002/H2/C14/N16/S161/s04/T1,Open and close,Trash Can,"[49, 270]",open and close trash can,214
+ZY20210800002/H2/C14/N15/S185/s04/T2,Throw something in it,Trash Can,"[41, 272]",throw something in it trash can,231
+ZY20210800002/H2/C14/N15/S161/s04/T1,Open and close,Trash Can,"[55, 253]",open and close trash can,194
+ZY20210800002/H2/C14/N14/S185/s04/T2,Throw something in it,Trash Can,"[36, 260]",throw something in it trash can,224
+ZY20210800002/H2/C14/N14/S161/s04/T1,Open and close,Trash Can,"[49, 259]",open and close trash can,203
+ZY20210800002/H2/C14/N13/S185/s04/T2,Throw something in it,Trash Can,"[42, 272]",throw something in it trash can,230
+ZY20210800002/H2/C14/N13/S161/s04/T1,Open and close,Trash Can,"[47, 272]",open and close trash can,220
+ZY20210800002/H2/C14/N12/S185/s03/T2,Throw something in it,Trash Can,"[47, 281]",throw something in it trash can,234
+ZY20210800002/H2/C14/N12/S161/s03/T1,Open and close,Trash Can,"[60, 272]",open and close trash can,212
+ZY20210800002/H2/C14/N11/S185/s03/T2,Throw something in it,Trash Can,"[35, 283]",throw something in it trash can,248
+ZY20210800002/H2/C14/N11/S161/s03/T1,Open and close,Trash Can,"[50, 281]",open and close trash can,231
+ZY20210800002/H2/C13/N38/S192/s03/T2,Take it out of the drawer,Knife,"[50, 251]",take it out of the drawer knife,201
+ZY20210800002/H2/C13/N38/S128/s03/T1,Pick and place,Knife,"[79, 273]",pick and place knife,194
+ZY20210800002/H2/C13/N36/S192/s03/T2,Take it out of the drawer,Knife,"[58, 249]",take it out of the drawer knife,191
+ZY20210800002/H2/C13/N36/S128/s03/T1,Pick and place,Knife,"[69, 264]",pick and place knife,195
+ZY20210800002/H2/C13/N34/S192/s03/T2,Take it out of the drawer,Knife,"[66, 260]",take it out of the drawer knife,194
+ZY20210800002/H2/C13/N34/S128/s03/T1,Pick and place,Knife,"[67, 255]",pick and place knife,188
+ZY20210800002/H2/C13/N32/S192/s03/T2,Take it out of the drawer,Knife,"[56, 253]",take it out of the drawer knife,188
+ZY20210800002/H2/C13/N32/S128/s03/T1,Pick and place,Knife,"[72, 257]",pick and place knife,185
+ZY20210800002/H2/C13/N30/S192/s02/T2,Take it out of the drawer,Knife,"[59, 243]",take it out of the drawer knife,184
+ZY20210800002/H2/C13/N30/S128/s02/T1,Pick and place,Knife,"[79, 265]",pick and place knife,186
+ZY20210800002/H2/C13/N28/S192/s02/T2,Take it out of the drawer,Knife,"[57, 251]",take it out of the drawer knife,194
+ZY20210800002/H2/C13/N28/S128/s02/T1,Pick and place,Knife,"[76, 260]",pick and place knife,184
+ZY20210800002/H2/C13/N26/S192/s02/T2,Take it out of the drawer,Knife,"[52, 254]",take it out of the drawer knife,202
+ZY20210800002/H2/C13/N26/S128/s02/T1,Pick and place,Knife,"[75, 257]",pick and place knife,182
+ZY20210800002/H2/C13/N25/S189/s05/T4,Cut apple,Knife,"[50, 257]",cut apple knife,207
+ZY20210800002/H2/C13/N25/S128/s02/T1,Pick and place,Knife,"[70, 244]",pick and place knife,174
+ZY20210800002/H2/C13/N24/S192/s02/T3,Put it in the drawer,Knife,"[55, 259]",put it in the drawer knife,204
+ZY20210800002/H2/C13/N24/S128/s01/T1,Pick and place,Knife,"[69, 242]",pick and place knife,173
+ZY20210800002/H2/C13/N23/S192/s01/T3,Put it in the drawer,Knife,"[53, 262]",put it in the drawer knife,209
+ZY20210800002/H2/C13/N23/S128/s01/T1,Pick and place,Knife,"[75, 268]",pick and place knife,193
+ZY20210800002/H2/C13/N22/S189/s05/T4,Cut apple,Knife,"[49, 253]",cut apple knife,204
+ZY20210800002/H2/C13/N22/S128/s01/T1,Pick and place,Knife,"[68, 247]",pick and place knife,179
+ZY20210800002/H2/C13/N21/S192/s01/T3,Put it in the drawer,Knife,"[50, 266]",put it in the drawer knife,216
+ZY20210800002/H2/C13/N21/S128/s01/T1,Pick and place,Knife,"[64, 247]",pick and place knife,183
+ZY20210800002/H2/C13/N20/S192/s01/T3,Put it in the drawer,Knife,"[49, 263]",put it in the drawer knife,214
+ZY20210800002/H2/C13/N20/S124/s05/T1,Pick and place,Knife,"[70, 253]",pick and place knife,183
+ZY20210800002/H2/C13/N19/S189/s05/T4,Cut apple,Knife,"[50, 266]",cut apple knife,216
+ZY20210800002/H2/C13/N19/S124/s05/T1,Pick and place,Knife,"[73, 257]",pick and place knife,184
+ZY20210800002/H2/C13/N18/S192/s01/T3,Put it in the drawer,Knife,"[49, 273]",put it in the drawer knife,224
+ZY20210800002/H2/C13/N18/S124/s05/T1,Pick and place,Knife,"[86, 265]",pick and place knife,179
+ZY20210800002/H2/C13/N17/S189/s05/T3,Put it in the drawer,Knife,"[52, 256]",put it in the drawer knife,204
+ZY20210800002/H2/C13/N17/S124/s05/T1,Pick and place,Knife,"[66, 260]",pick and place knife,194
+ZY20210800002/H2/C13/N16/S189/s04/T4,Cut apple,Knife,"[49, 268]",cut apple knife,219
+ZY20210800002/H2/C13/N16/S124/s04/T1,Pick and place,Knife,"[74, 257]",pick and place knife,176
+ZY20210800002/H2/C13/N15/S346/s01/T1,Pick and place,Knife,"[45, 246]",pick and place knife,197
+ZY20210800002/H2/C13/N15/S189/s04/T4,Cut apple,Knife,"[55, 264]",cut apple knife,209
+ZY20210800002/H2/C13/N15/S124/s04/T1,Pick and place,Knife,"[75, 256]",pick and place knife,179
+ZY20210800002/H2/C13/N14/S189/s04/T4,Cut apple,Knife,"[45, 269]",cut apple knife,224
+ZY20210800002/H2/C13/N14/S124/s04/T1,Pick and place,Knife,"[73, 247]",pick and place knife,174
+ZY20210800002/H2/C13/N13/S189/s04/T4,Cut apple,Knife,"[46, 258]",cut apple knife,212
+ZY20210800002/H2/C13/N13/S124/s04/T1,Pick and place,Knife,"[76, 279]",pick and place knife,198
+ZY20210800002/H2/C13/N12/S189/s03/T4,Cut apple,Knife,"[52, 272]",cut apple knife,220
+ZY20210800002/H2/C13/N12/S124/s03/T1,Pick and place,Knife,"[73, 263]",pick and place knife,180
+ZY20210800002/H2/C13/N11/S189/s03/T4,Cut apple,Knife,"[48, 258]",cut apple knife,210
+ZY20210800002/H2/C13/N11/S124/s03/T1,Pick and place,Knife,"[79, 249]",pick and place knife,170
+ZY20210800002/H2/C12/N46/S346/s03/T2,Pour water into a mug,Kettle,"[39, 236]",pour water into a mug kettle,197
+ZY20210800002/H2/C12/N39/S346/s03/T2,Pour water into a mug,Kettle,"[43, 252]",pour water into a mug kettle,209
+ZY20210800002/H2/C12/N36/S346/s03/T2,Pour water into a mug,Kettle,"[41, 271]",pour water into a mug kettle,228
+ZY20210800002/H2/C12/N36/S198/s03/T2,Pour water into a mug,Kettle,"[38, 262]",pour water into a mug kettle,224
+ZY20210800002/H2/C12/N36/S157/s03/T1,Pick and place,Kettle,"[73, 263]",pick and place kettle,186
+ZY20210800002/H2/C12/N35/S346/s03/T1,Pick and place,Kettle,"[45, 258]",pick and place kettle,213
+ZY20210800002/H2/C12/N34/S198/s03/T2,Pour water into a mug,Kettle,"[36, 261]",pour water into a mug kettle,225
+ZY20210800002/H2/C12/N34/S157/s03/T1,Pick and place,Kettle,"[60, 268]",pick and place kettle,199
+ZY20210800002/H2/C12/N33/S346/s01/T1,Pick and place,Kettle,"[42, 243]",pick and place kettle,201
+ZY20210800002/H2/C12/N32/S198/s03/T2,Pour water into a mug,Kettle,"[37, 263]",pour water into a mug kettle,226
+ZY20210800002/H2/C12/N32/S157/s03/T1,Pick and place,Kettle,"[76, 275]",pick and place kettle,191
+ZY20210800002/H2/C12/N31/S346/s01/T1,Pick and place,Kettle,"[40, 253]",pick and place kettle,213
+ZY20210800002/H2/C12/N30/S198/s02/T2,Pour water into a mug,Kettle,"[38, 268]",pour water into a mug kettle,230
+ZY20210800002/H2/C12/N30/S157/s02/T1,Pick and place,Kettle,"[72, 266]",pick and place kettle,178
+ZY20210800002/H2/C12/N28/S198/s02/T2,Pour water into a mug,Kettle,"[36, 273]",pour water into a mug kettle,237
+ZY20210800002/H2/C12/N28/S157/s02/T1,Pick and place,Kettle,"[66, 278]",pick and place kettle,205
+ZY20210800002/H2/C12/N26/S198/s02/T2,Pour water into a mug,Kettle,"[40, 263]",pour water into a mug kettle,223
+ZY20210800002/H2/C12/N26/S157/s02/T1,Pick and place,Kettle,"[69, 284]",pick and place kettle,201
+ZY20210800002/H2/C12/N25/S198/s02/T2,Pour water into a mug,Kettle,"[31, 261]",pour water into a mug kettle,230
+ZY20210800002/H2/C12/N25/S157/s02/T1,Pick and place,Kettle,"[64, 270]",pick and place kettle,195
+ZY20210800002/H2/C12/N24/S198/s01/T2,Pour water into a mug,Kettle,"[34, 271]",pour water into a mug kettle,237
+ZY20210800002/H2/C12/N24/S157/s01/T1,Pick and place,Kettle,"[66, 274]",pick and place kettle,191
+ZY20210800002/H2/C12/N23/S198/s01/T2,Pour water into a mug,Kettle,"[35, 268]",pour water into a mug kettle,233
+ZY20210800002/H2/C12/N23/S157/s01/T1,Pick and place,Kettle,"[70, 252]",pick and place kettle,177
+ZY20210800002/H2/C12/N22/S198/s01/T2,Pour water into a mug,Kettle,"[32, 262]",pour water into a mug kettle,230
+ZY20210800002/H2/C12/N22/S157/s01/T1,Pick and place,Kettle,"[65, 267]",pick and place kettle,195
+ZY20210800002/H2/C12/N21/S198/s01/T2,Pour water into a mug,Kettle,"[36, 264]",pour water into a mug kettle,228
+ZY20210800002/H2/C12/N21/S157/s01/T1,Pick and place,Kettle,"[71, 269]",pick and place kettle,194
+ZY20210800002/H2/C12/N20/S196/s05/T2,Pour water into a mug,Kettle,"[35, 257]",pour water into a mug kettle,222
+ZY20210800002/H2/C12/N20/S154/s05/T1,Pick and place,Kettle,"[61, 266]",pick and place kettle,199
+ZY20210800002/H2/C12/N19/S346/s02/T2,Pour water into a mug,Kettle,"[41, 244]",pour water into a mug kettle,203
+ZY20210800002/H2/C12/N19/S196/s05/T2,Pour water into a mug,Kettle,"[35, 265]",pour water into a mug kettle,230
+ZY20210800002/H2/C12/N19/S154/s05/T1,Pick and place,Kettle,"[62, 277]",pick and place kettle,210
+ZY20210800002/H2/C12/N18/S196/s05/T2,Pour water into a mug,Kettle,"[34, 265]",pour water into a mug kettle,231
+ZY20210800002/H2/C12/N18/S154/s05/T1,Pick and place,Kettle,"[70, 278]",pick and place kettle,198
+ZY20210800002/H2/C12/N17/S196/s05/T2,Pour water into a mug,Kettle,"[35, 263]",pour water into a mug kettle,228
+ZY20210800002/H2/C12/N17/S154/s05/T1,Pick and place,Kettle,"[69, 271]",pick and place kettle,196
+ZY20210800002/H2/C12/N16/S346/s02/T1,Pick and place,Kettle,"[41, 244]",pick and place kettle,199
+ZY20210800002/H2/C12/N16/S196/s04/T2,Pour water into a mug,Kettle,"[35, 257]",pour water into a mug kettle,222
+ZY20210800002/H2/C12/N16/S154/s05/T1,Pick and place,Kettle,"[66, 271]",pick and place kettle,195
+ZY20210800002/H2/C12/N15/S196/s04/T2,Pour water into a mug,Kettle,"[37, 271]",pour water into a mug kettle,234
+ZY20210800002/H2/C12/N15/S154/s04/T1,Pick and place,Kettle,"[57, 273]",pick and place kettle,203
+ZY20210800002/H2/C12/N14/S196/s04/T2,Pour water into a mug,Kettle,"[35, 260]",pour water into a mug kettle,225
+ZY20210800002/H2/C12/N14/S154/s04/T1,Pick and place,Kettle,"[54, 260]",pick and place kettle,206
+ZY20210800002/H2/C12/N13/S196/s04/T2,Pour water into a mug,Kettle,"[41, 263]",pour water into a mug kettle,222
+ZY20210800002/H2/C12/N13/S154/s04/T1,Pick and place,Kettle,"[61, 271]",pick and place kettle,201
+ZY20210800002/H2/C12/N12/S196/s03/T2,Pour water into a mug,Kettle,"[35, 262]",pour water into a mug kettle,227
+ZY20210800002/H2/C12/N12/S154/s04/T1,Pick and place,Kettle,"[66, 260]",pick and place kettle,194
+ZY20210800002/H2/C12/N11/S196/s03/T2,Pour water into a mug,Kettle,"[37, 264]",pour water into a mug kettle,227
+ZY20210800002/H2/C12/N11/S154/s03/T1,Pick and place,Kettle,"[63, 262]",pick and place kettle,190
+ZY20210800002/H2/C1/N50/S89/s05/T3,Put it in the drawer,Toy Car,"[26, 282]",put it in the drawer toy car,256
+ZY20210800002/H2/C1/N49/S89/s05/T1,Pick and place,Toy Car,"[21, 280]",pick and place toy car,259
+ZY20210800002/H2/C1/N48/S89/s04/T3,Put it in the drawer,Toy Car,"[21, 280]",put it in the drawer toy car,259
+ZY20210800002/H2/C1/N47/S89/s04/T3,Put it in the drawer,Toy Car,"[21, 275]",put it in the drawer toy car,254
+ZY20210800002/H2/C1/N47/S89/s04/T1,Pick and place,Toy Car,"[21, 280]",pick and place toy car,259
+ZY20210800002/H2/C1/N46/S89/s03/T3,Put it in the drawer,Toy Car,"[26, 289]",put it in the drawer toy car,263
+ZY20210800002/H2/C1/N46/S89/s03/T1,Pick and place,Toy Car,"[22, 275]",pick and place toy car,253
+ZY20210800002/H2/C1/N45/S94/s02/T3,Put it in the drawer,Toy Car,"[19, 271]",put it in the drawer toy car,252
+ZY20210800002/H2/C1/N42/S94/s01/T3,Put it in the drawer,Toy Car,"[18, 280]",put it in the drawer toy car,262
+ZY20210800002/H2/C1/N41/S94/s01/T3,Put it in the drawer,Toy Car,"[17, 291]",put it in the drawer toy car,274
+ZY20210800002/H2/C1/N39/S88/s05/T3,Put it in the drawer,Toy Car,"[19, 286]",put it in the drawer toy car,267
+ZY20210800002/H2/C1/N39/S88/s05/T1,Pick and place,Toy Car,"[25, 270]",pick and place toy car,245
+ZY20210800002/H2/C1/N38/S88/s04/T3,Put it in the drawer,Toy Car,"[22, 269]",put it in the drawer toy car,247
+ZY20210800002/H2/C1/N37/S88/s04/T3,Put it in the drawer,Toy Car,"[22, 265]",put it in the drawer toy car,243
+ZY20210800002/H2/C1/N37/S88/s04/T1,Pick and place,Toy Car,"[21, 281]",pick and place toy car,260
+ZY20210800002/H2/C1/N36/S94/s03/T3,Put it in the drawer,Toy Car,"[13, 272]",put it in the drawer toy car,259
+ZY20210800002/H2/C1/N35/S94/s03/T3,Put it in the drawer,Toy Car,"[24, 289]",put it in the drawer toy car,265
+ZY20210800002/H2/C1/N34/S94/s02/T1,Pick and place,Toy Car,"[13, 258]",pick and place toy car,245
+ZY20210800002/H2/C1/N34/S336/s01/T1,Pick and place,Toy Car,"[27, 242]",pick and place toy car,215
+ZY20210800002/H2/C1/N32/S88/s01/T3,Put it in the drawer,Toy Car,"[18, 266]",put it in the drawer toy car,248
+ZY20210800002/H2/C1/N32/S88/s01/T1,Pick and place,Toy Car,"[17, 277]",pick and place toy car,260
+ZY20210800002/H2/C1/N30/S94/s05/T3,Put it in the drawer,Toy Car,"[23, 284]",put it in the drawer toy car,261
+ZY20210800002/H2/C1/N29/S87/s05/T3,Put it in the drawer,Toy Car,"[15, 264]",put it in the drawer toy car,249
+ZY20210800002/H2/C1/N28/S87/s04/T3,Put it in the drawer,Toy Car,"[19, 288]",put it in the drawer toy car,269
+ZY20210800002/H2/C1/N28/S87/s04/T1,Pick and place,Toy Car,"[21, 273]",pick and place toy car,252
+ZY20210800002/H2/C1/N26/S94/s03/T3,Put it in the drawer,Toy Car,"[20, 274]",put it in the drawer toy car,254
+ZY20210800002/H2/C1/N24/S87/s02/T3,Put it in the drawer,Toy Car,"[21, 276]",put it in the drawer toy car,255
+ZY20210800002/H2/C1/N24/S87/s02/T1,Pick and place,Toy Car,"[20, 285]",pick and place toy car,265
+ZY20210800002/H2/C1/N23/S87/s02/T3,Put it in the drawer,Toy Car,"[24, 288]",put it in the drawer toy car,264
+ZY20210800002/H2/C1/N23/S87/s02/T1,Pick and place,Toy Car,"[25, 290]",pick and place toy car,265
+ZY20210800002/H2/C1/N20/S339/s05/T2,Push toy car,Toy Car,"[22, 279]",push toy car toy car,257
+ZY20210800002/H2/C1/N20/S339/s05/T1,Pick and place,Toy Car,"[20, 285]",pick and place toy car,265
+ZY20210800002/H2/C1/N19/S339/s05/T2,Push toy car,Toy Car,"[25, 265]",push toy car toy car,240
+ZY20210800002/H2/C1/N19/S339/s05/T1,Pick and place,Toy Car,"[20, 282]",pick and place toy car,262
+ZY20210800002/H2/C1/N18/S339/s04/T2,Push toy car,Toy Car,"[21, 290]",push toy car toy car,269
+ZY20210800002/H2/C1/N16/S339/s03/T2,Push toy car,Toy Car,"[22, 287]",push toy car toy car,265
+ZY20210800002/H2/C1/N14/S339/s03/T1,Pick and place,Toy Car,"[19, 277]",pick and place toy car,258
+ZY20210800002/H2/C1/N13/S339/s02/T1,Pick and place,Toy Car,"[23, 287]",pick and place toy car,264
+ZY20210800002/H2/C1/N12/S339/s01/T2,Push toy car,Toy Car,"[17, 288]",push toy car toy car,271
+ZY20210800002/H2/C1/N12/S339/s01/T1,Pick and place,Toy Car,"[20, 289]",pick and place toy car,269
+ZY20210800002/H2/C1/N11/S339/s02/T2,Push toy car,Toy Car,"[22, 282]",push toy car toy car,260
+ZY20210800002/H2/C1/N10/S336/s01/T2,Push toy car,Toy Car,"[21, 254]",push toy car toy car,233
+ZY20210800002/H2/C1/N07/S336/s04/T2,Push toy car,Toy Car,"[22, 284]",push toy car toy car,262
+ZY20210800002/H2/C1/N06/S336/s04/T1,Pick and place,Toy Car,"[21, 283]",pick and place toy car,262
+ZY20210800002/H2/C1/N04/S336/s03/T2,Push toy car,Toy Car,"[20, 285]",push toy car toy car,265
+ZY20210800002/H2/C1/N03/S336/s02/T1,Pick and place,Toy Car,"[27, 291]",pick and place toy car,264
+ZY20210800002/H2/C1/N02/S336/s03/T2,Push toy car,Toy Car,"[18, 287]",push toy car toy car,269
+ZY20210800002/H2/C1/N01/S336/s02/T1,Pick and place,Toy Car,"[19, 285]",pick and place toy car,266
+ZY20210800001/H1/C7/N50/S278/s05/T4,Take the ball out of the bowl,Bowl,"[54, 253]",take the ball out of the bowl bowl,193
+ZY20210800001/H1/C7/N50/S274/s03/T2,Put it in the drawer,Bowl,"[47, 266]",put it in the drawer bowl,219
+ZY20210800001/H1/C7/N49/S278/s05/T4,Take the ball out of the bowl,Bowl,"[61, 267]",take the ball out of the bowl bowl,195
+ZY20210800001/H1/C7/N49/S274/s03/T2,Put it in the drawer,Bowl,"[54, 287]",put it in the drawer bowl,233
+ZY20210800001/H1/C7/N48/S285/s02/T6,Pick and place (with ball),Bowl,"[48, 265]",pick and place (with ball) bowl,217
+ZY20210800001/H1/C7/N48/S278/s05/T4,Take the ball out of the bowl,Bowl,"[53, 238]",take the ball out of the bowl bowl,181
+ZY20210800001/H1/C7/N48/S274/s02/T2,Put it in the drawer,Bowl,"[48, 259]",put it in the drawer bowl,211
+ZY20210800001/H1/C7/N47/S285/s02/T6,Pick and place (with ball),Bowl,"[43, 271]",pick and place (with ball) bowl,228
+ZY20210800001/H1/C7/N47/S278/s05/T4,Take the ball out of the bowl,Bowl,"[53, 231]",take the ball out of the bowl bowl,178
+ZY20210800001/H1/C7/N47/S274/s02/T2,Put it in the drawer,Bowl,"[48, 266]",put it in the drawer bowl,218
+ZY20210800001/H1/C7/N46/S285/s02/T6,Pick and place (with ball),Bowl,"[49, 277]",pick and place (with ball) bowl,228
+ZY20210800001/H1/C7/N46/S278/s04/T4,Take the ball out of the bowl,Bowl,"[52, 250]",take the ball out of the bowl bowl,198
+ZY20210800001/H1/C7/N46/S274/s02/T2,Put it in the drawer,Bowl,"[43, 275]",put it in the drawer bowl,232
+ZY20210800001/H1/C7/N45/S285/s02/T6,Pick and place (with ball),Bowl,"[43, 272]",pick and place (with ball) bowl,229
+ZY20210800001/H1/C7/N45/S278/s04/T4,Take the ball out of the bowl,Bowl,"[60, 265]",take the ball out of the bowl bowl,199
+ZY20210800001/H1/C7/N45/S274/s02/T2,Put it in the drawer,Bowl,"[57, 260]",put it in the drawer bowl,203
+ZY20210800001/H1/C7/N44/S285/s01/T6,Pick and place (with ball),Bowl,"[46, 280]",pick and place (with ball) bowl,234
+ZY20210800001/H1/C7/N44/S278/s04/T4,Take the ball out of the bowl,Bowl,"[55, 244]",take the ball out of the bowl bowl,183
+ZY20210800001/H1/C7/N44/S274/s01/T2,Put it in the drawer,Bowl,"[43, 251]",put it in the drawer bowl,208
+ZY20210800001/H1/C7/N43/S285/s01/T6,Pick and place (with ball),Bowl,"[49, 256]",pick and place (with ball) bowl,207
+ZY20210800001/H1/C7/N43/S278/s04/T4,Take the ball out of the bowl,Bowl,"[58, 253]",take the ball out of the bowl bowl,195
+ZY20210800001/H1/C7/N43/S274/s01/T2,Put it in the drawer,Bowl,"[44, 265]",put it in the drawer bowl,221
+ZY20210800001/H1/C7/N42/S285/s01/T6,Pick and place (with ball),Bowl,"[46, 260]",pick and place (with ball) bowl,214
+ZY20210800001/H1/C7/N42/S278/s03/T4,Take the ball out of the bowl,Bowl,"[49, 258]",take the ball out of the bowl bowl,209
+ZY20210800001/H1/C7/N42/S274/s01/T2,Put it in the drawer,Bowl,"[47, 256]",put it in the drawer bowl,209
+ZY20210800001/H1/C7/N41/S285/s01/T6,Pick and place (with ball),Bowl,"[43, 265]",pick and place (with ball) bowl,222
+ZY20210800001/H1/C7/N41/S278/s03/T4,Take the ball out of the bowl,Bowl,"[55, 243]",take the ball out of the bowl bowl,184
+ZY20210800001/H1/C7/N41/S274/s01/T2,Put it in the drawer,Bowl,"[46, 263]",put it in the drawer bowl,217
+ZY20210800001/H1/C7/N40/S283/s05/T6,Pick and place (with ball),Bowl,"[48, 266]",pick and place (with ball) bowl,218
+ZY20210800001/H1/C7/N40/S278/s03/T4,Take the ball out of the bowl,Bowl,"[53, 252]",take the ball out of the bowl bowl,192
+ZY20210800001/H1/C7/N40/S272/s05/T2,Put it in the drawer,Bowl,"[52, 277]",put it in the drawer bowl,225
+ZY20210800001/H1/C7/N39/S61/s03/T2,Put it in the drawer,Bowl,"[28, 279]",put it in the drawer bowl,251
+ZY20210800001/H1/C7/N39/S61/s03/T1,Pick and place,Bowl,"[31, 271]",pick and place bowl,240
+ZY20210800001/H1/C7/N39/S283/s05/T6,Pick and place (with ball),Bowl,"[42, 271]",pick and place (with ball) bowl,229
+ZY20210800001/H1/C7/N39/S278/s03/T4,Take the ball out of the bowl,Bowl,"[54, 251]",take the ball out of the bowl bowl,197
+ZY20210800001/H1/C7/N39/S272/s05/T2,Put it in the drawer,Bowl,"[51, 277]",put it in the drawer bowl,226
+ZY20210800001/H1/C7/N38/S61/s03/T2,Put it in the drawer,Bowl,"[34, 267]",put it in the drawer bowl,233
+ZY20210800001/H1/C7/N38/S61/s03/T1,Pick and place,Bowl,"[44, 270]",pick and place bowl,226
+ZY20210800001/H1/C7/N38/S278/s02/T4,Take the ball out of the bowl,Bowl,"[56, 236]",take the ball out of the bowl bowl,176
+ZY20210800001/H1/C7/N38/S272/s05/T2,Put it in the drawer,Bowl,"[52, 256]",put it in the drawer bowl,204
+ZY20210800001/H1/C7/N37/S61/s02/T2,Put it in the drawer,Bowl,"[32, 255]",put it in the drawer bowl,223
+ZY20210800001/H1/C7/N37/S61/s02/T1,Pick and place,Bowl,"[38, 272]",pick and place bowl,234
+ZY20210800001/H1/C7/N37/S278/s02/T4,Take the ball out of the bowl,Bowl,"[60, 248]",take the ball out of the bowl bowl,186
+ZY20210800001/H1/C7/N37/S272/s05/T2,Put it in the drawer,Bowl,"[51, 269]",put it in the drawer bowl,218
+ZY20210800001/H1/C7/N36/S61/s02/T2,Put it in the drawer,Bowl,"[28, 273]",put it in the drawer bowl,245
+ZY20210800001/H1/C7/N36/S61/s02/T1,Pick and place,Bowl,"[34, 267]",pick and place bowl,233
+ZY20210800001/H1/C7/N36/S278/s02/T4,Take the ball out of the bowl,Bowl,"[56, 252]",take the ball out of the bowl bowl,196
+ZY20210800001/H1/C7/N36/S272/s04/T2,Put it in the drawer,Bowl,"[45, 251]",put it in the drawer bowl,206
+ZY20210800001/H1/C7/N35/S61/s01/T2,Put it in the drawer,Bowl,"[32, 265]",put it in the drawer bowl,233
+ZY20210800001/H1/C7/N35/S61/s01/T1,Pick and place,Bowl,"[38, 261]",pick and place bowl,223
+ZY20210800001/H1/C7/N35/S278/s02/T4,Take the ball out of the bowl,Bowl,"[55, 257]",take the ball out of the bowl bowl,195
+ZY20210800001/H1/C7/N35/S272/s04/T2,Put it in the drawer,Bowl,"[49, 256]",put it in the drawer bowl,207
+ZY20210800001/H1/C7/N34/S61/s01/T2,Put it in the drawer,Bowl,"[35, 267]",put it in the drawer bowl,232
+ZY20210800001/H1/C7/N34/S61/s01/T1,Pick and place,Bowl,"[31, 265]",pick and place bowl,234
+ZY20210800001/H1/C7/N34/S278/s01/T4,Take the ball out of the bowl,Bowl,"[59, 264]",take the ball out of the bowl bowl,203
+ZY20210800001/H1/C7/N34/S272/s04/T2,Put it in the drawer,Bowl,"[49, 251]",put it in the drawer bowl,202
+ZY20210800001/H1/C7/N33/S60/s05/T2,Put it in the drawer,Bowl,"[29, 263]",put it in the drawer bowl,234
+ZY20210800001/H1/C7/N33/S60/s05/T1,Pick and place,Bowl,"[30, 263]",pick and place bowl,233
+ZY20210800001/H1/C7/N33/S278/s01/T4,Take the ball out of the bowl,Bowl,"[52, 265]",take the ball out of the bowl bowl,201
+ZY20210800001/H1/C7/N33/S272/s04/T2,Put it in the drawer,Bowl,"[48, 251]",put it in the drawer bowl,203
+ZY20210800001/H1/C7/N32/S60/s05/T2,Put it in the drawer,Bowl,"[30, 246]",put it in the drawer bowl,216
+ZY20210800001/H1/C7/N32/S60/s05/T1,Pick and place,Bowl,"[31, 257]",pick and place bowl,226
+ZY20210800001/H1/C7/N32/S278/s01/T4,Take the ball out of the bowl,Bowl,"[54, 251]",take the ball out of the bowl bowl,195
+ZY20210800001/H1/C7/N32/S272/s03/T2,Put it in the drawer,Bowl,"[46, 251]",put it in the drawer bowl,205
+ZY20210800001/H1/C7/N31/S60/s04/T2,Put it in the drawer,Bowl,"[29, 268]",put it in the drawer bowl,239
+ZY20210800001/H1/C7/N31/S60/s04/T1,Pick and place,Bowl,"[35, 278]",pick and place bowl,243
+ZY20210800001/H1/C7/N31/S278/s01/T4,Take the ball out of the bowl,Bowl,"[54, 239]",take the ball out of the bowl bowl,185
+ZY20210800001/H1/C7/N31/S272/s03/T2,Put it in the drawer,Bowl,"[47, 265]",put it in the drawer bowl,218
+ZY20210800001/H1/C7/N30/S60/s04/T2,Put it in the drawer,Bowl,"[35, 264]",put it in the drawer bowl,229
+ZY20210800001/H1/C7/N30/S60/s04/T1,Pick and place,Bowl,"[33, 259]",pick and place bowl,226
+ZY20210800001/H1/C7/N30/S276/s05/T4,Take the ball out of the bowl,Bowl,"[55, 238]",take the ball out of the bowl bowl,183
+ZY20210800001/H1/C7/N30/S272/s03/T2,Put it in the drawer,Bowl,"[47, 266]",put it in the drawer bowl,219
+ZY20210800001/H1/C7/N29/S60/s02/T2,Put it in the drawer,Bowl,"[20, 255]",put it in the drawer bowl,235
+ZY20210800001/H1/C7/N29/S60/s02/T1,Pick and place,Bowl,"[35, 259]",pick and place bowl,224
+ZY20210800001/H1/C7/N29/S276/s05/T4,Take the ball out of the bowl,Bowl,"[58, 270]",take the ball out of the bowl bowl,212
+ZY20210800001/H1/C7/N29/S272/s03/T2,Put it in the drawer,Bowl,"[44, 253]",put it in the drawer bowl,209
+ZY20210800001/H1/C7/N28/S60/s02/T2,Put it in the drawer,Bowl,"[22, 288]",put it in the drawer bowl,266
+ZY20210800001/H1/C7/N28/S60/s02/T1,Pick and place,Bowl,"[31, 269]",pick and place bowl,238
+ZY20210800001/H1/C7/N28/S276/s05/T4,Take the ball out of the bowl,Bowl,"[58, 244]",take the ball out of the bowl bowl,180
+ZY20210800001/H1/C7/N28/S272/s02/T2,Put it in the drawer,Bowl,"[46, 265]",put it in the drawer bowl,219
+ZY20210800001/H1/C7/N27/S60/s03/T2,Put it in the drawer,Bowl,"[20, 269]",put it in the drawer bowl,249
+ZY20210800001/H1/C7/N27/S60/s03/T1,Pick and place,Bowl,"[40, 249]",pick and place bowl,209
+ZY20210800001/H1/C7/N27/S276/s05/T4,Take the ball out of the bowl,Bowl,"[54, 246]",take the ball out of the bowl bowl,192
+ZY20210800001/H1/C7/N27/S272/s02/T2,Put it in the drawer,Bowl,"[50, 260]",put it in the drawer bowl,210
+ZY20210800001/H1/C7/N26/S60/s03/T2,Put it in the drawer,Bowl,"[31, 267]",put it in the drawer bowl,236
+ZY20210800001/H1/C7/N26/S60/s03/T1,Pick and place,Bowl,"[31, 244]",pick and place bowl,213
+ZY20210800001/H1/C7/N26/S276/s04/T4,Take the ball out of the bowl,Bowl,"[57, 251]",take the ball out of the bowl bowl,189
+ZY20210800001/H1/C7/N26/S272/s02/T2,Put it in the drawer,Bowl,"[48, 259]",put it in the drawer bowl,211
+ZY20210800001/H1/C7/N25/S60/s01/T2,Put it in the drawer,Bowl,"[34, 268]",put it in the drawer bowl,234
+ZY20210800001/H1/C7/N25/S60/s01/T1,Pick and place,Bowl,"[28, 273]",pick and place bowl,245
+ZY20210800001/H1/C7/N25/S276/s04/T3,Take it out of the drawer,Bowl,"[48, 231]",take it out of the drawer bowl,183
+ZY20210800001/H1/C7/N25/S272/s02/T1,Pick and place,Bowl,"[56, 262]",pick and place bowl,206
+ZY20210800001/H1/C7/N24/S59/s03/T2,Put it in the drawer,Bowl,"[29, 247]",put it in the drawer bowl,218
+ZY20210800001/H1/C7/N24/S59/s03/T1,Pick and place,Bowl,"[29, 252]",pick and place bowl,223
+ZY20210800001/H1/C7/N24/S276/s04/T3,Take it out of the drawer,Bowl,"[43, 238]",take it out of the drawer bowl,195
+ZY20210800001/H1/C7/N24/S272/s01/T1,Pick and place,Bowl,"[48, 263]",pick and place bowl,215
+ZY20210800001/H1/C7/N23/S59/s03/T2,Put it in the drawer,Bowl,"[32, 257]",put it in the drawer bowl,225
+ZY20210800001/H1/C7/N23/S59/s03/T1,Pick and place,Bowl,"[40, 270]",pick and place bowl,230
+ZY20210800001/H1/C7/N23/S276/s04/T3,Take it out of the drawer,Bowl,"[49, 249]",take it out of the drawer bowl,200
+ZY20210800001/H1/C7/N23/S272/s01/T1,Pick and place,Bowl,"[42, 257]",pick and place bowl,215
+ZY20210800001/H1/C7/N22/S60/s01/T2,Put it in the drawer,Bowl,"[30, 266]",put it in the drawer bowl,236
+ZY20210800001/H1/C7/N22/S60/s01/T1,Pick and place,Bowl,"[27, 245]",pick and place bowl,218
+ZY20210800001/H1/C7/N22/S276/s03/T3,Take it out of the drawer,Bowl,"[47, 250]",take it out of the drawer bowl,203
+ZY20210800001/H1/C7/N22/S272/s01/T1,Pick and place,Bowl,"[51, 261]",pick and place bowl,210
+ZY20210800001/H1/C7/N21/S59/s04/T1,Pick and place,Bowl,"[41, 133]",pick and place bowl,92
+ZY20210800001/H1/C7/N21/S276/s03/T3,Take it out of the drawer,Bowl,"[48, 244]",take it out of the drawer bowl,196
+ZY20210800001/H1/C7/N21/S272/s01/T1,Pick and place,Bowl,"[46, 258]",pick and place bowl,212
+ZY20210800001/H1/C7/N20/S59/s02/T2,Put it in the drawer,Bowl,"[26, 275]",put it in the drawer bowl,249
+ZY20210800001/H1/C7/N20/S59/s02/T1,Pick and place,Bowl,"[55, 262]",pick and place bowl,207
+ZY20210800001/H1/C7/N20/S276/s03/T3,Take it out of the drawer,Bowl,"[53, 268]",take it out of the drawer bowl,215
+ZY20210800001/H1/C7/N20/S270/s05/T1,Pick and place,Bowl,"[51, 254]",pick and place bowl,203
+ZY20210800001/H1/C7/N19/S59/s05/T2,Put it in the drawer,Bowl,"[25, 275]",put it in the drawer bowl,250
+ZY20210800001/H1/C7/N19/S59/s05/T1,Pick and place,Bowl,"[23, 269]",pick and place bowl,246
+ZY20210800001/H1/C7/N19/S276/s03/T3,Take it out of the drawer,Bowl,"[46, 242]",take it out of the drawer bowl,196
+ZY20210800001/H1/C7/N19/S270/s05/T1,Pick and place,Bowl,"[42, 255]",pick and place bowl,213
+ZY20210800001/H1/C7/N18/S59/s05/T2,Put it in the drawer,Bowl,"[26, 234]",put it in the drawer bowl,208
+ZY20210800001/H1/C7/N18/S59/s05/T1,Pick and place,Bowl,"[22, 268]",pick and place bowl,246
+ZY20210800001/H1/C7/N18/S276/s02/T3,Take it out of the drawer,Bowl,"[44, 264]",take it out of the drawer bowl,220
+ZY20210800001/H1/C7/N18/S270/s05/T1,Pick and place,Bowl,"[46, 265]",pick and place bowl,219
+ZY20210800001/H1/C7/N17/S59/s04/T2,Put it in the drawer,Bowl,"[31, 278]",put it in the drawer bowl,247
+ZY20210800001/H1/C7/N17/S59/s04/T1,Pick and place,Bowl,"[21, 267]",pick and place bowl,246
+ZY20210800001/H1/C7/N17/S276/s02/T3,Take it out of the drawer,Bowl,"[49, 263]",take it out of the drawer bowl,214
+ZY20210800001/H1/C7/N17/S270/s05/T1,Pick and place,Bowl,"[44, 250]",pick and place bowl,206
+ZY20210800001/H1/C7/N16/S59/s02/T2,Put it in the drawer,Bowl,"[30, 277]",put it in the drawer bowl,247
+ZY20210800001/H1/C7/N16/S59/s02/T1,Pick and place,Bowl,"[27, 261]",pick and place bowl,234
+ZY20210800001/H1/C7/N16/S276/s02/T3,Take it out of the drawer,Bowl,"[52, 262]",take it out of the drawer bowl,210
+ZY20210800001/H1/C7/N16/S270/s04/T1,Pick and place,Bowl,"[44, 251]",pick and place bowl,207
+ZY20210800001/H1/C7/N15/S276/s02/T3,Take it out of the drawer,Bowl,"[48, 249]",take it out of the drawer bowl,201
+ZY20210800001/H1/C7/N15/S270/s04/T1,Pick and place,Bowl,"[47, 253]",pick and place bowl,206
+ZY20210800001/H1/C7/N14/S280/s04/T5,Put the ball in the bowl,Bowl,"[45, 237]",put the ball in the bowl bowl,192
+ZY20210800001/H1/C7/N14/S276/s01/T3,Take it out of the drawer,Bowl,"[42, 247]",take it out of the drawer bowl,205
+ZY20210800001/H1/C7/N14/S270/s04/T1,Pick and place,Bowl,"[44, 272]",pick and place bowl,228
+ZY20210800001/H1/C7/N13/S280/s04/T5,Put the ball in the bowl,Bowl,"[48, 227]",put the ball in the bowl bowl,179
+ZY20210800001/H1/C7/N13/S276/s01/T3,Take it out of the drawer,Bowl,"[40, 251]",take it out of the drawer bowl,211
+ZY20210800001/H1/C7/N13/S270/s04/T1,Pick and place,Bowl,"[43, 256]",pick and place bowl,213
+ZY20210800001/H1/C7/N12/S280/s03/T5,Put the ball in the bowl,Bowl,"[48, 255]",put the ball in the bowl bowl,207
+ZY20210800001/H1/C7/N12/S276/s01/T3,Take it out of the drawer,Bowl,"[41, 234]",take it out of the drawer bowl,193
+ZY20210800001/H1/C7/N12/S270/s03/T1,Pick and place,Bowl,"[43, 261]",pick and place bowl,218
+ZY20210800001/H1/C7/N11/S280/s03/T5,Put the ball in the bowl,Bowl,"[54, 254]",put the ball in the bowl bowl,195
+ZY20210800001/H1/C7/N11/S276/s01/T3,Take it out of the drawer,Bowl,"[52, 241]",take it out of the drawer bowl,189
+ZY20210800001/H1/C7/N11/S270/s03/T1,Pick and place,Bowl,"[49, 260]",pick and place bowl,211
+ZY20210800001/H1/C5/N47/S57/s05/T2,Pour all the water into a mug,Bottle,"[13, 111]",pour all the water into a mug bottle,98
+ZY20210800001/H1/C5/N47/S57/s05/T1,Pick and place,Bottle,"[19, 129]",pick and place bottle,110
+ZY20210800001/H1/C5/N46/S57/s05/T2,Pour all the water into a mug,Bottle,"[13, 124]",pour all the water into a mug bottle,111
+ZY20210800001/H1/C5/N46/S57/s05/T1,Pick and place,Bottle,"[16, 125]",pick and place bottle,109
+ZY20210800001/H1/C5/N15/S57/s03/T2,Pour all the water into a mug,Bottle,"[22, 134]",pour all the water into a mug bottle,112
+ZY20210800001/H1/C5/N15/S57/s03/T1,Pick and place,Bottle,"[25, 133]",pick and place bottle,108
+ZY20210800001/H1/C3/N46/S114/s03/T2,Open and close the display,Laptop,"[21, 134]",open and close the display laptop,113
+ZY20210800001/H1/C3/N46/S114/s03/T1,Pick and place,Laptop,"[20, 132]",pick and place laptop,112
+ZY20210800001/H1/C3/N44/S115/s03/T2,Open and close the display,Laptop,"[19, 144]",open and close the display laptop,125
+ZY20210800001/H1/C3/N44/S115/s03/T1,Pick and place,Laptop,"[19, 135]",pick and place laptop,116
+ZY20210800001/H1/C3/N40/S114/s02/T2,Open and close the display,Laptop,"[18, 113]",open and close the display laptop,95
+ZY20210800001/H1/C3/N40/S114/s02/T1,Pick and place,Laptop,"[29, 138]",pick and place laptop,109
+ZY20210800001/H1/C3/N33/S114/s05/T2,Open and close the display,Laptop,"[16, 141]",open and close the display laptop,125
+ZY20210800001/H1/C3/N33/S114/s05/T1,Pick and place,Laptop,"[23, 140]",pick and place laptop,117
+ZY20210800001/H1/C3/N28/S19/s03/T2,Open and close the display,Laptop,"[39, 281]",open and close the display laptop,242
+ZY20210800001/H1/C3/N28/S19/s03/T1,Pick and place,Laptop,"[29, 259]",pick and place laptop,230
+ZY20210800001/H1/C3/N25/S19/s02/T2,Open and close the display,Laptop,"[32, 292]",open and close the display laptop,260
+ZY20210800001/H1/C3/N25/S19/s02/T1,Pick and place,Laptop,"[30, 288]",pick and place laptop,258
+ZY20210800001/H1/C3/N23/S19/s01/T2,Open and close the display,Laptop,"[39, 290]",open and close the display laptop,251
+ZY20210800001/H1/C3/N23/S19/s01/T1,Pick and place,Laptop,"[39, 263]",pick and place laptop,224
+ZY20210800001/H1/C3/N20/S27/s04/T2,Open and close the display,Laptop,"[28, 266]",open and close the display laptop,238
+ZY20210800001/H1/C3/N14/S27/s01/T2,Open and close the display,Laptop,"[27, 263]",open and close the display laptop,236
+ZY20210800001/H1/C3/N13/S27/s01/T2,Open and close the display,Laptop,"[39, 290]",open and close the display laptop,251
+ZY20210800001/H1/C3/N08/S28/s05/T2,Open and close the display,Laptop,"[29, 287]",open and close the display laptop,258
+ZY20210800001/H1/C3/N08/S28/s05/T1,Pick and place,Laptop,"[22, 240]",pick and place laptop,218
+ZY20210800001/H1/C3/N01/S54/s05/T2,Open and close the display,Laptop,"[20, 268]",open and close the display laptop,248
+ZY20210800001/H1/C20/N48/S381/s04/T4,Pick and place to a new position,Chair,"[68, 230]",pick and place to a new position chair,162
+ZY20210800001/H1/C20/N48/S381/s03/T3,Pick and place to a new position,Chair,"[69, 225]",pick and place to a new position chair,156
+ZY20210800001/H1/C20/N48/S381/s02/T2,Pick and place to the original position,Chair,"[82, 246]",pick and place to the original position chair,164
+ZY20210800001/H1/C20/N48/S381/s01/T1,Pick and place to the original position,Chair,"[71, 233]",pick and place to the original position chair,162
+ZY20210800001/H1/C20/N47/S381/s04/T4,Pick and place to a new position,Chair,"[74, 224]",pick and place to a new position chair,150
+ZY20210800001/H1/C20/N47/S381/s03/T3,Pick and place to a new position,Chair,"[66, 243]",pick and place to a new position chair,177
+ZY20210800001/H1/C20/N47/S381/s02/T2,Pick and place to the original position,Chair,"[72, 237]",pick and place to the original position chair,165
+ZY20210800001/H1/C20/N47/S381/s01/T1,Pick and place to the original position,Chair,"[67, 243]",pick and place to the original position chair,176
+ZY20210800001/H1/C20/N34/S295/s05/T4,Pick and place to a new position,Chair,"[73, 254]",pick and place to a new position chair,181
+ZY20210800001/H1/C20/N34/S292/s05/T3,Pick and place to a new position,Chair,"[66, 251]",pick and place to a new position chair,185
+ZY20210800001/H1/C20/N34/S289/s05/T2,Pick and place to the original position,Chair,"[70, 241]",pick and place to the original position chair,171
+ZY20210800001/H1/C20/N34/S286/s05/T1,Pick and place to the original position,Chair,"[69, 245]",pick and place to the original position chair,176
+ZY20210800001/H1/C20/N33/S295/s04/T4,Pick and place to a new position,Chair,"[51, 255]",pick and place to a new position chair,204
+ZY20210800001/H1/C20/N33/S292/s04/T3,Pick and place to a new position,Chair,"[55, 257]",pick and place to a new position chair,202
+ZY20210800001/H1/C20/N33/S289/s04/T2,Pick and place to the original position,Chair,"[50, 242]",pick and place to the original position chair,192
+ZY20210800001/H1/C20/N33/S286/s04/T1,Pick and place to the original position,Chair,"[48, 245]",pick and place to the original position chair,197
+ZY20210800001/H1/C20/N32/S295/s04/T4,Pick and place to a new position,Chair,"[51, 247]",pick and place to a new position chair,196
+ZY20210800001/H1/C20/N32/S289/s04/T2,Pick and place to the original position,Chair,"[50, 240]",pick and place to the original position chair,190
+ZY20210800001/H1/C20/N32/S286/s04/T1,Pick and place to the original position,Chair,"[53, 251]",pick and place to the original position chair,198
+ZY20210800001/H1/C20/N31/S295/s04/T4,Pick and place to a new position,Chair,"[45, 242]",pick and place to a new position chair,197
+ZY20210800001/H1/C20/N31/S292/s04/T3,Pick and place to a new position,Chair,"[55, 236]",pick and place to a new position chair,181
+ZY20210800001/H1/C20/N31/S289/s04/T2,Pick and place to the original position,Chair,"[56, 255]",pick and place to the original position chair,199
+ZY20210800001/H1/C20/N31/S286/s04/T1,Pick and place to the original position,Chair,"[48, 235]",pick and place to the original position chair,187
+ZY20210800001/H1/C20/N30/S295/s04/T4,Pick and place to a new position,Chair,"[48, 261]",pick and place to a new position chair,213
+ZY20210800001/H1/C20/N30/S292/s04/T3,Pick and place to a new position,Chair,"[46, 242]",pick and place to a new position chair,196
+ZY20210800001/H1/C20/N30/S289/s04/T2,Pick and place to the original position,Chair,"[50, 249]",pick and place to the original position chair,199
+ZY20210800001/H1/C20/N30/S286/s04/T1,Pick and place to the original position,Chair,"[48, 231]",pick and place to the original position chair,183
+ZY20210800001/H1/C20/N29/S295/s03/T4,Pick and place to a new position,Chair,"[52, 241]",pick and place to a new position chair,189
+ZY20210800001/H1/C20/N29/S292/s03/T3,Pick and place to a new position,Chair,"[46, 246]",pick and place to a new position chair,200
+ZY20210800001/H1/C20/N29/S289/s03/T2,Pick and place to the original position,Chair,"[52, 255]",pick and place to the original position chair,203
+ZY20210800001/H1/C20/N29/S286/s03/T1,Pick and place to the original position,Chair,"[52, 249]",pick and place to the original position chair,197
+ZY20210800001/H1/C20/N28/S295/s03/T4,Pick and place to a new position,Chair,"[52, 258]",pick and place to a new position chair,206
+ZY20210800001/H1/C20/N28/S292/s03/T3,Pick and place to a new position,Chair,"[55, 259]",pick and place to a new position chair,204
+ZY20210800001/H1/C20/N28/S289/s03/T2,Pick and place to the original position,Chair,"[55, 236]",pick and place to the original position chair,181
+ZY20210800001/H1/C20/N28/S286/s03/T1,Pick and place to the original position,Chair,"[50, 251]",pick and place to the original position chair,201
+ZY20210800001/H1/C20/N27/S295/s03/T4,Pick and place to a new position,Chair,"[54, 250]",pick and place to a new position chair,196
+ZY20210800001/H1/C20/N27/S292/s03/T3,Pick and place to a new position,Chair,"[48, 255]",pick and place to a new position chair,207
+ZY20210800001/H1/C20/N27/S289/s03/T2,Pick and place to the original position,Chair,"[49, 216]",pick and place to the original position chair,167
+ZY20210800001/H1/C20/N27/S286/s03/T1,Pick and place to the original position,Chair,"[49, 230]",pick and place to the original position chair,181
+ZY20210800001/H1/C20/N25/S295/s02/T4,Pick and place to a new position,Chair,"[73, 243]",pick and place to a new position chair,170
+ZY20210800001/H1/C20/N25/S292/s02/T3,Pick and place to a new position,Chair,"[72, 241]",pick and place to a new position chair,169
+ZY20210800001/H1/C20/N25/S289/s02/T2,Pick and place to the original position,Chair,"[79, 240]",pick and place to the original position chair,161
+ZY20210800001/H1/C20/N25/S286/s02/T1,Pick and place to the original position,Chair,"[70, 245]",pick and place to the original position chair,175
+ZY20210800001/H1/C20/N24/S295/s02/T4,Pick and place to a new position,Chair,"[78, 245]",pick and place to a new position chair,167
+ZY20210800001/H1/C20/N24/S292/s02/T3,Pick and place to a new position,Chair,"[78, 239]",pick and place to a new position chair,161
+ZY20210800001/H1/C20/N24/S289/s02/T2,Pick and place to the original position,Chair,"[71, 240]",pick and place to the original position chair,169
+ZY20210800001/H1/C20/N24/S286/s02/T1,Pick and place to the original position,Chair,"[85, 231]",pick and place to the original position chair,146
+ZY20210800001/H1/C20/N23/S295/s02/T4,Pick and place to a new position,Chair,"[56, 241]",pick and place to a new position chair,185
+ZY20210800001/H1/C20/N23/S292/s02/T3,Pick and place to a new position,Chair,"[57, 226]",pick and place to a new position chair,169
+ZY20210800001/H1/C20/N23/S289/s02/T2,Pick and place to the original position,Chair,"[56, 239]",pick and place to the original position chair,183
+ZY20210800001/H1/C20/N23/S286/s02/T1,Pick and place to the original position,Chair,"[49, 235]",pick and place to the original position chair,186
+ZY20210800001/H1/C20/N22/S382/s03/T3,Pick and place to a new position,Chair,"[84, 234]",pick and place to a new position chair,150
+ZY20210800001/H1/C20/N22/S382/s02/T2,Pick and place to the original position,Chair,"[81, 238]",pick and place to the original position chair,157
+ZY20210800001/H1/C20/N22/S382/s01/T1,Pick and place to the original position,Chair,"[75, 250]",pick and place to the original position chair,175
+ZY20210800001/H1/C20/N21/S382/s04/T4,Pick and place to a new position,Chair,"[70, 234]",pick and place to a new position chair,164
+ZY20210800001/H1/C20/N21/S382/s03/T3,Pick and place to a new position,Chair,"[69, 231]",pick and place to a new position chair,162
+ZY20210800001/H1/C20/N21/S382/s02/T2,Pick and place to the original position,Chair,"[67, 219]",pick and place to the original position chair,152
+ZY20210800001/H1/C20/N21/S382/s01/T1,Pick and place to the original position,Chair,"[70, 236]",pick and place to the original position chair,166
+ZY20210800001/H1/C20/N20/S381/s04/T4,Pick and place to a new position,Chair,"[66, 218]",pick and place to a new position chair,152
+ZY20210800001/H1/C20/N20/S381/s03/T3,Pick and place to a new position,Chair,"[77, 208]",pick and place to a new position chair,131
+ZY20210800001/H1/C20/N20/S381/s02/T2,Pick and place to the original position,Chair,"[63, 233]",pick and place to the original position chair,170
+ZY20210800001/H1/C20/N20/S381/s01/T1,Pick and place to the original position,Chair,"[80, 234]",pick and place to the original position chair,154
+ZY20210800001/H1/C20/N19/S381/s04/T4,Pick and place to a new position,Chair,"[65, 234]",pick and place to a new position chair,169
+ZY20210800001/H1/C20/N19/S381/s03/T3,Pick and place to a new position,Chair,"[73, 234]",pick and place to a new position chair,161
+ZY20210800001/H1/C20/N19/S381/s02/T2,Pick and place to the original position,Chair,"[64, 246]",pick and place to the original position chair,182
+ZY20210800001/H1/C20/N19/S381/s01/T1,Pick and place to the original position,Chair,"[78, 248]",pick and place to the original position chair,170
+ZY20210800001/H1/C20/N18/S295/s01/T4,Pick and place to a new position,Chair,"[63, 260]",pick and place to a new position chair,197
+ZY20210800001/H1/C20/N18/S292/s01/T3,Pick and place to a new position,Chair,"[56, 254]",pick and place to a new position chair,198
+ZY20210800001/H1/C20/N18/S289/s01/T2,Pick and place to the original position,Chair,"[70, 253]",pick and place to the original position chair,183
+ZY20210800001/H1/C20/N18/S286/s01/T1,Pick and place to the original position,Chair,"[52, 237]",pick and place to the original position chair,185
+ZY20210800001/H1/C2/N49/S54/s04/T2,Put it in the drawer,Mug,"[19, 223]",put it in the drawer mug,204
+ZY20210800001/H1/C2/N49/S54/s04/T1,Pick and place,Mug,"[30, 238]",pick and place mug,208
+ZY20210800001/H1/C2/N48/S54/s03/T2,Put it in the drawer,Mug,"[25, 245]",put it in the drawer mug,220
+ZY20210800001/H1/C2/N48/S54/s03/T1,Pick and place,Mug,"[38, 237]",pick and place mug,199
+ZY20210800001/H1/C2/N48/S214/s02/T6,Pick and place (with water),Mug,"[41, 251]",pick and place (with water) mug,210
+ZY20210800001/H1/C2/N47/S54/s03/T2,Put it in the drawer,Mug,"[23, 239]",put it in the drawer mug,216
+ZY20210800001/H1/C2/N47/S54/s03/T1,Pick and place,Mug,"[32, 268]",pick and place mug,236
+ZY20210800001/H1/C2/N47/S214/s02/T6,Pick and place (with water),Mug,"[41, 278]",pick and place (with water) mug,237
+ZY20210800001/H1/C2/N46/S54/s02/T2,Put it in the drawer,Mug,"[27, 277]",put it in the drawer mug,250
+ZY20210800001/H1/C2/N46/S54/s02/T1,Pick and place,Mug,"[35, 290]",pick and place mug,255
+ZY20210800001/H1/C2/N46/S214/s02/T6,Pick and place (with water),Mug,"[44, 269]",pick and place (with water) mug,225
+ZY20210800001/H1/C2/N45/S54/s02/T2,Put it in the drawer,Mug,"[22, 269]",put it in the drawer mug,247
+ZY20210800001/H1/C2/N45/S54/s02/T1,Pick and place,Mug,"[32, 267]",pick and place mug,235
+ZY20210800001/H1/C2/N45/S214/s02/T6,Pick and place (with water),Mug,"[46, 268]",pick and place (with water) mug,222
+ZY20210800001/H1/C2/N44/S214/s01/T6,Pick and place (with water),Mug,"[43, 265]",pick and place (with water) mug,222
+ZY20210800001/H1/C2/N43/S214/s01/T6,Pick and place (with water),Mug,"[52, 263]",pick and place (with water) mug,211
+ZY20210800001/H1/C2/N42/S63/s05/T2,Put it in the drawer,Mug,"[30, 269]",put it in the drawer mug,239
+ZY20210800001/H1/C2/N42/S63/s05/T1,Pick and place,Mug,"[41, 256]",pick and place mug,215
+ZY20210800001/H1/C2/N42/S214/s01/T6,Pick and place (with water),Mug,"[49, 276]",pick and place (with water) mug,227
+ZY20210800001/H1/C2/N41/S63/s05/T2,Put it in the drawer,Mug,"[25, 271]",put it in the drawer mug,246
+ZY20210800001/H1/C2/N41/S63/s05/T1,Pick and place,Mug,"[28, 259]",pick and place mug,231
+ZY20210800001/H1/C2/N41/S214/s01/T6,Pick and place (with water),Mug,"[45, 254]",pick and place (with water) mug,209
+ZY20210800001/H1/C2/N40/S213/s05/T5,Pour water into another mug,Mug,"[41, 250]",pour water into another mug mug,209
+ZY20210800001/H1/C2/N39/S63/s04/T2,Put it in the drawer,Mug,"[33, 261]",put it in the drawer mug,228
+ZY20210800001/H1/C2/N39/S63/s04/T1,Pick and place,Mug,"[28, 246]",pick and place mug,218
+ZY20210800001/H1/C2/N39/S213/s05/T5,Pour water into another mug,Mug,"[44, 268]",pour water into another mug mug,224
+ZY20210800001/H1/C2/N38/S63/s03/T2,Put it in the drawer,Mug,"[27, 253]",put it in the drawer mug,226
+ZY20210800001/H1/C2/N38/S63/s03/T1,Pick and place,Mug,"[37, 282]",pick and place mug,245
+ZY20210800001/H1/C2/N38/S213/s05/T5,Pour water into another mug,Mug,"[41, 262]",pour water into another mug mug,221
+ZY20210800001/H1/C2/N37/S63/s03/T2,Put it in the drawer,Mug,"[41, 260]",put it in the drawer mug,219
+ZY20210800001/H1/C2/N37/S63/s03/T1,Pick and place,Mug,"[38, 272]",pick and place mug,234
+ZY20210800001/H1/C2/N37/S213/s05/T5,Pour water into another mug,Mug,"[37, 253]",pour water into another mug mug,216
+ZY20210800001/H1/C2/N36/S63/s02/T2,Put it in the drawer,Mug,"[23, 237]",put it in the drawer mug,214
+ZY20210800001/H1/C2/N36/S213/s04/T5,Pour water into another mug,Mug,"[44, 237]",pour water into another mug mug,193
+ZY20210800001/H1/C2/N35/S213/s04/T5,Pour water into another mug,Mug,"[44, 271]",pour water into another mug mug,227
+ZY20210800001/H1/C2/N34/S63/s01/T1,Pick and place,Mug,"[30, 256]",pick and place mug,226
+ZY20210800001/H1/C2/N34/S213/s04/T1,Pick and place,Mug,"[42, 245]",pick and place mug,203
+ZY20210800001/H1/C2/N33/S63/s01/T1,Pick and place,Mug,"[24, 237]",pick and place mug,213
+ZY20210800001/H1/C2/N33/S213/s04/T5,Pour water into another mug,Mug,"[39, 258]",pour water into another mug mug,219
+ZY20210800001/H1/C2/N32/S92/s05/T2,Put it in the drawer,Mug,"[31, 247]",put it in the drawer mug,216
+ZY20210800001/H1/C2/N32/S92/s05/T1,Pick and place,Mug,"[33, 235]",pick and place mug,202
+ZY20210800001/H1/C2/N32/S213/s03/T4,Fill with water by a kettle,Mug,"[48, 249]",fill with water by a kettle mug,201
+ZY20210800001/H1/C2/N31/S92/s05/T2,Put it in the drawer,Mug,"[29, 280]",put it in the drawer mug,251
+ZY20210800001/H1/C2/N31/S92/s05/T1,Pick and place,Mug,"[29, 258]",pick and place mug,229
+ZY20210800001/H1/C2/N31/S213/s03/T4,Fill with water by a kettle,Mug,"[42, 239]",fill with water by a kettle mug,197
+ZY20210800001/H1/C2/N30/S92/s04/T1,Pick and place,Mug,"[34, 250]",pick and place mug,216
+ZY20210800001/H1/C2/N30/S214/s03/T1,Pick and place,Mug,"[51, 277]",pick and place mug,226
+ZY20210800001/H1/C2/N30/S213/s03/T4,Fill with water by a kettle,Mug,"[50, 282]",fill with water by a kettle mug,232
+ZY20210800001/H1/C2/N29/S92/s04/T2,Put it in the drawer,Mug,"[28, 276]",put it in the drawer mug,248
+ZY20210800001/H1/C2/N29/S213/s03/T4,Fill with water by a kettle,Mug,"[42, 262]",fill with water by a kettle mug,220
+ZY20210800001/H1/C2/N28/S92/s03/T2,Put it in the drawer,Mug,"[26, 255]",put it in the drawer mug,229
+ZY20210800001/H1/C2/N28/S92/s03/T1,Pick and place,Mug,"[22, 266]",pick and place mug,244
+ZY20210800001/H1/C2/N28/S213/s02/T4,Fill with water by a kettle,Mug,"[47, 278]",fill with water by a kettle mug,231
+ZY20210800001/H1/C2/N27/S92/s03/T1,Pick and place,Mug,"[44, 245]",pick and place mug,201
+ZY20210800001/H1/C2/N27/S213/s02/T4,Fill with water by a kettle,Mug,"[46, 288]",fill with water by a kettle mug,242
+ZY20210800001/H1/C2/N26/S27/s02/T1,Pick and place,Mug,"[31, 276]",pick and place mug,245
+ZY20210800001/H1/C2/N26/S213/s02/T4,Fill with water by a kettle,Mug,"[53, 260]",fill with water by a kettle mug,207
+ZY20210800001/H1/C2/N25/S27/s02/T2,Put it in the drawer,Mug,"[26, 266]",put it in the drawer mug,240
+ZY20210800001/H1/C2/N25/S27/s02/T1,Pick and place,Mug,"[41, 246]",pick and place mug,205
+ZY20210800001/H1/C2/N25/S213/s02/T4,Fill with water by a kettle,Mug,"[45, 227]",fill with water by a kettle mug,182
+ZY20210800001/H1/C2/N24/S214/s04/T1,Pick and place,Mug,"[49, 253]",pick and place mug,204
+ZY20210800001/H1/C2/N24/S213/s01/T3,Take it out of the drawer,Mug,"[52, 262]",take it out of the drawer mug,210
+ZY20210800001/H1/C2/N23/S27/s01/T2,Put it in the drawer,Mug,"[24, 253]",put it in the drawer mug,229
+ZY20210800001/H1/C2/N23/S27/s01/T1,Pick and place,Mug,"[33, 257]",pick and place mug,224
+ZY20210800001/H1/C2/N23/S213/s01/T3,Take it out of the drawer,Mug,"[45, 258]",take it out of the drawer mug,213
+ZY20210800001/H1/C2/N22/S93/s05/T1,Pick and place,Mug,"[22, 276]",pick and place mug,254
+ZY20210800001/H1/C2/N22/S213/s01/T3,Take it out of the drawer,Mug,"[51, 253]",take it out of the drawer mug,202
+ZY20210800001/H1/C2/N21/S93/s05/T1,Pick and place,Mug,"[22, 259]",pick and place mug,237
+ZY20210800001/H1/C2/N21/S213/s01/T3,Take it out of the drawer,Mug,"[52, 275]",take it out of the drawer mug,223
+ZY20210800001/H1/C2/N20/S93/s04/T1,Pick and place,Mug,"[31, 257]",pick and place mug,226
+ZY20210800001/H1/C2/N20/S212/s05/T3,Take it out of the drawer,Mug,"[48, 258]",take it out of the drawer mug,210
+ZY20210800001/H1/C2/N19/S212/s05/T3,Take it out of the drawer,Mug,"[47, 264]",take it out of the drawer mug,217
+ZY20210800001/H1/C2/N18/S93/s03/T2,Put it in the drawer,Mug,"[26, 255]",put it in the drawer mug,229
+ZY20210800001/H1/C2/N18/S93/s03/T1,Pick and place,Mug,"[20, 276]",pick and place mug,256
+ZY20210800001/H1/C2/N18/S212/s05/T3,Take it out of the drawer,Mug,"[54, 258]",take it out of the drawer mug,204
+ZY20210800001/H1/C2/N17/S212/s05/T3,Take it out of the drawer,Mug,"[47, 271]",take it out of the drawer mug,224
+ZY20210800001/H1/C2/N16/S93/s02/T1,Pick and place,Mug,"[33, 284]",pick and place mug,251
+ZY20210800001/H1/C2/N16/S212/s04/T2,Put it in the drawer,Mug,"[43, 250]",put it in the drawer mug,207
+ZY20210800001/H1/C2/N15/S93/s02/T2,Put it in the drawer,Mug,"[28, 264]",put it in the drawer mug,236
+ZY20210800001/H1/C2/N15/S214/s03/T1,Pick and place,Mug,"[54, 253]",pick and place mug,199
+ZY20210800001/H1/C2/N15/S212/s04/T2,Put it in the drawer,Mug,"[47, 250]",put it in the drawer mug,203
+ZY20210800001/H1/C2/N14/S93/s01/T2,Put it in the drawer,Mug,"[21, 263]",put it in the drawer mug,242
+ZY20210800001/H1/C2/N14/S93/s01/T1,Pick and place,Mug,"[32, 254]",pick and place mug,222
+ZY20210800001/H1/C2/N14/S212/s04/T2,Put it in the drawer,Mug,"[47, 253]",put it in the drawer mug,206
+ZY20210800001/H1/C2/N13/S93/s01/T1,Pick and place,Mug,"[22, 257]",pick and place mug,235
+ZY20210800001/H1/C2/N13/S214/s03/T1,Pick and place,Mug,"[47, 248]",pick and place mug,201
+ZY20210800001/H1/C2/N13/S212/s04/T2,Put it in the drawer,Mug,"[48, 251]",put it in the drawer mug,203
+ZY20210800001/H1/C2/N12/S212/s03/T2,Put it in the drawer,Mug,"[51, 259]",put it in the drawer mug,208
+ZY20210800001/H1/C2/N11/S212/s03/T2,Put it in the drawer,Mug,"[44, 268]",put it in the drawer mug,224
+ZY20210800001/H1/C14/N50/S209/s02/T2,Throw something in it,Trash Can,"[58, 283]",throw something in it trash can,225
+ZY20210800001/H1/C14/N50/S158/s02/T1,Open and close,Trash Can,"[59, 269]",open and close trash can,206
+ZY20210800001/H1/C14/N49/S209/s01/T2,Throw something in it,Trash Can,"[50, 275]",throw something in it trash can,225
+ZY20210800001/H1/C14/N49/S158/s01/T1,Open and close,Trash Can,"[46, 278]",open and close trash can,232
+ZY20210800001/H1/C14/N48/S209/s01/T2,Throw something in it,Trash Can,"[51, 273]",throw something in it trash can,222
+ZY20210800001/H1/C14/N48/S158/s01/T1,Open and close,Trash Can,"[51, 276]",open and close trash can,220
+ZY20210800001/H1/C14/N47/S209/s01/T2,Throw something in it,Trash Can,"[44, 265]",throw something in it trash can,221
+ZY20210800001/H1/C14/N47/S158/s01/T1,Open and close,Trash Can,"[56, 265]",open and close trash can,209
+ZY20210800001/H1/C14/N46/S209/s01/T2,Throw something in it,Trash Can,"[33, 260]",throw something in it trash can,227
+ZY20210800001/H1/C14/N46/S158/s01/T1,Open and close,Trash Can,"[42, 282]",open and close trash can,236
+ZY20210800001/H1/C14/N45/S207/s05/T2,Throw something in it,Trash Can,"[35, 271]",throw something in it trash can,236
+ZY20210800001/H1/C14/N45/S155/s05/T1,Open and close,Trash Can,"[53, 274]",open and close trash can,221
+ZY20210800001/H1/C14/N44/S207/s05/T2,Throw something in it,Trash Can,"[53, 281]",throw something in it trash can,228
+ZY20210800001/H1/C14/N44/S155/s05/T1,Open and close,Trash Can,"[53, 273]",open and close trash can,220
+ZY20210800001/H1/C14/N43/S207/s05/T2,Throw something in it,Trash Can,"[41, 271]",throw something in it trash can,230
+ZY20210800001/H1/C14/N43/S155/s05/T1,Open and close,Trash Can,"[68, 278]",open and close trash can,210
+ZY20210800001/H1/C14/N42/S207/s05/T2,Throw something in it,Trash Can,"[41, 274]",throw something in it trash can,233
+ZY20210800001/H1/C14/N42/S155/s05/T1,Open and close,Trash Can,"[52, 286]",open and close trash can,234
+ZY20210800001/H1/C14/N41/S207/s04/T2,Throw something in it,Trash Can,"[45, 272]",throw something in it trash can,227
+ZY20210800001/H1/C14/N41/S155/s04/T1,Open and close,Trash Can,"[43, 263]",open and close trash can,220
+ZY20210800001/H1/C14/N40/S207/s04/T2,Throw something in it,Trash Can,"[45, 277]",throw something in it trash can,232
+ZY20210800001/H1/C14/N40/S155/s04/T1,Open and close,Trash Can,"[54, 287]",open and close trash can,229
+ZY20210800001/H1/C14/N39/S207/s04/T2,Throw something in it,Trash Can,"[44, 277]",throw something in it trash can,233
+ZY20210800001/H1/C14/N39/S155/s04/T1,Open and close,Trash Can,"[38, 273]",open and close trash can,235
+ZY20210800001/H1/C14/N38/S207/s04/T2,Throw something in it,Trash Can,"[50, 278]",throw something in it trash can,228
+ZY20210800001/H1/C14/N38/S155/s04/T1,Open and close,Trash Can,"[49, 263]",open and close trash can,214
+ZY20210800001/H1/C14/N37/S333/s03/T2,Throw something in it,Trash Can,"[48, 269]",throw something in it trash can,221
+ZY20210800001/H1/C14/N37/S333/s02/T1,Open and close,Trash Can,"[52, 248]",open and close trash can,191
+ZY20210800001/H1/C14/N36/S333/s03/T2,Throw something in it,Trash Can,"[42, 268]",throw something in it trash can,226
+ZY20210800001/H1/C14/N36/S333/s02/T1,Open and close,Trash Can,"[53, 253]",open and close trash can,192
+ZY20210800001/H1/C14/N35/S207/s03/T2,Throw something in it,Trash Can,"[49, 264]",throw something in it trash can,215
+ZY20210800001/H1/C14/N34/S207/s03/T2,Throw something in it,Trash Can,"[47, 284]",throw something in it trash can,237
+ZY20210800001/H1/C14/N34/S155/s03/T1,Open and close,Trash Can,"[57, 286]",open and close trash can,229
+ZY20210800001/H1/C14/N33/S333/s03/T2,Throw something in it,Trash Can,"[41, 278]",throw something in it trash can,237
+ZY20210800001/H1/C14/N33/S333/s01/T1,Open and close,Trash Can,"[48, 250]",open and close trash can,202
+ZY20210800001/H1/C14/N32/S207/s02/T2,Throw something in it,Trash Can,"[53, 278]",throw something in it trash can,225
+ZY20210800001/H1/C14/N32/S155/s02/T1,Open and close,Trash Can,"[57, 260]",open and close trash can,203
+ZY20210800001/H1/C14/N31/S207/s02/T2,Throw something in it,Trash Can,"[66, 287]",throw something in it trash can,221
+ZY20210800001/H1/C14/N31/S155/s02/T1,Open and close,Trash Can,"[50, 266]",open and close trash can,216
+ZY20210800001/H1/C14/N30/S333/s03/T2,Throw something in it,Trash Can,"[49, 277]",throw something in it trash can,228
+ZY20210800001/H1/C14/N30/S333/s01/T1,Open and close,Trash Can,"[48, 239]",open and close trash can,189
+ZY20210800001/H1/C14/N29/S207/s01/T2,Throw something in it,Trash Can,"[55, 266]",throw something in it trash can,211
+ZY20210800001/H1/C14/N29/S155/s01/T1,Open and close,Trash Can,"[51, 262]",open and close trash can,211
+ZY20210800001/H1/C14/N28/S207/s01/T2,Throw something in it,Trash Can,"[48, 276]",throw something in it trash can,228
+ZY20210800001/H1/C14/N28/S155/s01/T1,Open and close,Trash Can,"[61, 268]",open and close trash can,207
+ZY20210800001/H1/C14/N27/S333/s02/T2,Throw something in it,Trash Can,"[41, 260]",throw something in it trash can,219
+ZY20210800001/H1/C14/N27/S333/s01/T1,Open and close,Trash Can,"[49, 254]",open and close trash can,197
+ZY20210800001/H1/C14/N26/S333/s02/T2,Throw something in it,Trash Can,"[49, 272]",throw something in it trash can,223
+ZY20210800001/H1/C14/N26/S333/s01/T1,Open and close,Trash Can,"[56, 258]",open and close trash can,202
+ZY20210800001/H1/C14/N25/S367/s01/T2,Throw something in it,Trash Can,"[49, 258]",throw something in it trash can,209
+ZY20210800001/H1/C14/N25/S209/s03/T2,Throw something in it,Trash Can,"[51, 268]",throw something in it trash can,217
+ZY20210800001/H1/C14/N25/S158/s03/T1,Open and close,Trash Can,"[56, 251]",open and close trash can,195
+ZY20210800001/H1/C14/N24/S367/s01/T1,Open and close,Trash Can,"[48, 249]",open and close trash can,201
+ZY20210800001/H1/C14/N23/S209/s03/T2,Throw something in it,Trash Can,"[48, 274]",throw something in it trash can,226
+ZY20210800001/H1/C14/N23/S158/s03/T1,Open and close,Trash Can,"[66, 279]",open and close trash can,211
+ZY20210800001/H1/C14/N22/S367/s01/T1,Open and close,Trash Can,"[48, 255]",open and close trash can,207
+ZY20210800001/H1/C14/N21/S209/s03/T2,Throw something in it,Trash Can,"[49, 265]",throw something in it trash can,216
+ZY20210800001/H1/C14/N21/S158/s03/T1,Open and close,Trash Can,"[61, 286]",open and close trash can,218
+ZY20210800001/H1/C14/N19/S209/s02/T2,Throw something in it,Trash Can,"[51, 269]",throw something in it trash can,218
+ZY20210800001/H1/C14/N19/S158/s02/T1,Open and close,Trash Can,"[54, 277]",open and close trash can,218
+ZY20210800001/H1/C14/N17/S209/s02/T2,Throw something in it,Trash Can,"[49, 270]",throw something in it trash can,221
+ZY20210800001/H1/C14/N17/S158/s02/T1,Open and close,Trash Can,"[57, 283]",open and close trash can,226
+ZY20210800001/H1/C14/N15/S209/s02/T2,Throw something in it,Trash Can,"[60, 279]",throw something in it trash can,219
+ZY20210800001/H1/C14/N15/S158/s02/T1,Open and close,Trash Can,"[57, 268]",open and close trash can,211
+ZY20210800001/H1/C13/N50/S238/s03/T4,Cut apple,Knife,"[46, 249]",cut apple knife,203
+ZY20210800001/H1/C13/N50/S136/s03/T1,Pick and place,Knife,"[56, 261]",pick and place knife,205
+ZY20210800001/H1/C13/N48/S238/s03/T4,Cut apple,Knife,"[43, 245]",cut apple knife,202
+ZY20210800001/H1/C13/N48/S136/s03/T1,Pick and place,Knife,"[57, 277]",pick and place knife,220
+ZY20210800001/H1/C13/N46/S238/s03/T4,Cut apple,Knife,"[47, 245]",cut apple knife,198
+ZY20210800001/H1/C13/N46/S136/s03/T1,Pick and place,Knife,"[60, 271]",pick and place knife,211
+ZY20210800001/H1/C13/N44/S238/s02/T4,Cut apple,Knife,"[49, 253]",cut apple knife,204
+ZY20210800001/H1/C13/N44/S136/s02/T1,Pick and place,Knife,"[56, 267]",pick and place knife,211
+ZY20210800001/H1/C13/N42/S238/s02/T4,Cut apple,Knife,"[45, 252]",cut apple knife,207
+ZY20210800001/H1/C13/N42/S136/s02/T1,Pick and place,Knife,"[73, 275]",pick and place knife,202
+ZY20210800001/H1/C13/N40/S366/s01/T4,Cut apple,Knife,"[44, 257]",cut apple knife,213
+ZY20210800001/H1/C13/N40/S238/s02/T4,Cut apple,Knife,"[49, 239]",cut apple knife,190
+ZY20210800001/H1/C13/N40/S136/s02/T1,Pick and place,Knife,"[66, 257]",pick and place knife,191
+ZY20210800001/H1/C13/N25/S238/s02/T3,Put it in the drawer,Knife,"[48, 261]",put it in the drawer knife,213
+ZY20210800001/H1/C13/N25/S136/s02/T1,Pick and place,Knife,"[57, 262]",pick and place knife,205
+ZY20210800001/H1/C13/N24/S238/s01/T3,Put it in the drawer,Knife,"[45, 266]",put it in the drawer knife,221
+ZY20210800001/H1/C13/N24/S136/s01/T1,Pick and place,Knife,"[67, 274]",pick and place knife,207
+ZY20210800001/H1/C13/N23/S238/s01/T3,Put it in the drawer,Knife,"[40, 256]",put it in the drawer knife,216
+ZY20210800001/H1/C13/N23/S136/s01/T1,Pick and place,Knife,"[63, 271]",pick and place knife,208
+ZY20210800001/H1/C13/N22/S238/s01/T3,Put it in the drawer,Knife,"[44, 256]",put it in the drawer knife,212
+ZY20210800001/H1/C13/N22/S136/s01/T1,Pick and place,Knife,"[68, 275]",pick and place knife,207
+ZY20210800001/H1/C13/N21/S238/s01/T3,Put it in the drawer,Knife,"[44, 265]",put it in the drawer knife,221
+ZY20210800001/H1/C13/N21/S136/s01/T1,Pick and place,Knife,"[55, 266]",pick and place knife,211
+ZY20210800001/H1/C13/N20/S179/s05/T3,Put it in the drawer,Knife,"[40, 254]",put it in the drawer knife,214
+ZY20210800001/H1/C13/N20/S132/s05/T1,Pick and place,Knife,"[68, 267]",pick and place knife,199
+ZY20210800001/H1/C13/N19/S179/s05/T4,Cut apple,Knife,"[46, 258]",cut apple knife,212
+ZY20210800001/H1/C13/N19/S132/s05/T1,Pick and place,Knife,"[54, 277]",pick and place knife,223
+ZY20210800001/H1/C13/N18/S179/s05/T4,Cut apple,Knife,"[51, 258]",cut apple knife,207
+ZY20210800001/H1/C13/N18/S132/s05/T1,Pick and place,Knife,"[63, 271]",pick and place knife,208
+ZY20210800001/H1/C13/N17/S179/s05/T4,Cut apple,Knife,"[56, 261]",cut apple knife,205
+ZY20210800001/H1/C13/N17/S132/s05/T1,Pick and place,Knife,"[61, 266]",pick and place knife,205
+ZY20210800001/H1/C13/N16/S179/s04/T4,Cut apple,Knife,"[45, 225]",cut apple knife,180
+ZY20210800001/H1/C13/N16/S132/s04/T1,Pick and place,Knife,"[66, 275]",pick and place knife,199
+ZY20210800001/H1/C13/N15/S179/s04/T4,Cut apple,Knife,"[49, 250]",cut apple knife,201
+ZY20210800001/H1/C13/N15/S132/s04/T1,Pick and place,Knife,"[63, 275]",pick and place knife,212
+ZY20210800001/H1/C13/N14/S179/s04/T4,Cut apple,Knife,"[51, 237]",cut apple knife,186
+ZY20210800001/H1/C13/N14/S132/s04/T1,Pick and place,Knife,"[55, 270]",pick and place knife,215
+ZY20210800001/H1/C13/N13/S179/s04/T4,Cut apple,Knife,"[51, 275]",cut apple knife,224
+ZY20210800001/H1/C13/N13/S132/s04/T1,Pick and place,Knife,"[67, 266]",pick and place knife,199
+ZY20210800001/H1/C13/N12/S179/s03/T4,Cut apple,Knife,"[51, 274]",cut apple knife,223
+ZY20210800001/H1/C13/N12/S132/s03/T1,Pick and place,Knife,"[60, 260]",pick and place knife,200
+ZY20210800001/H1/C13/N11/S179/s03/T4,Cut apple,Knife,"[53, 274]",cut apple knife,221
+ZY20210800001/H1/C13/N11/S132/s03/T1,Pick and place,Knife,"[61, 264]",pick and place knife,203
+ZY20210800001/H1/C12/N50/S203/s02/T2,Pour water into a mug,Kettle,"[47, 268]",pour water into a mug kettle,221
+ZY20210800001/H1/C12/N50/S169/s02/T1,Pick and place,Kettle,"[59, 284]",pick and place kettle,221
+ZY20210800001/H1/C12/N49/S203/s01/T2,Pour water into a mug,Kettle,"[41, 256]",pour water into a mug kettle,215
+ZY20210800001/H1/C12/N49/S169/s01/T1,Pick and place,Kettle,"[61, 275]",pick and place kettle,214
+ZY20210800001/H1/C12/N48/S203/s01/T2,Pour water into a mug,Kettle,"[51, 275]",pour water into a mug kettle,224
+ZY20210800001/H1/C12/N48/S169/s01/T1,Pick and place,Kettle,"[61, 285]",pick and place kettle,213
+ZY20210800001/H1/C12/N47/S203/s01/T2,Pour water into a mug,Kettle,"[57, 278]",pour water into a mug kettle,221
+ZY20210800001/H1/C12/N47/S169/s01/T1,Pick and place,Kettle,"[61, 269]",pick and place kettle,208
+ZY20210800001/H1/C12/N46/S203/s01/T2,Pour water into a mug,Kettle,"[56, 273]",pour water into a mug kettle,217
+ZY20210800001/H1/C12/N46/S169/s01/T1,Pick and place,Kettle,"[66, 269]",pick and place kettle,203
+ZY20210800001/H1/C12/N45/S200/s05/T2,Pour water into a mug,Kettle,"[53, 269]",pour water into a mug kettle,216
+ZY20210800001/H1/C12/N45/S165/s05/T1,Pick and place,Kettle,"[72, 263]",pick and place kettle,191
+ZY20210800001/H1/C12/N44/S200/s05/T2,Pour water into a mug,Kettle,"[58, 268]",pour water into a mug kettle,210
+ZY20210800001/H1/C12/N44/S165/s05/T1,Pick and place,Kettle,"[65, 270]",pick and place kettle,203
+ZY20210800001/H1/C12/N43/S200/s05/T2,Pour water into a mug,Kettle,"[56, 261]",pour water into a mug kettle,205
+ZY20210800001/H1/C12/N43/S165/s05/T1,Pick and place,Kettle,"[62, 278]",pick and place kettle,216
+ZY20210800001/H1/C12/N42/S200/s05/T2,Pour water into a mug,Kettle,"[60, 272]",pour water into a mug kettle,212
+ZY20210800001/H1/C12/N42/S165/s05/T1,Pick and place,Kettle,"[61, 275]",pick and place kettle,214
+ZY20210800001/H1/C12/N41/S200/s04/T2,Pour water into a mug,Kettle,"[53, 268]",pour water into a mug kettle,215
+ZY20210800001/H1/C12/N41/S165/s04/T1,Pick and place,Kettle,"[52, 269]",pick and place kettle,206
+ZY20210800001/H1/C12/N40/S200/s04/T2,Pour water into a mug,Kettle,"[58, 272]",pour water into a mug kettle,214
+ZY20210800001/H1/C12/N40/S165/s04/T1,Pick and place,Kettle,"[48, 270]",pick and place kettle,216
+ZY20210800001/H1/C12/N39/S200/s04/T2,Pour water into a mug,Kettle,"[57, 271]",pour water into a mug kettle,214
+ZY20210800001/H1/C12/N39/S165/s04/T1,Pick and place,Kettle,"[71, 280]",pick and place kettle,209
+ZY20210800001/H1/C12/N38/S200/s04/T2,Pour water into a mug,Kettle,"[59, 281]",pour water into a mug kettle,222
+ZY20210800001/H1/C12/N38/S165/s04/T1,Pick and place,Kettle,"[54, 285]",pick and place kettle,227
+ZY20210800001/H1/C12/N37/S200/s03/T2,Pour water into a mug,Kettle,"[67, 280]",pour water into a mug kettle,213
+ZY20210800001/H1/C12/N37/S165/s03/T1,Pick and place,Kettle,"[53, 271]",pick and place kettle,216
+ZY20210800001/H1/C12/N36/S200/s03/T2,Pour water into a mug,Kettle,"[56, 282]",pour water into a mug kettle,226
+ZY20210800001/H1/C12/N36/S165/s03/T1,Pick and place,Kettle,"[77, 273]",pick and place kettle,196
+ZY20210800001/H1/C12/N35/S200/s03/T2,Pour water into a mug,Kettle,"[51, 278]",pour water into a mug kettle,227
+ZY20210800001/H1/C12/N35/S165/s03/T1,Pick and place,Kettle,"[55, 271]",pick and place kettle,216
+ZY20210800001/H1/C12/N34/S165/s03/T1,Pick and place,Kettle,"[50, 268]",pick and place kettle,218
+ZY20210800001/H1/C12/N33/S200/s02/T2,Pour water into a mug,Kettle,"[55, 277]",pour water into a mug kettle,222
+ZY20210800001/H1/C12/N33/S165/s02/T1,Pick and place,Kettle,"[51, 266]",pick and place kettle,211
+ZY20210800001/H1/C12/N32/S200/s02/T2,Pour water into a mug,Kettle,"[51, 286]",pour water into a mug kettle,235
+ZY20210800001/H1/C12/N32/S165/s02/T1,Pick and place,Kettle,"[63, 285]",pick and place kettle,222
+ZY20210800001/H1/C12/N31/S200/s02/T2,Pour water into a mug,Kettle,"[52, 274]",pour water into a mug kettle,222
+ZY20210800001/H1/C12/N31/S165/s02/T1,Pick and place,Kettle,"[56, 272]",pick and place kettle,216
+ZY20210800001/H1/C12/N30/S200/s02/T2,Pour water into a mug,Kettle,"[58, 268]",pour water into a mug kettle,210
+ZY20210800001/H1/C12/N30/S165/s02/T1,Pick and place,Kettle,"[49, 272]",pick and place kettle,223
+ZY20210800001/H1/C12/N29/S200/s01/T2,Pour water into a mug,Kettle,"[54, 286]",pour water into a mug kettle,230
+ZY20210800001/H1/C12/N29/S165/s01/T1,Pick and place,Kettle,"[57, 279]",pick and place kettle,218
+ZY20210800001/H1/C12/N28/S200/s01/T2,Pour water into a mug,Kettle,"[55, 284]",pour water into a mug kettle,229
+ZY20210800001/H1/C12/N28/S165/s01/T1,Pick and place,Kettle,"[63, 273]",pick and place kettle,210
+ZY20210800001/H1/C12/N27/S200/s01/T2,Pour water into a mug,Kettle,"[50, 266]",pour water into a mug kettle,216
+ZY20210800001/H1/C12/N27/S165/s01/T1,Pick and place,Kettle,"[63, 279]",pick and place kettle,216
+ZY20210800001/H1/C12/N26/S200/s01/T2,Pour water into a mug,Kettle,"[51, 268]",pour water into a mug kettle,217
+ZY20210800001/H1/C12/N26/S165/s01/T1,Pick and place,Kettle,"[58, 157]",pick and place kettle,99
+ZY20210800001/H1/C12/N11/S203/s03/T2,Pour water into a mug,Kettle,"[59, 287]",pour water into a mug kettle,228
+ZY20210800001/H1/C12/N11/S169/s03/T1,Pick and place,Kettle,"[73, 271]",pick and place kettle,196
+ZY20210800001/H1/C1/N49/S106/s05/T2,Push toy car,Toy Car,"[18, 137]",push toy car toy car,119
+ZY20210800001/H1/C1/N49/S106/s05/T1,Pick and place,Toy Car,"[17, 139]",pick and place toy car,122
+ZY20210800001/H1/C1/N48/S100/s03/T2,Push toy car,Toy Car,"[18, 144]",push toy car toy car,126
+ZY20210800001/H1/C1/N48/S100/s03/T1,Pick and place,Toy Car,"[12, 138]",pick and place toy car,126
+ZY20210800001/H1/C1/N47/S104/s04/T2,Push toy car,Toy Car,"[21, 139]",push toy car toy car,118
+ZY20210800001/H1/C1/N45/S106/s03/T1,Pick and place,Toy Car,"[14, 129]",pick and place toy car,115
+ZY20210800001/H1/C1/N44/S99/s02/T2,Push toy car,Toy Car,"[19, 144]",push toy car toy car,125
+ZY20210800001/H1/C1/N44/S99/s02/T1,Pick and place,Toy Car,"[19, 142]",pick and place toy car,123
+ZY20210800001/H1/C1/N41/S104/s03/T1,Pick and place,Toy Car,"[21, 121]",pick and place toy car,100
+ZY20210800001/H1/C1/N39/S99/s01/T2,Push toy car,Toy Car,"[11, 132]",push toy car toy car,121
+ZY20210800001/H1/C1/N39/S99/s01/T1,Pick and place,Toy Car,"[10, 128]",pick and place toy car,118
+ZY20210800001/H1/C1/N38/S100/s05/T2,Push toy car,Toy Car,"[14, 145]",push toy car toy car,131
+ZY20210800001/H1/C1/N38/S100/s05/T1,Pick and place,Toy Car,"[13, 128]",pick and place toy car,115
+ZY20210800001/H1/C1/N37/S104/s02/T2,Push toy car,Toy Car,"[12, 135]",push toy car toy car,123
+ZY20210800001/H1/C1/N37/S104/s02/T1,Pick and place,Toy Car,"[20, 135]",pick and place toy car,115
+ZY20210800001/H1/C1/N36/S100/s02/T2,Push toy car,Toy Car,"[13, 135]",push toy car toy car,122
+ZY20210800001/H1/C1/N36/S100/s02/T1,Pick and place,Toy Car,"[12, 137]",pick and place toy car,125
+ZY20210800001/H1/C1/N35/S104/s01/T2,Push toy car,Toy Car,"[18, 134]",push toy car toy car,116
+ZY20210800001/H1/C1/N34/S108/s05/T1,Pick and place,Toy Car,"[18, 127]",pick and place toy car,109
+ZY20210800001/H1/C1/N33/S100/s05/T2,Push toy car,Toy Car,"[13, 142]",push toy car toy car,129
+ZY20210800001/H1/C1/N33/S100/s05/T1,Pick and place,Toy Car,"[11, 124]",pick and place toy car,113
+ZY20210800001/H1/C1/N32/S108/s01/T2,Push toy car,Toy Car,"[13, 138]",push toy car toy car,125
+ZY20210800001/H1/C1/N32/S108/s01/T1,Pick and place,Toy Car,"[17, 137]",pick and place toy car,120
+ZY20210800001/H1/C1/N30/S104/s04/T2,Push toy car,Toy Car,"[13, 142]",push toy car toy car,129
+ZY20210800001/H1/C1/N29/S99/s03/T2,Push toy car,Toy Car,"[16, 136]",push toy car toy car,120
+ZY20210800001/H1/C1/N29/S99/s03/T1,Pick and place,Toy Car,"[9, 124]",pick and place toy car,115
+ZY20210800001/H1/C1/N28/S100/s03/T2,Push toy car,Toy Car,"[18, 131]",push toy car toy car,113
+ZY20210800001/H1/C1/N28/S100/s03/T1,Pick and place,Toy Car,"[14, 134]",pick and place toy car,120
+ZY20210800001/H1/C1/N27/S99/s05/T2,Push toy car,Toy Car,"[18, 141]",push toy car toy car,123
+ZY20210800001/H1/C1/N27/S99/s05/T1,Pick and place,Toy Car,"[13, 144]",pick and place toy car,131
+ZY20210800001/H1/C1/N26/S104/s05/T2,Push toy car,Toy Car,"[27, 139]",push toy car toy car,112
+ZY20210800001/H1/C1/N26/S104/s05/T1,Pick and place,Toy Car,"[16, 135]",pick and place toy car,119
+ZY20210800001/H1/C1/N24/S100/s01/T2,Push toy car,Toy Car,"[15, 143]",push toy car toy car,128
+ZY20210800001/H1/C1/N24/S100/s01/T1,Pick and place,Toy Car,"[23, 134]",pick and place toy car,111
+ZY20210800001/H1/C1/N23/S104/s05/T1,Pick and place,Toy Car,"[13, 141]",pick and place toy car,128
+ZY20210800001/H1/C1/N21/S99/s04/T2,Push toy car,Toy Car,"[12, 133]",push toy car toy car,121
+ZY20210800001/H1/C1/N21/S99/s04/T1,Pick and place,Toy Car,"[21, 139]",pick and place toy car,118
+ZY20210800001/H1/C1/N20/S108/s03/T1,Pick and place,Toy Car,"[13, 142]",pick and place toy car,129
+ZY20210800001/H1/C1/N19/S100/s02/T2,Push toy car,Toy Car,"[13, 140]",push toy car toy car,127
+ZY20210800001/H1/C1/N19/S100/s02/T1,Pick and place,Toy Car,"[16, 143]",pick and place toy car,127

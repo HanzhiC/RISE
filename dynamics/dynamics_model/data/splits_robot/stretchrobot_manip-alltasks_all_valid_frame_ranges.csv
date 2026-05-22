@@ -1,0 +1,452 @@
+dataset,sample,task_label,category_name,valid_frame_range,fine_action,valid_trajectory_number,advantage_label,success,is_teleop
+robot_explore/open_microwave,2026-04-13--15-18-41/0-204,,,"[0, 204]",open microwave,204,1,1,0
+robot_explore/open_microwave,2026-04-13--15-19-29/0-204,,,"[0, 204]",open microwave,204,0,0,0
+robot_explore/open_microwave,2026-04-13--15-20-11/0-204,,,"[0, 204]",open microwave,204,1,1,0
+robot_explore/open_microwave,2026-04-13--15-21-14/0-204,,,"[0, 204]",open microwave,204,1,1,0
+robot_explore/open_microwave,2026-04-13--15-21-50/0-204,,,"[0, 204]",open microwave,204,0,0,0
+robot_explore/open_microwave,2026-04-13--15-22-21/0-204,,,"[0, 204]",open microwave,204,1,1,0
+robot_explore/open_microwave,2026-04-13--15-23-20/0-204,,,"[0, 204]",open microwave,204,1,1,0
+robot_explore/open_microwave,2026-04-13--15-23-53/0-204,,,"[0, 204]",open microwave,204,0,0,0
+robot_explore/open_microwave,2026-04-13--15-24-39/0-204,,,"[0, 204]",open microwave,204,1,1,0
+robot_explore/open_microwave,2026-04-13--15-25-14/0-204,,,"[0, 204]",open microwave,204,1,1,0
+robot_explore/open_microwave,2026-04-13--15-25-55/0-204,,,"[0, 204]",open microwave,204,1,1,0
+robot_explore/open_microwave,2026-04-13--15-26-50/0-204,,,"[0, 204]",open microwave,204,0,0,0
+robot_explore/open_microwave,2026-04-13--15-27-31/0-204,,,"[0, 204]",open microwave,204,1,1,0
+robot_explore/open_microwave,2026-04-13--15-28-15/0-204,,,"[0, 204]",open microwave,204,1,1,0
+robot_explore/open_microwave,2026-04-13--15-28-47/0-204,,,"[0, 204]",open microwave,204,0,0,0
+robot_explore/open_microwave,2026-04-13--15-29-20/0-204,,,"[0, 204]",open microwave,204,1,1,0
+robot_explore/open_microwave,2026-04-13--15-29-58/0-204,,,"[0, 204]",open microwave,204,1,1,0
+robot_explore/open_microwave,2026-04-13--15-30-33/0-204,,,"[0, 204]",open microwave,204,1,1,0
+robot_explore/open_microwave,2026-04-13--15-31-10/0-204,,,"[0, 204]",open microwave,204,1,1,0
+robot_explore/open_microwave,2026-04-13--15-32-03/0-204,,,"[0, 204]",open microwave,204,0,0,0
+robot_explore/open_microwave,2026-04-13--15-32-39/0-204,,,"[0, 204]",open microwave,204,1,1,0
+robot_explore/place_drink,2026-04-13--14-32-13/0-154,,,"[0, 154]",place drink,154,1,1,0
+robot_explore/place_drink,2026-04-13--14-34-07/0-154,,,"[0, 154]",place drink,154,0,0,0
+robot_explore/place_drink,2026-04-13--14-35-36/0-154,,,"[0, 154]",place drink,154,1,1,0
+robot_explore/place_drink,2026-04-13--14-36-48/0-154,,,"[0, 154]",place drink,154,0,0,0
+robot_explore/place_drink,2026-04-13--14-38-43/0-154,,,"[0, 154]",place drink,154,0,0,0
+robot_explore/place_drink,2026-04-13--14-40-02/0-154,,,"[0, 154]",place drink,154,1,1,0
+robot_explore/place_drink,2026-04-13--14-41-34/0-154,,,"[0, 154]",place drink,154,1,1,0
+robot_explore/place_drink,2026-04-13--14-43-00/0-154,,,"[0, 154]",place drink,154,1,1,0
+robot_explore/place_drink,2026-04-13--14-44-11/0-154,,,"[0, 154]",place drink,154,1,1,0
+robot_explore/place_drink,2026-04-13--14-45-55/0-154,,,"[0, 154]",place drink,154,1,1,0
+robot_explore/place_drink,2026-04-13--14-47-32/0-154,,,"[0, 154]",place drink,154,1,1,0
+robot_explore/place_drink,2026-04-13--14-48-58/0-154,,,"[0, 154]",place drink,154,1,1,0
+robot_explore/place_drink,2026-04-13--14-50-16/0-154,,,"[0, 154]",place drink,154,1,1,0
+robot_explore/place_drink,2026-04-13--14-51-24/0-154,,,"[0, 154]",place drink,154,0,0,0
+robot_explore/place_drink,2026-04-13--14-52-31/0-154,,,"[0, 154]",place drink,154,0,0,0
+robot_explore/place_drink,2026-04-13--14-54-25/0-154,,,"[0, 154]",place drink,154,1,1,0
+robot_explore/place_drink,2026-04-13--14-55-54/0-154,,,"[0, 154]",place drink,154,0,0,0
+robot_explore/place_drink,2026-04-13--14-57-11/0-154,,,"[0, 154]",place drink,154,1,1,0
+robot_explore/place_drink,2026-04-13--14-58-33/0-154,,,"[0, 154]",place drink,154,1,1,0
+robot_explore/take_drink,2026-04-13--14-32-45/0-154,,,"[0, 154]",take drink,154,1,1,0
+robot_explore/take_drink,2026-04-13--14-33-40/0-154,,,"[0, 154]",take drink,154,1,1,0
+robot_explore/take_drink,2026-04-13--14-34-57/0-154,,,"[0, 154]",take drink,154,1,1,0
+robot_explore/take_drink,2026-04-13--14-36-17/0-154,,,"[0, 154]",take drink,154,1,1,0
+robot_explore/take_drink,2026-04-13--14-38-04/0-154,,,"[0, 154]",take drink,154,1,1,0
+robot_explore/take_drink,2026-04-13--14-39-29/0-154,,,"[0, 154]",take drink,154,1,1,0
+robot_explore/take_drink,2026-04-13--14-41-07/0-154,,,"[0, 154]",take drink,154,1,1,0
+robot_explore/take_drink,2026-04-13--14-42-25/0-154,,,"[0, 154]",take drink,154,1,1,0
+robot_explore/take_drink,2026-04-13--14-43-39/0-154,,,"[0, 154]",take drink,154,0,0,0
+robot_explore/take_drink,2026-04-13--14-45-10/0-154,,,"[0, 154]",take drink,154,1,1,0
+robot_explore/take_drink,2026-04-13--14-46-32/0-154,,,"[0, 154]",take drink,154,1,1,0
+robot_explore/take_drink,2026-04-13--14-48-26/0-154,,,"[0, 154]",take drink,154,1,1,0
+robot_explore/take_drink,2026-04-13--14-49-40/0-154,,,"[0, 154]",take drink,154,1,1,0
+robot_explore/take_drink,2026-04-13--14-51-02/0-154,,,"[0, 154]",take drink,154,1,1,0
+robot_explore/take_drink,2026-04-13--14-52-00/0-154,,,"[0, 154]",take drink,154,1,1,0
+robot_explore/take_drink,2026-04-13--14-53-48/0-154,,,"[0, 154]",take drink,154,1,1,0
+robot_explore/take_drink,2026-04-13--14-55-02/0-154,,,"[0, 154]",take drink,154,1,1,0
+robot_explore/take_drink,2026-04-13--14-56-44/0-154,,,"[0, 154]",take drink,154,1,1,0
+robot_explore/take_drink,2026-04-13--14-58-07/0-154,,,"[0, 154]",take drink,154,1,1,0
+robot_explore/take_drink,2026-04-13--15-00-11/0-154,,,"[0, 154]",take drink,154,1,1,0
+robot_explore/take_drink,2026-04-13--15-01-22/0-154,,,"[0, 154]",take drink,154,1,1,0
+robot_explore/wipe_table,2026-04-13--13-29-20/0-204,,,"[0, 204]",wipe table,204,1,1,0
+robot_explore/wipe_table,2026-04-13--13-33-30/0-204,,,"[0, 204]",wipe table,204,1,1,0
+robot_explore/wipe_table,2026-04-13--13-35-30/0-204,,,"[0, 204]",wipe table,204,1,1,0
+robot_explore/wipe_table,2026-04-13--13-38-28/0-204,,,"[0, 204]",wipe table,204,1,1,0
+robot_explore/wipe_table,2026-04-13--13-39-03/0-204,,,"[0, 204]",wipe table,204,1,1,0
+robot_explore/wipe_table,2026-04-13--13-43-19/0-204,,,"[0, 204]",wipe table,204,1,1,0
+robot_explore/wipe_table,2026-04-13--13-52-35/0-204,,,"[0, 204]",wipe table,204,1,1,0
+robot_explore/wipe_table,2026-04-13--13-53-16/0-204,,,"[0, 204]",wipe table,204,1,1,0
+robot_explore/wipe_table,2026-04-13--14-17-19/0-204,,,"[0, 204]",wipe table,204,1,1,0
+robot_explore/wipe_table,2026-04-13--14-18-13/0-204,,,"[0, 204]",wipe table,204,1,1,0
+robot_explore/wipe_table,2026-04-13--14-21-06/0-204,,,"[0, 204]",wipe table,204,1,1,0
+robot_explore/wipe_table,2026-04-13--14-21-47/0-204,,,"[0, 204]",wipe table,204,1,1,0
+robot_explore/wipe_table,2026-04-13--14-22-22/0-204,,,"[0, 204]",wipe table,204,1,1,0
+robot_explore/wipe_table,2026-04-13--14-23-10/0-204,,,"[0, 204]",wipe table,204,1,1,0
+robot_explore/wipe_table,2026-04-13--14-23-53/0-204,,,"[0, 204]",wipe table,204,1,1,0
+robot_explore/wipe_table,2026-04-13--14-24-25/0-204,,,"[0, 204]",wipe table,204,1,1,0
+robot_explore/wipe_table,2026-04-13--14-24-58/0-204,,,"[0, 204]",wipe table,204,1,1,0
+robot_explore/wipe_table,2026-04-13--14-26-17/0-204,,,"[0, 204]",wipe table,204,1,1,0
+robot_explore/wipe_table,2026-04-13--14-26-57/0-204,,,"[0, 204]",wipe table,204,1,1,0
+robot_explore/wipe_table,2026-04-13--14-27-39/0-204,,,"[0, 204]",wipe table,204,1,1,0
+robot_explore/pick_up_sock,2026-04-13--12-32-55/0-154,,,"[0, 154]",pick up sock,154,1,1,0
+robot_explore/pick_up_sock,2026-04-13--12-34-44/0-154,,,"[0, 154]",pick up sock,154,1,1,0
+robot_explore/pick_up_sock,2026-04-13--12-36-47/0-154,,,"[0, 154]",pick up sock,154,1,1,0
+robot_explore/pick_up_sock,2026-04-13--12-37-52/0-154,,,"[0, 154]",pick up sock,154,1,1,0
+robot_explore/pick_up_sock,2026-04-13--12-39-00/0-154,,,"[0, 154]",pick up sock,154,1,1,0
+robot_explore/pick_up_sock,2026-04-13--12-40-08/0-154,,,"[0, 154]",pick up sock,154,1,1,0
+robot_explore/pick_up_sock,2026-04-13--12-41-31/0-154,,,"[0, 154]",pick up sock,154,1,1,0
+robot_explore/pick_up_sock,2026-04-13--12-42-46/0-154,,,"[0, 154]",pick up sock,154,1,1,0
+robot_explore/pick_up_sock,2026-04-13--12-43-54/0-154,,,"[0, 154]",pick up sock,154,1,1,0
+robot_explore/pick_up_sock,2026-04-13--12-45-12/0-154,,,"[0, 154]",pick up sock,154,1,1,0
+robot_explore/pick_up_sock,2026-04-13--12-46-33/0-154,,,"[0, 154]",pick up sock,154,1,1,0
+robot_explore/pick_up_sock,2026-04-13--12-47-34/0-154,,,"[0, 154]",pick up sock,154,1,1,0
+robot_explore/pick_up_sock,2026-04-13--12-49-30/0-154,,,"[0, 154]",pick up sock,154,1,1,0
+robot_explore/pick_up_sock,2026-04-13--12-50-32/0-154,,,"[0, 154]",pick up sock,154,1,1,0
+robot_explore/pick_up_sock,2026-04-13--12-51-35/0-154,,,"[0, 154]",pick up sock,154,1,1,0
+robot_explore/pick_up_sock,2026-04-13--12-52-56/0-154,,,"[0, 154]",pick up sock,154,1,1,0
+robot_explore/pick_up_sock,2026-04-13--12-53-53/0-154,,,"[0, 154]",pick up sock,154,1,1,0
+robot_explore/pick_up_sock,2026-04-13--12-54-55/0-154,,,"[0, 154]",pick up sock,154,1,1,0
+robot_explore/pick_up_sock,2026-04-13--12-55-50/0-154,,,"[0, 154]",pick up sock,154,1,1,0
+robot_explore/pick_up_sock,2026-04-13--12-57-08/0-154,,,"[0, 154]",pick up sock,154,1,1,0
+robot_explore/pick_up_sock,2026-04-13--12-58-09/0-154,,,"[0, 154]",pick up sock,154,1,1,0
+robot_explore/pick_up_sock,2026-04-13--12-59-01/0-154,,,"[0, 154]",pick up sock,154,1,1,0
+robot_explore/pick_up_sock,2026-04-13--13-00-36/0-154,,,"[0, 154]",pick up sock,154,1,1,0
+robot_explore/pick_up_sock,2026-04-13--13-01-31/0-154,,,"[0, 154]",pick up sock,154,1,1,0
+robot_explore/pick_up_sock,2026-04-13--13-02-42/0-154,,,"[0, 154]",pick up sock,154,1,1,0
+robot_explore/place_basketball_in_basket,2026-04-13--15-36-19/0-154,,,"[0, 154]",place basketball in basket,154,0,0,0
+robot_explore/place_basketball_in_basket,2026-04-13--15-46-04/0-154,,,"[0, 154]",place basketball in basket,154,0,0,0
+robot_explore/place_basketball_in_basket,2026-04-13--15-47-19/0-154,,,"[0, 154]",place basketball in basket,154,1,1,0
+robot_explore/place_basketball_in_basket,2026-04-13--15-50-01/0-154,,,"[0, 154]",place basketball in basket,154,1,1,0
+robot_explore/place_basketball_in_basket,2026-04-13--15-51-42/0-154,,,"[0, 154]",place basketball in basket,154,0,0,0
+robot_explore/place_basketball_in_basket,2026-04-13--15-53-21/0-154,,,"[0, 154]",place basketball in basket,154,0,0,0
+robot_explore/place_basketball_in_basket,2026-04-13--15-54-42/0-154,,,"[0, 154]",place basketball in basket,154,1,1,0
+robot_explore/place_basketball_in_basket,2026-04-13--15-56-13/0-154,,,"[0, 154]",place basketball in basket,154,0,0,0
+robot_explore/place_basketball_in_basket,2026-04-13--15-57-47/0-154,,,"[0, 154]",place basketball in basket,154,1,1,0
+robot_explore/place_basketball_in_basket,2026-04-13--15-59-16/0-154,,,"[0, 154]",place basketball in basket,154,0,0,0
+robot_explore/place_basketball_in_basket,2026-04-13--16-00-21/0-154,,,"[0, 154]",place basketball in basket,154,1,1,0
+robot_explore/place_basketball_in_basket,2026-04-13--16-02-23/0-154,,,"[0, 154]",place basketball in basket,154,1,1,0
+robot_explore/place_basketball_in_basket,2026-04-13--16-03-41/0-154,,,"[0, 154]",place basketball in basket,154,0,0,0
+robot_explore/place_basketball_in_basket,2026-04-13--16-05-28/0-154,,,"[0, 154]",place basketball in basket,154,0,0,0
+robot_explore/place_basketball_in_basket,2026-04-13--16-10-21/0-154,,,"[0, 154]",place basketball in basket,154,0,0,0
+robot_explore/put_sock_in_drawer,2026-04-13--12-30-29/0-154,,,"[0, 154]",put sock in drawer,154,1,1,0
+robot_explore/put_sock_in_drawer,2026-04-13--12-32-18/0-154,,,"[0, 154]",put sock in drawer,154,1,1,0
+robot_explore/put_sock_in_drawer,2026-04-13--12-33-28/0-154,,,"[0, 154]",put sock in drawer,154,0,0,0
+robot_explore/put_sock_in_drawer,2026-04-13--12-35-16/0-154,,,"[0, 154]",put sock in drawer,154,1,1,0
+robot_explore/put_sock_in_drawer,2026-04-13--12-37-28/0-154,,,"[0, 154]",put sock in drawer,154,1,1,0
+robot_explore/put_sock_in_drawer,2026-04-13--12-38-21/0-154,,,"[0, 154]",put sock in drawer,154,1,1,0
+robot_explore/put_sock_in_drawer,2026-04-13--12-39-33/0-154,,,"[0, 154]",put sock in drawer,154,1,1,0
+robot_explore/put_sock_in_drawer,2026-04-13--12-42-15/0-154,,,"[0, 154]",put sock in drawer,154,1,1,0
+robot_explore/put_sock_in_drawer,2026-04-13--12-43-18/0-154,,,"[0, 154]",put sock in drawer,154,1,1,0
+robot_explore/put_sock_in_drawer,2026-04-13--12-44-29/0-154,,,"[0, 154]",put sock in drawer,154,0,0,0
+robot_explore/put_sock_in_drawer,2026-04-13--12-45-53/0-154,,,"[0, 154]",put sock in drawer,154,0,0,0
+robot_explore/put_sock_in_drawer,2026-04-13--12-46-56/0-154,,,"[0, 154]",put sock in drawer,154,0,0,0
+robot_explore/put_sock_in_drawer,2026-04-13--12-48-04/0-154,,,"[0, 154]",put sock in drawer,154,1,1,0
+robot_explore/put_sock_in_drawer,2026-04-13--12-49-47/0-154,,,"[0, 154]",put sock in drawer,154,1,1,0
+robot_explore/put_sock_in_drawer,2026-04-13--12-51-00/0-154,,,"[0, 154]",put sock in drawer,154,1,1,0
+robot_explore/put_sock_in_drawer,2026-04-13--12-52-18/0-154,,,"[0, 154]",put sock in drawer,154,1,1,0
+robot_explore/put_sock_in_drawer,2026-04-13--12-53-23/0-154,,,"[0, 154]",put sock in drawer,154,1,1,0
+robot_explore/put_sock_in_drawer,2026-04-13--12-54-58/0-154,,,"[0, 154]",put sock in drawer,154,1,1,0
+robot_explore/put_sock_in_drawer,2026-04-13--12-55-25/0-154,,,"[0, 154]",put sock in drawer,154,0,0,0
+robot_explore/put_sock_in_drawer,2026-04-13--12-56-16/0-154,,,"[0, 154]",put sock in drawer,154,1,1,0
+robot_explore/put_sock_in_drawer,2026-04-13--12-57-45/0-154,,,"[0, 154]",put sock in drawer,154,1,1,0
+robot_explore/put_sock_in_drawer,2026-04-13--12-58-33/0-154,,,"[0, 154]",put sock in drawer,154,0,0,0
+robot_explore/put_sock_in_drawer,2026-04-13--12-59-38/0-154,,,"[0, 154]",put sock in drawer,154,0,0,0
+robot_explore/put_sock_in_drawer,2026-04-13--13-01-05/0-154,,,"[0, 154]",put sock in drawer,154,1,1,0
+robot_explore/put_sock_in_drawer,2026-04-13--13-02-02/0-154,,,"[0, 154]",put sock in drawer,154,1,1,0
+robot_explore/put_sock_in_drawer,2026-04-13--13-03-07/0-154,,,"[0, 154]",put sock in drawer,154,1,1,0
+robot_explore/pick_up_basketball,2026-04-13--15-43-54/0-154,,,"[0, 154]",pick up basketball,154,0,0,0
+robot_explore/pick_up_basketball,2026-04-13--15-45-35/0-154,,,"[0, 154]",pick up basketball,154,1,1,0
+robot_explore/pick_up_basketball,2026-04-13--15-46-38/0-154,,,"[0, 154]",pick up basketball,154,1,1,0
+robot_explore/pick_up_basketball,2026-04-13--15-47-59/0-154,,,"[0, 154]",pick up basketball,154,0,0,0
+robot_explore/pick_up_basketball,2026-04-13--15-49-23/0-154,,,"[0, 154]",pick up basketball,154,1,1,0
+robot_explore/pick_up_basketball,2026-04-13--15-50-57/0-154,,,"[0, 154]",pick up basketball,154,1,1,0
+robot_explore/pick_up_basketball,2026-04-13--15-52-41/0-154,,,"[0, 154]",pick up basketball,154,1,1,0
+robot_explore/pick_up_basketball,2026-04-13--15-53-58/0-154,,,"[0, 154]",pick up basketball,154,1,1,0
+robot_explore/pick_up_basketball,2026-04-13--15-55-26/0-154,,,"[0, 154]",pick up basketball,154,1,1,0
+robot_explore/pick_up_basketball,2026-04-13--15-57-11/0-154,,,"[0, 154]",pick up basketball,154,1,1,0
+robot_explore/pick_up_basketball,2026-04-13--15-58-42/0-154,,,"[0, 154]",pick up basketball,154,1,1,0
+robot_explore/pick_up_basketball,2026-04-13--16-00-44/0-154,,,"[0, 154]",pick up basketball,154,1,1,0
+robot_explore/pick_up_basketball,2026-04-13--16-01-48/0-154,,,"[0, 154]",pick up basketball,154,1,1,0
+robot_explore/pick_up_basketball,2026-04-13--16-03-11/0-154,,,"[0, 154]",pick up basketball,154,1,1,0
+robot_explore/pick_up_basketball,2026-04-13--16-04-37/0-154,,,"[0, 154]",pick up basketball,154,1,1,0
+robot_explore/pick_up_basketball,2026-04-13--16-09-43/0-154,,,"[0, 154]",pick up basketball,154,1,1,0
+robot_explore/pick_up_basketball,2026-04-13--16-14-51/0-154,,,"[0, 154]",pick up basketball,154,1,1,0
+robot_explore/pick_up_basketball,2026-04-13--16-15-57/0-154,,,"[0, 154]",pick up basketball,154,1,1,0
+robot_explore/pick_up_basketball,2026-04-13--16-17-02/0-154,,,"[0, 154]",pick up basketball,154,1,1,0
+robot_explore/pick_up_basketball,2026-04-13--16-18-13/0-154,,,"[0, 154]",pick up basketball,154,1,1,0
+robot_explore/pick_up_basketball,2026-04-13--16-19-45/0-154,,,"[0, 154]",pick up basketball,154,1,1,0
+robot_explore/pick_up_basketball,2026-04-13--16-21-38/0-154,,,"[0, 154]",pick up basketball,154,1,1,0
+robot_explore/pick_up_basketball,2026-04-13--16-22-40/0-154,,,"[0, 154]",pick up basketball,154,1,1,0
+robot_explore/pick_up_basketball,2026-04-13--16-23-41/0-154,,,"[0, 154]",pick up basketball,154,1,1,0
+robot_explore/pick_up_basketball,2026-04-13--16-25-10/0-154,,,"[0, 154]",pick up basketball,154,1,1,0
+robot_explore/pick_up_basketball,2026-04-13--16-27-00/0-154,,,"[0, 154]",pick up basketball,154,1,1,0
+robot_explore/pick_up_basketball,2026-04-13--16-28-39/0-154,,,"[0, 154]",pick up basketball,154,1,1,0
+robot_explore/pick_up_basketball,2026-04-13--16-29-17/0-154,,,"[0, 154]",pick up basketball,154,1,1,0
+robot_explore/pick_up_basketball,2026-04-13--16-30-09/0-154,,,"[0, 154]",pick up basketball,154,1,1,0
+robot_explore/pick_up_basketball,2026-04-13--16-31-06/0-154,,,"[0, 154]",pick up basketball,154,1,1,0
+robot_explore/close_drawer,2026-04-13--13-04-35/0-154,,,"[0, 154]",close drawer,154,1,1,0
+robot_explore/close_drawer,2026-04-13--13-05-49/0-154,,,"[0, 154]",close drawer,154,0,0,0
+robot_explore/close_drawer,2026-04-13--13-06-22/0-154,,,"[0, 154]",close drawer,154,1,1,0
+robot_explore/close_drawer,2026-04-13--13-07-07/0-154,,,"[0, 154]",close drawer,154,1,1,0
+robot_explore/close_drawer,2026-04-13--13-07-48/0-154,,,"[0, 154]",close drawer,154,0,0,0
+robot_explore/close_drawer,2026-04-13--13-08-22/0-154,,,"[0, 154]",close drawer,154,1,1,0
+robot_explore/close_drawer,2026-04-13--13-09-16/0-154,,,"[0, 154]",close drawer,154,1,1,0
+robot_explore/close_drawer,2026-04-13--13-10-08/0-154,,,"[0, 154]",close drawer,154,0,0,0
+robot_explore/close_drawer,2026-04-13--13-10-51/0-154,,,"[0, 154]",close drawer,154,0,0,0
+robot_explore/close_drawer,2026-04-13--13-11-26/0-154,,,"[0, 154]",close drawer,154,1,1,0
+robot_explore/close_drawer,2026-04-13--13-12-55/0-154,,,"[0, 154]",close drawer,154,1,1,0
+robot_explore/close_drawer,2026-04-13--13-13-58/0-154,,,"[0, 154]",close drawer,154,1,1,0
+robot_explore/close_drawer,2026-04-13--13-15-29/0-154,,,"[0, 154]",close drawer,154,0,0,0
+robot_explore/close_drawer,2026-04-13--13-16-53/0-154,,,"[0, 154]",close drawer,154,1,1,0
+robot_explore/close_drawer,2026-04-13--13-17-29/0-154,,,"[0, 154]",close drawer,154,1,1,0
+robot_explore/close_drawer,2026-04-13--13-18-30/0-154,,,"[0, 154]",close drawer,154,1,1,0
+robot_explore/close_drawer,2026-04-13--13-19-12/0-154,,,"[0, 154]",close drawer,154,1,1,0
+robot_explore/close_drawer,2026-04-13--13-19-42/0-154,,,"[0, 154]",close drawer,154,0,0,0
+robot_explore/close_drawer,2026-04-13--13-20-21/0-154,,,"[0, 154]",close drawer,154,1,1,0
+robot_explore/close_drawer,2026-04-13--13-21-06/0-154,,,"[0, 154]",close drawer,154,1,1,0
+robot_explore/put_down_sponge,2026-04-13--13-25-24/0-154,,,"[0, 154]",put down sponge,154,0,0,0
+robot_explore/put_down_sponge,2026-04-13--13-28-43/0-154,,,"[0, 154]",put down sponge,154,1,1,0
+robot_explore/put_down_sponge,2026-04-13--13-30-31/0-154,,,"[0, 154]",put down sponge,154,1,1,0
+robot_explore/put_down_sponge,2026-04-13--13-31-39/0-154,,,"[0, 154]",put down sponge,154,1,1,0
+robot_explore/put_down_sponge,2026-04-13--13-34-54/0-154,,,"[0, 154]",put down sponge,154,1,1,0
+robot_explore/put_down_sponge,2026-04-13--13-37-38/0-154,,,"[0, 154]",put down sponge,154,1,1,0
+robot_explore/put_down_sponge,2026-04-13--13-40-29/0-154,,,"[0, 154]",put down sponge,154,0,0,0
+robot_explore/put_down_sponge,2026-04-13--13-42-42/0-154,,,"[0, 154]",put down sponge,154,1,1,0
+robot_explore/put_down_sponge,2026-04-13--13-44-50/0-154,,,"[0, 154]",put down sponge,154,1,1,0
+robot_explore/put_down_sponge,2026-04-13--13-46-36/0-154,,,"[0, 154]",put down sponge,154,1,1,0
+robot_explore/put_down_sponge,2026-04-13--13-51-52/0-154,,,"[0, 154]",put down sponge,154,1,1,0
+robot_explore/put_down_sponge,2026-04-13--13-55-37/0-154,,,"[0, 154]",put down sponge,154,1,1,0
+robot_explore/put_down_sponge,2026-04-13--13-57-05/0-154,,,"[0, 154]",put down sponge,154,1,1,0
+robot_explore/put_down_sponge,2026-04-13--13-58-08/0-154,,,"[0, 154]",put down sponge,154,0,0,0
+robot_explore/put_down_sponge,2026-04-13--13-59-43/0-154,,,"[0, 154]",put down sponge,154,1,1,0
+robot_explore/put_down_sponge,2026-04-13--14-00-37/0-154,,,"[0, 154]",put down sponge,154,0,0,0
+robot_explore/put_down_sponge,2026-04-13--14-01-39/0-154,,,"[0, 154]",put down sponge,154,1,1,0
+robot_explore/put_down_sponge,2026-04-13--14-02-48/0-154,,,"[0, 154]",put down sponge,154,0,0,0
+robot_explore/put_down_sponge,2026-04-13--14-03-46/0-154,,,"[0, 154]",put down sponge,154,0,0,0
+robot_explore/put_down_sponge,2026-04-13--14-06-09/0-154,,,"[0, 154]",put down sponge,154,1,1,0
+robot_explore/pick_up_food,2026-04-13--16-51-58/0-174,,,"[0, 174]",pick up food,174,0,0,0
+robot_explore/pick_up_food,2026-04-13--16-54-01/0-174,,,"[0, 174]",pick up food,174,1,1,0
+robot_explore/pick_up_food,2026-04-13--16-55-51/0-174,,,"[0, 174]",pick up food,174,0,0,0
+robot_explore/pick_up_food,2026-04-13--16-56-34/0-174,,,"[0, 174]",pick up food,174,1,1,0
+robot_explore/pick_up_food,2026-04-13--16-57-44/0-174,,,"[0, 174]",pick up food,174,1,1,0
+robot_explore/pick_up_food,2026-04-13--16-59-04/0-174,,,"[0, 174]",pick up food,174,0,0,0
+robot_explore/pick_up_food,2026-04-13--16-59-47/0-174,,,"[0, 174]",pick up food,174,1,1,0
+robot_explore/pick_up_food,2026-04-13--17-02-30/0-174,,,"[0, 174]",pick up food,174,1,1,0
+robot_explore/pick_up_food,2026-04-13--17-03-44/0-174,,,"[0, 174]",pick up food,174,0,0,0
+robot_explore/pick_up_food,2026-04-13--17-04-33/0-174,,,"[0, 174]",pick up food,174,1,1,0
+robot_explore/pick_up_food,2026-04-13--17-07-13/0-174,,,"[0, 174]",pick up food,174,1,1,0
+robot_explore/pick_up_food,2026-04-13--17-09-41/0-174,,,"[0, 174]",pick up food,174,1,1,0
+robot_explore/pick_up_food,2026-04-13--17-11-07/0-174,,,"[0, 174]",pick up food,174,1,1,0
+robot_explore/pick_up_food,2026-04-13--17-12-24/0-174,,,"[0, 174]",pick up food,174,1,1,0
+robot_explore/pick_up_food,2026-04-13--17-13-37/0-174,,,"[0, 174]",pick up food,174,0,0,0
+robot_explore/pick_up_food,2026-04-13--17-14-19/0-174,,,"[0, 174]",pick up food,174,0,0,0
+robot_explore/pick_up_food,2026-04-13--17-14-52/0-174,,,"[0, 174]",pick up food,174,0,0,0
+robot_explore/pick_up_food,2026-04-13--17-15-45/0-174,,,"[0, 174]",pick up food,174,1,1,0
+robot_explore/pick_up_food,2026-04-13--17-17-33/0-174,,,"[0, 174]",pick up food,174,1,1,0
+robot_explore/pick_up_food,2026-04-13--17-18-39/0-174,,,"[0, 174]",pick up food,174,1,1,0
+robot_explore/pick_up_food,2026-04-13--17-19-53/0-174,,,"[0, 174]",pick up food,174,0,0,0
+robot_explore/pick_up_food,2026-04-13--17-20-41/0-174,,,"[0, 174]",pick up food,174,1,1,0
+robot_explore/pick_up_food,2026-04-13--17-21-47/0-174,,,"[0, 174]",pick up food,174,1,1,0
+robot_explore/pick_up_food,2026-04-13--17-22-51/0-174,,,"[0, 174]",pick up food,174,1,1,0
+robot_explore/pick_up_food,2026-04-13--17-23-53/0-174,,,"[0, 174]",pick up food,174,1,1,0
+robot_explore/pick_up_food,2026-04-13--17-24-56/0-174,,,"[0, 174]",pick up food,174,1,1,0
+robot_explore/pick_up_food,2026-04-13--17-26-23/0-174,,,"[0, 174]",pick up food,174,0,0,0
+robot_explore/pick_up_food,2026-04-13--17-28-42/0-174,,,"[0, 174]",pick up food,174,1,1,0
+robot_explore/pick_up_food,2026-04-13--17-30-27/0-174,,,"[0, 174]",pick up food,174,1,1,0
+robot_explore/pick_up_food,2026-04-13--17-31-41/0-174,,,"[0, 174]",pick up food,174,1,1,0
+robot_explore/put_down_food,2026-04-13--16-54-57/0-154,,,"[0, 154]",put down food,154,1,1,0
+robot_explore/put_down_food,2026-04-13--16-56-55/0-154,,,"[0, 154]",put down food,154,1,1,0
+robot_explore/put_down_food,2026-04-13--16-58-11/0-154,,,"[0, 154]",put down food,154,1,1,0
+robot_explore/put_down_food,2026-04-13--17-00-22/0-154,,,"[0, 154]",put down food,154,1,1,0
+robot_explore/put_down_food,2026-04-13--17-01-22/0-154,,,"[0, 154]",put down food,154,1,1,0
+robot_explore/put_down_food,2026-04-13--17-05-20/0-154,,,"[0, 154]",put down food,154,1,1,0
+robot_explore/put_down_food,2026-04-13--17-11-11/0-154,,,"[0, 154]",put down food,154,1,1,0
+robot_explore/put_down_food,2026-04-13--17-11-44/0-154,,,"[0, 154]",put down food,154,1,1,0
+robot_explore/put_down_food,2026-04-13--17-12-56/0-154,,,"[0, 154]",put down food,154,1,1,0
+robot_explore/put_down_food,2026-04-13--17-16-28/0-154,,,"[0, 154]",put down food,154,1,1,0
+robot_explore/put_down_food,2026-04-13--17-18-04/0-154,,,"[0, 154]",put down food,154,1,1,0
+robot_explore/put_down_food,2026-04-13--17-19-09/0-154,,,"[0, 154]",put down food,154,1,1,0
+robot_explore/put_down_food,2026-04-13--17-21-09/0-154,,,"[0, 154]",put down food,154,1,1,0
+robot_explore/put_down_food,2026-04-13--17-22-20/0-154,,,"[0, 154]",put down food,154,1,1,0
+robot_explore/put_down_food,2026-04-13--17-23-18/0-154,,,"[0, 154]",put down food,154,1,1,0
+robot_explore/put_down_food,2026-04-13--17-24-23/0-154,,,"[0, 154]",put down food,154,1,1,0
+robot_explore/put_down_food,2026-04-13--17-29-15/0-154,,,"[0, 154]",put down food,154,0,0,0
+robot_explore/put_down_food,2026-04-13--17-30-56/0-154,,,"[0, 154]",put down food,154,1,1,0
+robot_explore/put_down_food,2026-04-13--17-32-13/0-154,,,"[0, 154]",put down food,154,0,0,0
+robot_explore/pick_up_sponge,2026-04-13--13-24-32/0-154,,,"[0, 154]",pick up sponge,154,1,1,0
+robot_explore/pick_up_sponge,2026-04-13--13-26-10/0-154,,,"[0, 154]",pick up sponge,154,0,0,0
+robot_explore/pick_up_sponge,2026-04-13--13-28-03/0-154,,,"[0, 154]",pick up sponge,154,1,1,0
+robot_explore/pick_up_sponge,2026-04-13--13-30-02/0-154,,,"[0, 154]",pick up sponge,154,1,1,0
+robot_explore/pick_up_sponge,2026-04-13--13-31-00/0-154,,,"[0, 154]",pick up sponge,154,1,1,0
+robot_explore/pick_up_sponge,2026-04-13--13-34-19/0-154,,,"[0, 154]",pick up sponge,154,1,1,0
+robot_explore/pick_up_sponge,2026-04-13--13-36-18/0-154,,,"[0, 154]",pick up sponge,154,0,0,0
+robot_explore/pick_up_sponge,2026-04-13--13-37-10/0-154,,,"[0, 154]",pick up sponge,154,1,1,0
+robot_explore/pick_up_sponge,2026-04-13--13-39-53/0-154,,,"[0, 154]",pick up sponge,154,1,1,0
+robot_explore/pick_up_sponge,2026-04-13--13-41-15/0-154,,,"[0, 154]",pick up sponge,154,0,0,0
+robot_explore/pick_up_sponge,2026-04-13--13-42-15/0-154,,,"[0, 154]",pick up sponge,154,1,1,0
+robot_explore/pick_up_sponge,2026-04-13--13-44-18/0-154,,,"[0, 154]",pick up sponge,154,1,1,0
+robot_explore/pick_up_sponge,2026-04-13--13-45-52/0-154,,,"[0, 154]",pick up sponge,154,1,1,0
+robot_explore/pick_up_sponge,2026-04-13--13-51-16/0-154,,,"[0, 154]",pick up sponge,154,1,1,0
+robot_explore/pick_up_sponge,2026-04-13--13-54-16/0-154,,,"[0, 154]",pick up sponge,154,0,0,0
+robot_explore/pick_up_sponge,2026-04-13--13-54-56/0-154,,,"[0, 154]",pick up sponge,154,1,1,0
+robot_explore/pick_up_sponge,2026-04-13--13-56-36/0-154,,,"[0, 154]",pick up sponge,154,1,1,0
+robot_explore/pick_up_sponge,2026-04-13--13-57-41/0-154,,,"[0, 154]",pick up sponge,154,1,1,0
+robot_explore/pick_up_sponge,2026-04-13--13-59-05/0-154,,,"[0, 154]",pick up sponge,154,1,1,0
+robot_explore/pick_up_sponge,2026-04-13--14-00-13/0-154,,,"[0, 154]",pick up sponge,154,1,1,0
+robot_explore/pick_up_sponge,2026-04-13--14-01-17/0-154,,,"[0, 154]",pick up sponge,154,1,1,0
+robot_explore/pick_up_sponge,2026-04-13--14-02-25/0-154,,,"[0, 154]",pick up sponge,154,1,1,0
+robot_explore/pick_up_sponge,2026-04-13--14-03-22/0-154,,,"[0, 154]",pick up sponge,154,1,1,0
+robot_explore/pick_up_sponge,2026-04-13--14-04-16/0-154,,,"[0, 154]",pick up sponge,154,1,1,0
+robot_explore/pick_up_sponge,2026-04-13--14-05-34/0-154,,,"[0, 154]",pick up sponge,154,1,1,0
+robot_explore/put_down_basketball_on_sofa,2026-04-13--16-16-27/0-154,,,"[0, 154]",put down basketball on sofa,154,1,1,0
+robot_explore/put_down_basketball_on_sofa,2026-04-13--16-17-33/0-154,,,"[0, 154]",put down basketball on sofa,154,1,1,0
+robot_explore/put_down_basketball_on_sofa,2026-04-13--16-18-48/0-154,,,"[0, 154]",put down basketball on sofa,154,1,1,0
+robot_explore/put_down_basketball_on_sofa,2026-04-13--16-20-16/0-154,,,"[0, 154]",put down basketball on sofa,154,1,1,0
+robot_explore/put_down_basketball_on_sofa,2026-04-13--16-22-04/0-154,,,"[0, 154]",put down basketball on sofa,154,1,1,0
+robot_explore/put_down_basketball_on_sofa,2026-04-13--16-23-09/0-154,,,"[0, 154]",put down basketball on sofa,154,1,1,0
+robot_explore/put_down_basketball_on_sofa,2026-04-13--16-24-06/0-154,,,"[0, 154]",put down basketball on sofa,154,1,1,0
+robot_explore/put_down_basketball_on_sofa,2026-04-13--16-25-52/0-154,,,"[0, 154]",put down basketball on sofa,154,1,1,0
+robot_explore/put_down_basketball_on_sofa,2026-04-13--16-27-38/0-154,,,"[0, 154]",put down basketball on sofa,154,1,1,0
+robot_explore/put_down_basketball_on_sofa,2026-04-13--16-31-53/0-154,,,"[0, 154]",put down basketball on sofa,154,1,1,0
+pnp_socks,2026-03-20--20-11-27/0-356,,,"[0, 356]",put the socks in the drawer and close the drawer,356,1,1,1
+pnp_socks,2026-03-20--20-13-58/0-419,,,"[0, 419]",put the socks in the drawer and close the drawer,419,1,1,1
+pnp_socks,2026-03-20--20-25-08/0-373,,,"[0, 373]",put the socks in the drawer and close the drawer,373,1,1,1
+pnp_socks,2026-03-20--20-28-18/0-333,,,"[0, 333]",put the socks in the drawer and close the drawer,333,1,1,1
+pnp_socks,2026-03-20--20-29-43/0-334,,,"[0, 334]",put the socks in the drawer and close the drawer,334,1,1,1
+pnp_socks,2026-03-20--20-31-25/0-340,,,"[0, 340]",put the socks in the drawer and close the drawer,340,1,1,1
+pnp_socks,2026-03-20--20-33-17/0-339,,,"[0, 339]",put the socks in the drawer and close the drawer,339,1,1,1
+pnp_socks,2026-03-20--20-35-24/0-399,,,"[0, 399]",put the socks in the drawer and close the drawer,399,1,1,1
+pnp_socks,2026-03-20--20-44-21/0-304,,,"[0, 304]",put the socks in the drawer and close the drawer,304,1,1,1
+pnp_socks,2026-03-20--20-46-28/0-310,,,"[0, 310]",put the socks in the drawer and close the drawer,310,1,1,1
+pnp_socks,2026-03-20--20-47-59/0-309,,,"[0, 309]",put the socks in the drawer and close the drawer,309,1,1,1
+pnp_socks,2026-03-20--20-52-41/0-279,,,"[0, 279]",put the socks in the drawer and close the drawer,279,1,1,1
+pnp_socks,2026-03-20--20-56-10/0-315,,,"[0, 315]",put the socks in the drawer and close the drawer,315,1,1,1
+pnp_socks,2026-03-20--20-58-20/0-348,,,"[0, 348]",put the socks in the drawer and close the drawer,348,1,1,1
+pnp_socks,2026-03-20--20-59-24/0-342,,,"[0, 342]",put the socks in the drawer and close the drawer,342,1,1,1
+pnp_socks,2026-03-20--21-01-34/0-344,,,"[0, 344]",put the socks in the drawer and close the drawer,344,1,1,1
+pnp_socks,2026-03-20--21-11-34/0-338,,,"[0, 338]",put the socks in the drawer and close the drawer,338,1,1,1
+pnp_socks,2026-03-20--21-35-14/0-341,,,"[0, 341]",put the socks in the drawer and close the drawer,341,1,1,1
+pnp_socks,2026-03-20--21-38-03/0-328,,,"[0, 328]",put the socks in the drawer and close the drawer,328,1,1,1
+pnp_socks,2026-03-20--21-42-48/0-416,,,"[0, 416]",put the socks in the drawer and close the drawer,416,1,1,1
+pnp_socks,2026-03-20--21-44-12/0-387,,,"[0, 387]",put the socks in the drawer and close the drawer,387,1,1,1
+pnp_socks,2026-03-20--21-52-08/0-318,,,"[0, 318]",put the socks in the drawer and close the drawer,318,1,1,1
+pnp_socks,2026-03-20--21-53-25/0-376,,,"[0, 376]",put the socks in the drawer and close the drawer,376,1,1,1
+pnp_socks,2026-03-20--21-55-13/0-385,,,"[0, 385]",put the socks in the drawer and close the drawer,385,1,1,1
+pnp_socks,2026-03-20--21-56-52/0-373,,,"[0, 373]",put the socks in the drawer and close the drawer,373,1,1,1
+pnp_socks,2026-03-20--21-58-15/0-370,,,"[0, 370]",put the socks in the drawer and close the drawer,370,1,1,1
+pnp_socks,2026-03-20--22-00-30/0-317,,,"[0, 317]",put the socks in the drawer and close the drawer,317,1,1,1
+pnp_socks,2026-03-20--22-03-03/0-298,,,"[0, 298]",put the socks in the drawer and close the drawer,298,1,1,1
+pnp_socks,2026-03-20--22-06-12/0-313,,,"[0, 313]",put the socks in the drawer and close the drawer,313,1,1,1
+pnp_socks,2026-03-20--22-07-27/0-330,,,"[0, 330]",put the socks in the drawer and close the drawer,330,1,1,1
+pnp_socks,2026-03-20--22-08-42/0-323,,,"[0, 323]",put the socks in the drawer and close the drawer,323,1,1,1
+pnp_socks,2026-03-20--22-10-10/0-383,,,"[0, 383]",put the socks in the drawer and close the drawer,383,1,1,1
+pnp_socks,2026-03-20--22-11-28/0-323,,,"[0, 323]",put the socks in the drawer and close the drawer,323,1,1,1
+pnp_socks,2026-03-20--22-12-56/0-337,,,"[0, 337]",put the socks in the drawer and close the drawer,337,1,1,1
+pnp_socks,2026-03-20--22-14-12/0-337,,,"[0, 337]",put the socks in the drawer and close the drawer,337,1,1,1
+pnp_ricecooker,2026-03-26--19-56-55/0-364,,,"[0, 364]",open the ricecooker and put food inside,364,1,1,1
+pnp_ricecooker,2026-03-26--20-00-01/0-375,,,"[0, 375]",open the ricecooker and put food inside,375,1,1,1
+pnp_ricecooker,2026-03-26--20-01-59/0-383,,,"[0, 383]",open the ricecooker and put food inside,383,1,1,1
+pnp_ricecooker,2026-03-26--20-04-12/0-403,,,"[0, 403]",open the ricecooker and put food inside,403,1,1,1
+pnp_ricecooker,2026-03-26--20-08-50/0-390,,,"[0, 390]",open the ricecooker and put food inside,390,1,1,1
+pnp_ricecooker,2026-03-26--20-10-44/0-400,,,"[0, 400]",open the ricecooker and put food inside,400,1,1,1
+pnp_ricecooker,2026-03-26--20-13-26/0-424,,,"[0, 424]",open the ricecooker and put food inside,424,1,1,1
+pnp_ricecooker,2026-03-26--20-14-53/0-411,,,"[0, 411]",open the ricecooker and put food inside,411,1,1,1
+pnp_ricecooker,2026-03-26--20-16-20/0-377,,,"[0, 377]",open the ricecooker and put food inside,377,1,1,1
+pnp_ricecooker,2026-03-26--20-17-46/0-386,,,"[0, 386]",open the ricecooker and put food inside,386,1,1,1
+pnp_ricecooker,2026-03-26--20-20-33/0-378,,,"[0, 378]",open the ricecooker and put food inside,378,1,1,1
+pnp_ricecooker,2026-03-26--20-22-38/0-383,,,"[0, 383]",open the ricecooker and put food inside,383,1,1,1
+pnp_ricecooker,2026-03-26--20-27-19/0-411,,,"[0, 411]",open the ricecooker and put food inside,411,1,1,1
+pnp_ricecooker,2026-03-26--20-28-42/0-421,,,"[0, 421]",open the ricecooker and put food inside,421,1,1,1
+pnp_ricecooker,2026-03-26--20-30-11/0-323,,,"[0, 323]",open the ricecooker and put food inside,323,1,1,1
+pnp_ricecooker,2026-03-26--20-32-28/0-388,,,"[0, 388]",open the ricecooker and put food inside,388,1,1,1
+pnp_ricecooker,2026-03-26--20-34-03/0-419,,,"[0, 419]",open the ricecooker and put food inside,419,1,1,1
+pnp_ricecooker,2026-03-26--20-36-48/0-396,,,"[0, 396]",open the ricecooker and put food inside,396,1,1,1
+pnp_ricecooker,2026-03-26--20-39-43/0-414,,,"[0, 414]",open the ricecooker and put food inside,414,1,1,1
+pnp_ricecooker,2026-03-26--20-44-03/0-379,,,"[0, 379]",open the ricecooker and put food inside,379,1,1,1
+pnp_ricecooker,2026-03-26--20-46-46/0-384,,,"[0, 384]",open the ricecooker and put food inside,384,1,1,1
+pnp_ricecooker,2026-03-26--20-48-36/0-316,,,"[0, 316]",open the ricecooker and put food inside,316,1,1,1
+pnp_ricecooker,2026-03-26--20-51-16/0-336,,,"[0, 336]",open the ricecooker and put food inside,336,1,1,1
+pnp_ricecooker,2026-03-26--20-53-22/0-384,,,"[0, 384]",open the ricecooker and put food inside,384,1,1,1
+pnp_ricecooker,2026-03-26--20-54-33/0-372,,,"[0, 372]",open the ricecooker and put food inside,372,1,1,1
+wipe_table,2026-03-15--13-49-21/0-312,,,"[0, 312]",take the sponge and wipe the table,312,1,1,1
+wipe_table,2026-03-15--13-50-52/0-322,,,"[0, 322]",take the sponge and wipe the table,322,1,1,1
+wipe_table,2026-03-15--14-13-20/0-308,,,"[0, 308]",take the sponge and wipe the table,308,1,1,1
+wipe_table,2026-03-15--14-14-31/0-277,,,"[0, 277]",take the sponge and wipe the table,277,1,1,1
+wipe_table,2026-03-15--14-15-37/0-270,,,"[0, 270]",take the sponge and wipe the table,270,1,1,1
+wipe_table,2026-03-15--14-16-48/0-321,,,"[0, 321]",take the sponge and wipe the table,321,1,1,1
+wipe_table,2026-03-15--14-18-00/0-297,,,"[0, 297]",take the sponge and wipe the table,297,1,1,1
+wipe_table,2026-03-15--14-19-32/0-337,,,"[0, 337]",take the sponge and wipe the table,337,1,1,1
+wipe_table,2026-03-15--14-23-52/0-292,,,"[0, 292]",take the sponge and wipe the table,292,1,1,1
+wipe_table,2026-03-15--14-25-25/0-341,,,"[0, 341]",take the sponge and wipe the table,341,1,1,1
+wipe_table,2026-03-15--14-26-33/0-311,,,"[0, 311]",take the sponge and wipe the table,311,1,1,1
+wipe_table,2026-03-15--14-28-20/0-314,,,"[0, 314]",take the sponge and wipe the table,314,1,1,1
+wipe_table,2026-03-15--14-30-04/0-322,,,"[0, 322]",take the sponge and wipe the table,322,1,1,1
+wipe_table,2026-03-15--14-31-53/0-311,,,"[0, 311]",take the sponge and wipe the table,311,1,1,1
+wipe_table,2026-03-15--14-33-34/0-317,,,"[0, 317]",take the sponge and wipe the table,317,1,1,1
+wipe_table,2026-03-15--14-36-45/0-308,,,"[0, 308]",take the sponge and wipe the table,308,1,1,1
+wipe_table,2026-03-15--14-38-12/0-287,,,"[0, 287]",take the sponge and wipe the table,287,1,1,1
+wipe_table,2026-03-15--14-40-00/0-306,,,"[0, 306]",take the sponge and wipe the table,306,1,1,1
+wipe_table,2026-03-15--14-41-27/0-329,,,"[0, 329]",take the sponge and wipe the table,329,1,1,1
+wipe_table,2026-03-15--14-43-00/0-315,,,"[0, 315]",take the sponge and wipe the table,315,1,1,1
+wipe_table,2026-03-15--14-44-52/0-292,,,"[0, 292]",take the sponge and wipe the table,292,1,1,1
+wipe_table,2026-03-15--14-46-37/0-316,,,"[0, 316]",take the sponge and wipe the table,316,1,1,1
+wipe_table,2026-03-15--14-48-12/0-281,,,"[0, 281]",take the sponge and wipe the table,281,1,1,1
+wipe_table,2026-03-15--14-50-46/0-282,,,"[0, 282]",take the sponge and wipe the table,282,1,1,1
+wipe_table,2026-03-15--14-52-20/0-315,,,"[0, 315]",take the sponge and wipe the table,315,1,1,1
+wipe_table,2026-03-15--14-53-54/0-314,,,"[0, 314]",take the sponge and wipe the table,314,1,1,1
+wipe_table,2026-03-15--14-59-48/0-304,,,"[0, 304]",take the sponge and wipe the table,304,1,1,1
+wipe_table,2026-03-15--15-01-18/0-345,,,"[0, 345]",take the sponge and wipe the table,345,1,1,1
+wipe_table,2026-03-15--15-02-47/0-338,,,"[0, 338]",take the sponge and wipe the table,338,1,1,1
+wipe_table,2026-03-15--15-07-40/0-315,,,"[0, 315]",take the sponge and wipe the table,315,1,1,1
+pnp_microwave,2026-03-13--14-06-15/0-358,,,"[0, 358]",open the microwave and take the drink,358,1,1,1
+pnp_microwave,2026-03-13--14-11-38/0-307,,,"[0, 307]",open the microwave and take the drink,307,1,1,1
+pnp_microwave,2026-03-13--14-12-54/0-322,,,"[0, 322]",open the microwave and take the drink,322,1,1,1
+pnp_microwave,2026-03-13--14-15-45/0-367,,,"[0, 367]",open the microwave and take the drink,367,1,1,1
+pnp_microwave,2026-03-13--14-17-23/0-348,,,"[0, 348]",open the microwave and take the drink,348,1,1,1
+pnp_microwave,2026-03-13--14-18-36/0-337,,,"[0, 337]",open the microwave and take the drink,337,1,1,1
+pnp_microwave,2026-03-13--14-20-04/0-332,,,"[0, 332]",open the microwave and take the drink,332,1,1,1
+pnp_microwave,2026-03-13--14-24-03/0-326,,,"[0, 326]",open the microwave and take the drink,326,1,1,1
+pnp_microwave,2026-03-13--14-26-01/0-347,,,"[0, 347]",open the microwave and take the drink,347,1,1,1
+pnp_microwave,2026-03-13--14-27-06/0-289,,,"[0, 289]",open the microwave and take the drink,289,1,1,1
+pnp_microwave,2026-03-13--14-28-57/0-295,,,"[0, 295]",open the microwave and take the drink,295,1,1,1
+pnp_microwave,2026-03-13--14-30-12/0-298,,,"[0, 298]",open the microwave and take the drink,298,1,1,1
+pnp_microwave,2026-03-13--14-31-56/0-311,,,"[0, 311]",open the microwave and take the drink,311,1,1,1
+pnp_microwave,2026-03-13--14-37-53/0-297,,,"[0, 297]",open the microwave and take the drink,297,1,1,1
+pnp_microwave,2026-03-13--14-40-03/0-301,,,"[0, 301]",open the microwave and take the drink,301,1,1,1
+pnp_microwave,2026-03-13--14-41-28/0-349,,,"[0, 349]",open the microwave and take the drink,349,1,1,1
+pnp_microwave,2026-03-13--14-42-54/0-371,,,"[0, 371]",open the microwave and take the drink,371,1,1,1
+pnp_microwave,2026-03-13--14-44-06/0-327,,,"[0, 327]",open the microwave and take the drink,327,1,1,1
+pnp_microwave,2026-03-13--14-45-26/0-319,,,"[0, 319]",open the microwave and take the drink,319,1,1,1
+pnp_microwave,2026-03-13--14-46-29/0-306,,,"[0, 306]",open the microwave and take the drink,306,1,1,1
+pnp_microwave,2026-03-13--14-48-12/0-311,,,"[0, 311]",open the microwave and take the drink,311,1,1,1
+pnp_microwave,2026-03-13--14-49-11/0-307,,,"[0, 307]",open the microwave and take the drink,307,1,1,1
+pnp_microwave,2026-03-13--14-50-37/0-303,,,"[0, 303]",open the microwave and take the drink,303,1,1,1
+pnp_microwave,2026-03-13--14-52-00/0-312,,,"[0, 312]",open the microwave and take the drink,312,1,1,1
+pnp_microwave,2026-03-13--15-24-39/0-274,,,"[0, 274]",open the microwave and take the drink,274,1,1,1
+pnp_basketball,2026-03-11--17-09-44/0-189,,,"[0, 189]",pick up the ball and place it in the basket,189,1,1,1
+pnp_basketball,2026-03-11--17-19-28/0-210,,,"[0, 210]",pick up the ball and place it in the basket,210,1,1,1
+pnp_basketball,2026-03-11--17-26-42/0-257,,,"[0, 257]",pick up the ball and place it in the basket,257,1,1,1
+pnp_basketball,2026-03-11--17-27-50/0-226,,,"[0, 226]",pick up the ball and place it in the basket,226,1,1,1
+pnp_basketball,2026-03-11--17-29-07/0-222,,,"[0, 222]",pick up the ball and place it in the basket,222,1,1,1
+pnp_basketball,2026-03-11--17-30-21/0-227,,,"[0, 227]",pick up the ball and place it in the basket,227,1,1,1
+pnp_basketball,2026-03-11--17-31-43/0-242,,,"[0, 242]",pick up the ball and place it in the basket,242,1,1,1
+pnp_basketball,2026-03-11--17-43-24/0-280,,,"[0, 280]",pick up the ball and place it in the basket,280,1,1,1
+pnp_basketball,2026-03-11--17-44-34/0-266,,,"[0, 266]",pick up the ball and place it in the basket,266,1,1,1
+pnp_basketball,2026-03-11--17-45-39/0-219,,,"[0, 219]",pick up the ball and place it in the basket,219,1,1,1
+pnp_basketball,2026-03-11--17-46-52/0-203,,,"[0, 203]",pick up the ball and place it in the basket,203,1,1,1
+pnp_basketball,2026-03-11--17-48-15/0-248,,,"[0, 248]",pick up the ball and place it in the basket,248,1,1,1
+pnp_basketball,2026-03-11--17-49-25/0-264,,,"[0, 264]",pick up the ball and place it in the basket,264,1,1,1
+pnp_basketball,2026-03-11--17-51-55/0-258,,,"[0, 258]",pick up the ball and place it in the basket,258,1,1,1
+pnp_basketball,2026-03-11--17-53-13/0-283,,,"[0, 283]",pick up the ball and place it in the basket,283,1,1,1
+pnp_basketball,2026-03-11--17-54-18/0-221,,,"[0, 221]",pick up the ball and place it in the basket,221,1,1,1
+pnp_basketball,2026-03-11--17-55-28/0-233,,,"[0, 233]",pick up the ball and place it in the basket,233,1,1,1
+pnp_basketball,2026-03-11--17-56-44/0-214,,,"[0, 214]",pick up the ball and place it in the basket,214,1,1,1
+pnp_basketball,2026-03-11--17-58-04/0-229,,,"[0, 229]",pick up the ball and place it in the basket,229,1,1,1
+pnp_basketball,2026-03-11--17-59-06/0-208,,,"[0, 208]",pick up the ball and place it in the basket,208,1,1,1
+pnp_basketball,2026-03-11--18-02-19/0-276,,,"[0, 276]",pick up the ball and place it in the basket,276,1,1,1
+pnp_basketball,2026-03-11--18-03-44/0-240,,,"[0, 240]",pick up the ball and place it in the basket,240,1,1,1
+pnp_basketball,2026-03-11--18-17-35/0-238,,,"[0, 238]",pick up the ball and place it in the basket,238,1,1,1
+pnp_basketball,2026-03-11--18-20-04/0-241,,,"[0, 241]",pick up the ball and place it in the basket,241,1,1,1
+pnp_basketball,2026-03-11--18-21-06/0-240,,,"[0, 240]",pick up the ball and place it in the basket,240,1,1,1
+pnp_basketball,2026-03-11--18-22-31/0-223,,,"[0, 223]",pick up the ball and place it in the basket,223,1,1,1
+pnp_basketball,2026-03-11--18-23-29/0-211,,,"[0, 211]",pick up the ball and place it in the basket,211,1,1,1
+pnp_basketball,2026-03-11--18-24-27/0-224,,,"[0, 224]",pick up the ball and place it in the basket,224,1,1,1
+pnp_basketball,2026-03-11--18-25-28/0-211,,,"[0, 211]",pick up the ball and place it in the basket,211,1,1,1
+pnp_basketball,2026-03-11--18-26-32/0-211,,,"[0, 211]",pick up the ball and place it in the basket,211,1,1,1
+pnp_ricecooker,2026-03-29--14-47-47/0-363,,,"[0, 363]",open the ricecooker and put food inside,363,1,1,0
+pnp_ricecooker,2026-03-29--14-49-07/0-381,,,"[0, 381]",open the ricecooker and put food inside,381,1,1,0
+pnp_ricecooker,2026-03-29--15-12-21/0-375,,,"[0, 375]",open the ricecooker and put food inside,375,1,1,0
+wipe_table,2026-03-17--11-11-23/0-285,,,"[0, 285]",take the sponge and wipe the table,285,1,1,0
+wipe_table,2026-03-17--11-12-53/0-341,,,"[0, 341]",take the sponge and wipe the table,341,1,1,0

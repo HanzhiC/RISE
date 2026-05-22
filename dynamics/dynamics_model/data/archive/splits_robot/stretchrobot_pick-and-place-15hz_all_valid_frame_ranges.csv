@@ -1,0 +1,26 @@
+dataset,sample,task_label,category_name,valid_frame_range,fine_action,valid_trajectory_number
+pick_and_place_15hz,2026-02-13--15-34-11/0-446,,,"[0, 446]",pick up pot and place in box,446
+pick_and_place_15hz,2026-02-13--15-35-51/0-319,,,"[0, 319]",pick up pot and place in box,319
+pick_and_place_15hz,2026-02-13--15-44-39/0-431,,,"[0, 431]",pick up pot and place in box,431
+pick_and_place_15hz,2026-02-13--15-46-22/0-346,,,"[0, 346]",pick up pot and place in box,346
+pick_and_place_15hz,2026-02-13--15-47-34/0-388,,,"[0, 388]",pick up pot and place in box,388
+pick_and_place_15hz,2026-02-13--15-48-41/0-317,,,"[0, 317]",pick up pot and place in box,317
+pick_and_place_15hz,2026-02-13--15-49-38/0-307,,,"[0, 307]",pick up pot and place in box,307
+pick_and_place_15hz,2026-02-13--15-50-34/0-286,,,"[0, 286]",pick up pot and place in box,286
+pick_and_place_15hz,2026-02-13--15-51-44/0-333,,,"[0, 333]",pick up pot and place in box,333
+pick_and_place_15hz,2026-02-13--15-52-47/0-319,,,"[0, 319]",pick up pot and place in box,319
+pick_and_place_15hz,2026-02-13--15-53-53/0-440,,,"[0, 440]",pick up pot and place in box,440
+pick_and_place_15hz,2026-02-13--15-55-00/0-356,,,"[0, 356]",pick up pot and place in box,356
+pick_and_place_15hz,2026-02-13--15-56-05/0-335,,,"[0, 335]",pick up pot and place in box,335
+pick_and_place_15hz,2026-02-13--15-57-05/0-309,,,"[0, 309]",pick up pot and place in box,309
+pick_and_place_15hz,2026-02-13--15-58-15/0-282,,,"[0, 282]",pick up pot and place in box,282
+pick_and_place_15hz,2026-02-13--15-59-21/0-274,,,"[0, 274]",pick up pot and place in box,274
+pick_and_place_15hz,2026-02-13--16-00-25/0-312,,,"[0, 312]",pick up pot and place in box,312
+pick_and_place_15hz,2026-02-13--16-01-32/0-396,,,"[0, 396]",pick up pot and place in box,396
+pick_and_place_15hz,2026-02-13--16-02-47/0-369,,,"[0, 369]",pick up pot and place in box,369
+pick_and_place_15hz,2026-02-13--16-03-46/0-331,,,"[0, 331]",pick up pot and place in box,331
+pick_and_place_15hz,2026-02-13--16-04-55/0-377,,,"[0, 377]",pick up pot and place in box,377
+pick_and_place_15hz,2026-02-13--16-05-54/0-332,,,"[0, 332]",pick up pot and place in box,332
+pick_and_place_15hz,2026-02-13--16-07-04/0-437,,,"[0, 437]",pick up pot and place in box,437
+pick_and_place_15hz,2026-02-13--16-08-14/0-360,,,"[0, 360]",pick up pot and place in box,360
+pick_and_place_15hz,2026-02-13--16-09-27/0-413,,,"[0, 413]",pick up pot and place in box,413

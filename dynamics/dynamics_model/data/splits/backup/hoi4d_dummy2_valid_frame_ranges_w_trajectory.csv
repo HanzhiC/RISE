@@ -1,0 +1,37 @@
+sample,task_label,category_name,valid_frame_range,fine_action,valid_trajectory_number
+ZY20210800004/H4/C3/N67/S380/s05/T2.000,open and close the display,laptop,"[51, 75]",pick up laptop,24
+ZY20210800004/H4/C4/N50/S260/s03/T2.003,open and close the door,storage furniture,"[234, 273]",close storage furniture
+ZY20210800004/H4/C4/N48/S217/s05/T3.002,put the drink in the door,storage furniture,"[135, 163]",close storage furniture
+ZY20210800004/H4/C4/N45/S260/s02/T2.001,open and close the door,storage furniture,"[86, 123]",close storage furniture
+ZY20210800004/H4/C4/N45/S260/s02/T2.003,open and close the door,storage furniture,"[230, 269]",close storage furniture
+ZY20210800004/H4/C4/N44/S223/s01/T4.002,put the drink in the drawer,storage furniture,"[181, 214]",open storage furniture
+ZY20210800004/H4/C4/N43/S260/s01/T2.000,open and close the door,storage furniture,"[46, 76]",open storage furniture
+ZY20210800004/H4/C4/N43/S223/s01/T4.002,put the drink in the drawer,storage furniture,"[188, 216]",open storage furniture
+ZY20210800004/H4/C4/N42/S260/s01/T2.000,open and close the door,storage furniture,"[45, 78]",open storage furniture
+ZY20210800004/H4/C4/N42/S260/s01/T2.002,open and close the door,storage furniture,"[189, 222]",open storage furniture
+ZY20210800004/H4/C4/N42/S223/s01/T4.002,put the drink in the drawer,storage furniture,"[188, 226]",open storage furniture
+ZY20210800004/H4/C3/N67/S380/s05/T2.001,open and close the display,laptop,"[77, 90]",carry laptop,13
+ZY20210800004/H4/C3/N67/S380/s05/T2.002,open and close the display,laptop,"[92, 112]",put down laptop,20
+ZY20210800004/H4/C3/N67/S380/s05/T2.003,open and close the display,laptop,"[187, 221]",open laptop,34
+ZY20210800004/H4/C3/N67/S380/s05/T2.004,open and close the display,laptop,"[223, 249]",close laptop,26
+ZY20210800004/H4/C7/N15/S56/s02/T1.000,pick and place,bowl,"[34, 74]",pick up bowl,40
+ZY20210800004/H4/C7/N15/S56/s02/T1.001,pick and place,bowl,"[76, 127]",put down bowl,51
+ZY20210800004/H4/C7/N15/S56/s02/T1.002,pick and place,bowl,"[172, 189]",pick up bowl,17
+ZY20210800004/H4/C7/N15/S56/s02/T1.003,pick and place,bowl,"[191, 254]",put down bowl,63
+ZY20210800004/H4/C3/N08/S97/s04/T2.000,open and close the display,laptop,"[33, 64]",open laptop,31
+ZY20210800004/H4/C3/N08/S97/s04/T2.001,open and close the display,laptop,"[66, 128]",put down laptop,62
+ZY20210800004/H4/C3/N08/S97/s04/T2.002,open and close the display,laptop,"[167, 180]",pick up laptop,13
+ZY20210800004/H4/C3/N08/S97/s04/T2.003,open and close the display,laptop,"[181, 209]",carry laptop,28
+ZY20210800004/H4/C3/N08/S97/s04/T2.004,open and close the display,laptop,"[211, 278]",put down laptop,67
+ZY20210800001/H1/C1/N19/S100/s02/T2.001,push toy car,toy car,"[53, 111]",carry toy car,58
+ZY20210800001/H1/C1/N19/S100/s02/T2.002,push toy car,toy car,"[113, 142]",put down toy car,29
+ZY20210800001/H1/C1/N19/S100/s02/T2.003,push toy car,toy car,"[172, 190]",push toy car,18
+ZY20210800001/H1/C1/N19/S100/s02/T2.004,push toy car,toy car,"[192, 211]",pull toy car,19
+ZY20210800001/H1/C1/N19/S100/s02/T2.005,push toy car,toy car,"[244, 262]",push toy car,18
+ZY20210800001/H1/C1/N19/S100/s02/T2.006,push toy car,toy car,"[264, 280]",pull toy car,16
+ZY20210800001/H1/C1/N19/S100/s02/T1.000,pick and place,toy car,"[44, 58]",pick up toy car,14
+ZY20210800001/H1/C1/N19/S100/s02/T1.001,pick and place,toy car,"[60, 84]",carry toy car,24
+ZY20210800001/H1/C1/N19/S100/s02/T1.002,pick and place,toy car,"[87, 128]",put down toy car,41
+ZY20210800001/H1/C1/N19/S100/s02/T1.003,pick and place,toy car,"[198, 221]",pick up toy car,23
+ZY20210800001/H1/C1/N19/S100/s02/T1.004,pick and place,toy car,"[223, 247]",carry toy car,24
+ZY20210800001/H1/C1/N19/S100/s02/T1.005,pick and place,toy car,"[249, 286]",put down toy car,37

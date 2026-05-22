@@ -1,0 +1,2 @@
+dataset,sample,task_label,category_name,valid_frame_range,fine_action,valid_trajectory_number,advantage_label,success,is_teleop
+pnp_basketball,2026-03-12--19-06-57/0-234,,,"[0, 234]",pick up the ball and place it in the basket,234,1,1,0

@@ -1,0 +1,36 @@
+dataset,sample,task_label,category_name,valid_frame_range,fine_action,valid_trajectory_number
+egodex,basic_pick_place/9978/0-42,pick and place,object,"[0, 42]",pick up the brown cube from the wood table with the right hand and place it into the blue bowl,42
+egodex,basic_pick_place/9980/0-70,pick and place,object,"[0, 70]",pick up a brown tropical duck from the table and place it in the green bowl,70
+egodex,basic_pick_place/9981/0-52,pick and place,object,"[0, 52]",pick up the blue hexagon shape from the metal table with the right hand and place it onto the blue plate,52
+egodex,basic_pick_place/9982/0-54,pick and place,object,"[0, 54]",pick up the yellow dice from the table and place it in the yellow plate,54
+egodex,basic_pick_place/9983/0-91,pick and place,object,"[0, 91]",pick up the blue dice box from the turquoise bowl and place it in the blue bowl,91
+egodex,basic_pick_place/9984/0-66,pick and place,object,"[0, 66]",pick up the red crab from the gray tray and place it into the blue bowl,66
+egodex,basic_pick_place/9989/0-55,pick and place,object,"[0, 55]",pick up the pink plushie from the table with the right hand and place it onto the yellow plate,55
+egodex,basic_pick_place/9990/0-29,pick and place,object,"[0, 29]",pick up the yellow dice from the table with the right hand and place it in the green bowl,29
+hoi4d,ZY20210800004/H4/C3/N67/S380/s05/T2.000,open and close the display,laptop,"[51, 75]",pick up laptop,24
+hoi4d,ZY20210800004/H4/C3/N67/S380/s05/T2.001,open and close the display,laptop,"[77, 90]",carry laptop,13
+hoi4d,ZY20210800004/H4/C3/N67/S380/s05/T2.002,open and close the display,laptop,"[92, 112]",put down laptop,20
+hoi4d,ZY20210800004/H4/C3/N67/S380/s05/T2.003,open and close the display,laptop,"[187, 221]",open laptop,34
+hoi4d,ZY20210800004/H4/C3/N67/S380/s05/T2.004,open and close the display,laptop,"[223, 249]",close laptop,26
+hoi4d,ZY20210800002/H2/C1/N01/S336/s02/T1.000,pick and place,toy car,"[30, 74]",pick up toy car,44
+hoi4d,ZY20210800002/H2/C1/N01/S336/s02/T1.001,pick and place,toy car,"[92, 153]",put down toy car,61
+hoi4d,ZY20210800002/H2/C1/N01/S336/s02/T1.002,pick and place,toy car,"[192, 216]",pick up toy car,24
+hoi4d,ZY20210800002/H2/C1/N01/S336/s02/T1.003,pick and place,toy car,"[218, 285]",put down toy car,67
+arti4d,rh201/scene_2025-04-24-19-18-42/1615-1640,interact with drawer,drawer,"[1615, 1640]",open drawer,25
+arti4d,rh201/scene_2025-04-24-19-21-50/545-567,interact with drawer,drawer,"[545, 567]",open drawer,22
+arti4d,rh201/scene_2025-04-24-19-21-50/698-725,interact with drawer,drawer,"[698, 725]",open drawer,27
+arti4d,rh201/scene_2025-04-24-19-24-09/780-804,interact with drawer,drawer,"[780, 804]",open drawer,24
+arti4d,rh201/scene_2025-04-24-19-24-09/877-913,interact with drawer,drawer,"[877, 913]",open drawer,36
+arti4d,rh201/scene_2025-04-24-19-24-09/1116-1143,interact with drawer,drawer,"[1116, 1143]",open drawer,27
+arti4d,rh201/scene_2025-04-24-19-24-09/1424-1450,interact with drawer,drawer,"[1424, 1450]",open drawer,26
+arti4d,rh201/scene_2025-04-24-19-24-09/1882-1907,interact with drawer,drawer,"[1882, 1907]",open drawer,25
+mrl4d,wipe_table/2026-04-08--16-25-12/0-117,interact with object,object,"[0, 117]",wipe table,117
+mrl4d,wipe_table/2026-04-08--16-25-24/0-75,interact with object,object,"[0, 75]",wipe table,75
+mrl4d,wipe_table/2026-04-08--16-25-46/0-69,interact with object,object,"[0, 69]",wipe table,69
+mrl4d,pnp_microwave/2026-04-08--16-17-13/0-61,interact with object,object,"[0, 61]",close microwave,61
+mrl4d,pnp_microwave/2026-04-08--16-17-25/0-46,interact with object,object,"[0, 46]",open microwave,46
+mrl4d,pnp_microwave/2026-04-08--16-17-32/0-46,interact with object,object,"[0, 46]",close microwave,46
+mrl4d,pnp_microwave/2026-04-08--16-17-39/0-40,interact with object,object,"[0, 40]",open microwave,40
+mrl4d,pnp_microwave/2026-04-08--16-17-47/0-51,interact with object,object,"[0, 51]",close microwave,51
+mrl4d,pnp_microwave/2026-04-08--16-17-56/0-38,interact with object,object,"[0, 38]",open microwave,38
+mrl4d,pnp_microwave/2026-04-08--16-18-04/0-34,interact with object,object,"[0, 34]",close microwave,34

@@ -1,0 +1,34 @@
+sample,task_label,category_name,valid_frame_range,fine_action,valid_trajectory_number
+ZY20210800004/H4/C3/N67/S380/s05/T2.000,open and close the display,laptop,"[51, 75]",pick up laptop,24
+ZY20210800004/H4/C3/N67/S380/s05/T2.001,open and close the display,laptop,"[77, 90]",carry laptop,13
+ZY20210800004/H4/C3/N67/S380/s05/T2.002,open and close the display,laptop,"[92, 112]",put down laptop,20
+ZY20210800004/H4/C3/N67/S380/s05/T2.003,open and close the display,laptop,"[187, 221]",open laptop,34
+ZY20210800004/H4/C3/N67/S380/s05/T2.004,open and close the display,laptop,"[223, 249]",close laptop,26
+ZY20210800004/H4/C7/N15/S56/s02/T1.000,pick and place,bowl,"[34, 74]",pick up bowl,40
+ZY20210800004/H4/C7/N15/S56/s02/T1.001,pick and place,bowl,"[76, 127]",put down bowl,51
+ZY20210800004/H4/C7/N15/S56/s02/T1.002,pick and place,bowl,"[172, 189]",pick up bowl,17
+ZY20210800004/H4/C7/N15/S56/s02/T1.003,pick and place,bowl,"[191, 254]",put down bowl,63
+ZY20210800004/H4/C3/N08/S97/s04/T2.001,open and close the display,laptop,"[66, 128]",put down laptop,62
+ZY20210800004/H4/C3/N08/S97/s04/T2.002,open and close the display,laptop,"[167, 180]",pick up laptop,13
+ZY20210800004/H4/C3/N08/S97/s04/T2.003,open and close the display,laptop,"[181, 209]",carry laptop,28
+ZY20210800004/H4/C3/N08/S97/s04/T2.004,open and close the display,laptop,"[211, 278]",put down laptop,67
+ZY20210800002/H2/C1/N01/S336/s02/T1.000,pick and place,toy car,"[30, 74]",pick up toy car,44
+ZY20210800002/H2/C1/N01/S336/s02/T1.001,pick and place,toy car,"[92, 153]",put down toy car,61
+ZY20210800002/H2/C1/N01/S336/s02/T1.002,pick and place,toy car,"[192, 216]",pick up toy car,24
+ZY20210800002/H2/C1/N01/S336/s02/T1.003,pick and place,toy car,"[218, 285]",put down toy car,67
+ZY20210800002/H2/C1/N01/S336/s02/T1.004,pick and place,toy car,"[76, 90]",carry toy car,14
+ZY20210800003/H3/C20/N16/S282/s03/T2.000,pick and place to the original position,chair,"[108, 131]",put down chair,23
+ZY20210800003/H3/C20/N16/S282/s03/T2.001,pick and place to the original position,chair,"[205, 230]",put down chair,25
+ZY20210800001/H1/C1/N19/S100/s02/T2.000,push toy car,toy car,"[41, 51]",pick up toy car,10
+ZY20210800001/H1/C1/N19/S100/s02/T2.001,push toy car,toy car,"[53, 111]",carry toy car,58
+ZY20210800001/H1/C1/N19/S100/s02/T2.002,push toy car,toy car,"[113, 142]",put down toy car,29
+ZY20210800001/H1/C1/N19/S100/s02/T2.003,push toy car,toy car,"[172, 190]",push toy car,18
+ZY20210800001/H1/C1/N19/S100/s02/T2.004,push toy car,toy car,"[192, 211]",pull toy car,19
+ZY20210800001/H1/C1/N19/S100/s02/T2.005,push toy car,toy car,"[244, 262]",push toy car,18
+ZY20210800001/H1/C1/N19/S100/s02/T2.006,push toy car,toy car,"[264, 280]",pull toy car,16
+ZY20210800001/H1/C1/N19/S100/s02/T1.000,pick and place,toy car,"[44, 58]",pick up toy car,14
+ZY20210800001/H1/C1/N19/S100/s02/T1.001,pick and place,toy car,"[60, 84]",carry toy car,24
+ZY20210800001/H1/C1/N19/S100/s02/T1.002,pick and place,toy car,"[87, 128]",put down toy car,41
+ZY20210800001/H1/C1/N19/S100/s02/T1.003,pick and place,toy car,"[198, 221]",pick up toy car,23
+ZY20210800001/H1/C1/N19/S100/s02/T1.004,pick and place,toy car,"[223, 247]",carry toy car,24
+ZY20210800001/H1/C1/N19/S100/s02/T1.005,pick and place,toy car,"[249, 286]",put down toy car,37

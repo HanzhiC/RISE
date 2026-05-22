@@ -1,0 +1,6 @@
+dataset,sample,task_label,category_name,valid_frame_range,fine_action,valid_trajectory_number
+PnPCabToCounter,demo_000049/0-174,interact with object,object,"[0, 174]",pick the yogurt from the cabinet and place it on the counter,174
+PnPCabToCounter,demo_000050/0-158,interact with object,object,"[0, 158]",pick the boxed drink from the cabinet and place it on the counter,158
+PnPCabToCounter,demo_000051/0-166,interact with object,object,"[0, 166]",pick the bell pepper from the cabinet and place it on the counter,166
+PnPCabToCounter,demo_000052/0-140,interact with object,object,"[0, 140]",pick the kiwi from the cabinet and place it on the counter,140
+PnPCabToCounter,demo_000053/0-131,interact with object,object,"[0, 131]",pick the avocado from the cabinet and place it on the counter,131

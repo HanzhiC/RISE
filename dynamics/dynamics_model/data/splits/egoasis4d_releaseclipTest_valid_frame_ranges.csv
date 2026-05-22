@@ -1,0 +1,1366 @@
+dataset,sample,task_label,category_name,valid_frame_range,fine_action,valid_trajectory_number
+hoi4d,ZY20210800002/H2/C1/N34/S94/s02/T1.004,pick and place,toy car,"[168, 204]",carry toy car,36
+hoi4d,ZY20210800004/H4/C1/N41/S190/s03/T3.001,put it in the drawer,toy car,"[68, 116]",carry toy car,48
+hoi4d,ZY20210800004/H4/C1/N13/S237/s04/T1.001,pick and place,toy car,"[76, 103]",carry toy car,27
+hoi4d,ZY20210800004/H4/C1/N37/S190/s02/T3.001,put it in the drawer,toy car,"[66, 121]",carry toy car,55
+hoi4d,ZY20210800004/H4/C1/N46/S240/s02/T2.003,push toy car,toy car,"[183, 197]",carry toy car,14
+hoi4d,ZY20210800001/H1/C1/N30/S104/s04/T2.001,push toy car,toy car,"[54, 86]",carry toy car,32
+hoi4d,ZY20210800004/H4/C1/N19/S194/s05/T4.004,take it out of the drawer,toy car,"[217, 255]",carry toy car,38
+hoi4d,ZY20210800004/H4/C1/N24/S242/s04/T3.001,put it in the drawer,toy car,"[65, 115]",carry toy car,50
+hoi4d,ZY20210800003/H3/C1/N24/S87/s04/T1.004,pick and place,toy car,"[209, 243]",carry toy car,34
+hoi4d,ZY20210800004/H4/C1/N05/S237/s02/T1.001,pick and place,toy car,"[72, 96]",carry toy car,24
+hoi4d,ZY20210800004/H4/C1/N29/S244/s03/T4.001,take it out of the drawer,toy car,"[88, 105]",carry toy car,17
+hoi4d,ZY20210800001/H1/C1/N24/S100/s01/T1.001,pick and place,toy car,"[71, 104]",carry toy car,33
+hoi4d,ZY20210800004/H4/C1/N37/S239/s05/T2.003,push toy car,toy car,"[173, 183]",carry toy car,10
+hoi4d,ZY20210800004/H4/C1/N36/S190/s02/T3.001,put it in the drawer,toy car,"[67, 115]",carry toy car,48
+hoi4d,ZY20210800001/H1/C4/N63/S385/s02/T2.003,open and close the door,storage furniture,"[229, 257]",close storage furniture,28
+hoi4d,ZY20210800003/H3/C4/N44/S48/s02/T2.001,open and close the door,storage furniture,"[98, 138]",close storage furniture,40
+hoi4d,ZY20210800004/H4/C4/N01/S254/s01/T1.001,open and close the drawer,storage furniture,"[89, 119]",close storage furniture,30
+hoi4d,ZY20210800001/H1/C4/N70/S386/s01/T1.003,open and close the drawer,storage furniture,"[217, 243]",close storage furniture,26
+hoi4d,ZY20210800004/H4/C4/N05/S260/s04/T2.003,open and close the door,storage furniture,"[233, 274]",close storage furniture,41
+hoi4d,ZY20210800002/H2/C4/N08/S105/s03/T2.001,open and close the door,storage furniture,"[86, 132]",close storage furniture,46
+hoi4d,ZY20210800002/H2/C4/N10/S105/s02/T1.001,open and close the drawer,storage furniture,"[83, 134]",close storage furniture,51
+hoi4d,ZY20210800001/H1/C4/N05/S20/s03/T1.003,open and close the drawer,storage furniture,"[264, 276]",close storage furniture,12
+hoi4d,ZY20210800001/H1/C4/N70/S386/s02/T2.001,open and close the door,storage furniture,"[96, 124]",close storage furniture,28
+hoi4d,ZY20210800001/H1/C4/N65/S391/s01/T1.003,open and close the drawer,storage furniture,"[219, 241]",close storage furniture,22
+hoi4d,ZY20210800001/H1/C4/N65/S391/s02/T2.001,open and close the door,storage furniture,"[99, 131]",close storage furniture,32
+hoi4d,ZY20210800001/H1/C4/N64/S385/s02/T2.003,open and close the door,storage furniture,"[238, 261]",close storage furniture,23
+hoi4d,ZY20210800001/H1/C4/N40/S22/s01/T1.003,open and close the drawer,storage furniture,"[254, 274]",close storage furniture,20
+hoi4d,ZY20210800001/H1/C7/N24/S276/s04/T3.002,take it out of the drawer,bowl,"[85, 99]",put down bowl,14
+hoi4d,ZY20210800002/H2/C7/N28/S81/s01/T1.003,pick and place,bowl,"[203, 242]",put down bowl,39
+hoi4d,ZY20210800001/H1/C7/N29/S60/s02/T1.005,pick and place,bowl,"[233, 258]",put down bowl,25
+hoi4d,ZY20210800001/H1/C7/N16/S59/s02/T1.005,pick and place,bowl,"[217, 260]",put down bowl,43
+hoi4d,ZY20210800001/H1/C7/N11/S276/s01/T3.005,take it out of the drawer,bowl,"[222, 240]",put down bowl,18
+hoi4d,ZY20210800001/H1/C7/N36/S61/s02/T2.002,put it in the drawer,bowl,"[79, 132]",put down bowl,53
+hoi4d,ZY20210800002/H2/C7/N16/S64/s03/T1.001,pick and place,bowl,"[77, 118]",put down bowl,41
+hoi4d,ZY20210800001/H1/C7/N26/S276/s04/T4.005,take the ball out of the bowl,bowl,"[234, 250]",put down bowl,16
+hoi4d,ZY20210800001/H1/C7/N36/S272/s04/T2.005,put it in the drawer,bowl,"[208, 250]",put down bowl,42
+hoi4d,ZY20210800001/H1/C7/N40/S272/s05/T2.002,put it in the drawer,bowl,"[128, 151]",put down bowl,23
+hoi4d,ZY20210800001/H1/C7/N26/S272/s02/T2.005,put it in the drawer,bowl,"[211, 258]",put down bowl,47
+hoi4d,ZY20210800002/H2/C7/N29/S81/s02/T1.001,pick and place,bowl,"[87, 128]",put down bowl,41
+hoi4d,ZY20210800001/H1/C7/N45/S285/s02/T6.005,pick and place (with ball),bowl,"[240, 271]",put down bowl,31
+hoi4d,ZY20210800001/H1/C7/N29/S276/s05/T4.005,take the ball out of the bowl,bowl,"[251, 269]",put down bowl,18
+hoi4d,ZY20210800002/H2/C7/N12/S64/s01/T3.002,take it out of the drawer,bowl,"[66, 99]",put down bowl,33
+hoi4d,ZY20210800001/H1/C7/N30/S60/s04/T1.002,pick and place,bowl,"[118, 178]",put down bowl,60
+hoi4d,ZY20210800001/H1/C7/N28/S60/s02/T1.002,pick and place,bowl,"[110, 147]",put down bowl,37
+hoi4d,ZY20210800001/H1/C7/N24/S272/s01/T1.002,pick and place,bowl,"[96, 129]",put down bowl,33
+hoi4d,ZY20210800001/H1/C7/N42/S278/s03/T4.005,take the ball out of the bowl,bowl,"[240, 257]",put down bowl,17
+hoi4d,ZY20210800004/H4/C13/N36/S184/s03/T4.004,cut apple,knife,"[215, 248]",cut knife,33
+hoi4d,ZY20210800003/H3/C13/N39/S200/s04/T4.005,cut apple,knife,"[201, 226]",cut knife,25
+hoi4d,ZY20210800001/H1/C13/N11/S179/s03/T4.004,cut apple,knife,"[210, 255]",cut knife,45
+hoi4d,ZY20210800001/H1/C4/N33/S22/s02/T1.002,open and close the drawer,storage furniture,"[178, 196]",open storage furniture,18
+hoi4d,ZY20210800003/H3/C4/N39/S53/s05/T1.000,open and close the drawer,storage furniture,"[57, 95]",open storage furniture,38
+hoi4d,ZY20210800001/H1/C4/N61/S388/s05/T4.003,put the drink in the drawer,storage furniture,"[199, 221]",open storage furniture,22
+hoi4d,ZY20210800003/H3/C4/N45/S48/s03/T1.002,open and close the drawer,storage furniture,"[157, 206]",open storage furniture,49
+hoi4d,ZY20210800001/H1/C4/N67/S391/s02/T2.000,open and close the door,storage furniture,"[89, 120]",open storage furniture,31
+hoi4d,ZY20210800004/H4/C4/N49/S260/s03/T2.000,open and close the door,storage furniture,"[54, 93]",open storage furniture,39
+hoi4d,ZY20210800003/H3/C4/N45/S48/s03/T1.000,open and close the drawer,storage furniture,"[37, 85]",open storage furniture,48
+hoi4d,ZY20210800001/H1/C4/N69/S392/s01/T1.002,open and close the drawer,storage furniture,"[196, 223]",open storage furniture,27
+hoi4d,ZY20210800004/H4/C4/N27/S65/s01/T4.003,put the drink in the drawer,storage furniture,"[152, 190]",open storage furniture,38
+hoi4d,ZY20210800001/H1/C4/N73/S386/s05/T2.000,open and close the door,storage furniture,"[69, 97]",open storage furniture,28
+hoi4d,ZY20210800001/H1/C4/N35/S21/s04/T2.000,open and close the door,storage furniture,"[45, 89]",open storage furniture,44
+hoi4d,ZY20210800004/H4/C4/N43/S260/s01/T2.002,open and close the door,storage furniture,"[173, 202]",open storage furniture,29
+hoi4d,ZY20210800004/H4/C4/N49/S260/s03/T2.002,open and close the door,storage furniture,"[198, 228]",open storage furniture,30
+hoi4d,ZY20210800002/H2/C18/N27/S183/s01/T2.003,bind the paper,stapler,"[163, 166]",pick up stapler,3
+hoi4d,ZY20210800003/H3/C18/N31/S195/s02/T2.006,bind the paper,stapler,"[220, 224]",pick up stapler,4
+hoi4d,ZY20210800002/H2/C18/N46/S135/s01/T1.002,pick and place,stapler,"[220, 235]",pick up stapler,15
+hoi4d,ZY20210800002/H2/C18/N47/S241/s01/T2.000,bind the paper,stapler,"[58, 62]",pick up stapler,4
+hoi4d,ZY20210800001/H1/C18/N43/S147/s05/T1.003,pick and place,stapler,"[192, 202]",pick up stapler,10
+hoi4d,ZY20210800003/H3/C18/N35/S195/s03/T2.003,bind the paper,stapler,"[210, 212]",pick up stapler,2
+hoi4d,ZY20210800002/H2/C18/N32/S131/s02/T1.000,pick and place,stapler,"[79, 94]",pick up stapler,15
+hoi4d,ZY20210800001/H1/C18/N48/S150/s01/T1.003,pick and place,stapler,"[183, 194]",pick up stapler,11
+hoi4d,ZY20210800001/H1/C18/N17/S199/s05/T2.003,bind the paper,stapler,"[217, 221]",pick up stapler,4
+hoi4d,ZY20210800003/H3/C18/N30/S195/s02/T2.005,bind the paper,stapler,"[208, 212]",pick up stapler,4
+hoi4d,ZY20210800001/H1/C18/N38/S394/s01/T1.000,pick and place,stapler,"[60, 73]",pick up stapler,13
+hoi4d,ZY20210800004/H4/C18/N32/S181/s03/T2.000,bind the paper,stapler,"[63, 68]",pick up stapler,5
+hoi4d,ZY20210800004/H4/C18/N48/S364/s03/T2.000,bind the paper,stapler,"[53, 63]",pick up stapler,10
+hoi4d,ZY20210800004/H4/C18/N28/S181/s02/T2.000,bind the paper,stapler,"[51, 56]",pick up stapler,5
+hoi4d,ZY20210800003/H3/C18/N40/S195/s04/T2.006,bind the paper,stapler,"[233, 238]",pick up stapler,5
+hoi4d,ZY20210800001/H1/C18/N30/S147/s02/T1.000,pick and place,stapler,"[57, 71]",pick up stapler,14
+hoi4d,ZY20210800003/H3/C18/N41/S195/s04/T2.003,bind the paper,stapler,"[166, 172]",pick up stapler,6
+hoi4d,ZY20210800002/H2/C18/N13/S241/s03/T2.000,bind the paper,stapler,"[52, 57]",pick up stapler,5
+hoi4d,ZY20210800001/H1/C18/N42/S147/s05/T1.000,pick and place,stapler,"[58, 75]",pick up stapler,17
+hoi4d,ZY20210800001/H1/C18/N20/S199/s05/T2.005,bind the paper,stapler,"[260, 263]",pick up stapler,3
+hoi4d,ZY20210800002/H2/C18/N47/S135/s01/T1.002,pick and place,stapler,"[208, 226]",pick up stapler,18
+hoi4d,ZY20210800004/H4/C3/N53/S373/s03/T2.001,open and close the display,laptop,"[70, 87]",carry laptop,17
+hoi4d,ZY20210800001/H1/C3/N40/S114/s02/T1.004,pick and place,laptop,"[238, 262]",carry laptop,24
+hoi4d,ZY20210800004/H4/C3/N59/S373/s03/T1.003,pick and place,laptop,"[221, 246]",carry laptop,25
+hoi4d,ZY20210800002/H2/C3/N17/S353/s02/T1.001,pick and place,laptop,"[73, 88]",carry laptop,15
+hoi4d,ZY20210800003/H3/C3/N36/S282/s04/T2.001,open and close the display,laptop,"[83, 112]",carry laptop,29
+hoi4d,ZY20210800004/H4/C3/N68/S380/s02/T1.001,pick and place,laptop,"[88, 104]",carry laptop,16
+hoi4d,ZY20210800004/H4/C3/N67/S380/s03/T2.001,open and close the display,laptop,"[64, 76]",carry laptop,12
+hoi4d,ZY20210800004/H4/C3/N52/S374/s03/T2.001,open and close the display,laptop,"[82, 104]",carry laptop,22
+hoi4d,ZY20210800004/H4/C3/N66/S380/s02/T1.004,pick and place,laptop,"[201, 220]",carry laptop,19
+hoi4d,ZY20210800004/H4/C3/N64/S379/s03/T2.001,open and close the display,laptop,"[71, 86]",carry laptop,15
+hoi4d,ZY20210800002/H2/C5/N45/S39/s05/T2.003,pour all the water into a mug,bottle,"[142, 189]",carry bottle,47
+hoi4d,ZY20210800004/H4/C5/N16/S109/s01/T5.004,reposition the bottle,bottle,"[218, 234]",carry bottle,16
+hoi4d,ZY20210800002/H2/C5/N42/S265/s03/T4.001,take it out of the drawer,bottle,"[77, 88]",carry bottle,11
+hoi4d,ZY20210800002/H2/C5/N46/S265/s04/T4.001,take it out of the drawer,bottle,"[83, 98]",carry bottle,15
+hoi4d,ZY20210800002/H2/C5/N22/S263/s03/T3.001,put it in the drawer,bottle,"[76, 96]",carry bottle,20
+hoi4d,ZY20210800002/H2/C5/N22/S258/s01/T1.001,pick and place,bottle,"[68, 85]",carry bottle,17
+hoi4d,ZY20210800002/H2/C5/N24/S263/s04/T4.001,take it out of the drawer,bottle,"[71, 82]",carry bottle,11
+hoi4d,ZY20210800002/H2/C5/N29/S263/s05/T4.001,take it out of the drawer,bottle,"[82, 93]",carry bottle,11
+hoi4d,ZY20210800003/H3/C5/N18/S58/s04/T1.001,pick and place,bottle,"[68, 100]",carry bottle,32
+hoi4d,ZY20210800004/H4/C5/N20/S109/s03/T5.001,reposition the bottle,bottle,"[77, 111]",carry bottle,34
+hoi4d,ZY20210800002/H2/C5/N24/S258/s01/T1.004,pick and place,bottle,"[207, 223]",carry bottle,16
+hoi4d,ZY20210800004/H4/C5/N14/S56/s02/T1.004,pick and place,bottle,"[188, 205]",carry bottle,17
+hoi4d,ZY20210800002/H2/C5/N41/S269/s01/T6.004,pick and place (with water),bottle,"[205, 226]",carry bottle,21
+hoi4d,ZY20210800004/H4/C5/N20/S109/s03/T5.004,reposition the bottle,bottle,"[226, 236]",carry bottle,10
+hoi4d,ZY20210800002/H2/C5/N35/S258/s04/T2.001,pour all the water into a mug,bottle,"[83, 104]",carry bottle,21
+hoi4d,ZY20210800004/H4/C3/N61/S379/s03/T2.002,open and close the display,laptop,"[100, 124]",put down laptop,24
+hoi4d,ZY20210800001/H1/C3/N08/S28/s05/T2.003,open and close the display,laptop,"[243, 286]",put down laptop,43
+hoi4d,ZY20210800003/H3/C3/N23/S277/s05/T2.002,open and close the display,laptop,"[101, 124]",put down laptop,23
+hoi4d,ZY20210800003/H3/C3/N24/S277/s05/T2.002,open and close the display,laptop,"[94, 119]",put down laptop,25
+hoi4d,ZY20210800004/H4/C3/N61/S379/s05/T2.002,open and close the display,laptop,"[98, 121]",put down laptop,23
+hoi4d,ZY20210800004/H4/C3/N68/S380/s01/T1.002,pick and place,laptop,"[91, 130]",put down laptop,39
+hoi4d,ZY20210800004/H4/C3/N55/S374/s01/T1.004,pick and place,laptop,"[245, 269]",put down laptop,24
+hoi4d,ZY20210800001/H1/C3/N25/S19/s02/T1.003,pick and place,laptop,"[247, 287]",put down laptop,40
+hoi4d,ZY20210800004/H4/C3/N56/S373/s02/T1.002,pick and place,laptop,"[115, 145]",put down laptop,30
+hoi4d,ZY20210800004/H4/C3/N68/S380/s02/T1.005,pick and place,laptop,"[229, 250]",put down laptop,21
+hoi4d,ZY20210800004/H4/C3/N46/S111/s05/T1.005,pick and place,laptop,"[221, 278]",put down laptop,57
+hoi4d,ZY20210800003/H3/C20/N13/S284/s05/T4.001,pick and place to a new position,chair,"[220, 239]",carry chair,19
+hoi4d,ZY20210800002/H2/C20/N13/S275/s05/T4.001,pick and place to a new position,chair,"[221, 240]",carry chair,19
+hoi4d,ZY20210800001/H1/C20/N31/S295/s04/T4.001,pick and place to a new position,chair,"[183, 203]",carry chair,20
+hoi4d,ZY20210800004/H4/C20/N38/S304/s03/T4.001,pick and place to a new position,chair,"[214, 235]",carry chair,21
+hoi4d,ZY20210800001/H1/C18/N22/S202/s01/T2.007,bind the paper,stapler,"[254, 261]",put down stapler,7
+hoi4d,ZY20210800004/H4/C18/N12/S178/s03/T2.002,bind the paper,stapler,"[104, 114]",put down stapler,10
+hoi4d,ZY20210800001/H1/C18/N31/S147/s02/T1.002,pick and place,stapler,"[103, 136]",put down stapler,33
+hoi4d,ZY20210800003/H3/C18/N42/S195/s05/T2.002,bind the paper,stapler,"[98, 110]",put down stapler,12
+hoi4d,ZY20210800003/H3/C18/N23/S197/s03/T2.004,bind the paper,stapler,"[174, 179]",put down stapler,5
+hoi4d,ZY20210800001/H1/C18/N19/S150/s02/T1.005,pick and place,stapler,"[234, 259]",put down stapler,25
+hoi4d,ZY20210800004/H4/C18/N18/S160/s05/T1.001,pick and place,stapler,"[76, 91]",put down stapler,15
+hoi4d,ZY20210800003/H3/C18/N46/S197/s01/T1.007,pick and place,stapler,"[239, 242]",put down stapler,3
+hoi4d,ZY20210800003/H3/C18/N32/S195/s02/T2.007,bind the paper,stapler,"[232, 235]",put down stapler,3
+hoi4d,ZY20210800001/H1/C18/N32/S147/s02/T1.005,pick and place,stapler,"[242, 268]",put down stapler,26
+hoi4d,ZY20210800003/H3/C18/N30/S195/s02/T2.004,bind the paper,stapler,"[173, 179]",put down stapler,6
+hoi4d,ZY20210800001/H1/C18/N25/S202/s02/T2.006,bind the paper,stapler,"[253, 256]",put down stapler,3
+hoi4d,ZY20210800001/H1/C18/N25/S202/s02/T2.004,bind the paper,stapler,"[212, 215]",put down stapler,3
+hoi4d,ZY20210800003/H3/C18/N27/S195/s01/T2.005,bind the paper,stapler,"[173, 179]",put down stapler,6
+hoi4d,ZY20210800002/H2/C18/N40/S131/s04/T1.003,pick and place,stapler,"[225, 254]",put down stapler,29
+hoi4d,ZY20210800002/H2/C18/N35/S131/s03/T1.001,pick and place,stapler,"[83, 109]",put down stapler,26
+hoi4d,ZY20210800001/H1/C18/N23/S202/s01/T2.006,bind the paper,stapler,"[260, 265]",put down stapler,5
+hoi4d,ZY20210800003/H3/C18/N32/S195/s02/T2.005,bind the paper,stapler,"[190, 194]",put down stapler,4
+hoi4d,ZY20210800002/H2/C18/N42/S183/s05/T2.005,bind the paper,stapler,"[193, 210]",put down stapler,17
+hoi4d,ZY20210800003/H3/C18/N37/S195/s03/T2.005,bind the paper,stapler,"[218, 221]",put down stapler,3
+hoi4d,ZY20210800004/H4/C18/N21/S181/s01/T2.002,bind the paper,stapler,"[110, 123]",put down stapler,13
+hoi4d,ZY20210800002/H2/C5/N39/S258/s05/T2.004,pour all the water into a mug,bottle,"[180, 219]",dump bottle,39
+hoi4d,ZY20210800003/H3/C6/N04/S251/s01/T2.002,put something in it,safe,"[176, 201]",open safe,25
+hoi4d,ZY20210800002/H2/C6/N05/S42/s03/T1.003,open and close the door,safe,"[189, 240]",open safe,51
+hoi4d,ZY20210800002/H2/C6/N09/S42/s05/T1.002,open and close the door,safe,"[176, 224]",open safe,48
+hoi4d,ZY20210800003/H3/C6/N02/S85/s04/T1.002,open and close the door,safe,"[192, 245]",open safe,53
+hoi4d,ZY20210800004/H4/C6/N15/S82/s03/T2.000,put something in it,safe,"[34, 63]",open safe,29
+hoi4d,ZY20210800002/H2/C6/N03/S245/s01/T1.000,open and close the door,safe,"[49, 86]",open safe,37
+hoi4d,ZY20210800001/H1/C6/N21/S248/s01/T2.002,put something in it,safe,"[192, 221]",open safe,29
+hoi4d,ZY20210800001/H1/C6/N33/S87/s03/T2.000,put something in it,safe,"[35, 89]",open safe,54
+hoi4d,ZY20210800002/H2/C6/N16/S245/s04/T2.002,put something in it,safe,"[172, 203]",open safe,31
+hoi4d,ZY20210800004/H4/C6/N01/S249/s01/T2.000,put something in it,safe,"[65, 84]",open safe,19
+hoi4d,ZY20210800004/H4/C6/N52/S378/s01/T1.001,open and close the door,safe,"[122, 141]",open safe,19
+hoi4d,ZY20210800002/H2/C6/N15/S245/s04/T2.000,put something in it,safe,"[47, 84]",open safe,37
+hoi4d,ZY20210800003/H3/C6/N28/S82/s05/T2.000,put something in it,safe,"[31, 74]",open safe,43
+hoi4d,ZY20210800004/H4/C6/N04/S249/s01/T2.002,put something in it,safe,"[191, 215]",open safe,24
+hoi4d,ZY20210800004/H4/C6/N51/S378/s02/T2.001,put something in it,safe,"[112, 129]",open safe,17
+hoi4d,ZY20210800002/H2/C6/N01/S245/s01/T1.000,open and close the door,safe,"[56, 101]",open safe,45
+hoi4d,ZY20210800004/H4/C3/N56/S375/s01/T2.004,open and close the display,laptop,"[244, 271]",close laptop,27
+hoi4d,ZY20210800003/H3/C3/N31/S282/s03/T2.005,open and close the display,laptop,"[229, 257]",close laptop,28
+hoi4d,ZY20210800004/H4/C3/N68/S380/s05/T2.004,open and close the display,laptop,"[234, 262]",close laptop,28
+hoi4d,ZY20210800001/H1/C3/N23/S19/s01/T2.001,open and close the display,laptop,"[129, 181]",close laptop,52
+hoi4d,ZY20210800003/H3/C3/N26/S279/s01/T2.005,open and close the display,laptop,"[240, 272]",close laptop,32
+hoi4d,ZY20210800003/H3/C6/N05/S85/s05/T2.003,put something in it,safe,"[238, 252]",put down safe,14
+hoi4d,ZY20210800003/H3/C6/N05/S251/s02/T2.005,put something in it,safe,"[216, 237]",put down safe,21
+hoi4d,ZY20210800004/H4/C6/N07/S82/s04/T2.005,put something in it,safe,"[242, 259]",put down safe,17
+hoi4d,ZY20210800001/H1/C6/N24/S248/s01/T2.005,put something in it,safe,"[242, 251]",put down safe,9
+hoi4d,ZY20210800004/H4/C6/N09/S249/s03/T2.005,put something in it,safe,"[237, 250]",put down safe,13
+hoi4d,ZY20210800003/H3/C4/N42/S48/s01/T2.003,open and close the door,storage furniture,"[242, 267]",put down storage furniture,25
+hoi4d,ZY20210800001/H1/C4/N67/S391/s05/T4.005,put the drink in the drawer,storage furniture,"[230, 243]",put down storage furniture,13
+hoi4d,ZY20210800004/H4/C4/N48/S217/s05/T3.004,put the drink in the door,storage furniture,"[236, 269]",put down storage furniture,33
+hoi4d,ZY20210800001/H1/C4/N72/S386/s03/T3.004,put the drink in the door,storage furniture,"[186, 223]",put down storage furniture,37
+hoi4d,ZY20210800001/H1/C4/N70/S386/s04/T4.005,put the drink in the drawer,storage furniture,"[227, 240]",put down storage furniture,13
+hoi4d,ZY20210800003/H3/C4/N03/S50/s05/T3.002,put the drink in the door,storage furniture,"[85, 190]",put down storage furniture,105
+hoi4d,ZY20210800001/H1/C4/N69/S392/s04/T4.002,put the drink in the drawer,storage furniture,"[142, 152]",put down storage furniture,10
+hoi4d,ZY20210800001/H1/C9/N33/S35/s02/T2.002,cut something,scissors,"[96, 105]",cut scissors,9
+hoi4d,ZY20210800003/H3/C9/N29/S306/s05/T2.004,cut something,scissors,"[194, 210]",cut scissors,16
+hoi4d,ZY20210800003/H3/C9/N22/S300/s04/T2.005,cut something,scissors,"[206, 221]",cut scissors,15
+hoi4d,ZY20210800003/H3/C9/N44/S303/s04/T2.004,cut something,scissors,"[206, 223]",cut scissors,17
+hoi4d,ZY20210800001/H1/C9/N42/S33/s05/T2.002,cut something,scissors,"[102, 116]",cut scissors,14
+hoi4d,ZY20210800003/H3/C9/N33/S303/s02/T2.004,cut something,scissors,"[226, 242]",cut scissors,16
+hoi4d,ZY20210800004/H4/C12/N30/S184/s02/T2.001,pour water into a mug,kettle,"[64, 94]",dump kettle,30
+hoi4d,ZY20210800003/H3/C12/N14/S206/s04/T2.001,pour water into a mug,kettle,"[61, 104]",dump kettle,43
+hoi4d,ZY20210800003/H3/C12/N15/S206/s04/T2.001,pour water into a mug,kettle,"[69, 103]",dump kettle,34
+hoi4d,ZY20210800004/H4/C12/N13/S186/s02/T2.001,pour water into a mug,kettle,"[62, 99]",dump kettle,37
+hoi4d,ZY20210800003/H3/C12/N24/S342/s01/T2.001,pour water into a mug,kettle,"[50, 131]",dump kettle,81
+hoi4d,ZY20210800002/H2/C5/N48/S261/s02/T2.000,pour all the water into a mug,bottle,"[58, 76]",pick up bottle,18
+hoi4d,ZY20210800002/H2/C5/N35/S268/s04/T6.003,pick and place (with water),bottle,"[182, 192]",pick up bottle,10
+hoi4d,ZY20210800002/H2/C5/N35/S41/s05/T1.000,pick and place,bottle,"[36, 83]",pick up bottle,47
+hoi4d,ZY20210800002/H2/C5/N49/S37/s02/T2.000,pour all the water into a mug,bottle,"[38, 79]",pick up bottle,41
+hoi4d,ZY20210800002/H2/C5/N16/S267/s04/T5.002,reposition the bottle,bottle,"[193, 202]",pick up bottle,9
+hoi4d,ZY20210800004/H4/C5/N15/S56/s02/T1.000,pick and place,bottle,"[47, 61]",pick up bottle,14
+hoi4d,ZY20210800002/H2/C5/N38/S268/s05/T6.003,pick and place (with water),bottle,"[189, 197]",pick up bottle,8
+hoi4d,ZY20210800002/H2/C5/N12/S267/s03/T5.002,reposition the bottle,bottle,"[187, 194]",pick up bottle,7
+hoi4d,ZY20210800002/H2/C5/N40/S265/s03/T4.003,take it out of the drawer,bottle,"[191, 208]",pick up bottle,17
+hoi4d,ZY20210800002/H2/C5/N34/S268/s04/T6.000,pick and place (with water),bottle,"[59, 71]",pick up bottle,12
+hoi4d,ZY20210800004/H4/C5/N28/S113/s02/T5.000,reposition the bottle,bottle,"[45, 56]",pick up bottle,11
+hoi4d,ZY20210800002/H2/C5/N47/S261/s02/T2.000,pour all the water into a mug,bottle,"[55, 74]",pick up bottle,19
+hoi4d,ZY20210800002/H2/C5/N18/S267/s05/T5.000,reposition the bottle,bottle,"[73, 104]",pick up bottle,31
+hoi4d,ZY20210800003/H3/C5/N40/S60/s05/T4.003,take it out of the drawer,bottle,"[183, 188]",pick up bottle,5
+hoi4d,ZY20210800002/H2/C5/N32/S268/s03/T6.003,pick and place (with water),bottle,"[199, 205]",pick up bottle,6
+hoi4d,ZY20210800004/H4/C5/N13/S56/s01/T1.003,pick and place,bottle,"[173, 188]",pick up bottle,15
+hoi4d,ZY20210800002/H2/C5/N39/S268/s05/T6.000,pick and place (with water),bottle,"[60, 74]",pick up bottle,14
+hoi4d,ZY20210800002/H2/C5/N13/S255/s04/T1.000,pick and place,bottle,"[73, 80]",pick up bottle,7
+hoi4d,ZY20210800002/H2/C5/N18/S267/s05/T5.002,reposition the bottle,bottle,"[201, 211]",pick up bottle,10
+hoi4d,ZY20210800004/H4/C18/N20/S178/s05/T2.004,bind the paper,stapler,"[173, 176]",carry stapler,3
+hoi4d,ZY20210800001/H1/C18/N21/S150/s03/T1.001,pick and place,stapler,"[75, 107]",carry stapler,32
+hoi4d,ZY20210800002/H2/C18/N49/S241/s01/T2.004,bind the paper,stapler,"[178, 192]",carry stapler,14
+hoi4d,ZY20210800003/H3/C18/N31/S195/s02/T2.001,bind the paper,stapler,"[61, 92]",carry stapler,31
+hoi4d,ZY20210800001/H1/C18/N17/S199/s05/T2.001,bind the paper,stapler,"[72, 142]",carry stapler,70
+hoi4d,ZY20210800002/H2/C18/N13/S241/s03/T2.001,bind the paper,stapler,"[59, 74]",carry stapler,15
+hoi4d,ZY20210800003/H3/C18/N37/S195/s03/T2.001,bind the paper,stapler,"[74, 113]",carry stapler,39
+hoi4d,ZY20210800003/H3/C18/N11/S139/s03/T1.001,pick and place,stapler,"[60, 78]",carry stapler,18
+hoi4d,ZY20210800003/H3/C18/N27/S195/s01/T2.001,bind the paper,stapler,"[57, 62]",carry stapler,5
+hoi4d,ZY20210800003/H3/C18/N14/S139/s04/T1.004,pick and place,stapler,"[192, 216]",carry stapler,24
+hoi4d,ZY20210800002/H2/C18/N34/S183/s03/T2.004,bind the paper,stapler,"[183, 209]",carry stapler,26
+hoi4d,ZY20210800004/H4/C18/N16/S178/s04/T2.001,bind the paper,stapler,"[55, 91]",carry stapler,36
+hoi4d,ZY20210800003/H3/C18/N30/S195/s02/T2.001,bind the paper,stapler,"[62, 98]",carry stapler,36
+hoi4d,ZY20210800002/H2/C18/N48/S241/s01/T2.001,bind the paper,stapler,"[63, 105]",carry stapler,42
+hoi4d,ZY20210800003/H3/C3/N15/S277/s03/T2.000,open and close the display,laptop,"[52, 73]",pick up laptop,21
+hoi4d,ZY20210800004/H4/C3/N46/S111/s05/T1.000,pick and place,laptop,"[41, 69]",pick up laptop,28
+hoi4d,ZY20210800002/H2/C3/N15/S353/s02/T1.000,pick and place,laptop,"[51, 69]",pick up laptop,18
+hoi4d,ZY20210800003/H3/C3/N22/S277/s05/T2.000,open and close the display,laptop,"[55, 75]",pick up laptop,20
+hoi4d,ZY20210800002/H2/C3/N24/S353/s03/T1.003,pick and place,laptop,"[193, 208]",pick up laptop,15
+hoi4d,ZY20210800003/H3/C3/N26/S282/s02/T2.000,open and close the display,laptop,"[47, 71]",pick up laptop,24
+hoi4d,ZY20210800003/H3/C3/N34/S279/s03/T2.000,open and close the display,laptop,"[48, 75]",pick up laptop,27
+hoi4d,ZY20210800004/H4/C3/N68/S380/s03/T2.000,open and close the display,laptop,"[50, 67]",pick up laptop,17
+hoi4d,ZY20210800004/H4/C3/N66/S380/s03/T2.000,open and close the display,laptop,"[48, 65]",pick up laptop,17
+hoi4d,ZY20210800002/H2/C3/N02/S354/s01/T2.000,open and close the display,laptop,"[49, 68]",pick up laptop,19
+hoi4d,ZY20210800004/H4/C3/N62/S379/s01/T1.003,pick and place,laptop,"[209, 225]",pick up laptop,16
+hoi4d,ZY20210800002/H2/C5/N28/S263/s05/T4.002,take it out of the drawer,bottle,"[83, 100]",put down bottle,17
+hoi4d,ZY20210800002/H2/C5/N35/S258/s04/T2.005,pour all the water into a mug,bottle,"[243, 272]",put down bottle,29
+hoi4d,ZY20210800002/H2/C5/N49/S265/s05/T5.001,reposition the bottle,bottle,"[79, 102]",put down bottle,23
+hoi4d,ZY20210800002/H2/C5/N34/S258/s04/T2.002,pour all the water into a mug,bottle,"[94, 124]",put down bottle,30
+hoi4d,ZY20210800002/H2/C5/N50/S37/s02/T2.001,pour all the water into a mug,bottle,"[87, 127]",put down bottle,40
+hoi4d,ZY20210800004/H4/C5/N29/S113/s02/T1.002,pick and place,bottle,"[86, 121]",put down bottle,35
+hoi4d,ZY20210800002/H2/C5/N31/S258/s03/T2.005,pour all the water into a mug,bottle,"[247, 279]",put down bottle,32
+hoi4d,ZY20210800002/H2/C5/N34/S41/s04/T1.001,pick and place,bottle,"[89, 138]",put down bottle,49
+hoi4d,ZY20210800002/H2/C5/N50/S261/s03/T3.005,put it in the drawer,bottle,"[194, 243]",put down bottle,49
+hoi4d,ZY20210800002/H2/C5/N19/S263/s03/T3.002,put it in the drawer,bottle,"[99, 136]",put down bottle,37
+hoi4d,ZY20210800002/H2/C5/N46/S265/s04/T4.005,take it out of the drawer,bottle,"[253, 273]",put down bottle,20
+hoi4d,ZY20210800002/H2/C5/N14/S121/s02/T3.002,put it in the drawer,bottle,"[85, 116]",put down bottle,31
+hoi4d,ZY20210800002/H2/C5/N48/S261/s02/T2.005,pour all the water into a mug,bottle,"[233, 274]",put down bottle,41
+hoi4d,ZY20210800002/H2/C5/N24/S268/s01/T6.005,pick and place (with water),bottle,"[226, 259]",put down bottle,33
+hoi4d,ZY20210800004/H4/C5/N16/S109/s01/T5.005,reposition the bottle,bottle,"[236, 257]",put down bottle,21
+hoi4d,ZY20210800002/H2/C5/N27/S263/s05/T4.002,take it out of the drawer,bottle,"[87, 108]",put down bottle,21
+hoi4d,ZY20210800002/H2/C5/N23/S56/s04/T2.005,pour all the water into a mug,bottle,"[193, 252]",put down bottle,59
+hoi4d,ZY20210800002/H2/C5/N34/S265/s01/T4.005,take it out of the drawer,bottle,"[211, 238]",put down bottle,27
+hoi4d,ZY20210800002/H2/C5/N38/S265/s02/T4.005,take it out of the drawer,bottle,"[228, 246]",put down bottle,18
+hoi4d,ZY20210800001/H1/C17/N57/S264/s02/T1.001,pick and place,lamp,"[73, 92]",carry lamp,19
+hoi4d,ZY20210800004/H4/C17/N16/S134/s04/T1.001,pick and place,lamp,"[81, 90]",carry lamp,9
+hoi4d,ZY20210800001/H1/C17/N74/S266/s01/T3.004,turn on and turn off,lamp,"[190, 210]",carry lamp,20
+hoi4d,ZY20210800003/H3/C17/N58/S264/s02/T1.004,pick and place,lamp,"[201, 224]",carry lamp,23
+hoi4d,ZY20210800001/H1/C17/N23/S159/s03/T3.001,turn on and turn off,lamp,"[64, 92]",carry lamp,28
+hoi4d,ZY20210800004/H4/C17/N13/S190/s04/T3.004,turn on and turn off,lamp,"[209, 232]",carry lamp,23
+hoi4d,ZY20210800001/H1/C17/N76/S380/s04/T1.004,pick and place,lamp,"[198, 218]",carry lamp,20
+hoi4d,ZY20210800004/H4/C17/N07/S134/s05/T1.001,pick and place,lamp,"[85, 98]",carry lamp,13
+hoi4d,ZY20210800003/H3/C17/N21/S171/s01/T3.004,turn on and turn off,lamp,"[194, 204]",carry lamp,10
+hoi4d,ZY20210800004/H4/C17/N22/S134/s02/T1.001,pick and place,lamp,"[92, 102]",carry lamp,10
+hoi4d,ZY20210800002/H2/C17/N09/S159/s03/T3.001,turn on and turn off,lamp,"[58, 81]",carry lamp,23
+hoi4d,ZY20210800002/H2/C9/N18/S347/s05/T1.000,pick and place,scissors,"[52, 64]",pick up scissors,12
+hoi4d,ZY20210800002/H2/C9/N16/S350/s02/T2.003,cut something,scissors,"[192, 199]",pick up scissors,7
+hoi4d,ZY20210800003/H3/C9/N29/S303/s01/T2.003,cut something,scissors,"[205, 217]",pick up scissors,12
+hoi4d,ZY20210800003/H3/C9/N30/S303/s01/T2.003,cut something,scissors,"[178, 204]",pick up scissors,26
+hoi4d,ZY20210800001/H1/C9/N45/S385/s04/T1.003,pick and place,scissors,"[210, 218]",pick up scissors,8
+hoi4d,ZY20210800001/H1/C9/N14/S33/s02/T2.000,cut something,scissors,"[34, 42]",pick up scissors,8
+hoi4d,ZY20210800003/H3/C9/N37/S309/s01/T2.000,cut something,scissors,"[55, 75]",pick up scissors,20
+hoi4d,ZY20210800001/H1/C9/N15/S33/s03/T1.000,pick and place,scissors,"[63, 78]",pick up scissors,15
+hoi4d,ZY20210800003/H3/C9/N26/S300/s05/T2.003,cut something,scissors,"[197, 216]",pick up scissors,19
+hoi4d,ZY20210800003/H3/C9/N43/S45/s04/T1.002,pick and place,scissors,"[180, 230]",pick up scissors,50
+hoi4d,ZY20210800003/H3/C9/N29/S306/s05/T2.000,cut something,scissors,"[53, 68]",pick up scissors,15
+hoi4d,ZY20210800003/H3/C9/N19/S45/s04/T1.002,pick and place,scissors,"[178, 222]",pick up scissors,44
+hoi4d,ZY20210800003/H3/C9/N40/S45/s05/T2.000,cut something,scissors,"[29, 72]",pick up scissors,43
+hoi4d,ZY20210800003/H3/C9/N19/S306/s03/T2.000,cut something,scissors,"[59, 77]",pick up scissors,18
+hoi4d,ZY20210800001/H1/C9/N38/S35/s04/T2.004,cut something,scissors,"[202, 209]",pick up scissors,7
+hoi4d,ZY20210800003/H3/C9/N16/S300/s02/T2.003,cut something,scissors,"[184, 192]",pick up scissors,8
+hoi4d,ZY20210800002/H2/C9/N50/S72/s02/T1.002,pick and place,scissors,"[167, 206]",pick up scissors,39
+hoi4d,ZY20210800001/H1/C20/N33/S292/s04/T3.000,pick and place to a new position,chair,"[88, 126]",put down chair,38
+hoi4d,ZY20210800003/H3/C20/N14/S279/s04/T1.001,pick and place to the original position,chair,"[216, 239]",put down chair,23
+hoi4d,ZY20210800001/H1/C20/N25/S289/s02/T2.001,pick and place to the original position,chair,"[124, 148]",put down chair,24
+hoi4d,ZY20210800001/H1/C20/N48/S381/s04/T4.002,pick and place to a new position,chair,"[210, 229]",put down chair,19
+hoi4d,ZY20210800004/H4/C20/N40/S301/s01/T2.000,pick and place to the original position,chair,"[99, 122]",put down chair,23
+hoi4d,ZY20210800002/H2/C20/N14/S277/s01/T4.000,pick and place to a new position,chair,"[118, 142]",put down chair,24
+hoi4d,ZY20210800001/H1/C20/N23/S295/s02/T4.000,pick and place to a new position,chair,"[93, 118]",put down chair,25
+hoi4d,ZY20210800001/H1/C20/N34/S289/s05/T2.001,pick and place to the original position,chair,"[208, 240]",put down chair,32
+hoi4d,ZY20210800003/H3/C20/N12/S279/s03/T2.000,pick and place to the original position,chair,"[100, 127]",put down chair,27
+hoi4d,ZY20210800001/H1/C20/N19/S381/s04/T4.000,pick and place to a new position,chair,"[107, 134]",put down chair,27
+hoi4d,ZY20210800001/H1/C20/N20/S381/s02/T2.000,pick and place to the original position,chair,"[94, 124]",put down chair,30
+hoi4d,ZY20210800002/H2/C20/N13/S275/s05/T4.002,pick and place to a new position,chair,"[242, 256]",put down chair,14
+hoi4d,ZY20210800004/H4/C20/N41/S301/s01/T2.001,pick and place to the original position,chair,"[199, 226]",put down chair,27
+hoi4d,ZY20210800004/H4/C20/N44/S304/s04/T4.000,pick and place to a new position,chair,"[122, 148]",put down chair,26
+hoi4d,ZY20210800004/H4/C20/N49/S301/s03/T2.000,pick and place to the original position,chair,"[111, 139]",put down chair,28
+hoi4d,ZY20210800001/H1/C20/N27/S289/s03/T2.001,pick and place to the original position,chair,"[192, 215]",put down chair,23
+hoi4d,ZY20210800004/H4/C20/N44/S298/s03/T1.000,pick and place to the original position,chair,"[129, 173]",put down chair,44
+hoi4d,ZY20210800001/H1/C8/N39/S323/s05/T2.003,pour water into another bucket,bucket,"[213, 216]",pick up bucket,3
+hoi4d,ZY20210800001/H1/C8/N11/S311/s03/T1.000,pick and place,bucket,"[55, 67]",pick up bucket,12
+hoi4d,ZY20210800001/H1/C8/N15/S73/s03/T1.000,pick and place,bucket,"[59, 69]",pick up bucket,10
+hoi4d,ZY20210800001/H1/C8/N19/S74/s02/T1.003,pick and place,bucket,"[178, 182]",pick up bucket,4
+hoi4d,ZY20210800001/H1/C8/N24/S323/s01/T2.000,pour water into another bucket,bucket,"[53, 57]",pick up bucket,4
+hoi4d,ZY20210800001/H1/C8/N48/S324/s02/T2.000,pour water into another bucket,bucket,"[56, 64]",pick up bucket,8
+hoi4d,ZY20210800004/H4/C8/N13/S71/s02/T1.000,pick and place,bucket,"[36, 89]",pick up bucket,53
+hoi4d,ZY20210800001/H1/C8/N33/S77/s03/T1.000,pick and place,bucket,"[65, 74]",pick up bucket,9
+hoi4d,ZY20210800001/H1/C8/N40/S313/s05/T1.000,pick and place,bucket,"[51, 62]",pick up bucket,11
+hoi4d,ZY20210800001/H1/C8/N35/S323/s04/T2.000,pour water into another bucket,bucket,"[65, 75]",pick up bucket,10
+hoi4d,ZY20210800001/H1/C8/N35/S319/s02/T2.003,pour water into another bucket,bucket,"[170, 183]",pick up bucket,13
+hoi4d,ZY20210800004/H4/C8/N12/S71/s02/T2.002,pour water into another bucket,bucket,"[159, 165]",pick up bucket,6
+hoi4d,ZY20210800001/H1/C8/N13/S73/s02/T1.003,pick and place,bucket,"[139, 145]",pick up bucket,6
+hoi4d,ZY20210800001/H1/C8/N40/S77/s01/T1.003,pick and place,bucket,"[194, 211]",pick up bucket,17
+hoi4d,ZY20210800001/H1/C8/N15/S73/s03/T2.003,pour water into another bucket,bucket,"[208, 212]",pick up bucket,4
+hoi4d,ZY20210800003/H3/C8/N42/S74/s04/T1.003,pick and place,bucket,"[209, 232]",pick up bucket,23
+hoi4d,ZY20210800001/H1/C8/N35/S319/s02/T2.000,pour water into another bucket,bucket,"[52, 61]",pick up bucket,9
+hoi4d,ZY20210800004/H4/C18/N48/S364/s03/T2.004,bind the paper,stapler,"[243, 263]",push stapler,20
+hoi4d,ZY20210800004/H4/C2/N30/S14/s01/T1.000,pick and place,mug,"[56, 81]",pick up mug,25
+hoi4d,ZY20210800001/H1/C2/N36/S63/s02/T2.000,put it in the drawer,mug,"[33, 38]",pick up mug,5
+hoi4d,ZY20210800004/H4/C2/N30/S14/s01/T1.002,pick and place,mug,"[175, 203]",pick up mug,28
+hoi4d,ZY20210800001/H1/C2/N38/S63/s03/T2.000,put it in the drawer,mug,"[40, 49]",pick up mug,9
+hoi4d,ZY20210800003/H3/C2/N11/S215/s03/T5.003,pour water into another mug,mug,"[179, 191]",pick up mug,12
+hoi4d,ZY20210800001/H1/C2/N13/S214/s03/T1.003,pick and place,mug,"[184, 195]",pick up mug,11
+hoi4d,ZY20210800001/H1/C2/N32/S92/s05/T2.003,put it in the drawer,mug,"[156, 161]",pick up mug,5
+hoi4d,ZY20210800001/H1/C2/N18/S93/s03/T1.000,pick and place,mug,"[28, 36]",pick up mug,8
+hoi4d,ZY20210800001/H1/C2/N27/S213/s02/T4.003,fill with water by a kettle,mug,"[178, 185]",pick up mug,7
+hoi4d,ZY20210800001/H1/C2/N13/S212/s04/T2.000,put it in the drawer,mug,"[55, 65]",pick up mug,10
+hoi4d,ZY20210800004/H4/C2/N32/S364/s04/T2.003,put it in the drawer,mug,"[192, 194]",pick up mug,2
+hoi4d,ZY20210800002/H2/C2/N24/S2/s02/T3.003,take it out of the drawer,mug,"[165, 170]",pick up mug,5
+hoi4d,ZY20210800001/H1/C2/N30/S213/s03/T4.000,fill with water by a kettle,mug,"[61, 72]",pick up mug,11
+hoi4d,ZY20210800002/H2/C2/N18/S25/s04/T1.000,pick and place,mug,"[35, 51]",pick up mug,16
+hoi4d,ZY20210800001/H1/C2/N20/S93/s04/T1.000,pick and place,mug,"[40, 51]",pick up mug,11
+hoi4d,ZY20210800004/H4/C2/N32/S14/s02/T1.003,pick and place,mug,"[174, 178]",pick up mug,4
+hoi4d,ZY20210800003/H3/C2/N28/S217/s02/T1.003,pick and place,mug,"[173, 191]",pick up mug,18
+hoi4d,ZY20210800003/H3/C2/N37/S217/s04/T2.003,put it in the drawer,mug,"[162, 183]",pick up mug,21
+hoi4d,ZY20210800004/H4/C2/N44/S364/s05/T6.000,pick and place (with water),mug,"[56, 66]",pick up mug,10
+hoi4d,ZY20210800001/H1/C2/N23/S27/s01/T1.000,pick and place,mug,"[48, 52]",pick up mug,4
+hoi4d,ZY20210800001/H1/C6/N09/S247/s03/T1.001,open and close the door,safe,"[103, 137]",close safe,34
+hoi4d,ZY20210800004/H4/C6/N02/S82/s01/T2.001,put something in it,safe,"[84, 112]",close safe,28
+hoi4d,ZY20210800004/H4/C6/N51/S378/s05/T2.002,put something in it,safe,"[135, 157]",close safe,22
+hoi4d,ZY20210800001/H1/C6/N10/S247/s03/T1.003,open and close the door,safe,"[240, 275]",close safe,35
+hoi4d,ZY20210800004/H4/C6/N21/S250/s01/T3.003,take something out of it,safe,"[113, 140]",close safe,27
+hoi4d,ZY20210800001/H1/C6/N06/S247/s02/T1.001,open and close the door,safe,"[91, 127]",close safe,36
+hoi4d,ZY20210800002/H2/C6/N05/S245/s02/T1.001,open and close the door,safe,"[96, 137]",close safe,41
+hoi4d,ZY20210800001/H1/C6/N14/S247/s04/T2.001,put something in it,safe,"[91, 118]",close safe,27
+hoi4d,ZY20210800003/H3/C6/N28/S82/s05/T2.004,put something in it,safe,"[230, 290]",close safe,60
+hoi4d,ZY20210800003/H3/C6/N39/S252/s02/T1.003,open and close the door,safe,"[222, 252]",close safe,30
+hoi4d,ZY20210800002/H2/C6/N30/S246/s03/T3.003,take something out of it,safe,"[119, 171]",close safe,52
+hoi4d,ZY20210800002/H2/C6/N25/S43/s04/T1.003,open and close the door,safe,"[200, 263]",close safe,63
+hoi4d,ZY20210800003/H3/C6/N50/S252/s05/T1.001,open and close the door,safe,"[79, 109]",close safe,30
+hoi4d,ZY20210800003/H3/C6/N11/S251/s03/T2.001,put something in it,safe,"[79, 108]",close safe,29
+hoi4d,ZY20210800001/H1/C17/N70/S264/s05/T2.002,turn and fold,lamp,"[88, 109]",close lamp,21
+hoi4d,ZY20210800004/H4/C17/N23/S194/s01/T2.006,turn and fold,lamp,"[229, 260]",close lamp,31
+hoi4d,ZY20210800004/H4/C17/N71/S262/s01/T2.002,turn and fold,lamp,"[98, 127]",close lamp,29
+hoi4d,ZY20210800004/H4/C17/N25/S194/s02/T2.006,turn and fold,lamp,"[221, 248]",close lamp,27
+hoi4d,ZY20210800003/H3/C17/N08/S167/s02/T2.006,turn and fold,lamp,"[215, 239]",close lamp,24
+hoi4d,ZY20210800004/H4/C17/N73/S262/s01/T2.002,turn and fold,lamp,"[90, 115]",close lamp,25
+hoi4d,ZY20210800001/H1/C17/N71/S266/s01/T2.002,turn and fold,lamp,"[97, 122]",close lamp,25
+hoi4d,ZY20210800001/H1/C14/N29/S207/s01/T2.008,throw something in it,trash can,"[254, 265]",put down trash can,11
+hoi4d,ZY20210800002/H2/C14/N19/S185/s05/T2.005,throw something in it,trash can,"[206, 220]",put down trash can,14
+hoi4d,ZY20210800004/H4/C14/N30/S335/s02/T2.004,throw something in it,trash can,"[216, 226]",put down trash can,10
+hoi4d,ZY20210800001/H1/C14/N46/S209/s01/T2.005,throw something in it,trash can,"[190, 205]",put down trash can,15
+hoi4d,ZY20210800002/H2/C14/N24/S359/s03/T2.007,throw something in it,trash can,"[273, 283]",put down trash can,10
+hoi4d,ZY20210800001/H1/C14/N41/S207/s04/T2.005,throw something in it,trash can,"[196, 209]",put down trash can,13
+hoi4d,ZY20210800001/H1/C14/N48/S209/s01/T2.004,throw something in it,trash can,"[182, 197]",put down trash can,15
+hoi4d,ZY20210800003/H3/C14/N43/S207/s05/T2.004,throw something in it,trash can,"[195, 209]",put down trash can,14
+hoi4d,ZY20210800001/H1/C14/N37/S333/s03/T2.007,throw something in it,trash can,"[261, 268]",put down trash can,7
+hoi4d,ZY20210800001/H1/C14/N26/S333/s02/T2.005,throw something in it,trash can,"[236, 242]",put down trash can,6
+hoi4d,ZY20210800001/H1/C8/N44/S324/s01/T2.005,pour water into another bucket,bucket,"[228, 274]",put down bucket,46
+hoi4d,ZY20210800001/H1/C8/N39/S77/s01/T2.002,pour water into another bucket,bucket,"[114, 139]",put down bucket,25
+hoi4d,ZY20210800004/H4/C8/N13/S71/s02/T1.003,pick and place,bucket,"[209, 260]",put down bucket,51
+hoi4d,ZY20210800001/H1/C8/N18/S74/s02/T1.005,pick and place,bucket,"[242, 268]",put down bucket,26
+hoi4d,ZY20210800001/H1/C8/N39/S77/s01/T1.002,pick and place,bucket,"[123, 139]",put down bucket,16
+hoi4d,ZY20210800001/H1/C8/N24/S76/s02/T1.005,pick and place,bucket,"[240, 256]",put down bucket,16
+hoi4d,ZY20210800001/H1/C8/N21/S74/s03/T2.005,pour water into another bucket,bucket,"[232, 276]",put down bucket,44
+hoi4d,ZY20210800001/H1/C8/N38/S76/s05/T2.001,pour water into another bucket,bucket,"[86, 115]",put down bucket,29
+hoi4d,ZY20210800001/H1/C8/N45/S324/s02/T2.005,pour water into another bucket,bucket,"[239, 273]",put down bucket,34
+hoi4d,ZY20210800001/H1/C8/N12/S73/s01/T2.002,pour water into another bucket,bucket,"[110, 140]",put down bucket,30
+hoi4d,ZY20210800001/H1/C8/N32/S77/s03/T2.002,pour water into another bucket,bucket,"[120, 148]",put down bucket,28
+hoi4d,ZY20210800002/H2/C8/N11/S80/s01/T1.003,pick and place,bucket,"[206, 253]",put down bucket,47
+hoi4d,ZY20210800001/H1/C8/N48/S324/s02/T2.002,pour water into another bucket,bucket,"[103, 125]",put down bucket,22
+hoi4d,ZY20210800001/H1/C8/N29/S77/s05/T2.001,pour water into another bucket,bucket,"[73, 113]",put down bucket,40
+hoi4d,ZY20210800001/H1/C8/N35/S76/s04/T1.001,pick and place,bucket,"[124, 169]",put down bucket,45
+hoi4d,ZY20210800001/H1/C8/N36/S319/s02/T2.002,pour water into another bucket,bucket,"[93, 118]",put down bucket,25
+hoi4d,ZY20210800001/H1/C8/N14/S311/s04/T1.002,pick and place,bucket,"[108, 141]",put down bucket,33
+hoi4d,ZY20210800001/H1/C7/N21/S272/s01/T1.004,pick and place,bowl,"[200, 227]",carry bowl,27
+hoi4d,ZY20210800001/H1/C7/N44/S285/s01/T6.001,pick and place (with ball),bowl,"[65, 109]",carry bowl,44
+hoi4d,ZY20210800001/H1/C7/N18/S59/s05/T1.001,pick and place,bowl,"[38, 80]",carry bowl,42
+hoi4d,ZY20210800002/H2/C7/N28/S81/s01/T3.001,take it out of the drawer,bowl,"[59, 79]",carry bowl,20
+hoi4d,ZY20210800001/H1/C7/N46/S278/s04/T4.004,take the ball out of the bowl,bowl,"[180, 226]",carry bowl,46
+hoi4d,ZY20210800001/H1/C7/N33/S272/s04/T2.001,put it in the drawer,bowl,"[64, 101]",carry bowl,37
+hoi4d,ZY20210800001/H1/C7/N39/S61/s03/T1.004,pick and place,bowl,"[177, 228]",carry bowl,51
+hoi4d,ZY20210800001/H1/C7/N45/S274/s02/T2.001,put it in the drawer,bowl,"[75, 117]",carry bowl,42
+hoi4d,ZY20210800001/H1/C7/N37/S61/s02/T2.004,put it in the drawer,bowl,"[171, 228]",carry bowl,57
+hoi4d,ZY20210800001/H1/C7/N25/S60/s01/T1.004,pick and place,bowl,"[180, 247]",carry bowl,67
+hoi4d,ZY20210800001/H1/C7/N17/S276/s02/T3.001,take it out of the drawer,bowl,"[96, 106]",carry bowl,10
+hoi4d,ZY20210800001/H1/C7/N29/S60/s02/T2.001,put it in the drawer,bowl,"[40, 74]",carry bowl,34
+hoi4d,ZY20210800001/H1/C7/N34/S61/s01/T2.001,put it in the drawer,bowl,"[56, 98]",carry bowl,42
+hoi4d,ZY20210800001/H1/C7/N38/S61/s03/T1.001,pick and place,bowl,"[74, 121]",carry bowl,47
+hoi4d,ZY20210800001/H1/C7/N30/S60/s04/T2.004,put it in the drawer,bowl,"[177, 211]",carry bowl,34
+hoi4d,ZY20210800003/H3/C1/N19/S87/s01/T2.000,push toy car,toy car,"[24, 97]",push toy car,73
+hoi4d,ZY20210800002/H2/C1/N48/S89/s04/T3.000,put it in the drawer,toy car,"[22, 76]",push toy car,54
+hoi4d,ZY20210800003/H3/C1/N48/S83/s05/T2.002,push toy car,toy car,"[202, 254]",push toy car,52
+hoi4d,ZY20210800004/H4/C1/N19/S242/s03/T2.004,push toy car,toy car,"[180, 207]",push toy car,27
+hoi4d,ZY20210800004/H4/C1/N01/S240/s03/T2.005,push toy car,toy car,"[224, 244]",push toy car,20
+hoi4d,ZY20210800002/H2/C1/N07/S336/s04/T2.002,push toy car,toy car,"[173, 209]",push toy car,36
+hoi4d,ZY20210800004/H4/C1/N40/S239/s05/T2.000,push toy car,toy car,"[59, 84]",push toy car,25
+hoi4d,ZY20210800001/H1/C1/N44/S99/s02/T2.003,push toy car,toy car,"[185, 198]",push toy car,13
+hoi4d,ZY20210800002/H2/C6/N29/S246/s03/T3.000,take something out of it,safe,"[55, 61]",pick up safe,6
+hoi4d,ZY20210800004/H4/C6/N04/S249/s01/T2.003,put something in it,safe,"[237, 241]",pick up safe,4
+hoi4d,ZY20210800004/H4/C6/N21/S250/s01/T3.000,take something out of it,safe,"[59, 65]",pick up safe,6
+hoi4d,ZY20210800003/H3/C6/N04/S85/s05/T2.001,put something in it,safe,"[107, 112]",pick up safe,5
+hoi4d,ZY20210800001/H1/C4/N62/S385/s03/T3.000,put the drink in the door,storage furniture,"[72, 81]",pick up storage furniture,9
+hoi4d,ZY20210800004/H4/C4/N48/S217/s05/T3.003,put the drink in the door,storage furniture,"[228, 234]",pick up storage furniture,6
+hoi4d,ZY20210800003/H3/C4/N03/S50/s05/T3.000,put the drink in the door,storage furniture,"[53, 62]",pick up storage furniture,9
+hoi4d,ZY20210800001/H1/C4/N72/S386/s04/T4.000,put the drink in the drawer,storage furniture,"[78, 103]",pick up storage furniture,25
+hoi4d,ZY20210800001/H1/C4/N75/S387/s03/T3.000,put the drink in the door,storage furniture,"[56, 64]",pick up storage furniture,8
+hoi4d,ZY20210800001/H1/C4/N63/S385/s03/T3.000,put the drink in the door,storage furniture,"[60, 65]",pick up storage furniture,5
+hoi4d,ZY20210800001/H1/C11/N58/S376/s04/T4.004,clamp something,pliers,"[199, 222]",cut pliers,23
+hoi4d,ZY20210800002/H2/C11/N10/S201/s03/T4.004,clamp something,pliers,"[239, 249]",cut pliers,10
+hoi4d,ZY20210800001/H1/C1/N39/S99/s01/T2.006,push toy car,toy car,"[249, 264]",pull toy car,15
+hoi4d,ZY20210800003/H3/C1/N50/S83/s04/T2.003,push toy car,toy car,"[207, 270]",pull toy car,63
+hoi4d,ZY20210800001/H1/C1/N39/S99/s01/T2.004,push toy car,toy car,"[178, 204]",pull toy car,26
+hoi4d,ZY20210800002/H2/C1/N30/S94/s05/T3.003,put it in the drawer,toy car,"[244, 283]",pull toy car,39
+hoi4d,ZY20210800004/H4/C1/N36/S239/s04/T2.006,push toy car,toy car,"[224, 264]",pull toy car,40
+hoi4d,ZY20210800004/H4/C1/N14/S242/s01/T2.001,push toy car,toy car,"[71, 92]",pull toy car,21
+hoi4d,ZY20210800001/H1/C1/N37/S104/s02/T2.006,push toy car,toy car,"[255, 269]",pull toy car,14
+hoi4d,ZY20210800004/H4/C1/N40/S239/s05/T2.001,push toy car,toy car,"[86, 103]",pull toy car,17
+hoi4d,ZY20210800002/H2/C17/N56/S253/s02/T1.000,pick and place,lamp,"[68, 74]",pick up lamp,6
+hoi4d,ZY20210800004/H4/C17/N22/S194/s01/T2.000,turn and fold,lamp,"[45, 53]",pick up lamp,8
+hoi4d,ZY20210800003/H3/C17/N08/S126/s02/T1.000,pick and place,lamp,"[74, 80]",pick up lamp,6
+hoi4d,ZY20210800004/H4/C17/N74/S262/s01/T3.003,turn on and turn off,lamp,"[190, 197]",pick up lamp,7
+hoi4d,ZY20210800004/H4/C17/N21/S194/s01/T2.000,turn and fold,lamp,"[43, 58]",pick up lamp,15
+hoi4d,ZY20210800003/H3/C17/N09/S126/s03/T1.002,pick and place,lamp,"[217, 226]",pick up lamp,9
+hoi4d,ZY20210800003/H3/C17/N22/S130/s01/T1.000,pick and place,lamp,"[82, 104]",pick up lamp,22
+hoi4d,ZY20210800003/H3/C17/N13/S126/s04/T1.002,pick and place,lamp,"[213, 219]",pick up lamp,6
+hoi4d,ZY20210800004/H4/C17/N20/S190/s05/T2.004,turn and fold,lamp,"[185, 196]",pick up lamp,11
+hoi4d,ZY20210800003/H3/C17/N70/S264/s05/T2.004,turn and fold,lamp,"[204, 217]",pick up lamp,13
+hoi4d,ZY20210800004/H4/C17/N08/S190/s02/T3.000,turn on and turn off,lamp,"[45, 52]",pick up lamp,7
+hoi4d,ZY20210800004/H4/C17/N73/S262/s01/T2.000,turn and fold,lamp,"[53, 65]",pick up lamp,12
+hoi4d,ZY20210800003/H3/C17/N20/S126/s05/T1.002,pick and place,lamp,"[219, 227]",pick up lamp,8
+hoi4d,ZY20210800004/H4/C17/N19/S190/s05/T2.000,turn and fold,lamp,"[41, 48]",pick up lamp,7
+hoi4d,ZY20210800003/H3/C17/N17/S167/s05/T2.004,turn and fold,lamp,"[181, 185]",pick up lamp,4
+hoi4d,ZY20210800002/H2/C17/N09/S159/s03/T3.000,turn on and turn off,lamp,"[42, 56]",pick up lamp,14
+hoi4d,ZY20210800004/H4/C17/N17/S134/s01/T1.000,pick and place,lamp,"[86, 102]",pick up lamp,16
+hoi4d,ZY20210800003/H3/C17/N18/S126/s05/T1.000,pick and place,lamp,"[82, 93]",pick up lamp,11
+hoi4d,ZY20210800003/H3/C17/N63/S264/s04/T2.004,turn and fold,lamp,"[166, 171]",pick up lamp,5
+hoi4d,ZY20210800004/H4/C17/N06/S190/s02/T3.003,turn on and turn off,lamp,"[202, 207]",pick up lamp,5
+hoi4d,ZY20210800001/H1/C14/N46/S158/s01/T1.002,open and close,trash can,"[204, 245]",open trash can,41
+hoi4d,ZY20210800002/H2/C14/N48/S163/s03/T1.002,open and close,trash can,"[197, 229]",open trash can,32
+hoi4d,ZY20210800001/H1/C14/N31/S155/s02/T1.000,open and close,trash can,"[60, 95]",open trash can,35
+hoi4d,ZY20210800002/H2/C14/N11/S161/s03/T1.002,open and close,trash can,"[216, 244]",open trash can,28
+hoi4d,ZY20210800003/H3/C14/N45/S166/s05/T1.002,open and close,trash can,"[201, 232]",open trash can,31
+hoi4d,ZY20210800004/H4/C14/N15/S174/s03/T1.000,open and close,trash can,"[64, 89]",open trash can,25
+hoi4d,ZY20210800001/H1/C14/N26/S333/s01/T1.000,open and close,trash can,"[70, 104]",open trash can,34
+hoi4d,ZY20210800004/H4/C14/N17/S174/s03/T1.002,open and close,trash can,"[192, 220]",open trash can,28
+hoi4d,ZY20210800002/H2/C14/N42/S163/s02/T1.000,open and close,trash can,"[75, 103]",open trash can,28
+hoi4d,ZY20210800004/H4/C14/N24/S211/s01/T2.000,throw something in it,trash can,"[61, 77]",open trash can,16
+hoi4d,ZY20210800001/H1/C14/N23/S209/s03/T2.000,throw something in it,trash can,"[59, 74]",open trash can,15
+hoi4d,ZY20210800004/H4/C14/N23/S174/s01/T1.002,open and close,trash can,"[191, 219]",open trash can,28
+hoi4d,ZY20210800003/H3/C14/N46/S209/s01/T2.000,throw something in it,trash can,"[45, 70]",open trash can,25
+hoi4d,ZY20210800003/H3/C14/N44/S166/s05/T1.002,open and close,trash can,"[210, 231]",open trash can,21
+hoi4d,ZY20210800001/H1/C14/N33/S333/s01/T1.000,open and close,trash can,"[61, 86]",open trash can,25
+hoi4d,ZY20210800002/H2/C14/N20/S161/s05/T1.002,open and close,trash can,"[205, 238]",open trash can,33
+hoi4d,ZY20210800001/H1/C14/N38/S207/s04/T2.000,throw something in it,trash can,"[56, 71]",open trash can,15
+hoi4d,ZY20210800001/H1/C14/N33/S333/s01/T1.002,open and close,trash can,"[185, 210]",open trash can,25
+hoi4d,ZY20210800001/H1/C14/N45/S207/s05/T2.002,throw something in it,trash can,"[139, 160]",open trash can,21
+hoi4d,ZY20210800001/H1/C8/N34/S77/s04/T2.001,pour water into another bucket,bucket,"[56, 107]",carry bucket,51
+hoi4d,ZY20210800001/H1/C8/N38/S319/s02/T2.001,pour water into another bucket,bucket,"[67, 100]",carry bucket,33
+hoi4d,ZY20210800001/H1/C8/N40/S77/s01/T1.004,pick and place,bucket,"[213, 254]",carry bucket,41
+hoi4d,ZY20210800001/H1/C8/N19/S74/s02/T1.004,pick and place,bucket,"[184, 221]",carry bucket,37
+hoi4d,ZY20210800001/H1/C8/N26/S76/s03/T2.001,pour water into another bucket,bucket,"[60, 105]",carry bucket,45
+hoi4d,ZY20210800003/H3/C8/N42/S74/s04/T1.001,pick and place,bucket,"[50, 98]",carry bucket,48
+hoi4d,ZY20210800001/H1/C8/N17/S311/s05/T1.004,pick and place,bucket,"[180, 197]",carry bucket,17
+hoi4d,ZY20210800001/H1/C8/N14/S321/s04/T2.001,pour water into another bucket,bucket,"[69, 86]",carry bucket,17
+hoi4d,ZY20210800001/H1/C8/N34/S77/s04/T1.001,pick and place,bucket,"[59, 116]",carry bucket,57
+hoi4d,ZY20210800001/H1/C8/N13/S311/s04/T1.004,pick and place,bucket,"[195, 222]",carry bucket,27
+hoi4d,ZY20210800001/H1/C8/N36/S319/s02/T2.001,pour water into another bucket,bucket,"[64, 91]",carry bucket,27
+hoi4d,ZY20210800004/H4/C13/N41/S184/s04/T4.001,cut apple,knife,"[75, 95]",carry knife,20
+hoi4d,ZY20210800001/H1/C13/N48/S136/s03/T1.001,pick and place,knife,"[79, 128]",carry knife,49
+hoi4d,ZY20210800003/H3/C13/N46/S144/s01/T1.001,pick and place,knife,"[75, 97]",carry knife,22
+hoi4d,ZY20210800003/H3/C13/N34/S140/s03/T1.004,pick and place,knife,"[203, 208]",carry knife,5
+hoi4d,ZY20210800001/H1/C13/N46/S238/s03/T4.001,cut apple,knife,"[65, 96]",carry knife,31
+hoi4d,ZY20210800001/H1/C13/N14/S132/s04/T1.001,pick and place,knife,"[76, 125]",carry knife,49
+hoi4d,ZY20210800002/H2/C13/N24/S192/s02/T3.003,put it in the drawer,knife,"[190, 214]",carry knife,24
+hoi4d,ZY20210800004/H4/C13/N35/S233/s03/T1.004,pick and place,knife,"[225, 244]",carry knife,19
+hoi4d,ZY20210800002/H2/C13/N16/S189/s04/T4.001,cut apple,knife,"[67, 89]",carry knife,22
+hoi4d,ZY20210800003/H3/C13/N39/S200/s04/T4.004,cut apple,knife,"[189, 199]",carry knife,10
+hoi4d,ZY20210800003/H3/C13/N26/S200/s01/T2.004,take it out of the drawer,knife,"[205, 216]",carry knife,11
+hoi4d,ZY20210800002/H2/C13/N15/S346/s01/T1.004,pick and place,knife,"[197, 223]",carry knife,26
+hoi4d,ZY20210800001/H1/C13/N15/S179/s04/T4.001,cut apple,knife,"[68, 99]",carry knife,31
+hoi4d,ZY20210800004/H4/C13/N17/S234/s02/T1.001,pick and place,knife,"[72, 89]",carry knife,17
+hoi4d,ZY20210800003/H3/C13/N37/S200/s03/T3.001,put it in the drawer,knife,"[62, 75]",carry knife,13
+hoi4d,ZY20210800003/H3/C13/N30/S140/s02/T1.001,pick and place,knife,"[89, 112]",carry knife,23
+hoi4d,ZY20210800003/H3/C3/N48/S284/s02/T2.003,open and close the display,laptop,"[179, 196]",open laptop,17
+hoi4d,ZY20210800003/H3/C3/N25/S277/s05/T2.003,open and close the display,laptop,"[183, 211]",open laptop,28
+hoi4d,ZY20210800003/H3/C3/N06/S277/s01/T2.003,open and close the display,laptop,"[195, 222]",open laptop,27
+hoi4d,ZY20210800003/H3/C3/N32/S282/s03/T2.003,open and close the display,laptop,"[185, 206]",open laptop,21
+hoi4d,ZY20210800003/H3/C3/N45/S284/s02/T2.003,open and close the display,laptop,"[183, 199]",open laptop,16
+hoi4d,ZY20210800004/H4/C3/N60/S377/s04/T2.003,open and close the display,laptop,"[222, 251]",open laptop,29
+hoi4d,ZY20210800003/H3/C3/N36/S282/s04/T2.003,open and close the display,laptop,"[207, 225]",open laptop,18
+hoi4d,ZY20210800002/H2/C13/N32/S128/s03/T1.003,pick and place,knife,"[232, 256]",put down knife,24
+hoi4d,ZY20210800003/H3/C13/N35/S140/s03/T1.002,pick and place,knife,"[106, 125]",put down knife,19
+hoi4d,ZY20210800004/H4/C13/N15/S186/s02/T2.004,take it out of the drawer,knife,"[214, 243]",put down knife,29
+hoi4d,ZY20210800003/H3/C13/N29/S140/s01/T1.005,pick and place,knife,"[210, 221]",put down knife,11
+hoi4d,ZY20210800001/H1/C13/N40/S366/s01/T4.002,cut apple,knife,"[111, 135]",put down knife,24
+hoi4d,ZY20210800001/H1/C13/N46/S238/s03/T4.007,cut apple,knife,"[231, 244]",put down knife,13
+hoi4d,ZY20210800004/H4/C13/N43/S233/s05/T1.002,pick and place,knife,"[99, 122]",put down knife,23
+hoi4d,ZY20210800002/H2/C13/N17/S189/s05/T3.004,put it in the drawer,knife,"[216, 255]",put down knife,39
+hoi4d,ZY20210800003/H3/C13/N26/S200/s01/T2.002,take it out of the drawer,knife,"[111, 130]",put down knife,19
+hoi4d,ZY20210800001/H1/C13/N21/S136/s01/T1.005,pick and place,knife,"[252, 265]",put down knife,13
+hoi4d,ZY20210800001/H1/C13/N40/S366/s01/T4.005,cut apple,knife,"[235, 256]",put down knife,21
+hoi4d,ZY20210800002/H2/C13/N21/S128/s01/T1.003,pick and place,knife,"[219, 246]",put down knife,27
+hoi4d,ZY20210800004/H4/C13/N36/S233/s03/T1.002,pick and place,knife,"[94, 115]",put down knife,21
+hoi4d,ZY20210800002/H2/C13/N34/S128/s03/T1.001,pick and place,knife,"[94, 113]",put down knife,19
+hoi4d,ZY20210800001/H1/C13/N42/S238/s02/T4.002,cut apple,knife,"[106, 130]",put down knife,24
+hoi4d,ZY20210800001/H1/C13/N11/S179/s03/T4.002,cut apple,knife,"[114, 134]",put down knife,20
+hoi4d,ZY20210800004/H4/C13/N42/S233/s05/T1.005,pick and place,knife,"[226, 251]",put down knife,25
+hoi4d,ZY20210800002/H2/C13/N28/S192/s02/T2.004,take it out of the drawer,knife,"[210, 250]",put down knife,40
+hoi4d,ZY20210800003/H3/C13/N49/S144/s01/T1.005,pick and place,knife,"[249, 267]",put down knife,18
+hoi4d,ZY20210800004/H4/C13/N17/S186/s02/T2.002,take it out of the drawer,knife,"[93, 108]",put down knife,15
+hoi4d,ZY20210800002/H2/C11/N15/S201/s04/T4.002,clamp something,pliers,"[110, 130]",put down pliers,20
+hoi4d,ZY20210800004/H4/C11/N56/S368/s02/T2.005,take it out of the drawer,pliers,"[249, 267]",put down pliers,18
+hoi4d,ZY20210800004/H4/C11/N50/S193/s02/T3.002,put it in the drawer,pliers,"[99, 115]",put down pliers,16
+hoi4d,ZY20210800002/H2/C11/N21/S204/s01/T3.005,put it in the drawer,pliers,"[211, 248]",put down pliers,37
+hoi4d,ZY20210800001/H1/C11/N23/S187/s01/T3.002,put it in the drawer,pliers,"[85, 101]",put down pliers,16
+hoi4d,ZY20210800004/H4/C11/N19/S193/s02/T3.005,put it in the drawer,pliers,"[238, 257]",put down pliers,19
+hoi4d,ZY20210800001/H1/C11/N24/S187/s01/T3.002,put it in the drawer,pliers,"[101, 134]",put down pliers,33
+hoi4d,ZY20210800003/H3/C11/N47/S182/s01/T4.002,clamp something,pliers,"[95, 123]",put down pliers,28
+hoi4d,ZY20210800001/H1/C11/N19/S185/s05/T2.005,take it out of the drawer,pliers,"[243, 267]",put down pliers,24
+hoi4d,ZY20210800003/H3/C11/N47/S151/s01/T1.002,pick and place,pliers,"[84, 101]",put down pliers,17
+hoi4d,ZY20210800003/H3/C11/N40/S180/s04/T4.002,clamp something,pliers,"[100, 117]",put down pliers,17
+hoi4d,ZY20210800001/H1/C11/N09/S185/s03/T2.002,take it out of the drawer,pliers,"[129, 143]",put down pliers,14
+hoi4d,ZY20210800004/H4/C11/N49/S193/s01/T3.005,put it in the drawer,pliers,"[209, 252]",put down pliers,43
+hoi4d,ZY20210800001/H1/C11/N61/S376/s03/T3.005,put it in the drawer,pliers,"[205, 241]",put down pliers,36
+hoi4d,ZY20210800002/H2/C11/N19/S133/s05/T1.005,pick and place,pliers,"[251, 269]",put down pliers,18
+hoi4d,ZY20210800004/H4/C11/N55/S368/s05/T2.002,take it out of the drawer,pliers,"[80, 96]",put down pliers,16
+hoi4d,ZY20210800004/H4/C11/N56/S368/s02/T2.002,take it out of the drawer,pliers,"[95, 112]",put down pliers,17
+hoi4d,ZY20210800001/H1/C11/N13/S125/s04/T1.002,pick and place,pliers,"[136, 157]",put down pliers,21
+hoi4d,ZY20210800004/H4/C1/N33/S244/s04/T4.002,take it out of the drawer,toy car,"[105, 116]",put down toy car,11
+hoi4d,ZY20210800004/H4/C1/N14/S237/s04/T1.002,pick and place,toy car,"[117, 145]",put down toy car,28
+hoi4d,ZY20210800004/H4/C1/N21/S242/s03/T3.002,put it in the drawer,toy car,"[117, 154]",put down toy car,37
+hoi4d,ZY20210800001/H1/C1/N27/S99/s05/T1.005,pick and place,toy car,"[245, 287]",put down toy car,42
+hoi4d,ZY20210800004/H4/C1/N28/S242/s05/T3.002,put it in the drawer,toy car,"[131, 156]",put down toy car,25
+hoi4d,ZY20210800001/H1/C1/N38/S100/s05/T2.002,push toy car,toy car,"[84, 124]",put down toy car,40
+hoi4d,ZY20210800004/H4/C1/N20/S237/s05/T1.005,pick and place,toy car,"[235, 263]",put down toy car,28
+hoi4d,ZY20210800001/H1/C1/N44/S99/s02/T2.002,push toy car,toy car,"[119, 143]",put down toy car,24
+hoi4d,ZY20210800004/H4/C1/N35/S244/s04/T4.002,take it out of the drawer,toy car,"[90, 98]",put down toy car,8
+hoi4d,ZY20210800002/H2/C1/N46/S89/s03/T1.002,pick and place,toy car,"[104, 152]",put down toy car,48
+hoi4d,ZY20210800002/H2/C1/N14/S339/s03/T1.001,pick and place,toy car,"[97, 167]",put down toy car,70
+hoi4d,ZY20210800004/H4/C1/N50/S6/s02/T1.002,pick and place,toy car,"[83, 132]",put down toy car,49
+hoi4d,ZY20210800002/H2/C1/N48/S89/s04/T1.001,pick and place,toy car,"[86, 139]",put down toy car,53
+hoi4d,ZY20210800004/H4/C1/N01/S237/s01/T1.002,pick and place,toy car,"[88, 104]",put down toy car,16
+hoi4d,ZY20210800004/H4/C1/N29/S239/s03/T1.005,pick and place,toy car,"[245, 264]",put down toy car,19
+hoi4d,ZY20210800004/H4/C1/N41/S240/s01/T2.004,push toy car,toy car,"[183, 189]",put down toy car,6
+hoi4d,ZY20210800001/H1/C9/N41/S36/s01/T1.001,pick and place,scissors,"[57, 120]",carry scissors,63
+hoi4d,ZY20210800002/H2/C9/N23/S350/s04/T2.001,cut something,scissors,"[68, 90]",carry scissors,22
+hoi4d,ZY20210800001/H1/C9/N43/S36/s02/T1.004,pick and place,scissors,"[199, 260]",carry scissors,61
+hoi4d,ZY20210800003/H3/C9/N35/S306/s05/T2.001,cut something,scissors,"[79, 114]",carry scissors,35
+hoi4d,ZY20210800002/H2/C9/N28/S349/s02/T1.004,pick and place,scissors,"[185, 211]",carry scissors,26
+hoi4d,ZY20210800003/H3/C9/N33/S303/s02/T2.001,cut something,scissors,"[77, 113]",carry scissors,36
+hoi4d,ZY20210800001/H1/C9/N16/S33/s03/T2.005,cut something,scissors,"[220, 259]",carry scissors,39
+hoi4d,ZY20210800001/H1/C9/N31/S35/s01/T2.005,cut something,scissors,"[202, 250]",carry scissors,48
+hoi4d,ZY20210800003/H3/C9/N17/S306/s03/T2.001,cut something,scissors,"[82, 108]",carry scissors,26
+hoi4d,ZY20210800002/H2/C9/N22/S350/s04/T2.001,cut something,scissors,"[61, 82]",carry scissors,21
+hoi4d,ZY20210800002/H2/C9/N25/S350/s05/T2.001,cut something,scissors,"[70, 94]",carry scissors,24
+hoi4d,ZY20210800002/H2/C9/N17/S347/s05/T1.001,pick and place,scissors,"[66, 95]",carry scissors,29
+hoi4d,ZY20210800001/H1/C4/N67/S391/s04/T4.001,put the drink in the drawer,storage furniture,"[118, 122]",carry storage furniture,4
+hoi4d,ZY20210800001/H1/C4/N66/S391/s05/T4.005,put the drink in the drawer,storage furniture,"[243, 247]",carry storage furniture,4
+hoi4d,ZY20210800003/H3/C4/N05/S50/s01/T3.001,put the drink in the door,storage furniture,"[55, 84]",carry storage furniture,29
+hoi4d,ZY20210800001/H1/C4/N73/S386/s04/T4.004,put the drink in the drawer,storage furniture,"[240, 243]",carry storage furniture,3
+hoi4d,ZY20210800001/H1/C8/N36/S319/s02/T2.004,pour water into another bucket,bucket,"[195, 222]",dump bucket,27
+hoi4d,ZY20210800001/H1/C8/N26/S317/s04/T2.003,pour water into another bucket,bucket,"[211, 233]",dump bucket,22
+hoi4d,ZY20210800001/H1/C8/N13/S73/s02/T2.004,pour water into another bucket,bucket,"[204, 249]",dump bucket,45
+hoi4d,ZY20210800003/H3/C8/N42/S74/s04/T2.005,pour water into another bucket,bucket,"[220, 255]",dump bucket,35
+hoi4d,ZY20210800001/H1/C8/N17/S367/s03/T2.003,pour water into another bucket,bucket,"[180, 213]",dump bucket,33
+hoi4d,ZY20210800002/H2/C12/N19/S196/s05/T2.004,pour water into a mug,kettle,"[200, 233]",carry kettle,33
+hoi4d,ZY20210800003/H3/C12/N13/S173/s04/T1.001,pick and place,kettle,"[63, 94]",carry kettle,31
+hoi4d,ZY20210800002/H2/C12/N18/S196/s05/T2.004,pour water into a mug,kettle,"[202, 233]",carry kettle,31
+hoi4d,ZY20210800004/H4/C12/N17/S236/s02/T1.001,pick and place,kettle,"[75, 99]",carry kettle,24
+hoi4d,ZY20210800004/H4/C12/N45/S236/s01/T1.001,pick and place,kettle,"[69, 94]",carry kettle,25
+hoi4d,ZY20210800002/H2/C12/N17/S196/s05/T2.004,pour water into a mug,kettle,"[201, 238]",carry kettle,37
+hoi4d,ZY20210800001/H1/C12/N36/S165/s03/T1.004,pick and place,kettle,"[239, 262]",carry kettle,23
+hoi4d,ZY20210800004/H4/C12/N29/S235/s02/T1.001,pick and place,kettle,"[69, 89]",carry kettle,20
+hoi4d,ZY20210800003/H3/C12/N30/S176/s02/T1.001,pick and place,kettle,"[72, 93]",carry kettle,21
+hoi4d,ZY20210800003/H3/C12/N18/S173/s05/T1.004,pick and place,kettle,"[240, 255]",carry kettle,15
+hoi4d,ZY20210800001/H1/C12/N30/S165/s02/T1.001,pick and place,kettle,"[65, 111]",carry kettle,46
+hoi4d,ZY20210800001/H1/C12/N42/S165/s05/T1.001,pick and place,kettle,"[79, 131]",carry kettle,52
+hoi4d,ZY20210800002/H2/C12/N36/S346/s03/T2.004,pour water into a mug,kettle,"[218, 242]",carry kettle,24
+hoi4d,ZY20210800002/H2/C7/N50/S58/s04/T1.002,pick and place,bowl,"[172, 207]",pick up bowl,35
+hoi4d,ZY20210800002/H2/C7/N40/S57/s04/T1.002,pick and place,bowl,"[179, 221]",pick up bowl,42
+hoi4d,ZY20210800001/H1/C7/N31/S272/s03/T2.000,put it in the drawer,bowl,"[57, 62]",pick up bowl,5
+hoi4d,ZY20210800002/H2/C7/N19/S79/s02/T1.002,pick and place,bowl,"[184, 215]",pick up bowl,31
+hoi4d,ZY20210800001/H1/C7/N27/S60/s03/T1.000,pick and place,bowl,"[45, 52]",pick up bowl,7
+hoi4d,ZY20210800002/H2/C7/N40/S57/s04/T1.000,pick and place,bowl,"[37, 95]",pick up bowl,58
+hoi4d,ZY20210800001/H1/C7/N34/S61/s01/T1.003,pick and place,bowl,"[190, 201]",pick up bowl,11
+hoi4d,ZY20210800001/H1/C7/N47/S278/s05/T4.000,take the ball out of the bowl,bowl,"[61, 64]",pick up bowl,3
+hoi4d,ZY20210800001/H1/C7/N31/S60/s04/T1.003,pick and place,bowl,"[220, 231]",pick up bowl,11
+hoi4d,ZY20210800001/H1/C7/N24/S59/s03/T2.000,put it in the drawer,bowl,"[41, 51]",pick up bowl,10
+hoi4d,ZY20210800001/H1/C7/N14/S276/s01/T3.000,take it out of the drawer,bowl,"[53, 80]",pick up bowl,27
+hoi4d,ZY20210800002/H2/C7/N39/S57/s03/T1.000,pick and place,bowl,"[41, 89]",pick up bowl,48
+hoi4d,ZY20210800001/H1/C7/N34/S272/s04/T2.000,put it in the drawer,bowl,"[60, 64]",pick up bowl,4
+hoi4d,ZY20210800002/H2/C7/N15/S64/s03/T3.000,take it out of the drawer,bowl,"[28, 31]",pick up bowl,3
+hoi4d,ZY20210800001/H1/C7/N37/S278/s02/T4.003,take the ball out of the bowl,bowl,"[176, 184]",pick up bowl,8
+hoi4d,ZY20210800002/H2/C7/N42/S57/s05/T1.002,pick and place,bowl,"[154, 199]",pick up bowl,45
+hoi4d,ZY20210800001/H1/C7/N47/S285/s02/T6.003,pick and place (with ball),bowl,"[199, 202]",pick up bowl,3
+hoi4d,ZY20210800001/H1/C7/N27/S60/s03/T2.003,put it in the drawer,bowl,"[183, 188]",pick up bowl,5
+hoi4d,ZY20210800001/H1/C7/N37/S61/s02/T2.000,put it in the drawer,bowl,"[41, 45]",pick up bowl,4
+hoi4d,ZY20210800003/H3/C12/N12/S206/s03/T2.000,pour water into a mug,kettle,"[62, 67]",pick up kettle,5
+hoi4d,ZY20210800001/H1/C12/N45/S200/s05/T2.000,pour water into a mug,kettle,"[60, 70]",pick up kettle,10
+hoi4d,ZY20210800002/H2/C12/N19/S346/s02/T2.000,pour water into a mug,kettle,"[53, 58]",pick up kettle,5
+hoi4d,ZY20210800002/H2/C12/N33/S346/s01/T1.003,pick and place,kettle,"[179, 192]",pick up kettle,13
+hoi4d,ZY20210800002/H2/C12/N24/S157/s01/T1.002,pick and place,kettle,"[223, 238]",pick up kettle,15
+hoi4d,ZY20210800004/H4/C12/N42/S235/s05/T1.003,pick and place,kettle,"[176, 187]",pick up kettle,11
+hoi4d,ZY20210800002/H2/C12/N16/S346/s02/T1.003,pick and place,kettle,"[180, 191]",pick up kettle,11
+hoi4d,ZY20210800002/H2/C12/N11/S196/s03/T2.000,pour water into a mug,kettle,"[43, 51]",pick up kettle,8
+hoi4d,ZY20210800002/H2/C12/N23/S198/s01/T2.003,pour water into a mug,kettle,"[194, 204]",pick up kettle,10
+hoi4d,ZY20210800003/H3/C12/N13/S206/s04/T2.000,pour water into a mug,kettle,"[53, 62]",pick up kettle,9
+hoi4d,ZY20210800001/H1/C12/N33/S165/s02/T1.003,pick and place,kettle,"[205, 209]",pick up kettle,4
+hoi4d,ZY20210800002/H2/C12/N23/S157/s01/T1.000,pick and place,kettle,"[81, 101]",pick up kettle,20
+hoi4d,ZY20210800004/H4/C12/N28/S184/s01/T2.000,pour water into a mug,kettle,"[47, 54]",pick up kettle,7
+hoi4d,ZY20210800002/H2/C12/N36/S198/s03/T2.000,pour water into a mug,kettle,"[48, 56]",pick up kettle,8
+hoi4d,ZY20210800003/H3/C12/N15/S173/s04/T1.003,pick and place,kettle,"[201, 215]",pick up kettle,14
+hoi4d,ZY20210800002/H2/C12/N15/S196/s04/T2.003,pour water into a mug,kettle,"[199, 208]",pick up kettle,9
+hoi4d,ZY20210800004/H4/C12/N40/S235/s04/T1.000,pick and place,kettle,"[52, 68]",pick up kettle,16
+hoi4d,ZY20210800001/H1/C12/N11/S203/s03/T2.003,pour water into a mug,kettle,"[221, 228]",pick up kettle,7
+hoi4d,ZY20210800002/H2/C12/N15/S154/s04/T1.000,pick and place,kettle,"[74, 92]",pick up kettle,18
+hoi4d,ZY20210800001/H1/C12/N44/S200/s05/T2.003,pour water into a mug,kettle,"[201, 208]",pick up kettle,7
+hoi4d,ZY20210800001/H1/C11/N53/S367/s03/T3.000,put it in the drawer,pliers,"[60, 67]",pick up pliers,7
+hoi4d,ZY20210800004/H4/C11/N54/S368/s03/T3.000,put it in the drawer,pliers,"[52, 72]",pick up pliers,20
+hoi4d,ZY20210800004/H4/C11/N43/S243/s05/T3.000,put it in the drawer,pliers,"[57, 75]",pick up pliers,18
+hoi4d,ZY20210800002/H2/C11/N14/S133/s04/T1.003,pick and place,pliers,"[202, 216]",pick up pliers,14
+hoi4d,ZY20210800001/H1/C11/N59/S376/s01/T1.003,pick and place,pliers,"[195, 202]",pick up pliers,7
+hoi4d,ZY20210800003/H3/C11/N49/S151/s01/T1.000,pick and place,pliers,"[53, 70]",pick up pliers,17
+hoi4d,ZY20210800001/H1/C11/N51/S367/s03/T3.000,put it in the drawer,pliers,"[72, 79]",pick up pliers,7
+hoi4d,ZY20210800001/H1/C11/N21/S187/s01/T3.004,put it in the drawer,pliers,"[179, 190]",pick up pliers,11
+hoi4d,ZY20210800002/H2/C11/N09/S133/s03/T1.000,pick and place,pliers,"[68, 83]",pick up pliers,15
+hoi4d,ZY20210800004/H4/C11/N57/S368/s05/T2.003,take it out of the drawer,pliers,"[194, 208]",pick up pliers,14
+hoi4d,ZY20210800002/H2/C11/N13/S201/s04/T4.000,clamp something,pliers,"[55, 64]",pick up pliers,9
+hoi4d,ZY20210800001/H1/C11/N24/S129/s01/T1.000,pick and place,pliers,"[70, 85]",pick up pliers,15
+hoi4d,ZY20210800001/H1/C11/N52/S367/s03/T3.000,put it in the drawer,pliers,"[52, 63]",pick up pliers,11
+hoi4d,ZY20210800002/H2/C11/N10/S201/s03/T4.000,clamp something,pliers,"[64, 73]",pick up pliers,9
+hoi4d,ZY20210800001/H1/C11/N60/S376/s02/T2.003,take it out of the drawer,pliers,"[180, 188]",pick up pliers,8
+hoi4d,ZY20210800004/H4/C11/N25/S193/s03/T2.003,take it out of the drawer,pliers,"[177, 196]",pick up pliers,19
+hoi4d,ZY20210800004/H4/C11/N21/S193/s03/T3.000,put it in the drawer,pliers,"[53, 72]",pick up pliers,19
+hoi4d,ZY20210800003/H3/C11/N33/S148/s02/T1.003,pick and place,pliers,"[196, 208]",pick up pliers,12
+hoi4d,ZY20210800004/H4/C1/N22/S242/s03/T3.000,put it in the drawer,toy car,"[59, 62]",pick up toy car,3
+hoi4d,ZY20210800004/H4/C1/N34/S239/s04/T1.000,pick and place,toy car,"[65, 76]",pick up toy car,11
+hoi4d,ZY20210800002/H2/C1/N13/S339/s02/T1.000,pick and place,toy car,"[29, 89]",pick up toy car,60
+hoi4d,ZY20210800004/H4/C1/N33/S190/s01/T3.003,put it in the drawer,toy car,"[190, 193]",pick up toy car,3
+hoi4d,ZY20210800004/H4/C1/N30/S239/s03/T1.000,pick and place,toy car,"[65, 74]",pick up toy car,9
+hoi4d,ZY20210800004/H4/C1/N45/S17/s02/T3.000,put it in the drawer,toy car,"[81, 92]",pick up toy car,11
+hoi4d,ZY20210800001/H1/C1/N39/S99/s01/T1.000,pick and place,toy car,"[32, 42]",pick up toy car,10
+hoi4d,ZY20210800004/H4/C1/N23/S239/s01/T1.000,pick and place,toy car,"[69, 78]",pick up toy car,9
+hoi4d,ZY20210800004/H4/C1/N21/S239/s01/T1.003,pick and place,toy car,"[183, 192]",pick up toy car,9
+hoi4d,ZY20210800004/H4/C1/N32/S239/s03/T1.000,pick and place,toy car,"[57, 63]",pick up toy car,6
+hoi4d,ZY20210800001/H1/C1/N39/S99/s01/T1.003,pick and place,toy car,"[174, 185]",pick up toy car,11
+hoi4d,ZY20210800003/H3/C1/N24/S87/s04/T1.003,pick and place,toy car,"[194, 208]",pick up toy car,14
+hoi4d,ZY20210800002/H2/C1/N12/S339/s01/T1.000,pick and place,toy car,"[28, 88]",pick up toy car,60
+hoi4d,ZY20210800004/H4/C1/N33/S190/s01/T3.000,put it in the drawer,toy car,"[55, 59]",pick up toy car,4
+hoi4d,ZY20210800002/H2/C1/N23/S87/s02/T1.002,pick and place,toy car,"[183, 246]",pick up toy car,63
+hoi4d,ZY20210800004/H4/C1/N38/S244/s05/T4.000,take it out of the drawer,toy car,"[53, 77]",pick up toy car,24
+hoi4d,ZY20210800004/H4/C2/N39/S10/s05/T1.005,pick and place,mug,"[201, 259]",put down mug,58
+hoi4d,ZY20210800002/H2/C2/N18/S25/s04/T1.005,pick and place,mug,"[205, 267]",put down mug,62
+hoi4d,ZY20210800002/H2/C2/N24/S2/s02/T3.005,take it out of the drawer,mug,"[231, 290]",put down mug,59
+hoi4d,ZY20210800004/H4/C2/N47/S16/s02/T1.005,pick and place,mug,"[194, 240]",put down mug,46
+hoi4d,ZY20210800004/H4/C2/N16/S11/s04/T1.002,pick and place,mug,"[75, 120]",put down mug,45
+hoi4d,ZY20210800002/H2/C2/N43/S29/s02/T3.004,take it out of the drawer,mug,"[204, 271]",put down mug,67
+hoi4d,ZY20210800001/H1/C2/N37/S63/s03/T1.005,pick and place,mug,"[237, 271]",put down mug,34
+hoi4d,ZY20210800001/H1/C2/N37/S213/s05/T5.005,pour water into another mug,mug,"[209, 252]",put down mug,43
+hoi4d,ZY20210800001/H1/C2/N47/S54/s03/T1.005,pick and place,mug,"[218, 267]",put down mug,49
+hoi4d,ZY20210800001/H1/C2/N14/S93/s01/T2.002,put it in the drawer,mug,"[68, 97]",put down mug,29
+hoi4d,ZY20210800001/H1/C2/N14/S212/s04/T2.005,put it in the drawer,mug,"[228, 252]",put down mug,24
+hoi4d,ZY20210800004/H4/C2/N32/S14/s02/T1.005,pick and place,mug,"[216, 250]",put down mug,34
+hoi4d,ZY20210800004/H4/C2/N36/S10/s04/T5.005,pour water into another mug,mug,"[229, 252]",put down mug,23
+hoi4d,ZY20210800001/H1/C2/N23/S27/s01/T2.002,put it in the drawer,mug,"[88, 144]",put down mug,56
+hoi4d,ZY20210800004/H4/C2/N19/S13/s01/T5.002,pour water into another mug,mug,"[143, 162]",put down mug,19
+hoi4d,ZY20210800002/H2/C2/N47/S29/s04/T3.002,take it out of the drawer,mug,"[102, 144]",put down mug,42
+hoi4d,ZY20210800001/H1/C2/N45/S54/s02/T2.002,put it in the drawer,mug,"[64, 88]",put down mug,24
+hoi4d,ZY20210800003/H3/C2/N47/S219/s02/T3.002,take it out of the drawer,mug,"[97, 121]",put down mug,24
+hoi4d,ZY20210800001/H1/C2/N44/S214/s01/T6.005,pick and place (with water),mug,"[232, 264]",put down mug,32
+hoi4d,ZY20210800002/H2/C2/N17/S25/s04/T3.005,take it out of the drawer,mug,"[201, 249]",put down mug,48
+hoi4d,ZY20210800001/H1/C11/N11/S125/s03/T1.004,pick and place,pliers,"[233, 254]",carry pliers,21
+hoi4d,ZY20210800001/H1/C11/N15/S125/s04/T1.001,pick and place,pliers,"[90, 127]",carry pliers,37
+hoi4d,ZY20210800003/H3/C11/N09/S151/s03/T1.004,pick and place,pliers,"[216, 232]",carry pliers,16
+hoi4d,ZY20210800001/H1/C11/N58/S376/s02/T2.004,take it out of the drawer,pliers,"[197, 232]",carry pliers,35
+hoi4d,ZY20210800001/H1/C11/N61/S376/s03/T3.004,put it in the drawer,pliers,"[197, 203]",carry pliers,6
+hoi4d,ZY20210800001/H1/C11/N20/S185/s05/T3.001,put it in the drawer,pliers,"[68, 94]",carry pliers,26
+hoi4d,ZY20210800002/H2/C11/N24/S137/s01/T1.004,pick and place,pliers,"[231, 246]",carry pliers,15
+hoi4d,ZY20210800003/H3/C11/N42/S148/s05/T1.004,pick and place,pliers,"[200, 220]",carry pliers,20
+hoi4d,ZY20210800001/H1/C11/N58/S376/s05/T2.001,take it out of the drawer,pliers,"[75, 94]",carry pliers,19
+hoi4d,ZY20210800001/H1/C11/N53/S367/s04/T4.001,clamp something,pliers,"[85, 110]",carry pliers,25
+hoi4d,ZY20210800001/H1/C11/N59/S376/s01/T1.004,pick and place,pliers,"[204, 235]",carry pliers,31
+hoi4d,ZY20210800001/H1/C11/N53/S367/s03/T3.001,put it in the drawer,pliers,"[69, 108]",carry pliers,39
+hoi4d,ZY20210800002/H2/C11/N12/S359/s02/T1.004,pick and place,pliers,"[221, 243]",carry pliers,22
+hoi4d,ZY20210800003/H3/C11/N40/S180/s04/T4.001,clamp something,pliers,"[77, 98]",carry pliers,21
+hoi4d,ZY20210800004/H4/C11/N57/S368/s03/T3.001,put it in the drawer,pliers,"[63, 91]",carry pliers,28
+hoi4d,ZY20210800004/H4/C11/N43/S243/s05/T3.001,put it in the drawer,pliers,"[77, 89]",carry pliers,12
+hoi4d,ZY20210800004/H4/C17/N73/S262/s01/T2.005,turn and fold,lamp,"[201, 223]",open lamp,22
+hoi4d,ZY20210800001/H1/C17/N66/S264/s04/T2.001,turn and fold,lamp,"[67, 104]",open lamp,37
+hoi4d,ZY20210800004/H4/C17/N17/S190/s05/T2.001,turn and fold,lamp,"[55, 87]",open lamp,32
+hoi4d,ZY20210800003/H3/C17/N69/S264/s05/T2.001,turn and fold,lamp,"[53, 70]",open lamp,17
+hoi4d,ZY20210800004/H4/C17/N74/S262/s03/T2.005,turn and fold,lamp,"[199, 221]",open lamp,22
+hoi4d,ZY20210800002/H2/C17/N64/S253/s04/T2.001,turn and fold,lamp,"[51, 84]",open lamp,33
+hoi4d,ZY20210800002/H2/C12/N25/S198/s02/T2.002,pour water into a mug,kettle,"[87, 126]",put down kettle,39
+hoi4d,ZY20210800001/H1/C12/N44/S200/s05/T2.005,pour water into a mug,kettle,"[252, 267]",put down kettle,15
+hoi4d,ZY20210800004/H4/C12/N32/S235/s02/T1.005,pick and place,kettle,"[242, 266]",put down kettle,24
+hoi4d,ZY20210800004/H4/C12/N17/S186/s02/T2.002,pour water into a mug,kettle,"[101, 133]",put down kettle,32
+hoi4d,ZY20210800004/H4/C12/N44/S184/s05/T2.005,pour water into a mug,kettle,"[233, 262]",put down kettle,29
+hoi4d,ZY20210800001/H1/C12/N43/S165/s05/T1.002,pick and place,kettle,"[142, 156]",put down kettle,14
+hoi4d,ZY20210800001/H1/C12/N45/S200/s05/T2.005,pour water into a mug,kettle,"[246, 268]",put down kettle,22
+hoi4d,ZY20210800002/H2/C12/N18/S196/s05/T2.002,pour water into a mug,kettle,"[96, 134]",put down kettle,38
+hoi4d,ZY20210800002/H2/C12/N16/S346/s02/T1.005,pick and place,kettle,"[216, 243]",put down kettle,27
+hoi4d,ZY20210800002/H2/C12/N12/S154/s04/T1.001,pick and place,kettle,"[108, 134]",put down kettle,26
+hoi4d,ZY20210800001/H1/C12/N50/S203/s02/T2.002,pour water into a mug,kettle,"[102, 155]",put down kettle,53
+hoi4d,ZY20210800001/H1/C12/N30/S165/s02/T1.005,pick and place,kettle,"[242, 271]",put down kettle,29
+hoi4d,ZY20210800004/H4/C12/N19/S236/s03/T1.002,pick and place,kettle,"[108, 137]",put down kettle,29
+hoi4d,ZY20210800004/H4/C12/N45/S236/s01/T1.002,pick and place,kettle,"[96, 115]",put down kettle,19
+hoi4d,ZY20210800003/H3/C12/N11/S206/s03/T2.002,pour water into a mug,kettle,"[100, 128]",put down kettle,28
+hoi4d,ZY20210800003/H3/C12/N18/S206/s05/T2.005,pour water into a mug,kettle,"[240, 250]",put down kettle,10
+hoi4d,ZY20210800004/H4/C12/N23/S236/s03/T1.002,pick and place,kettle,"[112, 132]",put down kettle,20
+hoi4d,ZY20210800001/H1/C12/N26/S200/s01/T2.002,pour water into a mug,kettle,"[108, 142]",put down kettle,34
+hoi4d,ZY20210800004/H4/C12/N26/S184/s01/T2.002,pour water into a mug,kettle,"[116, 147]",put down kettle,31
+hoi4d,ZY20210800003/H3/C12/N18/S206/s05/T2.002,pour water into a mug,kettle,"[102, 130]",put down kettle,28
+hoi4d,ZY20210800001/H1/C6/N28/S87/s01/T2.004,put something in it,safe,"[221, 228]",carry safe,7
+hoi4d,ZY20210800001/H1/C6/N01/S82/s01/T2.003,put something in it,safe,"[223, 237]",carry safe,14
+hoi4d,ZY20210800001/H1/C6/N20/S247/s05/T2.004,put something in it,safe,"[246, 255]",carry safe,9
+hoi4d,ZY20210800002/H2/C6/N16/S40/s03/T2.003,put something in it,safe,"[211, 234]",carry safe,23
+hoi4d,ZY20210800004/H4/C6/N06/S249/s02/T2.004,put something in it,safe,"[234, 245]",carry safe,11
+hoi4d,ZY20210800001/H1/C2/N38/S213/s05/T5.001,pour water into another mug,mug,"[61, 98]",dump mug,37
+hoi4d,ZY20210800001/H1/C17/N65/S264/s04/T2.007,turn and fold,lamp,"[255, 274]",put down lamp,19
+hoi4d,ZY20210800002/H2/C17/N67/S253/s05/T2.003,turn and fold,lamp,"[130, 144]",put down lamp,14
+hoi4d,ZY20210800003/H3/C17/N17/S126/s05/T1.001,pick and place,lamp,"[86, 105]",put down lamp,19
+hoi4d,ZY20210800002/H2/C17/N11/S152/s03/T1.001,pick and place,lamp,"[103, 127]",put down lamp,24
+hoi4d,ZY20210800004/H4/C17/N10/S138/s01/T1.002,pick and place,lamp,"[89, 97]",put down lamp,8
+hoi4d,ZY20210800003/H3/C17/N72/S266/s01/T2.007,turn and fold,lamp,"[234, 254]",put down lamp,20
+hoi4d,ZY20210800003/H3/C17/N16/S126/s04/T1.001,pick and place,lamp,"[85, 98]",put down lamp,13
+hoi4d,ZY20210800001/H1/C17/N62/S266/s03/T3.005,turn on and turn off,lamp,"[213, 228]",put down lamp,15
+hoi4d,ZY20210800001/H1/C17/N75/S266/s02/T3.002,turn on and turn off,lamp,"[87, 100]",put down lamp,13
+hoi4d,ZY20210800001/H1/C17/N73/S266/s01/T3.002,turn on and turn off,lamp,"[81, 92]",put down lamp,11
+hoi4d,ZY20210800001/H1/C17/N71/S266/s01/T2.007,turn and fold,lamp,"[250, 264]",put down lamp,14
+hoi4d,ZY20210800003/H3/C17/N06/S126/s02/T1.001,pick and place,lamp,"[109, 134]",put down lamp,25
+hoi4d,ZY20210800004/H4/C17/N22/S134/s02/T1.005,pick and place,lamp,"[247, 260]",put down lamp,13
+hoi4d,ZY20210800002/H2/C17/N75/S256/s02/T3.005,turn on and turn off,lamp,"[223, 238]",put down lamp,15
+hoi4d,ZY20210800004/H4/C17/N10/S138/s01/T1.005,pick and place,lamp,"[209, 218]",put down lamp,9
+hoi4d,ZY20210800004/H4/C17/N61/S259/s03/T1.002,pick and place,lamp,"[119, 147]",put down lamp,28
+hoi4d,ZY20210800004/H4/C17/N10/S190/s03/T3.002,turn on and turn off,lamp,"[99, 115]",put down lamp,16
+hoi4d,ZY20210800004/H4/C17/N12/S190/s03/T3.005,turn on and turn off,lamp,"[230, 241]",put down lamp,11
+hoi4d,ZY20210800003/H3/C17/N57/S264/s02/T1.002,pick and place,lamp,"[79, 98]",put down lamp,19
+hoi4d,ZY20210800004/H4/C17/N07/S190/s02/T3.005,turn on and turn off,lamp,"[246, 263]",put down lamp,17
+hoi4d,ZY20210800004/H4/C13/N40/S184/s04/T4.000,cut apple,knife,"[59, 74]",pick up knife,15
+hoi4d,ZY20210800003/H3/C13/N36/S140/s03/T1.003,pick and place,knife,"[208, 216]",pick up knife,8
+hoi4d,ZY20210800001/H1/C13/N46/S238/s03/T4.000,cut apple,knife,"[55, 63]",pick up knife,8
+hoi4d,ZY20210800004/H4/C13/N41/S233/s04/T1.000,pick and place,knife,"[66, 87]",pick up knife,21
+hoi4d,ZY20210800003/H3/C13/N36/S200/s03/T3.003,put it in the drawer,knife,"[175, 194]",pick up knife,19
+hoi4d,ZY20210800003/H3/C13/N45/S140/s05/T1.000,pick and place,knife,"[70, 81]",pick up knife,11
+hoi4d,ZY20210800001/H1/C13/N18/S179/s05/T4.003,cut apple,knife,"[182, 194]",pick up knife,12
+hoi4d,ZY20210800003/H3/C13/N46/S203/s01/T4.000,cut apple,knife,"[51, 68]",pick up knife,17
+hoi4d,ZY20210800003/H3/C13/N11/S203/s03/T4.000,cut apple,knife,"[46, 60]",pick up knife,14
+hoi4d,ZY20210800001/H1/C13/N40/S238/s02/T4.006,cut apple,knife,"[215, 219]",pick up knife,4
+hoi4d,ZY20210800004/H4/C13/N49/S186/s01/T3.000,put it in the drawer,knife,"[58, 75]",pick up knife,17
+hoi4d,ZY20210800003/H3/C13/N36/S200/s03/T3.000,put it in the drawer,knife,"[63, 77]",pick up knife,14
+hoi4d,ZY20210800003/H3/C13/N35/S200/s03/T3.000,put it in the drawer,knife,"[57, 74]",pick up knife,17
+hoi4d,ZY20210800003/H3/C13/N30/S200/s02/T2.003,take it out of the drawer,knife,"[201, 220]",pick up knife,19
+hoi4d,ZY20210800003/H3/C13/N47/S144/s01/T1.000,pick and place,knife,"[74, 84]",pick up knife,10
+hoi4d,ZY20210800002/H2/C13/N28/S128/s02/T1.000,pick and place,knife,"[85, 102]",pick up knife,17
+hoi4d,ZY20210800002/H2/C13/N18/S124/s05/T1.000,pick and place,knife,"[96, 113]",pick up knife,17
+hoi4d,ZY20210800004/H4/C13/N19/S186/s02/T2.000,take it out of the drawer,knife,"[58, 80]",pick up knife,22
+hoi4d,ZY20210800004/H4/C13/N36/S233/s03/T1.003,pick and place,knife,"[201, 214]",pick up knife,13
+hoi4d,ZY20210800004/H4/C13/N25/S234/s03/T1.003,pick and place,knife,"[180, 197]",pick up knife,17
+hoi4d,ZY20210800002/H2/C13/N34/S192/s03/T2.000,take it out of the drawer,knife,"[76, 99]",pick up knife,23
+hoi4d,ZY20210800001/H1/C13/N21/S136/s01/T1.000,pick and place,knife,"[68, 76]",pick up knife,8
+hoi4d,ZY20210800002/H2/C14/N11/S185/s03/T2.001,throw something in it,trash can,"[79, 101]",close trash can,22
+hoi4d,ZY20210800003/H3/C14/N27/S334/s01/T1.003,open and close,trash can,"[210, 239]",close trash can,29
+hoi4d,ZY20210800004/H4/C14/N28/S177/s02/T1.001,open and close,trash can,"[88, 110]",close trash can,22
+hoi4d,ZY20210800003/H3/C14/N33/S334/s03/T2.001,throw something in it,trash can,"[77, 98]",close trash can,21
+hoi4d,ZY20210800003/H3/C14/N30/S334/s03/T2.001,throw something in it,trash can,"[72, 82]",close trash can,10
+hoi4d,ZY20210800001/H1/C14/N34/S207/s03/T2.001,throw something in it,trash can,"[82, 106]",close trash can,24
+hoi4d,ZY20210800001/H1/C14/N35/S207/s03/T2.001,throw something in it,trash can,"[92, 116]",close trash can,24
+hoi4d,ZY20210800001/H1/C14/N43/S155/s05/T1.001,open and close,trash can,"[111, 158]",close trash can,47
+hoi4d,ZY20210800004/H4/C14/N32/S177/s03/T1.003,open and close,trash can,"[200, 230]",close trash can,30
+hoi4d,ZY20210800001/H1/C14/N32/S207/s02/T2.008,throw something in it,trash can,"[255, 277]",close trash can,22
+hoi4d,ZY20210800001/H1/C14/N29/S155/s01/T1.001,open and close,trash can,"[91, 131]",close trash can,40
+hoi4d,ZY20210800003/H3/C14/N44/S207/s05/T2.001,throw something in it,trash can,"[63, 74]",close trash can,11
+hoi4d,ZY20210800003/H3/C14/N32/S166/s02/T1.001,open and close,trash can,"[89, 109]",close trash can,20
+hoi4d,ZY20210800003/H3/C14/N31/S166/s02/T1.003,open and close,trash can,"[219, 238]",close trash can,19
+hoi4d,ZY20210800002/H2/C14/N17/S161/s05/T1.001,open and close,trash can,"[100, 126]",close trash can,26
+hoi4d,ZY20210800001/H1/C14/N47/S209/s01/T2.003,throw something in it,trash can,"[177, 191]",carry trash can,14
+hoi4d,ZY20210800002/H2/C14/N50/S187/s03/T2.007,throw something in it,trash can,"[206, 215]",carry trash can,9
+hoi4d,ZY20210800001/H1/C14/N32/S207/s02/T2.006,throw something in it,trash can,"[229, 236]",carry trash can,7
+hoi4d,ZY20210800001/H1/C14/N46/S209/s01/T2.004,throw something in it,trash can,"[178, 188]",carry trash can,10
+hoi4d,ZY20210800003/H3/C14/N46/S209/s01/T2.003,throw something in it,trash can,"[165, 186]",carry trash can,21
+hoi4d,ZY20210800003/H3/C14/N26/S334/s02/T2.004,throw something in it,trash can,"[183, 203]",carry trash can,20
+hoi4d,ZY20210800001/H1/C14/N17/S209/s02/T2.004,throw something in it,trash can,"[208, 224]",carry trash can,16
+hoi4d,ZY20210800003/H3/C14/N30/S334/s03/T2.006,throw something in it,trash can,"[240, 245]",carry trash can,5
+hoi4d,ZY20210800003/H3/C14/N26/S334/s02/T2.006,throw something in it,trash can,"[235, 238]",pick up trash can,3
+hoi4d,ZY20210800002/H2/C14/N44/S187/s02/T2.006,throw something in it,trash can,"[260, 268]",pick up trash can,8
+hoi4d,ZY20210800001/H1/C14/N45/S207/s05/T2.006,throw something in it,trash can,"[251, 255]",pick up trash can,4
+hoi4d,ZY20210800001/H1/C14/N50/S209/s02/T2.006,throw something in it,trash can,"[269, 276]",pick up trash can,7
+hoi4d,ZY20210800003/H3/C14/N33/S334/s03/T2.006,throw something in it,trash can,"[244, 250]",pick up trash can,6
+hoi4d,ZY20210800001/H1/C14/N26/S333/s02/T2.003,throw something in it,trash can,"[207, 210]",pick up trash can,3
+hoi4d,ZY20210800001/H1/C14/N15/S209/s02/T2.005,throw something in it,trash can,"[228, 232]",pick up trash can,4
+hoi4d,ZY20210800001/H1/C14/N36/S333/s03/T2.002,throw something in it,trash can,"[183, 193]",pick up trash can,10
+hoi4d,ZY20210800003/H3/C14/N38/S207/s04/T2.005,throw something in it,trash can,"[220, 227]",pick up trash can,7
+hoi4d,ZY20210800004/H4/C14/N24/S211/s01/T2.003,throw something in it,trash can,"[191, 195]",pick up trash can,4
+hoi4d,ZY20210800001/H1/C9/N47/S36/s04/T2.003,cut something,scissors,"[107, 177]",put down scissors,70
+hoi4d,ZY20210800001/H1/C9/N42/S33/s05/T1.002,pick and place,scissors,"[148, 169]",put down scissors,21
+hoi4d,ZY20210800001/H1/C9/N49/S36/s05/T2.003,cut something,scissors,"[120, 194]",put down scissors,74
+hoi4d,ZY20210800002/H2/C9/N20/S350/s03/T2.002,cut something,scissors,"[88, 106]",put down scissors,18
+hoi4d,ZY20210800001/H1/C9/N18/S33/s04/T1.005,pick and place,scissors,"[260, 283]",put down scissors,23
+hoi4d,ZY20210800003/H3/C9/N13/S300/s02/T2.002,cut something,scissors,"[112, 128]",put down scissors,16
+hoi4d,ZY20210800001/H1/C9/N13/S33/s02/T2.006,cut something,scissors,"[268, 281]",put down scissors,13
+hoi4d,ZY20210800003/H3/C9/N19/S45/s04/T1.003,pick and place,scissors,"[224, 267]",put down scissors,43
+hoi4d,ZY20210800003/H3/C9/N39/S303/s03/T2.005,cut something,scissors,"[230, 258]",put down scissors,28
+hoi4d,ZY20210800001/H1/C9/N12/S33/s01/T1.005,pick and place,scissors,"[238, 271]",put down scissors,33
+hoi4d,ZY20210800003/H3/C9/N17/S300/s03/T2.005,cut something,scissors,"[219, 242]",put down scissors,23
+hoi4d,ZY20210800002/H2/C9/N40/S344/s01/T2.002,cut something,scissors,"[98, 110]",put down scissors,12
+hoi4d,ZY20210800001/H1/C9/N49/S36/s05/T1.005,pick and place,scissors,"[274, 279]",put down scissors,5
+hoi4d,ZY20210800001/H1/C9/N18/S33/s04/T2.006,cut something,scissors,"[248, 274]",put down scissors,26
+hoi4d,ZY20210800003/H3/C9/N16/S300/s02/T2.005,cut something,scissors,"[210, 234]",put down scissors,24
+hoi4d,ZY20210800003/H3/C9/N50/S306/s01/T2.005,cut something,scissors,"[236, 262]",put down scissors,26
+hoi4d,ZY20210800002/H2/C9/N21/S349/s01/T1.001,pick and place,scissors,"[102, 121]",put down scissors,19
+hoi4d,ZY20210800004/H4/C2/N47/S16/s02/T1.001,pick and place,mug,"[37, 46]",carry mug,9
+hoi4d,ZY20210800002/H2/C2/N36/S30/s03/T1.001,pick and place,mug,"[39, 80]",carry mug,41
+hoi4d,ZY20210800001/H1/C2/N11/S212/s03/T2.004,put it in the drawer,mug,"[223, 236]",carry mug,13
+hoi4d,ZY20210800003/H3/C2/N31/S217/s03/T1.004,pick and place,mug,"[180, 208]",carry mug,28
+hoi4d,ZY20210800004/H4/C2/N27/S13/s05/T1.004,pick and place,mug,"[186, 194]",carry mug,8
+hoi4d,ZY20210800003/H3/C2/N18/S215/s05/T6.001,pick and place (with water),mug,"[62, 84]",carry mug,22
+hoi4d,ZY20210800002/H2/C2/N19/S25/s05/T3.001,take it out of the drawer,mug,"[57, 96]",carry mug,39
+hoi4d,ZY20210800001/H1/C2/N48/S54/s03/T2.004,put it in the drawer,mug,"[167, 188]",carry mug,21
+hoi4d,ZY20210800002/H2/C2/N49/S29/s05/T3.001,take it out of the drawer,mug,"[41, 83]",carry mug,42
+hoi4d,ZY20210800002/H2/C2/N17/S25/s04/T3.004,take it out of the drawer,mug,"[174, 199]",carry mug,25
+hoi4d,ZY20210800001/H1/C2/N18/S212/s05/T3.001,take it out of the drawer,mug,"[79, 91]",carry mug,12
+hoi4d,ZY20210800001/H1/C2/N41/S63/s05/T1.003,pick and place,mug,"[210, 235]",carry mug,25
+hoi4d,ZY20210800003/H3/C2/N23/S217/s01/T6.004,pick and place (with water),mug,"[180, 217]",carry mug,37
+hoi4d,ZY20210800001/H1/C2/N21/S213/s01/T3.001,take it out of the drawer,mug,"[88, 96]",carry mug,8
+hoi4d,ZY20210800004/H4/C2/N48/S16/s02/T5.001,pour water into another mug,mug,"[40, 77]",carry mug,37
+hoi4d,ZY20210800004/H4/C2/N48/S16/s02/T5.003,pour water into another mug,mug,"[117, 140]",carry mug,23
+arti4d,din080/scene_2025-04-11-13-43-03/673-722,interact with fridge,fridge,"[673, 722]",open fridge,49
+arti4d,din080/scene_2025-04-11-15-43-24/1264-1310,interact with freezer,freezer,"[1264, 1310]",close freezer,46
+arti4d,rr080/scene_2025-04-22-09-53-49/731-762,interact with slider,slider,"[731, 762]",open slider,31
+arti4d,din080/scene_2025-04-11-15-43-24/1974-1996,interact with slider,slider,"[1974, 1996]",open slider,22
+arti4d,din080/scene_2025-04-11-11-44-32/1926-1955,interact with slider,slider,"[1926, 1955]",open slider,29
+arti4d,din080/scene_2025-04-11-15-43-24/308-334,interact with drawer,drawer,"[308, 334]",open drawer,26
+arti4d,rh201/scene_2025-04-25-10-36-37/1120-1162,interact with drawer,drawer,"[1120, 1162]",open drawer,42
+arti4d,rr080/scene_2025-04-22-09-58-49/440-461,interact with drawer,drawer,"[440, 461]",open drawer,21
+arti4d,rh078/scene_2025-04-07-11-48-40/1063-1097,interact with drawer,drawer,"[1063, 1097]",open drawer,34
+arti4d,rh201/scene_2025-04-25-11-15-47/511-537,interact with drawer,drawer,"[511, 537]",open drawer,26
+arti4d,rh078/scene_2025-04-09-10-30-11/391-421,interact with drawer,drawer,"[391, 421]",open drawer,30
+arti4d,rr080/scene_2025-04-17-15-33-44/757-775,interact with drawer,drawer,"[757, 775]",open drawer,18
+arti4d,rr080/scene_2025-04-17-15-33-44/952-974,interact with drawer,drawer,"[952, 974]",open drawer,22
+arti4d,rr080/scene_2025-04-10-16-05-09/1924-1946,interact with container,container,"[1924, 1946]",open container,22
+arti4d,rr080/scene_2025-04-17-15-25-14/772-799,interact with container,container,"[772, 799]",open container,27
+arti4d,rr080/scene_2025-04-22-11-48-01/1076-1119,interact with container,container,"[1076, 1119]",open container,43
+arti4d,rh078/scene_2025-04-07-11-39-17/523-581,interact with cabinet,cabinet,"[523, 581]",open cabinet,58
+arti4d,rh201/scene_2025-04-25-15-04-48/525-556,interact with cabinet,cabinet,"[525, 556]",open cabinet,31
+arti4d,rh201/scene_2025-04-25-10-53-40/835-861,interact with cabinet,cabinet,"[835, 861]",open cabinet,26
+arti4d,rh201/scene_2025-04-24-17-52-21/291-321,interact with fridge,fridge,"[291, 321]",close fridge,30
+arti4d,rh078/scene_2025-04-09-10-30-11/1232-1264,interact with box,box,"[1232, 1264]",open box,32
+arti4d,rr080/scene_2025-04-22-11-50-40/1220-1248,interact with container,container,"[1220, 1248]",close container,28
+arti4d,rr080/scene_2025-04-17-15-25-14/799-827,interact with container,container,"[799, 827]",close container,28
+arti4d,rr080/scene_2025-04-17-15-33-44/1655-1684,interact with container,container,"[1655, 1684]",close container,29
+arti4d,din080/scene_2025-04-11-13-43-03/2173-2203,interact with cabinet,cabinet,"[2173, 2203]",close cabinet,30
+arti4d,rh078/scene_2025-04-07-11-48-40/1754-1795,interact with cabinet,cabinet,"[1754, 1795]",close cabinet,41
+arti4d,din080/scene_2025-04-11-13-18-00/877-907,interact with cabinet,cabinet,"[877, 907]",close cabinet,30
+arti4d,din080/scene_2025-04-11-15-46-48/547-584,interact with freezer,freezer,"[547, 584]",open freezer,37
+arti4d,rr080/scene_2025-04-10-16-05-09/1141-1163,interact with box,box,"[1141, 1163]",close box,22
+arti4d,din080/scene_2025-04-11-12-58-58/942-961,interact with slider,slider,"[942, 961]",close slider,19
+arti4d,rr080/scene_2025-04-10-13-11-16/1378-1401,interact with slider,slider,"[1378, 1401]",close slider,23
+arti4d,rh201/scene_2025-04-24-19-18-42/1640-1666,interact with drawer,drawer,"[1640, 1666]",close drawer,26
+arti4d,rh201/scene_2025-04-25-15-04-48/1353-1388,interact with drawer,drawer,"[1353, 1388]",close drawer,35
+arti4d,rh201/scene_2025-04-24-19-21-50/725-753,interact with drawer,drawer,"[725, 753]",close drawer,28
+arti4d,rh201/scene_2025-04-25-15-04-48/1054-1078,interact with drawer,drawer,"[1054, 1078]",close drawer,24
+arti4d,rr080/scene_2025-04-17-15-25-14/1477-1505,interact with drawer,drawer,"[1477, 1505]",close drawer,28
+arti4d,rh078/scene_2025-04-09-10-32-52/777-810,interact with drawer,drawer,"[777, 810]",close drawer,33
+egodex,basic_pick_place/2324/0-39,pick and place,object,"[0, 39]",pick up a yellow die from the metal table and place it into a tub,39
+egodex,basic_pick_place/6466/0-57,pick and place,object,"[0, 57]",pick up the blue tongs from the table with the left hand and place them into the tupperware,57
+egodex,basic_pick_place/139/0-44,pick and place,object,"[0, 44]",pick up the white lego from the gray tupperware with the right hand and place it on the metal tray,44
+egodex,basic_pick_place/9351/0-51,pick and place,object,"[0, 51]",pick up the black screwdriver from the metal table and place it in the speaker case,51
+egodex,basic_pick_place/569/0-75,pick and place,object,"[0, 75]",pick up the pink block from the table with the right hand and place it in the blue bowl,75
+egodex,basic_pick_place/2451/0-64,pick and place,object,"[0, 64]",pick up the jenga block from the light blue bowl with the right hand and place it into the orange bowl,64
+egodex,basic_pick_place/4759/0-44,pick and place,object,"[0, 44]",pick up a blue cooking tong from the metal table and place it in a speaker case,44
+egodex,basic_pick_place/182/0-31,pick and place,object,"[0, 31]",pick up the brown egg from the wood table with the right hand and place it into the yellow bowl,31
+egodex,basic_pick_place/9991/0-39,pick and place,object,"[0, 39]",pick up the red strawberry from the baking tray and place it in the bowl,39
+egodex,basic_pick_place/2446/0-44,pick and place,object,"[0, 44]",pick up the orange carrot from the table with the left hand and place it into the green bowl,44
+egodex,basic_pick_place/2679/0-74,pick and place,object,"[0, 74]",pick up a black donut block from the table and place it in the purple scoop,74
+egodex,basic_pick_place/570/0-66,pick and place,object,"[0, 66]",pick up the blue block from the light blue bowl with the right hand and place it on the tray,66
+egodex,basic_pick_place/8066/0-41,pick and place,object,"[0, 41]",pick up the white egg from the table with the right hand and place it into the yellow bowl,41
+egodex,basic_pick_place/8563/0-47,pick and place,object,"[0, 47]",pick up the blue plushie from the table with the left hand and place it in the green plate,47
+egodex,basic_pick_place/5401/0-69,pick and place,object,"[0, 69]",pick up a red screwdriver from the metal table and place it on the baking tray,69
+egodex,basic_pick_place/9586/0-55,pick and place,object,"[0, 55]",pick up the green grapes from the metal table with the right hand and place them on the green plate,55
+egodex,basic_pick_place/640/0-21,pick and place,object,"[0, 21]",pick up the purple teacup from the table with the right hand and place it on the yellow bowl,21
+egodex,basic_pick_place/515/0-158,pick and place,object,"[0, 158]",pick up the tennis ball from the black case with the right hand and place it on the cardboard lid,158
+egodex,basic_pick_place/6468/0-46,pick and place,object,"[0, 46]",pick up the blue plushie from the table with the left hand and place it in the green plate,46
+egodex,basic_pick_place/2540/0-63,pick and place,object,"[0, 63]",pick up a yellow builder duck from the table and place it onto the red plate,63
+egodex,basic_pick_place/5288/0-50,pick and place,object,"[0, 50]",pick up the big yellow block from the table with the right hand and place it on the gray bowl,50
+egodex,basic_pick_place/1512/0-44,pick and place,object,"[0, 44]",pick up the yellow banana from the wooden table with the right hand and place it on the green plate,44
+egodex,basic_pick_place/2254/0-42,pick and place,object,"[0, 42]",pick up the lime from the gray plate with the right hand and place it on the tupperwear,42
+egodex,basic_pick_place/3689/0-26,pick and place,object,"[0, 26]",pick up the red strawberry from the table with the left hand and place it in the green bowl,26
+egodex,basic_pick_place/3536/0-34,pick and place,object,"[0, 34]",pick up a brown ruler from the metal table and place it in the tool box,34
+egodex,basic_pick_place/8031/0-31,pick and place,object,"[0, 31]",pick up the clear safety glasses from the metal table and place them on the plate,31
+egodex,basic_pick_place/9532/0-28,pick and place,object,"[0, 28]",pick up a multi-color rubik's cube from the metal table and place it in the drawer,28
+egodex,basic_pick_place/8035/0-47,pick and place,object,"[0, 47]",pick up the white plushie from the table with the right hand and place it on the blue plate,47
+egodex,basic_pick_place/1087/0-24,pick and place,object,"[0, 24]",pick up a blue lego brick from the table and place it on a lid,24
+egodex,basic_pick_place/2285/0-68,pick and place,object,"[0, 68]",pick up the yellow hippo from the table and place it into the turquoise bowl,68
+egodex,basic_pick_place/2761/0-86,pick and place,object,"[0, 86]",pick up an ice cube from the table and place it onto the blue plate,86
+egodex,basic_pick_place/3473/0-92,pick and place,object,"[0, 92]",pick up the red cherry from the table and place it in the utensil drying rack,92
+egodex,basic_pick_place/4703/0-62,pick and place,object,"[0, 62]",pick up the blue plushie from the table with the right hand and place it in the white dustpan,62
+egodex,basic_pick_place/6659/0-32,pick and place,object,"[0, 32]",pick up the cherries from the table with the right hand and place them into the orange bowl,32
+egodex,basic_pick_place/6154/0-71,pick and place,object,"[0, 71]",pick up the brown duck from the metal table with the right hand and place it in the gray bowl,71
+egodex,basic_pick_place/427/0-30,pick and place,object,"[0, 30]",pick up a white lego brick from the table and place it on a baking tray,30
+egodex,basic_pick_place/3990/0-39,pick and place,object,"[0, 39]",pick up the red strawberry from the table with the right hand and place it in the pink bowl,39
+egodex,basic_pick_place/6264/0-43,pick and place,object,"[0, 43]",pick up the croissant from the table with the left hand and place it into the yellow bowl,43
+egodex,basic_pick_place/3263/0-32,pick and place,object,"[0, 32]",pick up the croissant from the table with the left hand and place it into the yellow bowl,32
+egodex,basic_pick_place/6350/0-69,pick and place,object,"[0, 69]",pick up a brown tropical duck from the table and place it in the green bowl,69
+egodex,basic_pick_place/2967/0-40,pick and place,object,"[0, 40]",pick up the brown egg from the blue plate with the right hand and place it in the gray bowl,40
+egodex,basic_pick_place/6410/0-32,pick and place,object,"[0, 32]",pick up the gray brush from the gray tray with the right hand and place it on the clear tupperware,32
+egodex,basic_pick_place/4676/0-98,pick and place,object,"[0, 98]",pick up a brown goat plush from the table and place it in the yellow bowl,98
+egodex,basic_pick_place/9167/0-21,pick and place,object,"[0, 21]",pick up the beige and blue and red block from the table with the right hand and place it in the green bowl,21
+egodex,basic_pick_place/7330/0-82,pick and place,object,"[0, 82]",pick up the green triangle from the table with the right hand and place it in the blue bowl,82
+egodex,basic_pick_place/5240/0-39,pick and place,object,"[0, 39]",pick up the brown plushie from the yellow plate with the right hand and place it on the orange bowl,39
+egodex,basic_pick_place/4168/0-39,pick and place,object,"[0, 39]",pick up the white domino from the wood table with the right hand and place it on the gray tupperware,39
+egodex,basic_pick_place/4795/0-71,pick and place,object,"[0, 71]",pick up the red block from the table with the right hand and place it in the blue bowl,71
+egodex,basic_pick_place/6392/0-35,pick and place,object,"[0, 35]",pick up the pink duck from the table with the right hand and place it onto the green plate,35
+egodex,basic_pick_place/9928/0-53,pick and place,object,"[0, 53]",pick up the yellow pepper from the table with the right hand and place it in the yellow bowl,53
+egodex,basic_pick_place/8001/0-59,pick and place,object,"[0, 59]",pick up the apple from the tupperwear with the right hand and place it on the gray plate,59
+egodex,basic_pick_place/301/0-30,pick and place,object,"[0, 30]",pick up the mango from the table with the right hand and place it on the blue bowl,30
+egodex,basic_pick_place/5431/0-31,pick and place,object,"[0, 31]",pick up the purple sticky notes from the metal table and place them in the bowl,31
+egodex,basic_pick_place/5819/0-33,pick and place,object,"[0, 33]",pick up the brown egg from the wood table with the right hand and place it into the yellow bowl,33
+egodex,basic_pick_place/7030/0-59,pick and place,object,"[0, 59]",pick up the white domino from the metal table with the right hand and place it in the white dustpan,59
+egodex,basic_pick_place/8713/0-28,pick and place,object,"[0, 28]",pick up the deep purple plum from the table with the right hand and place it into the green bowl,28
+egodex,basic_pick_place/5114/0-42,pick and place,object,"[0, 42]",pick up the big blue block from the table with the right hand and place it on the gray bowl,42
+egodex,basic_pick_place/7812/0-57,pick and place,object,"[0, 57]",pick up a gray rabbit plush from the yellow bowl and place it in the container,57
+egodex,basic_pick_place/8915/0-62,pick and place,object,"[0, 62]",pick up the blue cube from the wood table with the right hand and place it on the yellow plate,62
+egodex,basic_pick_place/7364/0-81,pick and place,object,"[0, 81]",pick up a yellow mummy duck from the blue bowl and place it in the small container,81
+egodex,basic_pick_place/3186/0-50,pick and place,object,"[0, 50]",pick up the yellow block from the table with the right hand and place it in the white dustpan,50
+egodex,basic_pick_place/1537/0-56,pick and place,object,"[0, 56]",pick up a yellow builder duck from the table and place it onto the red plate,56
+egodex,basic_pick_place/4956/0-157,pick and place,object,"[0, 157]",pick up the tennis ball from the black case with the right hand and place it on the cardboard lid,157
+egodex,basic_pick_place/3082/0-42,pick and place,object,"[0, 42]",pick up the cherries from the table with the right hand and place them into the orange bowl,42
+egodex,basic_pick_place/2515/0-43,pick and place,object,"[0, 43]",pick up the cherries from the table with the right hand and place them into the orange bowl,43
+egodex,basic_pick_place/6488/0-43,pick and place,object,"[0, 43]",pick up the white duck from the tupperwear with the right hand and place it on the gray bowl,43
+egodex,basic_pick_place/5693/0-59,pick and place,object,"[0, 59]",pick up the purple duck from the table with the right hand and place it in the yellow plate,59
+egodex,basic_pick_place/7676/0-52,pick and place,object,"[0, 52]",pick up the yellow plushie from the table with the right hand and place it in the gray bowl,52
+egodex,basic_pick_place/2668/0-44,pick and place,object,"[0, 44]",pick up the green block from the blue bowl with the right hand and place it in the gray bowl,44
+egodex,basic_pick_place/5836/0-38,pick and place,object,"[0, 38]",pick up the blue sponge from the gray plate with the right hand and place it on the tupperwear,38
+egodex,basic_pick_place/5439/0-38,pick and place,object,"[0, 38]",pick up the pink duck from the table with the right hand and place it onto the green plate,38
+egodex,basic_pick_place/5335/0-125,pick and place,object,"[0, 125]",pick up the black and yellow tape measure from the metal table and place it into the black case,125
+egodex,basic_pick_place/3058/0-35,pick and place,object,"[0, 35]",pick up the brown egg from the table with the right hand and place it into the orange bowl,35
+egodex,basic_pick_place/485/0-43,pick and place,object,"[0, 43]",pick up a white box of staples from the drawer and place it in a box,43
+egodex,basic_pick_place/3558/0-63,pick and place,object,"[0, 63]",pick up an orange heart block from the table and place it in the turquoise bowl,63
+egodex,basic_pick_place/8308/0-14,pick and place,object,"[0, 14]",pick up the brown block from the wood table with the right hand and place it into the gray bowl,14
+egodex,basic_pick_place/4205/0-37,pick and place,object,"[0, 37]",pick up a black stapler from the metal table and place it in a speaker case,37
+egodex,basic_pick_place/5017/0-47,pick and place,object,"[0, 47]",pick up the red toy screwdriver from the table with the right hand and place it on the baking tray,47
+egodex,basic_pick_place/3065/0-26,pick and place,object,"[0, 26]",pick up the pink tea cup from the table with the right hand and place it on the green bowl,26
+egodex,basic_pick_place/5576/0-21,pick and place,object,"[0, 21]",pick up the gray duck from the table with the right hand and place it on the green bowl,21
+egodex,basic_pick_place/7040/0-142,pick and place,object,"[0, 142]",pick up the rubik's cube from the cardboard lid with the right hand and place it on the black case,142
+egodex,basic_pick_place/4007/0-29,pick and place,object,"[0, 29]",pick up the sanitizer from the wooden table with the right hand and place it on the small plate,29
+egodex,basic_pick_place/4940/0-23,pick and place,object,"[0, 23]",pick up the brown block from the wood table with the right hand and place it into the gray bowl,23
+egodex,basic_pick_place/902/0-42,pick and place,object,"[0, 42]",pick up the bread slice from the table with the right hand and place it into the blue bowl,42
+egodex,basic_pick_place/2892/0-21,pick and place,object,"[0, 21]",pick up the brown block from the wood table with the right hand and place it into the gray bowl,21
+egodex,basic_pick_place/6329/0-59,pick and place,object,"[0, 59]",pick up a red screwdriver from the metal table and place it on the baking tray,59
+egodex,basic_pick_place/7052/0-140,pick and place,object,"[0, 140]",pick up the black pen from the yellow cup with the right hand and place it in the orange bowl,140
+egodex,basic_pick_place/8747/0-35,pick and place,object,"[0, 35]",pick up the gray brush from the gray tray with the right hand and place it on the clear tupperware,35
+egodex,basic_pick_place/5717/0-61,pick and place,object,"[0, 61]",pick up the block from the wooden table with the right hand and place it on the clear tupperwear,61
+egodex,basic_pick_place/9408/0-85,pick and place,object,"[0, 85]",pick up a pink macaron from the table and place it onto the yellow plate,85
+egodex,basic_pick_place/3044/0-32,pick and place,object,"[0, 32]",pick up the blue slime from the wooden table with the right hand and place it into the yellow bowl,32
+egodex,basic_pick_place/4632/0-38,pick and place,object,"[0, 38]",pick up a brown ruler from the metal table and place it in the tool box,38
+egodex,basic_pick_place/6416/0-52,pick and place,object,"[0, 52]",pick up a yellow hippo from the metal table and place it into a tupperware,52
+egodex,basic_pick_place/3272/0-43,pick and place,object,"[0, 43]",pick up the gray duck from the table with the right hand and place it in the green bowl,43
+egodex,basic_pick_place/3557/0-33,pick and place,object,"[0, 33]",pick up the gray plushie from the wooden table with the right hand and place it into the green bowl,33
+egodex,basic_pick_place/41/0-38,pick and place,object,"[0, 38]",pick up a black computer mouse from the metal table and place it in a small box,38
+egodex,basic_pick_place/4578/0-43,pick and place,object,"[0, 43]",pick up the black wheel from the metal table with the right hand and place it in the white dustpan,43
+egodex,basic_pick_place/611/0-70,pick and place,object,"[0, 70]",pick up a pink duck from the sweeper and place it in the container,70
+egodex,basic_pick_place/1226/0-43,pick and place,object,"[0, 43]",pick up the beige jenga block from the table with the right hand and place it in the green bowl,43
+egodex,basic_pick_place/9820/0-27,pick and place,object,"[0, 27]",pick up the yellow duck from the table with the right hand and place it into the green bowl,27
+egodex,basic_pick_place/7600/0-29,pick and place,object,"[0, 29]",pick up a yellow cup from the table and place it on a baking tray,29
+egodex,basic_pick_place/758/0-42,pick and place,object,"[0, 42]",pick up the purple grape from the wooden table with the right hand and place it on the clear tupperwear,42
+egodex,basic_pick_place/9360/0-29,pick and place,object,"[0, 29]",pick up the brown egg from the wood table with the right hand and place it into the yellow bowl,29
+egodex,basic_pick_place/4216/0-65,pick and place,object,"[0, 65]",pick up a blue lego block from the table and place it in the purple scoop,65
+egodex,basic_pick_place/3122/0-34,pick and place,object,"[0, 34]",pick up a grey remote from the metal table and place it in a tub,34
+egodex,basic_pick_place/7381/0-59,pick and place,object,"[0, 59]",pick up a yellow mummy duck from the blue bowl and place it in the small container,59
+egodex,basic_pick_place/5254/0-26,pick and place,object,"[0, 26]",pick up the mango from the table with the right hand and place it on the blue bowl,26
+egodex,basic_pick_place/4050/0-53,pick and place,object,"[0, 53]",pick up the blue block from the table with the right hand and place it onto the green plate,53
+egodex,basic_pick_place/5856/0-56,pick and place,object,"[0, 56]",pick up the slime from the yellow bowl with the right hand and place it on the clear tupperwear,56
+egodex,basic_pick_place/5378/0-35,pick and place,object,"[0, 35]",pick up the white egg from the wooden table with the right hand and place it into the yellow bowl,35
+egodex,basic_pick_place/3591/0-56,pick and place,object,"[0, 56]",pick up the ice cube from the wooden table with the right hand and place it on the tupperwear,56
+egodex,basic_pick_place/8622/0-40,pick and place,object,"[0, 40]",pick up the brown stuffed animal from the metal table and place it into the tupperware,40
+egodex,basic_pick_place/6921/0-72,pick and place,object,"[0, 72]",pick up the black tube from the wood table with the right hand and place it in the gray bowl,72
+egodex,basic_pick_place/7792/0-45,pick and place,object,"[0, 45]",pick up the blue lego from the gray plate with the right hand and place it on the tupperwear,45
+egodex,basic_pick_place/2479/0-124,pick and place,object,"[0, 124]",pick up the thera tears from the table and place it in the dark blue bowl,124
+egodex,basic_pick_place/8287/0-47,pick and place,object,"[0, 47]",pick up the brown duck from the table with the right hand and place it on the blue plate,47
+egodex,basic_pick_place/1946/0-42,pick and place,object,"[0, 42]",pick up a yellow mustard bottle from the metal table and place it in a tupperware,42
+egodex,basic_pick_place/6759/0-38,pick and place,object,"[0, 38]",pick up the white airpods from the metal table and place them into the tupperware,38
+egodex,basic_pick_place/5460/0-44,pick and place,object,"[0, 44]",pick up the pink bunny from the wooden table with the right hand and place it on the tray,44
+egodex,basic_pick_place/3199/0-25,pick and place,object,"[0, 25]",pick up the deep purple plum from the table with the right hand and place it into the green bowl,25
+egodex,basic_pick_place/5209/0-41,pick and place,object,"[0, 41]",pick up the bread slice from the table with the right hand and place it into the blue bowl,41
+egodex,basic_pick_place/8937/0-35,pick and place,object,"[0, 35]",pick up a white usb from the cup and place it in the bowl,35
+egodex,basic_pick_place/8353/0-31,pick and place,object,"[0, 31]",pick up the red grapes from the metal bowl with the right hand and place them on the black plate,31
+egodex,basic_pick_place/5062/0-41,pick and place,object,"[0, 41]",pick up the red grapes from the metal bowl with the right hand and place them on the black plate,41
+egodex,basic_pick_place/2248/0-56,pick and place,object,"[0, 56]",pick up the lime from the gray bowl with the right hand and place it on the tupperwear,56
+egodex,basic_pick_place/3983/0-84,pick and place,object,"[0, 84]",pick up the silver lock from the gray bowl with the left hand and place it in the blue bowl,84
+egodex,basic_pick_place/900/0-35,pick and place,object,"[0, 35]",pick up the brown donut from the baking tray and place it in the bowl,35
+egodex,basic_pick_place/836/0-38,pick and place,object,"[0, 38]",pick up the yellow fry from the table with the right hand and place it into the red cup,38
+egodex,basic_pick_place/636/0-41,pick and place,object,"[0, 41]",pick up the green dice from the metal table with the right hand and place it in the blue plate,41
+egodex,basic_pick_place/2246/0-46,pick and place,object,"[0, 46]",pick up a grey remote from a speaker case and place it in a black box,46
+egodex,basic_pick_place/7358/0-50,pick and place,object,"[0, 50]",pick up the leaf from the tupperwear with the right hand and place it on the gray plate,50
+egodex,basic_pick_place/381/0-49,pick and place,object,"[0, 49]",pick up the brown plushie from the table with the right hand and place it onto the blue plate,49
+egodex,basic_pick_place/1522/0-31,pick and place,object,"[0, 31]",pick up the brown bread from the metal table and place it in the bowl,31
+egodex,basic_pick_place/8682/0-24,pick and place,object,"[0, 24]",pick up the purple teacup from the table with the right hand and place it on the yellow bowl,24
+egodex,basic_pick_place/9128/0-34,pick and place,object,"[0, 34]",pick up the big blue block from the table with the right hand and place it on the gray bowl,34
+egodex,basic_pick_place/8999/0-20,pick and place,object,"[0, 20]",pick up the yellow banana from the table with the right hand and place it in the green bowl,20
+egodex,basic_pick_place/1545/0-43,pick and place,object,"[0, 43]",pick up the green wooden piece from the metal table with the right hand and place it in the white dustpan,43
+egodex,basic_pick_place/5553/0-44,pick and place,object,"[0, 44]",pick up the white domino from the wood table with the right hand and place it on the gray tupperware,44
+egodex,basic_pick_place/4449/0-39,pick and place,object,"[0, 39]",pick up the buddha from the wooden table with the right hand and place it in the gray bowl,39
+egodex,basic_pick_place/7367/0-65,pick and place,object,"[0, 65]",pick up a pink duck from the sweeper and place it in the container,65
+egodex,basic_pick_place/6576/0-34,pick and place,object,"[0, 34]",pick up the white domino from the wood table with the right hand and place it on the gray tupperware,34
+egodex,basic_pick_place/8284/0-46,pick and place,object,"[0, 46]",pick up the brown stuffed animal from the metal table and place it into the tupperware,46
+egodex,basic_pick_place/7317/0-40,pick and place,object,"[0, 40]",pick up the ice cube from the red cup with the right hand and place it on the wooden table,40
+egodex,basic_pick_place/1154/0-80,pick and place,object,"[0, 80]",pick up a white box of tape from the metal table and place it on the baking tray,80
+egodex,basic_pick_place/7891/0-22,pick and place,object,"[0, 22]",pick up the brown block from the wood table with the right hand and place it into the gray bowl,22
+egodex,basic_pick_place/3493/0-34,pick and place,object,"[0, 34]",pick up the brown donut from the baking tray and place it in the bowl,34
+egodex,basic_pick_place/3768/0-79,pick and place,object,"[0, 79]",pick up the red crab from the gray tray and place it into the blue bowl,79
+egodex,basic_pick_place/7388/0-59,pick and place,object,"[0, 59]",pick up a red tomato from a yellow plate and place it in the green plate,59
+egodex,basic_pick_place/7785/0-81,pick and place,object,"[0, 81]",pick up a green magnetic square from the green bowl and place it on the large container lid,81
+egodex,basic_pick_place/1342/0-33,pick and place,object,"[0, 33]",pick up the yellow duck from the table with the right hand and place it into the green bowl,33
+egodex,basic_pick_place/4024/0-58,pick and place,object,"[0, 58]",pick up the blue tongs from the table with the left hand and place them into the tupperware,58
+egodex,basic_pick_place/9395/0-21,pick and place,object,"[0, 21]",pick up the blue star toy block from the table with the right hand and place it into the green bowl,21
+egodex,basic_pick_place/5813/0-33,pick and place,object,"[0, 33]",pick up a white and red box of tape from the metal table and place it on a plate,33
+egodex,basic_pick_place/8698/0-41,pick and place,object,"[0, 41]",pick up a silver padlock from the metal table and place it in a tupperware,41
+egodex,basic_pick_place/4539/0-69,pick and place,object,"[0, 69]",pick up a magnetic ring from the table and place it in the pink bowl,69
+egodex,basic_pick_place/2890/0-64,pick and place,object,"[0, 64]",pick up a yellow mummy duck from the blue bowl and place it in the small container,64
+egodex,basic_pick_place/4397/0-34,pick and place,object,"[0, 34]",pick up the clear safety glasses from the metal table and place them on the plate,34
+egodex,basic_pick_place/6719/0-64,pick and place,object,"[0, 64]",pick up a red tomato from a yellow plate and place it in the green plate,64
+egodex,basic_pick_place/4412/0-69,pick and place,object,"[0, 69]",pick up the yellow block from the table with the right hand and place it in the white dustpan,69
+egodex,basic_pick_place/1373/0-38,pick and place,object,"[0, 38]",pick up the brown stuffed animal from the metal table and place it into the tupperware,38
+egodex,basic_pick_place/4672/0-66,pick and place,object,"[0, 66]",pick up the pink plushie from the table with the right hand and place it onto the yellow plate,66
+egodex,basic_pick_place/5141/0-31,pick and place,object,"[0, 31]",pick up the white ring from the metal table and place it in the tupperware,31
+egodex,basic_pick_place/4078/0-56,pick and place,object,"[0, 56]",pick up the blue block from the table with the right hand and place it onto the green plate,56
+egodex,basic_pick_place/8021/0-151,pick and place,object,"[0, 151]",pick up the donut from the gray tray with the left hand and place it on the red plate,151
+egodex,basic_pick_place/3484/0-29,pick and place,object,"[0, 29]",pick up the red grapes from the metal bowl with the right hand and place them on the black plate,29
+egodex,basic_pick_place/3670/0-32,pick and place,object,"[0, 32]",pick up the wooden block from the gray tray with the right hand and place it on the clear tupperware,32
+egodex,basic_pick_place/7006/0-63,pick and place,object,"[0, 63]",pick up the white egg from the blue bowl with the right hand and place it into the gray tupperware,63
+egodex,basic_pick_place/403/0-22,pick and place,object,"[0, 22]",pick up the red and beige screw from the table with the right hand and place it into the green bowl,22
+egodex,basic_pick_place/6836/0-35,pick and place,object,"[0, 35]",pick up the green dice from the table with the right hand and place it into the green bowl,35
+egodex,basic_pick_place/1753/0-60,pick and place,object,"[0, 60]",pick up a green hexagon block from the table and place it in the jar lid,60
+egodex,basic_pick_place/620/0-154,pick and place,object,"[0, 154]",pick up the hand sanitizer bottle from the pink bowl with the right hand and place it on the gray tray,154
+egodex,basic_pick_place/2198/0-41,pick and place,object,"[0, 41]",pick up the blue block from the wooden table with the right hand and place it on the green plate,41
+egodex,basic_pick_place/4770/0-31,pick and place,object,"[0, 31]",pick up the blue dice box from the table with the right hand and place it in the tupperware,31
+egodex,basic_pick_place/4933/0-22,pick and place,object,"[0, 22]",pick up the red strawberry from the table with the left hand and place it in the green bowl,22
+egodex,basic_pick_place/9298/0-113,pick and place,object,"[0, 113]",pick up a brown egg from a black pot and place it on a yellow plate,113
+egodex,basic_pick_place/9230/0-25,pick and place,object,"[0, 25]",pick up the white box from the wood table with the right hand and place it on the gray bowl,25
+egodex,basic_pick_place/8521/0-47,pick and place,object,"[0, 47]",pick up the brown plushie from the yellow plate with the right hand and place it on the orange bowl,47
+egodex,basic_pick_place/7827/0-41,pick and place,object,"[0, 41]",pick up a transparent roll of tape from the metal table and place it on a plate,41
+egodex,basic_pick_place/4792/0-35,pick and place,object,"[0, 35]",pick up the blue scrub from the table with the right hand and place it in the pink bowl,35
+egodex,basic_pick_place/7662/0-32,pick and place,object,"[0, 32]",pick up a red lego brick from the metal table and place it in a small box,32
+egodex,basic_pick_place/770/0-52,pick and place,object,"[0, 52]",pick up a black computer mouse from the metal table and place it in a small box,52
+egodex,basic_pick_place/2163/0-72,pick and place,object,"[0, 72]",pick up the screwdriver from the tray with the right hand and place it on the yellow plate,72
+egodex,basic_pick_place/7653/0-29,pick and place,object,"[0, 29]",pick up the purple sticky notes from the metal table and place them in the bowl,29
+egodex,basic_pick_place/471/0-24,pick and place,object,"[0, 24]",pick up the white ring from the metal table and place it in the tupperware,24
+egodex,basic_pick_place/3503/0-31,pick and place,object,"[0, 31]",pick up a red lego brick from the metal table and place it in a small box,31
+egodex,basic_pick_place/6890/0-59,pick and place,object,"[0, 59]",pick up the bread from the orange bowl with the right hand and place it on the clear tupperwear,59
+egodex,basic_pick_place/9188/0-44,pick and place,object,"[0, 44]",pick up the red strawberry from the gray tupperware with the right hand and place it into the blue bowl,44
+egodex,basic_pick_place/5968/0-48,pick and place,object,"[0, 48]",pick up a jenga block from the table and place it in the pink bowl,48
+egodex,basic_pick_place/6805/0-78,pick and place,object,"[0, 78]",pick up the pink block from the table with the right hand and place it in the blue bowl,78
+egodex,basic_pick_place/6008/0-31,pick and place,object,"[0, 31]",pick up a grey remote from the metal table and place it in a tub,31
+egodex,basic_pick_place/1706/0-70,pick and place,object,"[0, 70]",pick up the red block from the table with the right hand and place it in the blue bowl,70
+egodex,basic_pick_place/4213/0-37,pick and place,object,"[0, 37]",pick up the blue dice box from the table with the right hand and place it in the tupperware,37
+egodex,basic_pick_place/1926/0-24,pick and place,object,"[0, 24]",pick up the yellow duck from the table with the right hand and place it into the green bowl,24
+egodex,basic_pick_place/928/0-24,pick and place,object,"[0, 24]",pick up a yellow rubber duck from the metal table and place it in the bowl,24
+egodex,basic_pick_place/7901/0-58,pick and place,object,"[0, 58]",pick up the red strawberry from the gray tupperware with the right hand and place it into the blue bowl,58
+egodex,basic_pick_place/8322/0-41,pick and place,object,"[0, 41]",pick up the red block from the table with the right hand and place it in the blue bowl,41
+egodex,basic_pick_place/1624/0-58,pick and place,object,"[0, 58]",pick up the green lego from the yellow plate with the right hand and place it on the tray,58
+egodex,basic_pick_place/4517/0-25,pick and place,object,"[0, 25]",pick up the blue lego block from the table with the right hand and place it into the green bowl,25
+egodex,basic_pick_place/7474/0-48,pick and place,object,"[0, 48]",pick up a brown piece of bread from the baking tray and place it in a tupperware,48
+egodex,basic_pick_place/1525/0-63,pick and place,object,"[0, 63]",pick up the light blue slime box from the table with the right hand and place it in the pink bowl,63
+egodex,basic_pick_place/2846/0-59,pick and place,object,"[0, 59]",pick up a white airpods case from the metal table and place it in the dresser,59
+egodex,basic_pick_place/7015/0-81,pick and place,object,"[0, 81]",pick up a pink teacup from the table and place it in the yellow bowl,81
+egodex,basic_pick_place/7817/0-46,pick and place,object,"[0, 46]",pick up the domino from the wooden table with the right hand and place it on the small plate,46
+egodex,basic_pick_place/7274/0-22,pick and place,object,"[0, 22]",pick up the gray duck from the table with the right hand and place it on the green bowl,22
+egodex,basic_pick_place/6627/0-57,pick and place,object,"[0, 57]",pick up a green hexagon block from the table and place it in the jar lid,57
+egodex,basic_pick_place/7271/0-51,pick and place,object,"[0, 51]",pick up the yellow duck from the table with the right hand and place it in the pink bowl,51
+egodex,basic_pick_place/5785/0-25,pick and place,object,"[0, 25]",pick up the brown chess piece from the wood table with the right hand and place it into the yellow bowl,25
+egodex,basic_pick_place/8304/0-33,pick and place,object,"[0, 33]",pick up the brown duck from the table with the right hand and place it on the blue plate,33
+egodex,basic_pick_place/5519/0-31,pick and place,object,"[0, 31]",pick up the blue dice box from the table with the left hand and place it on the gray plate,31
+egodex,basic_pick_place/882/0-68,pick and place,object,"[0, 68]",pick up a green dice from the large container lid and place it in the utensil dry rack,68
+egodex,basic_pick_place/2056/0-54,pick and place,object,"[0, 54]",pick up the yellow duck from the table with the right hand and place it in the orange bowl,54
+egodex,basic_pick_place/125/0-80,pick and place,object,"[0, 80]",pick up a yellow dishsoap from the table and place it in the blue bowl,80
+egodex,basic_pick_place/6322/0-46,pick and place,object,"[0, 46]",pick up the white plushie from the table with the right hand and place it on the blue plate,46
+egodex,basic_pick_place/5812/0-52,pick and place,object,"[0, 52]",pick up the white domino from the metal table with the right hand and place it in the white dustpan,52
+egodex,basic_pick_place/7669/0-55,pick and place,object,"[0, 55]",pick up the blue cube from the wood table with the right hand and place it on the yellow plate,55
+egodex,basic_pick_place/5446/0-136,pick and place,object,"[0, 136]",pick up the rubber duck from the white dustpan with the right hand and place it on the purple scooper,136
+egodex,basic_pick_place/2695/0-53,pick and place,object,"[0, 53]",pick up the ice cube from the tupperwear with the right hand and place it on the gray plate,53
+egodex,basic_pick_place/9699/0-33,pick and place,object,"[0, 33]",pick up the blue scrub from the metal table with the right hand and place it onto the yellow plate,33
+egodex,basic_pick_place/3156/0-30,pick and place,object,"[0, 30]",pick up a grey remote from the metal table and place it in a tub,30
+egodex,basic_pick_place/2260/0-57,pick and place,object,"[0, 57]",pick up the pink block from the table with the right hand and place it in the blue bowl,57
+egodex,basic_pick_place/1618/0-31,pick and place,object,"[0, 31]",pick up a white laptop charger from the metal table and place it in the drawer,31
+egodex,basic_pick_place/7003/0-54,pick and place,object,"[0, 54]",pick up the ice cube from the gray bowl with the right hand and place it on the green plate,54
+egodex,basic_pick_place/8013/0-111,pick and place,object,"[0, 111]",pick up a gray duck from the table and place it in the blue pan,111
+egodex,basic_pick_place/4248/0-26,pick and place,object,"[0, 26]",pick up a yellow die from the metal table and place it into a tub,26
+egodex,basic_pick_place/5422/0-59,pick and place,object,"[0, 59]",pick up the yellow plushie from the table with the right hand and place it in the gray bowl,59
+egodex,basic_pick_place/1257/0-30,pick and place,object,"[0, 30]",pick up the beige jenga from the table with the right hand and place it in the green bowl,30
+egodex,basic_pick_place/9069/0-62,pick and place,object,"[0, 62]",pick up a white box of tape from the metal table and place it on the baking tray,62
+egodex,basic_pick_place/6431/0-47,pick and place,object,"[0, 47]",pick up the yellow soap dispenser from the table with the right hand and place it in the blue bowl,47
+egodex,basic_pick_place/972/0-58,pick and place,object,"[0, 58]",pick up the white plushie from the table with the right hand and place it onto the blue plate,58
+egodex,basic_pick_place/9812/0-25,pick and place,object,"[0, 25]",pick up the purple sticky notes from the metal table and place them in the bowl,25
+egodex,basic_pick_place/3743/0-57,pick and place,object,"[0, 57]",pick up the yellow duck from the table with the right hand and place it onto the green plate,57
+egodex,basic_pick_place/6427/0-31,pick and place,object,"[0, 31]",pick up the blue cylinder from the wood table with the right hand and place it into the clear tupperware,31
+egodex,basic_pick_place/9420/0-39,pick and place,object,"[0, 39]",pick up the brown donut from the wood table with the right hand and place it into the gray bowl,39
+egodex,basic_pick_place/470/0-24,pick and place,object,"[0, 24]",pick up the beige and red screw from the table with the right hand and place it into the green bowl,24
+egodex,basic_pick_place/7400/0-64,pick and place,object,"[0, 64]",pick up a purple block from a blue pot and place it in the blue bowl,64
+egodex,basic_pick_place/1488/0-44,pick and place,object,"[0, 44]",pick up the ice cube from the red cup with the right hand and place it on the wooden table,44
+egodex,basic_pick_place/9750/0-40,pick and place,object,"[0, 40]",pick up the teacup from the table with the right hand and place it on the yellow bowl,40
+egodex,basic_pick_place/2686/0-165,pick and place,object,"[0, 165]",pick up the lime from the yellow bowl with the right hand and place it on the transparent tupperware,165
+egodex,basic_pick_place/707/0-45,pick and place,object,"[0, 45]",pick up a white box of staples from the drawer and place it in a box,45
+egodex,basic_pick_place/3563/0-32,pick and place,object,"[0, 32]",pick up the blue scrub from the table with the right hand and place it in the pink bowl,32
+egodex,basic_pick_place/9397/0-61,pick and place,object,"[0, 61]",pick up the iphone from the clear tupperwear with the right hand and place it on the orange bowl,61
+egodex,basic_pick_place/8673/0-43,pick and place,object,"[0, 43]",pick up the brown egg from the teacup and place it on the plate,43
+egodex,basic_pick_place/2926/0-26,pick and place,object,"[0, 26]",pick up the yellow block from the table with the right hand and place it onto the blue plate,26
+egodex,basic_pick_place/3027/0-54,pick and place,object,"[0, 54]",pick up the white block from the table with the right hand and place it in the blue bowl,54
+egodex,basic_pick_place/6974/0-44,pick and place,object,"[0, 44]",pick up a pink donut from the baking tray and place it in a tupperware,44
+egodex,basic_pick_place/6450/0-44,pick and place,object,"[0, 44]",pick up a clear jar from the metal table and place it on a plate,44
+egodex,basic_pick_place/4485/0-23,pick and place,object,"[0, 23]",pick up the beige dog from the table with the left hand and place it into the green bowl,23
+egodex,basic_pick_place/7623/0-23,pick and place,object,"[0, 23]",pick up a blue sponge from the metal table and place it on a lid,23
+egodex,basic_pick_place/5410/0-33,pick and place,object,"[0, 33]",pick up a yellow die from the metal table and place it into a tub,33
+egodex,basic_pick_place/4458/0-45,pick and place,object,"[0, 45]",pick up the wood block from the gray plate with the right hand and place it on the tupperwear,45
+egodex,basic_pick_place/8131/0-60,pick and place,object,"[0, 60]",pick up a yellow builder duck from the table and place it onto the red plate,60
+egodex,basic_pick_place/3538/0-35,pick and place,object,"[0, 35]","pick up the beige, red, and blue block from the table with the left hand and place it into the green bowl",35
+egodex,basic_pick_place/4263/0-150,pick and place,object,"[0, 150]",pick up the pencil from the red cup with the left hand and place it into the small blue cup,150
+egodex,basic_pick_place/9602/0-47,pick and place,object,"[0, 47]",pick up the blue block from the table with the right hand and place it onto the green plate,47
+egodex,basic_pick_place/8091/0-48,pick and place,object,"[0, 48]",pick up a white box of tape from the metal table and place it on the baking tray,48
+egodex,basic_pick_place/2809/0-69,pick and place,object,"[0, 69]",pick up a yellow dishsoap from the table and place it in the blue bowl,69
+egodex,basic_pick_place/8129/0-53,pick and place,object,"[0, 53]",pick up the donut from the gray plate with the right hand and place it on the tupperwear,53
+egodex,basic_pick_place/3945/0-70,pick and place,object,"[0, 70]",pick up the small plate from the light blue bowl with the right hand and place it into the orange bowl,70
+egodex,basic_pick_place/4834/0-62,pick and place,object,"[0, 62]",pick up a clear jar from the metal table and place it on a plate,62
+egodex,basic_pick_place/1697/0-53,pick and place,object,"[0, 53]",pick up the normal banana from the table with the left hand and place it on the turquoise bowl,53
+egodex,basic_pick_place/6582/0-48,pick and place,object,"[0, 48]",pick up a jenga block from the pink bowl and place it in the blue bowl,48
+egodex,basic_pick_place/8928/0-53,pick and place,object,"[0, 53]",pick up a brown goat plush from the table and place it in the yellow bowl,53
+egodex,basic_pick_place/8580/0-39,pick and place,object,"[0, 39]",pick up a brown egg from the teacup and place it in the bowl,39
+egodex,basic_pick_place/9782/0-34,pick and place,object,"[0, 34]",pick up the blue dice box from the table with the right hand and place it in the tupperware,34
+egodex,basic_pick_place/2400/0-39,pick and place,object,"[0, 39]","pick up the beige, red, and blue block from the table with the left hand and place it into the green bowl",39
+egodex,basic_pick_place/7261/0-138,pick and place,object,"[0, 138]",pick up the rubber duck from the white dustpan with the right hand and place it on the purple scooper,138
+egodex,basic_pick_place/5329/0-27,pick and place,object,"[0, 27]",pick up the red strawberry from the baking tray and place it in the bowl,27
+egodex,basic_pick_place/9304/0-34,pick and place,object,"[0, 34]",pick up the brown egg from the metal table and place it on the plate,34
+egodex,basic_pick_place/6081/0-13,pick and place,object,"[0, 13]",pick up the white cube from the table with the right hand and place it into the green bowl,13
+egodex,basic_pick_place/479/0-39,pick and place,object,"[0, 39]",pick up the yellow duck from the table with the right hand and place it into the green bowl,39
+egodex,basic_pick_place/1996/0-81,pick and place,object,"[0, 81]",pick up a pink donut from the table and place it in the turquoise bowl,81
+egodex,basic_pick_place/4974/0-29,pick and place,object,"[0, 29]",pick up the blue elephant from the table with the left hand and place it into the green bowl,29
+egodex,basic_pick_place/2162/0-36,pick and place,object,"[0, 36]",pick up the brown duck from the table with the right hand and place it on the blue plate,36
+egodex,basic_pick_place/3915/0-42,pick and place,object,"[0, 42]",pick up an orange ball from the metal table and place it on a plate,42
+egodex,basic_pick_place/8524/0-54,pick and place,object,"[0, 54]",pick up the small cup from the wooden table with the right hand and place it on the tupperwear,54
+egodex,basic_pick_place/5520/0-98,pick and place,object,"[0, 98]",pick up a brown egg from a black pot and place it on a yellow plate,98
+egodex,basic_pick_place/3013/0-61,pick and place,object,"[0, 61]",pick up the brown chess piece from the wood table with the right hand and place it into the yellow bowl,61
+egodex,basic_pick_place/2875/0-48,pick and place,object,"[0, 48]",pick up a red lego block from the table and place it onto the blue plate,48
+egodex,basic_pick_place/309/0-59,pick and place,object,"[0, 59]",pick up a red lego block from the table and place it onto the blue plate,59
+egodex,basic_pick_place/6252/0-36,pick and place,object,"[0, 36]",pick up the yellow banana from the wooden table with the right hand and place it on the blue plate,36
+egodex,basic_pick_place/2749/0-52,pick and place,object,"[0, 52]",pick up an ice cube from the table and place it onto the blue plate,52
+egodex,basic_pick_place/1334/0-25,pick and place,object,"[0, 25]",pick up the red and beige screw from the table with the right hand and place it into the green bowl,25
+egodex,basic_pick_place/8135/0-51,pick and place,object,"[0, 51]",pick up a black stapler from the metal table and place it in the box lid,51
+egodex,basic_pick_place/4814/0-40,pick and place,object,"[0, 40]",pick up the blue block from the wooden table with the right hand and place it on the green plate,40
+egodex,basic_pick_place/2717/0-30,pick and place,object,"[0, 30]",pick up the yellow block from the table with the right hand and place it onto the blue plate,30
+egodex,basic_pick_place/22/0-25,pick and place,object,"[0, 25]",pick up the brown donut from the wood table with the right hand and place it into the gray bowl,25
+egodex,basic_pick_place/6271/0-55,pick and place,object,"[0, 55]",pick up a yellow fish from the table and place it in the blue bowl,55
+egodex,basic_pick_place/326/0-40,pick and place,object,"[0, 40]",pick up the orange carrot from the table with the left hand and place it into the green bowl,40
+egodex,basic_pick_place/4258/0-50,pick and place,object,"[0, 50]",pick up the ice cube from the gray bowl with the right hand and place it on the green plate,50
+egodex,basic_pick_place/2552/0-77,pick and place,object,"[0, 77]",pick up the yellow block from the table with the right hand and place it in the white dustpan,77
+egodex,basic_pick_place/3918/0-62,pick and place,object,"[0, 62]",pick up the black wheel from the metal table with the right hand and place it in the white dustpan,62
+egodex,basic_pick_place/9671/0-65,pick and place,object,"[0, 65]",pick up the normal banana from the table with the left hand and place it on the turquoise bowl,65
+egodex,basic_pick_place/3179/0-27,pick and place,object,"[0, 27]",pick up the tan baguette from the wooden table with the right hand and place it into the green bowl,27
+egodex,basic_pick_place/6361/0-26,pick and place,object,"[0, 26]",pick up the deep purple plum from the table with the right hand and place it into the green bowl,26
+egodex,basic_pick_place/867/0-44,pick and place,object,"[0, 44]",pick up the gray duck from the table with the right hand and place it on the green plate,44
+egodex,basic_pick_place/7955/0-66,pick and place,object,"[0, 66]",pick up a pink duck from the sweeper and place it in the container,66
+egodex,basic_pick_place/5292/0-62,pick and place,object,"[0, 62]",pick up a red screwdriver from the metal table and place it on the baking tray,62
+egodex,basic_pick_place/6462/0-46,pick and place,object,"[0, 46]",pick up the red cherry from the table with the right hand and place it in the brown barrel,46
+egodex,basic_pick_place/9151/0-30,pick and place,object,"[0, 30]",pick up the red strawberry from the table with the left hand and place it into the green bowl,30
+egodex,basic_pick_place/134/0-30,pick and place,object,"[0, 30]",pick up the beige dog from the table with the left hand and place it into the green bowl,30
+egodex,basic_pick_place/2176/0-61,pick and place,object,"[0, 61]",pick up a red tomato from a yellow plate and place it in the green plate,61
+egodex,basic_pick_place/9334/0-137,pick and place,object,"[0, 137]",pick up the tennis ball from the silver tray with the right hand and place it in the orange bowl,137
+egodex,basic_pick_place/632/0-49,pick and place,object,"[0, 49]",pick up the jenga block from the light blue bowl with the right hand and place it into the orange bowl,49
+egodex,basic_pick_place/4337/0-55,pick and place,object,"[0, 55]",pick up a pink puppy plush from the red plate and place it in the purple scoop,55
+egodex,basic_pick_place/5394/0-141,pick and place,object,"[0, 141]",pick up the yellow banana from the clear tupperware with the right hand and place it into the blue bowl,141
+egodex,basic_pick_place/4146/0-40,pick and place,object,"[0, 40]",pick up the wood block from the table with the right hand and place it into the yellow bowl,40
+egodex,basic_pick_place/6927/0-137,pick and place,object,"[0, 137]",pick up the puzzle pieces from the wooden table with the right hand and assemble the puzzle,137
+egodex,basic_pick_place/5769/0-42,pick and place,object,"[0, 42]",pick up the purple duck from the table with the right hand and place it onto the blue plate,42
+egodex,basic_pick_place/9161/0-49,pick and place,object,"[0, 49]",pick up the brown egg from the clear tupperware with the right hand and place it into the orange bowl,49
+egodex,basic_pick_place/8559/0-72,pick and place,object,"[0, 72]",pick up the metal lid from the wood table with the right hand and place it on the gray bowl,72
+egodex,basic_pick_place/3141/0-47,pick and place,object,"[0, 47]",pick up the tennis ball from the table with the right hand and place it into the gray bowl,47
+egodex,basic_pick_place/600/0-39,pick and place,object,"[0, 39]",pick up the wood block from the gray plate with the right hand and place it on the tupperwear,39
+egodex,basic_pick_place/9148/0-33,pick and place,object,"[0, 33]",pick up the brown croissant from the metal skillet with the right hand and place it on the black plate,33
+egodex,basic_pick_place/8707/0-44,pick and place,object,"[0, 44]",pick up the blue sponge from the table with the right hand and place it on the tupperwear,44
+egodex,basic_pick_place/6700/0-43,pick and place,object,"[0, 43]",pick up the green block from the table with the right hand and place it onto the yellow plate,43
+egodex,basic_pick_place/2013/0-31,pick and place,object,"[0, 31]",pick up the blue dice box from the table with the right hand and place it in the tupperware,31
+egodex,basic_pick_place/3947/0-61,pick and place,object,"[0, 61]",pick up a small yellow banana from the table and place it in the turquoise basket,61
+egodex,basic_pick_place/8204/0-38,pick and place,object,"[0, 38]",pick up the white egg from the table with the right hand and place it into the yellow bowl,38
+egodex,basic_pick_place/8705/0-42,pick and place,object,"[0, 42]",pick up a clear jar from the metal table and place it on a plate,42
+egodex,basic_pick_place/2608/0-33,pick and place,object,"[0, 33]",pick up a white usb from the cup and place it in the bowl,33
+egodex,basic_pick_place/9979/0-64,pick and place,object,"[0, 64]",pick up the blue scrub from the metal table with the right hand and place it in the yellow plate,64
+egodex,basic_pick_place/3382/0-83,pick and place,object,"[0, 83]",pick up the red cherry from the table and place it in the utensil drying rack,83
+egodex,basic_pick_place/3575/0-77,pick and place,object,"[0, 77]",pick up a brown tropical duck from the table and place it in the green bowl,77
+egodex,basic_pick_place/7660/0-39,pick and place,object,"[0, 39]",pick up the yellow banana from the wooden table with the right hand and place it on the green plate,39
+egodex,basic_pick_place/5093/0-41,pick and place,object,"[0, 41]",pick up the pink donut from the wood table with the right hand and place it on the clear tupperware,41
+egodex,basic_pick_place/495/0-58,pick and place,object,"[0, 58]",pick up the gray duck from the table with the right hand and place it on the green plate,58
+egodex,basic_pick_place/6904/0-57,pick and place,object,"[0, 57]",pick up the green dice from the table with the right hand and place it in the yellow plate,57
+egodex,basic_pick_place/7635/0-47,pick and place,object,"[0, 47]",pick up the big yellow block from the table with the right hand and place it on the gray bowl,47
+egodex,basic_pick_place/7695/0-63,pick and place,object,"[0, 63]",pick up the gray duck from the table with the right hand and place it on the green plate,63
+egodex,basic_pick_place/5073/0-28,pick and place,object,"[0, 28]",pick up the beige and red screw from the table with the right hand and place it into the green bowl,28
+egodex,basic_pick_place/1520/0-43,pick and place,object,"[0, 43]",pick up the white box from the wood table with the right hand and place it on the gray bowl,43
+egodex,basic_pick_place/8604/0-30,pick and place,object,"[0, 30]",pick up the beige and blue and red block from the table with the right hand and place it in the green bowl,30
+egodex,basic_pick_place/8086/0-41,pick and place,object,"[0, 41]",pick up the wooden block from the gray tray with the right hand and place it on the clear tupperware,41
+egodex,basic_pick_place/4105/0-29,pick and place,object,"[0, 29]",pick up a white lego brick from the table and place it on a baking tray,29
+egodex,basic_pick_place/4125/0-107,pick and place,object,"[0, 107]",pick up the black and yellow tape measure from the metal table and place it into the black case,107
+egodex,basic_pick_place/7684/0-71,pick and place,object,"[0, 71]",pick up the green block from the blue bowl with the right hand and place it on the yellow plate,71
+egodex,basic_pick_place/4135/0-63,pick and place,object,"[0, 63]",pick up the blue dice from the table with the right hand and place it in the blue bowl,63
+egodex,basic_pick_place/5601/0-46,pick and place,object,"[0, 46]",pick up the gray screw from the table with the right hand and place it into the yellow bowl,46
+egodex,basic_pick_place/4139/0-40,pick and place,object,"[0, 40]",pick up the red cherry from the table with the right hand and place it in the brown barrel,40
+egodex,basic_pick_place/3673/0-58,pick and place,object,"[0, 58]",pick up a magnetic ring from the table and place it in the pink bowl,58
+egodex,basic_pick_place/8067/0-28,pick and place,object,"[0, 28]",pick up the beige dog from the table with the left hand and place it into the green bowl,28
+egodex,basic_pick_place/5356/0-122,pick and place,object,"[0, 122]",pick up a pink duck from the sweeper and place it in the container,122
+egodex,basic_pick_place/142/0-53,pick and place,object,"[0, 53]",pick up the orange plushie from the wooden table with the right hand and place it on the tray,53
+egodex,basic_pick_place/4980/0-52,pick and place,object,"[0, 52]",pick up the blue plushie from the table with the left hand and place it in the green plate,52
+egodex,basic_pick_place/9437/0-32,pick and place,object,"[0, 32]",pick up the orange plushie from the table with the right hand and place it in the yellow plate,32
+egodex,basic_pick_place/6910/0-36,pick and place,object,"[0, 36]",pick up the ice cube from the wooden table with the right hand and place it in the blue bowl,36
+egodex,basic_pick_place/2420/0-52,pick and place,object,"[0, 52]",pick up the yellow nurse duck from the table and place it in the orange bowl,52
+egodex,basic_pick_place/6669/0-55,pick and place,object,"[0, 55]",pick up the pink plate from the wood table with the right hand and place it on the gray tupperware,55
+egodex,basic_pick_place/1635/0-50,pick and place,object,"[0, 50]",pick up the orange plushie from the table with the right hand and place it in the yellow plate,50
+egodex,basic_pick_place/5561/0-24,pick and place,object,"[0, 24]",pick up the beige jenga from the table with the right hand and place it in the green bowl,24
+egodex,basic_pick_place/1986/0-24,pick and place,object,"[0, 24]",pick up a yellow cup from the table and place it on a baking tray,24
+egodex,basic_pick_place/6808/0-60,pick and place,object,"[0, 60]",pick up the block labeled 'a f' from the small container and place it in the blue bowl,60
+egodex,basic_pick_place/7779/0-10,pick and place,object,"[0, 10]",pick up the beige and navy toy block from the table with the right hand and place it into the green bowl,10
+egodex,basic_pick_place/8469/0-66,pick and place,object,"[0, 66]",pick up the yellow block from the table with the right hand and place it onto the green plate,66
+egodex,basic_pick_place/978/0-55,pick and place,object,"[0, 55]",pick up the red toy screwdriver from the table with the right hand and place it on the baking tray,55
+egodex,basic_pick_place/8868/0-32,pick and place,object,"[0, 32]",pick up the red strawberry from the baking tray and place it in the bowl,32
+egodex,basic_pick_place/4303/0-52,pick and place,object,"[0, 52]",pick up a green block from the metal table and place it into the tupperware,52
+egodex,basic_pick_place/6136/0-149,pick and place,object,"[0, 149]",pick up the blue dice from the purple scooper with the right hand and place it on the white dustpan,149
+egodex,basic_pick_place/8694/0-44,pick and place,object,"[0, 44]",pick up the yellow duck from the table with the right hand and place it in the white dustpan,44
+egodex,basic_pick_place/2872/0-25,pick and place,object,"[0, 25]",pick up the blue cylinder from the wood table with the right hand and place it into the clear tupperware,25
+egodex,basic_pick_place/5638/0-29,pick and place,object,"[0, 29]",pick up a white laptop charger from the metal table and place it in the drawer,29
+egodex,basic_pick_place/2283/0-51,pick and place,object,"[0, 51]",pick up a blue and green square fidget toy from the metal table and place it on the baking tray,51
+egodex,basic_pick_place/1106/0-31,pick and place,object,"[0, 31]",pick up the blue lego from the table with the left hand and place it in the green bowl,31
+egodex,basic_pick_place/6187/0-40,pick and place,object,"[0, 40]",pick up the tan baguette from the wooden table with the right hand and place it into the green bowl,40
+egodex,basic_pick_place/8600/0-28,pick and place,object,"[0, 28]",pick up the blue star toy block from the table with the right hand and place it into the green bowl,28
+egodex,basic_pick_place/503/0-37,pick and place,object,"[0, 37]",pick up the white domino from the wood table with the right hand and place it on the gray tupperware,37
+egodex,basic_pick_place/6177/0-44,pick and place,object,"[0, 44]",pick up the yellow duck from the table with the right hand and place it onto the green plate,44
+egodex,basic_pick_place/8324/0-37,pick and place,object,"[0, 37]",pick up the yellow duck from the table with the right hand and place it in the pink bowl,37
+egodex,basic_pick_place/1252/0-48,pick and place,object,"[0, 48]",pick up the red strawberry from the gray tupperware with the right hand and place it into the blue bowl,48
+egodex,basic_pick_place/9424/0-90,pick and place,object,"[0, 90]",pick up a brown elephant plush from the table and place it on the large container lid,90
+egodex,basic_pick_place/5632/0-61,pick and place,object,"[0, 61]",pick up the orange plushie from the wooden table with the right hand and place it on the tray,61
+egodex,basic_pick_place/8111/0-50,pick and place,object,"[0, 50]",pick up the black screwdriver from the metal table and place it in the speaker case,50
+egodex,basic_pick_place/7670/0-39,pick and place,object,"[0, 39]",pick up a yellow mustard bottle from the metal table and place it in a tupperware,39
+egodex,basic_pick_place/3877/0-54,pick and place,object,"[0, 54]",pick up the green wooden piece from the metal table with the right hand and place it in the white dustpan,54
+egodex,basic_pick_place/8766/0-30,pick and place,object,"[0, 30]",pick up the white lego from the gray tupperware with the right hand and place it on the metal tray,30
+egodex,basic_pick_place/589/0-44,pick and place,object,"[0, 44]",pick up a yellow mustard bottle from the metal table and place it in a tupperware,44
+egodex,basic_pick_place/3449/0-126,pick and place,object,"[0, 126]",pick up the black pen from the yellow cup with the right hand and place it in the orange bowl,126
+egodex,basic_pick_place/1324/0-37,pick and place,object,"[0, 37]",pick up the white plushie from the table with the right hand and place it on the blue plate,37
+egodex,basic_pick_place/8336/0-69,pick and place,object,"[0, 69]",pick up a blue lego block from the table and place it in the purple scoop,69
+egodex,basic_pick_place/8905/0-91,pick and place,object,"[0, 91]",pick up the beige and pink donut from the table with the left hand and place it into the green bowl,91
+egodex,basic_pick_place/8232/0-33,pick and place,object,"[0, 33]",pick up the white bread from the yellow plate with the right hand and place it on the clear tupperware,33
+egodex,basic_pick_place/4249/0-80,pick and place,object,"[0, 80]",pick up the lipton tea from the table and place it into the container,80
+egodex,basic_pick_place/5397/0-33,pick and place,object,"[0, 33]",pick up a yellow cup from the table and place it on a baking tray,33
+egodex,basic_pick_place/3361/0-32,pick and place,object,"[0, 32]",pick up the black tube from the wood table with the right hand and place it in the gray bowl,32
+egodex,basic_pick_place/8717/0-44,pick and place,object,"[0, 44]",pick up the pink duck from the table with the right hand and place it onto the green plate,44
+egodex,basic_pick_place/1703/0-87,pick and place,object,"[0, 87]",pick up the lipton tea from the table and place it into the container,87
+egodex,basic_pick_place/7147/0-76,pick and place,object,"[0, 76]",pick up a blue dice from the blue plate and place it in the clear jar,76
+egodex,basic_pick_place/7108/0-29,pick and place,object,"[0, 29]",pick up the red lego from the table with the left hand and place it in the green bowl,29
+egodex,basic_pick_place/5100/0-66,pick and place,object,"[0, 66]",pick up the black tube from the wood table with the right hand and place it in the gray bowl,66
+egodex,basic_pick_place/3902/0-28,pick and place,object,"[0, 28]",pick up the tan baguette from the wooden table with the right hand and place it into the green bowl,28
+egodex,basic_pick_place/1032/0-41,pick and place,object,"[0, 41]",pick up the black and yellow tape measure from the metal table and place it into the tupperware,41
+egodex,basic_pick_place/5261/0-38,pick and place,object,"[0, 38]",pick up the multicolor cube from the wood table with the right hand and place it in the blue bowl,38
+egodex,basic_pick_place/1918/0-66,pick and place,object,"[0, 66]",pick up the blue dice from the table with the right hand and place it in the gray bowl,66
+egodex,basic_pick_place/1666/0-33,pick and place,object,"[0, 33]",pick up the yellow fry from the table with the right hand and place it into the red cup,33
+egodex,basic_pick_place/8841/0-34,pick and place,object,"[0, 34]",pick up the yellow fry from the wooden table with the right hand and place it on the green plate,34
+egodex,basic_pick_place/2049/0-28,pick and place,object,"[0, 28]",pick up a yellow cup from the table and place it on a baking tray,28
+egodex,basic_pick_place/9429/0-81,pick and place,object,"[0, 81]",pick up a stack of white and red cards from one baking tray and place it onto the other baking tray,81
+egodex,basic_pick_place/4071/0-37,pick and place,object,"[0, 37]",pick up the blue scrub from the metal table with the right hand and place it onto the yellow plate,37
+egodex,basic_pick_place/7494/0-64,pick and place,object,"[0, 64]",pick up a brown elephant plush from the table and place it on the large container lid,64
+egodex,basic_pick_place/8130/0-69,pick and place,object,"[0, 69]",pick up a black mouse from the metal table and place it in the black case,69
+egodex,basic_pick_place/7024/0-46,pick and place,object,"[0, 46]",pick up a black usb dongle from the chess board and place it in a box,46
+egodex,basic_pick_place/6962/0-50,pick and place,object,"[0, 50]",pick up a white laptop charger from the metal table and place it in the drawer,50
+egodex,basic_pick_place/8259/0-35,pick and place,object,"[0, 35]",pick up a pink donut from the baking tray and place it in a tupperware,35
+egodex,basic_pick_place/7203/0-29,pick and place,object,"[0, 29]",pick up the yellow bread from the table with the left hand and place it in the green bowl,29
+egodex,basic_pick_place/4246/0-49,pick and place,object,"[0, 49]",pick up the domino from the table with the right hand and place it on the gray tray,49
+egodex,basic_pick_place/3356/0-39,pick and place,object,"[0, 39]",pick up the small cup from the tupperwear with the right hand and place it on the yellow bowl,39
+egodex,basic_pick_place/2354/0-72,pick and place,object,"[0, 72]",pick up a red tomato from a yellow plate and place it in the green plate,72
+egodex,basic_pick_place/720/0-30,pick and place,object,"[0, 30]",pick up the green apple from the table with the right hand and place it on the black plate,30
+egodex,basic_pick_place/742/0-144,pick and place,object,"[0, 144]",pick up the red apple from the blue bowl with the left hand and place it into the pink bowl,144
+egodex,basic_pick_place/3744/0-57,pick and place,object,"[0, 57]",pick up a pink donut from the baking tray and place it in a tupperware,57
+egodex,basic_pick_place/3368/0-64,pick and place,object,"[0, 64]",pick up a green tennis ball from a speaker case and place it in a black box,64
+egodex,basic_pick_place/3957/0-83,pick and place,object,"[0, 83]",pick up a gray rabbit plush from the yellow bowl and place it in the container,83
+egodex,basic_pick_place/8463/0-41,pick and place,object,"[0, 41]",pick up the jenga block from the wooden table with the right hand and place it on the small plate,41
+egodex,basic_pick_place/6520/0-52,pick and place,object,"[0, 52]",pick up the purple sticky notes from the metal table and place them in the bowl,52
+egodex,basic_pick_place/1686/0-57,pick and place,object,"[0, 57]",pick up a white airpods case from the metal table and place it in the dresser,57
+egodex,basic_pick_place/2936/0-50,pick and place,object,"[0, 50]",pick up a yellow screw from the table and place it in the purple scoop,50
+egodex,basic_pick_place/625/0-51,pick and place,object,"[0, 51]",pick up the white duck from the tupperwear with the right hand and place it on the gray bowl,51
+egodex,basic_pick_place/9263/0-152,pick and place,object,"[0, 152]",pick up the tennis ball from the silver tray with the right hand and place it in the orange bowl,152
+egodex,basic_pick_place/3433/0-41,pick and place,object,"[0, 41]",pick up the brown duck from the wooden table with the right hand and place it in the blue bowl,41
+egodex,basic_pick_place/2114/0-87,pick and place,object,"[0, 87]",pick up an orange lip balm from the table and place it in the green cup,87
+egodex,basic_pick_place/9686/0-29,pick and place,object,"[0, 29]",pick up the blue dice box from the table with the right hand and place it in the tupperware,29
+egodex,basic_pick_place/8348/0-34,pick and place,object,"[0, 34]",pick up a green lego brick from the chess board and place it in a box,34
+egodex,basic_pick_place/8842/0-71,pick and place,object,"[0, 71]",pick up the lipton tea from the table and place it into the container,71
+egodex,basic_pick_place/4317/0-44,pick and place,object,"[0, 44]",pick up the dark orange plush elephant from the table with the left hand and place it into the green bowl,44
+egodex,basic_pick_place/9463/0-61,pick and place,object,"[0, 61]",pick up the purell from the yellow bowl and place it on the blue plate,61
+egodex,basic_pick_place/7658/0-23,pick and place,object,"[0, 23]",pick up a blue sponge from the metal table and place it on a lid,23
+egodex,basic_pick_place/1928/0-38,pick and place,object,"[0, 38]",pick up the sanitizer from the wooden table with the right hand and place it on the yellow plate,38
+egodex,basic_pick_place/8919/0-35,pick and place,object,"[0, 35]",pick up the purple grape from the wooden table with the right hand and place it in the yellow bowl,35
+egodex,basic_pick_place/1710/0-80,pick and place,object,"[0, 80]",pick up a pink macaron from the table and place it onto the yellow plate,80
+egodex,basic_pick_place/6646/0-64,pick and place,object,"[0, 64]",pick up an orange lip balm from the table and place it in the green cup,64
+egodex,basic_pick_place/1785/0-44,pick and place,object,"[0, 44]",pick up the lime from the gray bowl with the right hand and place it on the tupperwear,44
+egodex,basic_pick_place/5913/0-22,pick and place,object,"[0, 22]",pick up the beige dog from the table with the left hand and place it into the green bowl,22
+egodex,basic_pick_place/6379/0-21,pick and place,object,"[0, 21]",pick up the white box from the wood table with the right hand and place it on the gray bowl,21
+egodex,basic_pick_place/3470/0-33,pick and place,object,"[0, 33]",pick up the brown croissant from the metal skillet with the right hand and place it on the black plate,33
+egodex,basic_pick_place/3107/0-54,pick and place,object,"[0, 54]",pick up the purell from the yellow bowl and place it on the blue plate,54
+egodex,basic_pick_place/551/0-51,pick and place,object,"[0, 51]",pick up a black computer mouse from the metal table and place it in a small box,51
+egodex,basic_pick_place/4826/0-39,pick and place,object,"[0, 39]",pick up the wood block from the wood table with the right hand and place it on the yellow plate,39
+egodex,basic_pick_place/3448/0-34,pick and place,object,"[0, 34]",pick up the beige and yellow and red toy block from the table with the right hand and place it into the green bowl,34
+egodex,basic_pick_place/8593/0-126,pick and place,object,"[0, 126]",pick up the black pen from the yellow cup with the right hand and place it in the orange bowl,126
+egodex,basic_pick_place/5328/0-77,pick and place,object,"[0, 77]",pick up a blue dice from an orange bowl and place it on the green plate,77
+egodex,basic_pick_place/7566/0-39,pick and place,object,"[0, 39]",pick up the blue dice box from the table with the left hand and place it on the gray plate,39
+egodex,basic_pick_place/3628/0-31,pick and place,object,"[0, 31]",pick up the blue scrub from the table with the right hand and place it in the pink bowl,31
+egodex,basic_pick_place/109/0-40,pick and place,object,"[0, 40]",pick up the big blue block from the table with the right hand and place it on the gray bowl,40
+egodex,basic_pick_place/3685/0-27,pick and place,object,"[0, 27]",pick up the red strawberry from the baking tray and place it in the bowl,27
+egodex,basic_pick_place/8183/0-63,pick and place,object,"[0, 63]",pick up the yellow square duck from the table and place it into the turquoise bowl,63
+egodex,basic_pick_place/1653/0-53,pick and place,object,"[0, 53]",pick up the orange semicircle shape from the table with the right hand and place it onto the green plate,53
+egodex,basic_pick_place/6760/0-29,pick and place,object,"[0, 29]",pick up the gray plushie from the wooden table with the right hand and place it into the green bowl,29
+egodex,basic_pick_place/3115/0-58,pick and place,object,"[0, 58]",pick up the yellow nurse duck from the table and place it in the orange bowl,58
+egodex,basic_pick_place/9962/0-47,pick and place,object,"[0, 47]",pick up the white block from the table with the left hand and place it into the blue bowl,47
+egodex,basic_pick_place/1707/0-65,pick and place,object,"[0, 65]",pick up the small plate from the light blue bowl with the right hand and place it into the orange bowl,65
+egodex,basic_pick_place/4553/0-75,pick and place,object,"[0, 75]",pick up a green clover block from the purple scoop and place it in the coffee lid,75
+egodex,basic_pick_place/8370/0-23,pick and place,object,"[0, 23]",pick up the green block from the table with the right hand and place it into the blue bowl,23
+egodex,basic_pick_place/3537/0-38,pick and place,object,"[0, 38]",pick up a white and red box of tape from the metal table and place it on a plate,38
+egodex,basic_pick_place/9362/0-35,pick and place,object,"[0, 35]",pick up the white plushie from the table with the right hand and place it on the blue plate,35
+egodex,basic_pick_place/1886/0-56,pick and place,object,"[0, 56]",pick up the white block from the table with the right hand and place it in the blue bowl,56
+egodex,basic_pick_place/1611/0-30,pick and place,object,"[0, 30]",pick up the blue lego from the table with the left hand and place it in the green bowl,30
+egodex,basic_pick_place/4744/0-35,pick and place,object,"[0, 35]",pick up a red lego brick from the metal table and place it in a small box,35
+egodex,basic_pick_place/5583/0-78,pick and place,object,"[0, 78]",pick up a grey remote from a speaker case and place it in a black box,78
+egodex,basic_pick_place/9325/0-53,pick and place,object,"[0, 53]",pick up the blue scrub from the metal table with the right hand and place it onto the yellow plate,53
+egodex,basic_pick_place/153/0-83,pick and place,object,"[0, 83]",pick up a large red pepper from the container lid and place it in the container,83
+egodex,basic_pick_place/8397/0-51,pick and place,object,"[0, 51]",pick up the yellow fish from the plate and place it into the blue bowl,51
+egodex,basic_pick_place/9824/0-44,pick and place,object,"[0, 44]",pick up the green grapes from the metal table with the right hand and place them on the green plate,44
+egodex,basic_pick_place/7459/0-65,pick and place,object,"[0, 65]",pick up a pink puppy plush from the red plate and place it in the purple scoop,65
+egodex,basic_pick_place/1598/0-84,pick and place,object,"[0, 84]",pick up a creamer from a green plate and place it in the orange bowl,84
+egodex,basic_pick_place/8688/0-125,pick and place,object,"[0, 125]",pick up the pencil from the red cup with the left hand and place it on the small blue cup,125
+egodex,basic_pick_place/2300/0-35,pick and place,object,"[0, 35]",pick up the white domino from the wood table with the right hand and place it on the gray tupperware,35
+egodex,basic_pick_place/3868/0-66,pick and place,object,"[0, 66]",pick up the brown plushie from the table with the right hand and place it onto the blue plate,66
+egodex,basic_pick_place/971/0-34,pick and place,object,"[0, 34]",pick up the jenga block from the wooden table with the right hand and place it on the small plate,34
+egodex,basic_pick_place/4161/0-23,pick and place,object,"[0, 23]",pick up the yellow banana from the table with the right hand and place it in the green bowl,23
+egodex,basic_pick_place/2257/0-90,pick and place,object,"[0, 90]",pick up the lipton tea from the table and place it into the container,90
+egodex,basic_pick_place/2488/0-43,pick and place,object,"[0, 43]",pick up the blue sponge from the gray plate with the right hand and place it on the tupperwear,43
+egodex,basic_pick_place/1740/0-64,pick and place,object,"[0, 64]",pick up a white sheep plush from the table and place it in the blue pan,64
+egodex,basic_pick_place/1742/0-59,pick and place,object,"[0, 59]",pick up a transparent roll of tape from the metal table and place it on a plate,59
+egodex,basic_pick_place/3438/0-32,pick and place,object,"[0, 32]",pick up the pink donut from the wood table with the right hand and place it on the clear tupperware,32
+egodex,basic_pick_place/278/0-46,pick and place,object,"[0, 46]",pick up a silver padlock from the metal table and place it in a tupperware,46
+egodex,basic_pick_place/6539/0-60,pick and place,object,"[0, 60]",pick up the yellow soap dispenser from the table with the right hand and place it in the blue bowl,60
+egodex,basic_pick_place/2898/0-26,pick and place,object,"[0, 26]",pick up the white ice cube from the blue tablecloth with the left hand and place it into the green bowl,26
+egodex,basic_pick_place/3280/0-84,pick and place,object,"[0, 84]",pick up a brown tropical duck from the table and place it in the green bowl,84
+egodex,basic_pick_place/6766/0-34,pick and place,object,"[0, 34]",pick up the purple sticky notes from the metal table and place them in the bowl,34
+egodex,basic_pick_place/9442/0-49,pick and place,object,"[0, 49]",pick up the blue tongs from the table with the left hand and place them into the tupperware,49
+egodex,basic_pick_place/2570/0-166,pick and place,object,"[0, 166]",pick up the sticky notes from the clear drawer with the right hand and place them on the black oval case,166
+egodex,basic_pick_place/2046/0-27,pick and place,object,"[0, 27]","pick up the beige, red, and blue block from the table with the right hand and place it into the green bowl",27
+egodex,basic_pick_place/4058/0-46,pick and place,object,"[0, 46]",pick up the red cherry from the table with the right hand and place it in the brown barrel,46
+egodex,basic_pick_place/2289/0-145,pick and place,object,"[0, 145]",pick up the green apple from the pink bowl with the left hand and place it into the blue bowl,145
+egodex,basic_pick_place/2411/0-36,pick and place,object,"[0, 36]",pick up the brown croissant from the metal skillet with the right hand and place it on the black plate,36
+egodex,basic_pick_place/8119/0-59,pick and place,object,"[0, 59]",pick up the white egg from the wooden table with the right hand and place it into the yellow bowl,59
+egodex,basic_pick_place/9286/0-59,pick and place,object,"[0, 59]",pick up a creamer from a green plate and place it in the orange bowl,59
+egodex,basic_pick_place/7917/0-65,pick and place,object,"[0, 65]",pick up the duck from the orange bowl with the right hand and place it on the clear tupperwear,65
+egodex,basic_pick_place/9743/0-34,pick and place,object,"[0, 34]",pick up the brown donut from the baking tray and place it in the bowl,34
+egodex,basic_pick_place/5223/0-75,pick and place,object,"[0, 75]",pick up the white plushie from the table with the right hand and place it on the blue plate,75
+egodex,basic_pick_place/8332/0-23,pick and place,object,"[0, 23]",pick up the yellow dice from the table with the right hand and place it in the green bowl,23
+egodex,basic_pick_place/1748/0-35,pick and place,object,"[0, 35]",pick up the red strawberry from the table with the right hand and place it in the pink bowl,35

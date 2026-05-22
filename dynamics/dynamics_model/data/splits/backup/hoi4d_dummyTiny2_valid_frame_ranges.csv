@@ -1,0 +1,10 @@
+sample,task_label,category_name,valid_frame_range,fine_action,valid_trajectory_number
+ZY20210800001/H1/C3/N33/S114/s05/T2.000,open and close the display,laptop,"[44, 89]",open laptop,45
+ZY20210800003/H3/C3/N33/S279/s02/T2.004,open and close the display,laptop,"[226, 235]",open laptop,9
+ZY20210800002/H2/C3/N06/S354/s01/T2.003,open and close the display,laptop,"[210, 248]",open laptop,38
+ZY20210800003/H3/C3/N22/S277/s05/T2.003,open and close the display,laptop,"[183, 199]",open laptop,16
+ZY20210800003/H3/C3/N49/S284/s03/T2.004,open and close the display,laptop,"[226, 238]",open laptop,12
+ZY20210800003/H3/C3/N32/S282/s03/T2.004,open and close the display,laptop,"[217, 235]",open laptop,18
+ZY20210800004/H4/C3/N08/S97/s04/T2.000,open and close the display,laptop,"[33, 64]",open laptop,31
+ZY20210800003/H3/C17/N09/S167/s03/T2.007,turn and fold,lamp,"[256, 263]",put down lamp,0
+ZY20210800003/H3/C17/N08/S167/s02/T2.003,turn and fold,lamp,"[115, 122]",put down lamp,0

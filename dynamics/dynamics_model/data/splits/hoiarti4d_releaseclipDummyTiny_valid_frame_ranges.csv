@@ -1,0 +1,4 @@
+dataset,sample,task_label,category_name,valid_frame_range,fine_action,valid_trajectory_number
+hoi4d,ZY20210800004/H4/C3/N67/S380/s05/T2.001,open and close the display,laptop,"[77, 90]",carry laptop,13
+arti4d,rh201/scene_2025-04-24-19-21-50/545-567,interact with drawer,drawer,"[545, 567]",open drawer,22
+hoi4d,ZY20210800003/H3/C3/N22/S277/s05/T2.000,open and close the display,laptop,"[55, 75]",pick up laptop,20

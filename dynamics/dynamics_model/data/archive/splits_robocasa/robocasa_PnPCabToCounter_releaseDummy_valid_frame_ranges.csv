@@ -1,0 +1,24 @@
+dataset,sample,task_label,category_name,valid_frame_range,fine_action,valid_trajectory_number
+PnPCabToCounter,demo_000000/0-275,interact with object,object,"[0, 275]",pick the hot dog from the cabinet and place it on the counter,275
+PnPCabToCounter,demo_000001/0-290,interact with object,object,"[0, 290]",pick the steak from the cabinet and place it on the counter,290
+PnPCabToCounter,demo_000002/0-287,interact with object,object,"[0, 287]",pick the ketchup from the cabinet and place it on the counter,287
+PnPCabToCounter,demo_000003/0-247,interact with object,object,"[0, 247]",pick the jam from the cabinet and place it on the counter,247
+PnPCabToCounter,demo_000004/0-364,interact with object,object,"[0, 364]",pick the egg from the cabinet and place it on the counter,364
+PnPCabToCounter,demo_000005/0-236,interact with object,object,"[0, 236]",pick the hot dog from the cabinet and place it on the counter,236
+PnPCabToCounter,demo_000006/0-334,interact with object,object,"[0, 334]",pick the banana from the cabinet and place it on the counter,334
+PnPCabToCounter,demo_000007/0-331,interact with object,object,"[0, 331]",pick the steak from the cabinet and place it on the counter,331
+PnPCabToCounter,demo_000008/0-296,interact with object,object,"[0, 296]",pick the mushroom from the cabinet and place it on the counter,296
+PnPCabToCounter,demo_000009/0-292,interact with object,object,"[0, 292]",pick the bar from the cabinet and place it on the counter,292
+PnPCabToCounter,demo_000010/0-303,interact with object,object,"[0, 303]",pick the banana from the cabinet and place it on the counter,303
+PnPCabToCounter,demo_000011/0-394,interact with object,object,"[0, 394]",pick the onion from the cabinet and place it on the counter,394
+PnPCabToCounter,demo_000012/0-440,interact with object,object,"[0, 440]",pick the jug from the cabinet and place it on the counter,440
+PnPCabToCounter,demo_000013/0-304,interact with object,object,"[0, 304]",pick the bread from the cabinet and place it on the counter,304
+PnPCabToCounter,demo_000014/0-285,interact with object,object,"[0, 285]",pick the tomato from the cabinet and place it on the counter,285
+PnPCabToCounter,demo_000015/0-303,interact with object,object,"[0, 303]",pick the fish from the cabinet and place it on the counter,303
+PnPCabToCounter,demo_000016/0-291,interact with object,object,"[0, 291]",pick the bell pepper from the cabinet and place it on the counter,291
+PnPCabToCounter,demo_000017/0-356,interact with object,object,"[0, 356]",pick the avocado from the cabinet and place it on the counter,356
+PnPCabToCounter,demo_000018/0-275,interact with object,object,"[0, 275]",pick the onion from the cabinet and place it on the counter,275
+PnPCabToCounter,demo_000019/0-330,interact with object,object,"[0, 330]",pick the yogurt from the cabinet and place it on the counter,330
+PnPCabToCounter,demo_000020/0-293,interact with object,object,"[0, 293]",pick the mango from the cabinet and place it on the counter,293
+PnPCabToCounter,demo_000021/0-299,interact with object,object,"[0, 299]",pick the onion from the cabinet and place it on the counter,299
+PnPCabToCounter,demo_000022/0-352,interact with object,object,"[0, 352]",pick the ketchup from the cabinet and place it on the counter,352

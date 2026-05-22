@@ -1,0 +1,5 @@
+dataset,sample,task_label,category_name,valid_frame_range,fine_action,valid_trajectory_number
+pick_and_place,2026-02-04--17-09-02/0-278,,,"[0, 278]",pick up pot and place in box,278
+pick_and_place,2026-02-04--17-40-59/0-276,,,"[0, 276]",pick up pot and place in box,276
+pick_and_place,2026-02-04--17-55-47/0-262,,,"[0, 262]",pick up pot and place in box,262
+pick_and_place,2026-02-04--18-21-52/0-234,,,"[0, 234]",pick up pot and place in box,234
