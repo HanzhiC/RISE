@@ -535,8 +535,13 @@ class Trainer:
         # loss spikes
         anomalies = []
 
+        # Avoid per-epoch INFO spam when one epoch is only a few dataloader steps.
+        log_memory_every_n_epochs = getattr(self.args, "log_memory_every_n_epochs", None)
+        if log_memory_every_n_epochs is None:
+            log_memory_every_n_epochs = max(
+                1, self.args.steps_to_log // max(1, len(self.train_dataloader))
+            )
         for epoch in range(first_epoch, self.state.train_epochs):
-            logger.info(f"started epoch.")
             logger.debug(f"Starting epoch ({epoch + 1}/{self.state.train_epochs})")
 
             self.diffusion_model.train()
@@ -823,12 +828,14 @@ class Trainer:
                     accelerator.wait_for_everyone()
 
           
-            memory_statistics = get_memory_statistics()
-            logger.info(f"Memory after epoch {epoch + 1}: {json.dumps(memory_statistics, indent=4)}")
+            if (epoch + 1) % log_memory_every_n_epochs == 0:
+                memory_statistics = get_memory_statistics()
+                logger.info(
+                    f"Memory after epoch {epoch + 1}: {json.dumps(memory_statistics, indent=4)}"
+                )
 
             accelerator.wait_for_everyone()
-            # time.sleep(0.003)
-            logger.info(f"Finished epoch.")
+            logger.debug(f"Finished epoch ({epoch + 1}/{self.state.train_epochs})")
             if accelerator.is_main_process and self.writer is not None:
                 avg_loss = running_loss / len(self.train_dataloader)
                 self.writer.add_scalar("Average Training Loss", avg_loss, epoch)
