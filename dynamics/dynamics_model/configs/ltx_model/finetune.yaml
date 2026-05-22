@@ -42,6 +42,7 @@ train_epochs: 10000
 steps_to_save: 1000
 steps_to_log: 1000
 steps_to_val: 500
+log_memory_every_n_epochs: 5000  # memory stats INFO interval; epoch start/end stay at DEBUG
 
 mixed_precision: bf16
 allow_tf32: False

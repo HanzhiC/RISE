@@ -535,12 +535,12 @@ class Trainer:
         # loss spikes
         anomalies = []
 
-        # Avoid per-epoch INFO spam when one epoch is only a few dataloader steps.
         log_memory_every_n_epochs = getattr(self.args, "log_memory_every_n_epochs", None)
         if log_memory_every_n_epochs is None:
             log_memory_every_n_epochs = max(
                 1, self.args.steps_to_log // max(1, len(self.train_dataloader))
             )
+
         for epoch in range(first_epoch, self.state.train_epochs):
             logger.debug(f"Starting epoch ({epoch + 1}/{self.state.train_epochs})")
 
