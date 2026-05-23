@@ -64,7 +64,7 @@ def load_cached_states(dataset, video_seqs, device=None):
                 os.path.join(head_color_video_fpath, f"{frame:06d}.png")
             )
 
-        cache_state_dir = os.path.join(dataset_path, sample, f"state_cache")
+        cache_state_dir = os.path.join(dataset_path, sample, f"state_cache_ablation_wo_geo")
         visual_feature_gripper_curr_fpath = os.path.join(
             cache_state_dir, "visual_feature_gripper.npy"
         )
@@ -1012,10 +1012,10 @@ def main(args):
     # video_seqs_failed = ["2026-03-15--12-20-14/0-333"]  # microwave
     # video_seqs_failed = ["2026-03-27--18-26-13/0-66"]  # socks
     # video_seqs_failed = ["2026-03-29--16-14-13/0-144"]  # ricecooker; didn't correct well, so value model rejects
-    # video_seqs_failed = [
-    #     "2026-03-17--13-00-49/0-30",
-    #     "2026-03-17--13-01-37/0-29",
-    # ]  # wipe
+    video_seqs_failed = [
+        # "2026-03-17--13-00-49/0-30",
+        "2026-03-17--13-01-37/0-29",
+    ]  # wipe
 
     # video_seqs_failed = [
     #     "2026-05-08--17-26-08/0-298",
@@ -1074,7 +1074,7 @@ def main(args):
 
     viser_server = None
     # use_viser = not (os.environ.get("DISPLAY") or os.environ.get("WAYLAND_DISPLAY"))
-    use_viser = True
+    use_viser = False
     if use_viser and args.visualize_action:
         viser_server = viser.ViserServer(host="0.0.0.0", port=args.viser_port)
 
@@ -1327,7 +1327,6 @@ def main(args):
             }
 
             # Run inference for top-3 references and merge samples along dim=1.
-            infer_video_value = getattr(args, "infer_future_video", False)
             outputs = infer_with_top_k_references(
                 data_batch=data_batch,
                 ref_indices=top_k_of_interest_idx,
@@ -1344,7 +1343,7 @@ def main(args):
                 enable_guidance=False,
                 eval_guidance=False,
                 align_to_current_state=False,
-                action_only=not infer_video_value,
+                action_only=True,
             )
 
             # WM action chunk = 30; video model uses 30 -> pad(last) -> 50 -> [1:50:2]
@@ -1358,7 +1357,8 @@ def main(args):
             )
 
             # Infer future video
-            infer_save_dir = getattr(args, "infer_save_dir", "tmp_infer_case/outputs")
+            infer_save_dir = getattr(args, "infer_save_dir", f"./.tmp/action_guided_results/")
+            infer_save_dir = os.path.join(infer_save_dir, args.task.replace("-", "_"))
             os.makedirs(infer_save_dir, exist_ok=True)
             dynamics_predictions = []
             cached_videos = []
@@ -1390,7 +1390,7 @@ def main(args):
 
             if cached_videos:
                 combined_mp4 = os.path.join(
-                    infer_save_dir, f"{frame_idx:06d}_all_samples.mp4"
+                    infer_save_dir, video_seq.replace("/", "_"), f"rollout_future_{frame_idx:06d}.mp4"
                 )
                 _save_cached_action_videos_mp4(cached_videos, combined_mp4, fps=10)
 
@@ -1471,7 +1471,6 @@ def main(args):
                     )
 
             if args.visualize_action:  # and is_improved:
-
                 policy_wrapper.visualize_action_predictions(
                     data_batch,
                     outputs,
@@ -1545,7 +1544,7 @@ if __name__ == "__main__":
     parser.add_argument(
         "--ckpt",
         type=str,
-        default="last.ckpt",
+        default="iter6000.ckpt",
         help="Name of the checkpoint file.",
     )  # Seems 55k is good enough ...
     parser.add_argument(
@@ -1613,11 +1612,7 @@ if __name__ == "__main__":
         default=5,
         help="Number of actions to sample.",
     )
-    parser.add_argument(
-        "--infer_future_video",
-        action="store_true",
-        help="Run diffusion-based future video inference for the predicted actions.",
-    )
+
     parser.add_argument(
         "--infer_cfg",
         type=str,
@@ -1639,7 +1634,7 @@ if __name__ == "__main__":
     parser.add_argument(
         "--infer_save_dir",
         type=str,
-        default="tmp_infer_case/outputs",
+        default="./.tmp/action_guided_results/",
         help="Directory to save inferred future videos as mp4",
     )
     parser.add_argument(
@@ -1670,4 +1665,4 @@ if __name__ == "__main__":
     args = parser.parse_args()
     main(args)
 
-#  python rl_pipeline/rl_inference_stretchrobot_guided_action.py --cfg /home/wiss/chenh/storage/logs/egoasis4d-stretchrobot-vlawmvm-repre-ablation/ablation_repre_wo_geometric_frozenvla+wm+vm_stretchrobot_pnp-ricecooker/config.yaml  -t pnp-ricecooker -n -o --use_episode_correspondence --infer_future_video --infer_save_dir tmp_infer_case/outputs     --infer_diffusion_ckpt results/2026_05_19_18_25_28/step_7000/diffusion_pytorch_model.safetensors -a 2 -n -va
+#  python rl_pipeline/rl_inference_stretchrobot_guided_action.py --cfg /home/wiss/chenh/storage/logs/egoasis4d-stretchrobot-vlawmvm-repre-ablation/ablation_repre_wo_geometric_frozenvla+wm+vm_stretchrobot_pnp-ricecooker/config.yaml  -t pnp-ricecooker -n -o --use_episode_correspondence  --infer_save_dir tmp_infer_case/outputs     --infer_diffusion_ckpt results/2026_05_19_18_25_28/step_7000/diffusion_pytorch_model.safetensors -a 2 -n -va
