@@ -64,7 +64,9 @@ def load_cached_states(dataset, video_seqs, device=None):
                 os.path.join(head_color_video_fpath, f"{frame:06d}.png")
             )
 
-        cache_state_dir = os.path.join(dataset_path, sample, f"state_cache_ablation_wo_geo")
+        cache_state_dir = os.path.join(
+            dataset_path, sample, f"state_cache_ablation_wo_geo"
+        )
         visual_feature_gripper_curr_fpath = os.path.join(
             cache_state_dir, "visual_feature_gripper.npy"
         )
@@ -1013,8 +1015,8 @@ def main(args):
     # video_seqs_failed = ["2026-03-27--18-26-13/0-66"]  # socks
     # video_seqs_failed = ["2026-03-29--16-14-13/0-144"]  # ricecooker; didn't correct well, so value model rejects
     # video_seqs_failed = [
-        # "2026-03-17--13-00-49/0-30",
-        # "2026-03-17--13-01-37/0-29",
+    # "2026-03-17--13-00-49/0-30",
+    # "2026-03-17--13-01-37/0-29",
     # ]  # wipe
 
     # video_seqs_failed = [
@@ -1152,14 +1154,43 @@ def main(args):
 
         value_seq, value_seq_future, advantage_seq = [], [], []
         need_reference_filenames = args.visualize_action or args.save_meta
+        saved_value_pred = (
+            np.load(value_pred_save_path)
+            if os.path.isfile(value_pred_save_path)
+            else None
+        )
         for _, frame_data in tqdm(
             enumerate(video_data_to_be_optimized),
             desc="Processing frames...",
             total=len(video_data_to_be_optimized),
         ):
+            frame_idx = int(frame_data["frame_idx"].item())
+
+            action_save_fpath = os.path.join(
+                action_save_video_fpath, f"{frame_idx:06d}.npz"
+            )
+            if os.path.exists(action_save_fpath) and not args.overwrite:
+                print(f"[INFO] Dex action already exists for frame: {frame_idx}")
+                frame_offset = frame_idx - int(valid_frame_range[0])
+                if (
+                    saved_value_pred is not None
+                    and "value_future_guided" in saved_value_pred
+                    and "advantage_guided" in saved_value_pred
+                ):
+                    value_seq.append(frame_data["value_expected"].item())
+                    value_seq_future.append(
+                        float(saved_value_pred["value_future_guided"][frame_offset])
+                    )
+                    advantage_seq.append(
+                        float(saved_value_pred["advantage_guided"][frame_offset])
+                    )
+                else:
+                    value_seq.append(frame_data["value_expected"].item())
+                    value_seq_future.append(frame_data["value_future_expected"].item())
+                    advantage_seq.append(frame_data["advantage"].item())
+                continue
 
             # Check if we need to do the optimization ...
-            frame_idx = int(frame_data["frame_idx"].item())
             if frame_data["advantage_label"].item() == 1:
                 if not args.no_save:
                     action_save_fpath = os.path.join(
@@ -1357,7 +1388,9 @@ def main(args):
             )
 
             # Infer future video
-            infer_save_dir = getattr(args, "infer_save_dir", f"./.tmp/action_guided_results/")
+            infer_save_dir = getattr(
+                args, "infer_save_dir", f"./.tmp/action_guided_results/"
+            )
             infer_save_dir = os.path.join(infer_save_dir, args.task.replace("-", "_"))
             os.makedirs(infer_save_dir, exist_ok=True)
             dynamics_predictions = []
@@ -1390,7 +1423,9 @@ def main(args):
 
             if cached_videos:
                 combined_mp4 = os.path.join(
-                    infer_save_dir, video_seq.replace("/", "_"), f"rollout_future_{frame_idx:06d}.mp4"
+                    infer_save_dir,
+                    video_seq.replace("/", "_"),
+                    f"rollout_future_{frame_idx:06d}.mp4",
                 )
                 _save_cached_action_videos_mp4(cached_videos, combined_mp4, fps=10)
 
@@ -1455,9 +1490,7 @@ def main(args):
                 history_action_original = np.load(action_original_fpath)[
                     "history_trajectory"
                 ]
-                action_save_fpath = os.path.join(
-                    action_save_video_fpath, f"{frame_idx:06d}.npz"
-                )
+
                 action_to_save_final = {
                     "history_trajectory": history_action_original,
                     "trajectory": action_to_save,
@@ -1478,7 +1511,7 @@ def main(args):
                     viser_server=viser_server,
                     view="head",
                 )
-                
+
         if not args.no_save:
             value_info_saved = dict(np.load(value_pred_save_path))
             value_seq_future = np.array(value_seq_future)
@@ -1522,7 +1555,7 @@ def main(args):
             print(
                 f"=============> Saved value predictions and advantage to {value_pred_save_path}"
             )
-            
+
     if args.visualize:
         plt.ioff()
 

@@ -13,7 +13,7 @@ SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 cd "${SCRIPT_DIR}"
 
 CFG_BASE="/home/wiss/chenh/storage/logs/egoasis4d-stretchrobot-vlawmvm-repre-ablation/ablation_repre_wo_geometric_frozenvla+wm+vm_stretchrobot"
-INFER_DIFFUSION_CKPT="${INFER_DIFFUSION_CKPT:-results/2026_05_22_18_50_18/step_23000/diffusion_pytorch_model.safetensors}"
+INFER_DIFFUSION_CKPT="${INFER_DIFFUSION_CKPT:-results/2026_05_22_18_50_18/step_24000/diffusion_pytorch_model.safetensors}"
 
 PYTHON="${PYTHON:-python}"
 
@@ -111,9 +111,10 @@ run_guided_infer() {
         "${PYTHON}" rl_pipeline/rl_inference_stretchrobot_guided_action.py \
         --cfg "${cfg_path}" \
         --task "${task}" \
-        # --overwrite \
         --use_episode_correspondence \
-        --infer_diffusion_ckpt "${INFER_DIFFUSION_CKPT}"
+        --rollout_only \
+        --infer_diffusion_ckpt "${INFER_DIFFUSION_CKPT}"\
+        --overwrite
 }
 
 if [ "${1:-}" = "-h" ] || [ "${1:-}" = "--help" ]; then
