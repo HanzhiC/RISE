@@ -1084,18 +1084,16 @@ def main(args):
         if args.use_episode_correspondence:
             mapped_video_seqs = episode_correspondence.get(video_seq, [])
             if len(mapped_video_seqs) == 0:
-                print(
-                    f"[WARN] No episode correspondence for {video_seq}; fallback to all successful sequences."
-                )
-                mapped_video_seqs = video_seqs_success
+                print(f"[WARN] No episode correspondence for {video_seq}; Skipping.")
+                continue
             mapped_video_seqs = [
                 s for s in mapped_video_seqs if s in val_dataset.sample_name_to_index
             ]
             if len(mapped_video_seqs) == 0:
                 print(
-                    f"[WARN] No valid mapped episodes found for {video_seq}; fallback to all successful sequences."
+                    f"[WARN] No valid mapped episodes found for {video_seq}; Skipping."
                 )
-                mapped_video_seqs = video_seqs_success
+                continue
             cache_key = tuple(mapped_video_seqs)
             if cache_key not in episode_cache_bank:
                 print(
