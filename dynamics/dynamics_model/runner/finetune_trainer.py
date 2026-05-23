@@ -945,7 +945,7 @@ class Trainer:
             if gt_actions is None:
                 gt_actions = batch['actions'][:, -self.args.data['train']['action_chunk']:]
                 action_dim = gt_actions.shape[-1]
-
+            bias_std = 1.0
             action_logs = act_metric(
                 preds['action'][:,:,:action_dim].detach().cpu().to(torch.float).numpy()[:batch_size],
                 gt_actions[:,:,:action_dim].detach().cpu().to(torch.float).numpy()[:batch_size],

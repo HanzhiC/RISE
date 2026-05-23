@@ -514,25 +514,29 @@ def infer_advantage_with_video_visual_conditioning(
 ):
     """Value/advantage per sample using DINO features from predicted video last frames."""
 
-    future_frames = outputs["image_predictions"] # [B, N, 3, 224, 224]
-    pred_actions = outputs["action_predictions"] # [B, N, H, D]
+    future_frames = outputs["image_predictions"]  # [B, N, 3, 224, 224]
+    pred_actions = outputs["action_predictions"]  # [B, N, H, D]
     B, N, _, _, _ = future_frames.shape
     future_frames = future_frames.view(B * N, 3, 224, 224)
     future_visual_feature_patch = (
         policy_wrapper.visual_feature_extractor.extract_features(future_frames)[-1]
     )
-    future_visual_feature_patch = rearrange(future_visual_feature_patch, "b c h w -> b (h w) c", h=14, w=14)
+    future_visual_feature_patch = rearrange(
+        future_visual_feature_patch, "b c h w -> b (h w) c", h=14, w=14
+    )
     future_visual_feature_patch = rearrange(
         future_visual_feature_patch, "(b n) l c -> b n l c", b=B, n=N
-    ) # [B, N, 196, 768]
+    )  # [B, N, 196, 768]
     future_visual_feature_patch = future_visual_feature_patch
-    future_visual_feature_patch = future_visual_feature_patch[:, :, None].expand(-1, -1, history_length, -1, -1) # [B, N, H, 196, 768]
+    future_visual_feature_patch = future_visual_feature_patch[:, :, None].expand(
+        -1, -1, history_length, -1, -1
+    )  # [B, N, H, 196, 768]
 
     pred_action_cond = policy_wrapper.build_action_conditioning(
         pred_actions,
         action_chunk_size=policy_wrapper.cfg.ALGORITHM.model.action_chunk_size,
-    ) # [B, N, H, D]
-    
+    )  # [B, N, H, D]
+
     data_batch_future = copy.deepcopy(data_batch)
     data_batch_current = copy.deepcopy(data_batch)
     data_batch_future = TensorUtils.repeat_by_expand_at(
@@ -541,16 +545,18 @@ def infer_advantage_with_video_visual_conditioning(
     data_batch_current = TensorUtils.repeat_by_expand_at(
         data_batch_current, repeats=N, dim=0
     )
-    data_batch_future["history_visual_feature_patch"] = future_visual_feature_patch.flatten(0, 1) # [B*N, history_length, 196, 768]
+    data_batch_future["history_visual_feature_patch"] = (
+        future_visual_feature_patch.flatten(0, 1)
+    )  # [B*N, history_length, 196, 768]
     data_batch_future[f"gt_action"] = pred_action_cond.flatten(0, 1)
-    
-    value_info = policy_wrapper.inference_advantage(data_batch_current, data_batch_future)
+
+    value_info = policy_wrapper.inference_advantage(
+        data_batch_current, data_batch_future
+    )
     value_info["advantage_predictions"] = value_info["advantage_predictions"].view(
         -1, N
     )
-    value_info["value_predictions"] = value_info["value_predictions"].view(
-        -1, N
-    )
+    value_info["value_predictions"] = value_info["value_predictions"].view(-1, N)
     value_info["future_value_predictions"] = value_info[
         "future_value_predictions"
     ].view(-1, N)
@@ -612,9 +618,7 @@ def pad_actions_to_horizon(actions, target_horizon=ACTION_PAD_HORIZON):
     h = actions.shape[0]
     if h < target_horizon:
         pad_h = target_horizon - h
-        actions = torch.cat(
-            [actions, actions[-1:].expand(pad_h, -1)], dim=0
-        )
+        actions = torch.cat([actions, actions[-1:].expand(pad_h, -1)], dim=0)
     elif h > target_horizon:
         actions = actions[:target_horizon]
     return actions
@@ -706,9 +710,7 @@ def _resize_video_spatial(video, size=VIDEO_OUTPUT_SIZE):
     if h == target_h and w == target_w:
         return video
     frames = video.permute(1, 0, 2, 3).float()  # [T, C, H, W]
-    frames = F.interpolate(
-        frames, size=size, mode="bilinear", align_corners=False
-    )
+    frames = F.interpolate(frames, size=size, mode="bilinear", align_corners=False)
     return frames.permute(1, 0, 2, 3).to(dtype=video.dtype)
 
 
@@ -937,6 +939,7 @@ def main(args):
     # cfg.ALGORITHM.model.num_steps = 5
     cfg.DATA.rl_mode = True
     cfg.DATA.rl_round = args.rl_round
+    cfg.DATA.data_dir = "/storage/slurm/chenh/stretch/"
     task_params = edict(TASK_PARAMS[args.task])
 
     datamodule = datamodule_factory(cfg)
@@ -1111,15 +1114,14 @@ def main(args):
         clip_idx = f"{int(clip_idx_start):06d}_{int(clip_idx_end):06d}"
         dataset_path = os.path.join(val_dataset.data_dir, dataset_name)
         action_save_video_fpath = os.path.join(
-            dataset_path, sample, f"dex_traj_guided_risevideogen_rlround{args.rl_round}"
+            dataset_path, sample, f"dex_traj_guided_risevideogen"
         )
         action_original_video_fpath = os.path.join(dataset_path, sample, "dex_traj")
-        value_pred_save_path = os.path.join(
-            dataset_path,
-            sample,
-            f"value_prediction",
-            f"{clip_idx}.npz",
+        value_pred_dir = os.path.join(
+            dataset_path, sample, "value_prediction_ablation_wo_geo"
         )
+        os.makedirs(value_pred_dir, exist_ok=True)
+        value_pred_save_path = os.path.join(value_pred_dir, f"{clip_idx}.npz")
 
         # Check existence of the action save video path
         all_filenames_exist = check_existence_of_action_save_video(
@@ -1149,7 +1151,6 @@ def main(args):
             continue
 
         value_seq, value_seq_future, advantage_seq = [], [], []
-        guidance_meta_entries = []
         need_reference_filenames = args.visualize_action or args.save_meta
         for _, frame_data in tqdm(
             enumerate(video_data_to_be_optimized),
@@ -1357,9 +1358,7 @@ def main(args):
             )
 
             # Infer future video
-            infer_save_dir = getattr(
-                args, "infer_save_dir", "tmp_infer_case/outputs"
-            )
+            infer_save_dir = getattr(args, "infer_save_dir", "tmp_infer_case/outputs")
             os.makedirs(infer_save_dir, exist_ok=True)
             dynamics_predictions = []
             cached_videos = []
@@ -1375,13 +1374,11 @@ def main(args):
                         n_chunk=1,
                         norm_constant="FINETUNE_TASK",
                         norm_config_path="data/utils/action_norm.json",  # change this
-                        domain_name=args.task.replace("-", "_"),  
+                        domain_name=args.task.replace("-", "_"),
                         action_chunk=50,
                         model_root=getattr(args, "infer_model_root", None),
                         diffusion_ckpt=getattr(args, "infer_diffusion_ckpt", None),
-                        act_tokens_path=getattr(
-                            args, "infer_act_tokens_path", None
-                        ),
+                        act_tokens_path=getattr(args, "infer_act_tokens_path", None),
                     )
                     dynamics_predictions.append(last_frame)
                     cached_videos.append(pred_video)
@@ -1398,15 +1395,13 @@ def main(args):
                 _save_cached_action_videos_mp4(cached_videos, combined_mp4, fps=10)
 
             if len(dynamics_predictions) == 0:
-                print(
-                    f"[WARN] No video frames for frame {frame_idx}, skip value infer"
-                )
+                print(f"[WARN] No video frames for frame {frame_idx}, skip value infer")
                 continue
 
-            video_last_frames = torch.stack(
-                dynamics_predictions, dim=0
-            )  # [N, 3, H, W]
-            outputs["image_predictions"] = video_last_frames[None].to(policy_wrapper.device)
+            video_last_frames = torch.stack(dynamics_predictions, dim=0)  # [N, 3, H, W]
+            outputs["image_predictions"] = video_last_frames[None].to(
+                policy_wrapper.device
+            )
             outputs = infer_advantage_with_video_visual_conditioning(
                 policy_wrapper,
                 data_batch,
@@ -1484,9 +1479,51 @@ def main(args):
                     viser_server=viser_server,
                     view="head",
                 )
+                
+        if not args.no_save:
+            value_info_saved = dict(np.load(value_pred_save_path))
+            value_seq_future = np.array(value_seq_future)
+            advantage_seq = np.array(advantage_seq)
+            episode_len = len(value_seq_future)
+            # value_future / advantage in the npz: one entry per frame for the full valid span
+            # (rl_inference_stretchrobot_value uses _get_video (0,1)). Guided frames are exactly
+            # _get_video(frame_range_ratio) with the same ratio as above — last min(50, span) frames
+            # when span > 50, else the whole span — so they align with the *tail* of the npz arrays.
+            expected_guided_frames = _get_video_window_length(
+                valid_frame_range, frame_range_ratio
+            )
+            if episode_len != expected_guided_frames:
+                raise ValueError(
+                    f"guided length {episode_len} != _get_video window {expected_guided_frames} "
+                    f"(valid span {int(valid_frame_range[1] - valid_frame_range[0])}, "
+                    f"frame_range_ratio={frame_range_ratio})."
+                )
+            vf_npz = np.asarray(value_info_saved["value_future"])
+            adv_npz = np.asarray(value_info_saved["advantage"])
+            if vf_npz.shape[0] != adv_npz.shape[0]:
+                raise ValueError(
+                    f"value_future ({vf_npz.shape[0]}) and advantage ({adv_npz.shape[0]}) "
+                    "length mismatch in npz."
+                )
+            n_full = int(valid_frame_range[1] - valid_frame_range[0])
+            if vf_npz.shape[0] != n_full:
+                raise ValueError(
+                    f"value_future length {vf_npz.shape[0]} != valid clip span {n_full}; "
+                    "value npz must be from a full-clip value run for this sample."
+                )
+            suffix_start = vf_npz.shape[0] - episode_len
+            value_info_saved["value_future_guided"] = value_info_saved[
+                "value_future"
+            ].copy()
+            value_info_saved["advantage_guided"] = value_info_saved["advantage"].copy()
+            value_info_saved["value_future_guided"][suffix_start:] = value_seq_future
+            value_info_saved["advantage_guided"][suffix_start:] = advantage_seq
 
-
-
+            np.savez(value_pred_save_path, **value_info_saved)
+            print(
+                f"=============> Saved value predictions and advantage to {value_pred_save_path}"
+            )
+            
     if args.visualize:
         plt.ioff()
 
@@ -1627,7 +1664,7 @@ if __name__ == "__main__":
         "--rl_round",
         "-rr",
         type=int,
-        default=2,
+        default=1,
         help="RL round.",
     )
     args = parser.parse_args()

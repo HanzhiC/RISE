@@ -20,8 +20,7 @@ import time
 from data.dataset import Egoasis4DDataset
 from scipy.spatial.transform import Rotation as R
 
-# DATA_DIR = "/storage/group/srl/stretch/"
-DATA_DIR = "/storage/group/srl/stretch/"
+DATA_DIR = "/storage/slurm/chenh/stretch/"
 DEFAULT_FPS = 15
 # DOWNSAMPLING_FACTOR_DYNAMICS = 3
 DOWNSAMPLING_FACTOR_DYNAMICS = 2
@@ -62,9 +61,6 @@ class Robot4DDataset(Egoasis4DDataset):
         action_in_world_frame=True,
         training=False,
         rl_mode=False,
-        rl_round=0,
-        reward_type="dense",  # "sparse" or "dense"
-        dinov3_visual_dim=768,
         **kwargs,
     ):
         super().__init__(
@@ -91,8 +87,6 @@ class Robot4DDataset(Egoasis4DDataset):
             load_finger_tips=False,
             load_tracks=False,
             load_hands=False,
-            reward_type=reward_type,
-            dinov3_visual_dim=dinov3_visual_dim,
         )
         assert (
             self.HEAD_IMAGE_SIZE[0] == self.HEAD_IMAGE_SIZE[1]
@@ -104,8 +98,7 @@ class Robot4DDataset(Egoasis4DDataset):
         self.load_rgbd_frames = load_rgbd_frames
         self.action_chunk_size = action_chunk_size
         self.rl_mode = rl_mode
-        self.rl_round = rl_round
-        self.reward_type = reward_type
+
         # Reload the action statistics
         if self.load_hands:
             prefix = "rel" if self.action_in_relative else ""
@@ -235,26 +228,6 @@ class Robot4DDataset(Egoasis4DDataset):
             print(
                 "====> VLA-RL mode: Training on all samples, parsing advantage prediction ..."
             )
-            if "round" in self.df.columns:
-                valid_mask = self.df["round"].fillna(-1).astype(int).values <= int(
-                    self.rl_round
-                )
-                self.df = self.df.loc[valid_mask].reset_index(drop=True)
-                print(
-                    f"====> VLA-RL mode: Keeping samples with rl_round <= {self.rl_round}, {len(self.df)} samples left."
-                )
-                self.advantage_labels = self.df["advantage_label"].values
-                self.samples = self.df["sample"].tolist()
-                self.valid_frame_ranges = [
-                    eval(v) for v in self.df["valid_frame_range"].tolist()
-                ]
-                self.fine_actions = self.df["fine_action"].tolist()
-                self.dataset_categories = self.df["dataset"].tolist()
-                self._build_sample_clip_pairs()
-            else:
-                raise ValueError(
-                    "====> VLA-RL mode: No 'round' column in split, skipping rl_round filtering."
-                )
             self._parse_advantage_prediction()
         else:
             self.load_value_prediction = False
@@ -274,24 +247,7 @@ class Robot4DDataset(Egoasis4DDataset):
                 # Load class and task labels
                 self._build_sample_clip_pairs()
             else:
-                if "round" in self.df.columns:
-                    valid_mask = self.df["round"].fillna(-1).astype(int).values <= int(
-                        self.rl_round
-                    )
-                    self.df = self.df.loc[valid_mask].reset_index(drop=True)
-                    print(
-                        f"====> WM+VM mode: Keeping samples with round <= {self.rl_round}, {len(self.df)} samples left."
-                    )
-                    self.advantage_labels = self.df["advantage_label"].values
-                    self.samples = self.df["sample"].tolist()
-                    self.valid_frame_ranges = [
-                        eval(v) for v in self.df["valid_frame_range"].tolist()
-                    ]
-                    self.fine_actions = self.df["fine_action"].tolist()
-                    self.dataset_categories = self.df["dataset"].tolist()
-                    self._build_sample_clip_pairs()
-                else:
-                    print("====> WM+VM mode: Training on all samples ...")
+                print("====> WM+VM mode: Training on all samples ...")
 
         self.success_labels = self.df["success"].values
         self.is_teleop_labels = self.df["is_teleop"].values
@@ -313,7 +269,7 @@ class Robot4DDataset(Egoasis4DDataset):
             clip_idx = f"{int(clip_idx_start):06d}_{int(clip_idx_end):06d}"
 
             value_pred_dir = os.path.join(
-                dataset_path, sample, f"value_prediction"
+                dataset_path, sample, "value_prediction_ablation_wo_geo"
             )
             value_pred_save_path = os.path.join(value_pred_dir, f"{clip_idx}.npz")
 
@@ -344,7 +300,7 @@ class Robot4DDataset(Egoasis4DDataset):
             # ) == len(self.samples) - sum(self.is_teleop_labels)
             # Set the advantage to be top 30% of the advantage predictions
             advantage_pred_list = np.concatenate(advantage_pred_list)
-            self.advantage_threshold = np.percentile(advantage_pred_list, 70)
+            self.advantage_threshold = np.percentile(advantage_pred_list, 60)
         print(
             f"=============> RL mode: Advantage threshold: {self.advantage_threshold}"
         )
@@ -387,7 +343,7 @@ class Robot4DDataset(Egoasis4DDataset):
         head_depth_video_fpath = os.path.join(dataset_path, sample, "head_depth")
         dex_traj_video_fpath = os.path.join(dataset_path, sample, f"dex_traj")
         dex_traj_guided_video_fpath = os.path.join(
-            dataset_path, sample, f"dex_traj_guided_latest_rlround{self.rl_round}"
+            dataset_path, sample, f"dex_traj_guided_risevideogen"
         )
 
         language_embedding_fpath = os.path.join(
@@ -679,7 +635,7 @@ class Robot4DDataset(Egoasis4DDataset):
             value_pred_fpath = os.path.join(
                 dataset_path,
                 sample,
-                f"value_prediction",
+                "value_prediction_ablation_wo_geo",
                 f"{clip_idx}.npz",
             )
 
@@ -705,7 +661,7 @@ class Robot4DDataset(Egoasis4DDataset):
                     value_future_pred_guided = value_pred_data["value_future_guided"][
                         frame - valid_frame_range[0]
                     ]
-                    is_improved = advantage_pred_guided > max(advantage_pred, 0) + 0.01
+                    is_improved = advantage_pred_guided > max(advantage_pred, 0) + 0.05
                     advantage_pred = (
                         advantage_pred_guided if is_improved else advantage_pred
                     )
@@ -945,13 +901,7 @@ class Robot4DDataset(Egoasis4DDataset):
         T_max = self.max_episode_len
         idx = frame_idx - valid_frame_range[0]
         # progress supervision
-        if self.reward_type == "sparse":
-            gamma = 0.995
-            gt_state_value = gamma ** (T_max - idx)
-        elif self.reward_type == "dense":
-            gt_state_value = idx / T_max
-        else:
-            raise ValueError(f"Invalid reward type: {self.reward_type}")
+        gt_state_value = idx / T_max
         gt_state_value = np.clip(gt_state_value, 0, 1)
 
         # terminal flag (based on real episode length)
@@ -1037,13 +987,6 @@ class Robot4DDataset(Egoasis4DDataset):
             )
             return None
         visual_observation = np.load(visual_feature_fpath, mmap_mode="r")
-
-        assert (
-            visual_observation.shape[-1] == self.dinov3_visual_dim
-        ), (
-            f"Visual feature last dim {visual_observation.shape[-1]} != "
-            f"dinov3_visual_dim={self.dinov3_visual_dim} ({visual_feature_fpath})"
-        )
 
         # Build the history visual feature
         frame_indices = np.arange(
