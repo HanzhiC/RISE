@@ -111,7 +111,7 @@ run_guided_infer() {
         "${PYTHON}" rl_pipeline/rl_inference_stretchrobot_guided_action.py \
         --cfg "${cfg_path}" \
         --task "${task}" \
-        --overwrite \
+        # --overwrite \
         --use_episode_correspondence \
         --infer_diffusion_ckpt "${INFER_DIFFUSION_CKPT}"
 }
