@@ -1012,10 +1012,10 @@ def main(args):
     # video_seqs_failed = ["2026-03-15--12-20-14/0-333"]  # microwave
     # video_seqs_failed = ["2026-03-27--18-26-13/0-66"]  # socks
     # video_seqs_failed = ["2026-03-29--16-14-13/0-144"]  # ricecooker; didn't correct well, so value model rejects
-    video_seqs_failed = [
+    # video_seqs_failed = [
         # "2026-03-17--13-00-49/0-30",
-        "2026-03-17--13-01-37/0-29",
-    ]  # wipe
+        # "2026-03-17--13-01-37/0-29",
+    # ]  # wipe
 
     # video_seqs_failed = [
     #     "2026-05-08--17-26-08/0-298",
